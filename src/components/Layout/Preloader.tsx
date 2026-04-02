@@ -31,10 +31,6 @@ const Preloader: React.FC = () => {
         const targetAttr = anchor.getAttribute("target");
 
         // We check if it's an internal link
-        // 1. Must have an href
-        // 2. Starts with / or the current origin (using document.location.origin)
-        // 3. Is NOT an external link (target="_blank")
-        // 4. Is NOT a hash link (e.g. #footer)
         if (
           href && 
           (href.startsWith("/") || href.startsWith(window.location.origin)) &&
@@ -43,24 +39,35 @@ const Preloader: React.FC = () => {
           !href.startsWith("tel:") &&
           !href.startsWith("mailto:")
         ) {
+          // DIRECT DOM MANIPULATION for maximum speed
+          // This ensures the preloader covers the screen BEFORE the next React render cycle
+          const preloader = document.getElementById("preloader");
+          if (preloader) {
+            preloader.style.transition = "none";
+            preloader.style.opacity = "1";
+            preloader.style.visibility = "visible";
+          }
           setShow(true);
         }
       }
     };
 
-    document.addEventListener("click", handleAnchorClick);
-    return () => document.removeEventListener("click", handleAnchorClick);
+    document.addEventListener("click", handleAnchorClick, { capture: true });
+    return () => document.removeEventListener("click", handleAnchorClick, { capture: true });
   }, []);
 
   return (
     <div 
+      id="preloader"
       className={`preloader-area position-fixed text-center ${show ? "" : "preloader-deactivate"}`}
       style={{
-        transition: 'opacity 0.6s ease-in-out, visibility 0.6s ease-in-out',
+        // Transition ONLY when fading out (show = false)
+        // When appearing (show = true), it should be INSTANT
+        transition: show ? 'none' : 'opacity 0.6s ease-in-out, visibility 0.6s ease-in-out',
         opacity: show ? 1 : 0,
         visibility: show ? 'visible' : 'hidden',
         zIndex: 99999,
-        pointerEvents: show ? 'auto' : 'none', // Block interaction while loading
+        pointerEvents: show ? 'auto' : 'none', 
       }}
     >
       <div className="loader">
