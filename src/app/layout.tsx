@@ -14,8 +14,10 @@ import "../../public/css/style.css";
 // Globals Responsive Styles
 import "../../public/css/responsive.css";
 
+import React, { Suspense } from "react";
 import AosAnimation from "@/components/Layout/AosAnimation";
 import BackToTop from "@/components/Layout/BackToTop";
+import Preloader from "@/components/Layout/Preloader";
 
 import type { Metadata } from "next";
 import { Jost } from "next/font/google";
@@ -36,6 +38,11 @@ export default function RootLayout({
     <html lang="en">
       <body className={jost.className}>
         {children}
+
+        {/* Preloader */}
+        <Suspense fallback={null}>
+          <Preloader />
+        </Suspense>
 
         {/* AosAnimation */}
         <AosAnimation />
