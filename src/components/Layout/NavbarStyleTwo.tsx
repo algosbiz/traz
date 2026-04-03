@@ -14,6 +14,7 @@ import Image from "next/image";
 
 import logo from "/public/images/black-logo.svg";
 import blackLogo from "/public/images/black-logo.svg";
+import ThemeToggle from "./ThemeToggle";
 
 const NavbarStyleTwo: React.FC = () => {
   const currentRoute = usePathname();
@@ -464,6 +465,8 @@ const NavbarStyleTwo: React.FC = () => {
 
           {/* others-options */}
           <div className="others-option d-flex align-items-center">
+            <ThemeToggle />
+
             <div className="option-item">
               <div className="search-btn" onClick={handleToggleSearchModal}>
                 <i className="ri-search-line"></i>

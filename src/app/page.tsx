@@ -15,7 +15,7 @@ import Footer from "@/components/Layout/Footer";
 
 export default function Home() {
   return (
-    <div className="full-bg-black-color">
+    <>
       <Navbar />
 
       <HeroBanner />
@@ -43,6 +43,6 @@ export default function Home() {
       <ContactForm />
 
       <Footer />
-    </div>
+    </>
   );
 }

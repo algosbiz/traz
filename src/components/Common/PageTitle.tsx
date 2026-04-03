@@ -20,7 +20,7 @@ const PageTitle: React.FC<PageBannerTitleProps> = ({
         <div className="page-banner-inner">
           <ul className="list text-uppercase">
             <li>
-              <Link href={homeUrl} className="text-black hover:text-[#717FF8]">
+              <Link href={homeUrl} className="theme-heading-color hover:text-[#717FF8]">
                 {homeText}
               </Link>
             </li>

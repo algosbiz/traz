@@ -53,12 +53,48 @@ Default CSS
   --paragraphColor: #7C7772;
   --fontSize: 17px;
   --transition: .6s;
+
+  --backgroundColor: var(--whiteColor);
+  --textColor: var(--paragraphColor);
+  --headingColor: var(--blackColor);
+  --subtitleColor: #989898;
+  --mutedColor: #6C6661;
+  --cardBg: #F4F4F4;
+  --borderColor: #E7E0E0;
+  --navLinkColor: var(--blackColor);
+  --navStickyBg: var(--whiteColor);
+  --navStickyShadow: rgba(0, 0, 0, 0.1);
+  --inputBg: transparent;
+  --inputBorder: #E7E0E0;
+}
+
+[data-theme='dark'] {
+  --backgroundColor: var(--blackColor);
+  --textColor: #B7B3AF;
+  --headingColor: #E1DBD6;
+  --subtitleColor: #BDBDBD;
+  --mutedColor: #9D9A97;
+  --cardBg: #24231D;
+  --borderColor: #3A3835;
+  --navLinkColor: var(--whiteColor);
+  --navStickyBg: var(--blackColor);
+  --navStickyShadow: rgba(0, 0, 0, 0.9);
+  --inputBg: transparent;
+  --inputBorder: #3A3835;
+}
+
+.theme-heading-color {
+  color: var(--headingColor) !important;
+}
+.theme-text-color {
+  color: var(--textColor) !important;
 }
 
 body {
   margin: 0;
   padding: 0;
-  color: var(--paragraphColor);
+  color: var(--textColor);
+  background-color: var(--backgroundColor);
   font-size: var(--fontSize);
   font-weight: 400;
 }
@@ -74,7 +110,7 @@ p:last-child {
 }
 
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
-  color: var(--blackColor);
+  color: var(--headingColor);
   font-weight: bold;
 }
 
@@ -190,18 +226,18 @@ Section Title CSS
 }
 .section-title h2 {
   font-size: 40px;
-  color: #E1DBD6;
+  color: var(--headingColor);
   margin-bottom: 0;
 }
 .section-title h2 span {
   color: transparent;
-  -webkit-text-stroke: 0.5px var(--whiteColor);
+  -webkit-text-stroke: 0.5px var(--headingColor);
   -webkit-user-select: none;
   -moz-user-select: none;
   user-select: none;
 }
 .section-title a {
-  color: #9D9A97;
+  color: var(--subtitleColor);
   font-weight: 500;
   font-size: 15px;
   letter-spacing: 1.5px;
@@ -345,19 +381,19 @@ Main Banner Area CSS
   position: relative;
 }
 .main-banner-content h1 {
-  color: #E1DBD6;
+  color: var(--headingColor);
   font-size: 70px;
   margin-bottom: 20px;
 }
 .main-banner-content h1 span {
   color: transparent;
-  -webkit-text-stroke: 0.5px var(--whiteColor);
+  -webkit-text-stroke: 0.5px var(--headingColor);
   -webkit-user-select: none;
   -moz-user-select: none;
   user-select: none;
 }
 .main-banner-content p {
-  color: #B7B3AF;
+  color: var(--mutedColor);
   max-width: 625px;
 }
 .main-banner-content .banner-btn {
@@ -705,13 +741,13 @@ About Area CSS
 }
 .about-one-content .title h2 {
   font-size: 40px;
-  color: #E1DBD6;
+  color: var(--headingColor);
   margin-bottom: 0;
   line-height: 1.3;
 }
 .about-one-content .title h2 span {
   color: transparent;
-  -webkit-text-stroke: 0.5px var(--whiteColor);
+  -webkit-text-stroke: 0.5px var(--headingColor);
   -webkit-user-select: none;
   -moz-user-select: none;
   user-select: none;
@@ -724,7 +760,7 @@ About Area CSS
   padding-left: 25px;
 }
 .about-one-content .inner-content p {
-  color: #9D9A97;
+  color: var(--mutedColor);
   margin-bottom: 30px;
 }
 .about-one-content .inner-content .list {
@@ -735,7 +771,7 @@ About Area CSS
   list-style-type: none;
   font-size: 18px;
   font-weight: 500;
-  color: #BDBDBD;
+  color: var(--subtitleColor);
   margin-bottom: 20px;
   position: relative;
   padding-left: 40px;
@@ -1001,6 +1037,10 @@ About Area CSS
   right: 10px;
   top: 28px;
 }
+.our-mission-and-vision-accordion .accordion__item {
+  background: var(--cardBg);
+  padding: 20px 30px;
+}
 .our-mission-and-vision-accordion .accordion__item .accordion__panel {
   padding: 15px 0 0 30px;
 }
@@ -1151,8 +1191,9 @@ Services Area CSS
   width: 100%;
 }
 
-.services-wrap-area {
-  background-color: #F2EFEB;
+.serv.sidebar-widget-area {
+  padding: 50px;
+  background-color: var(--cardBg);
 }
 .services-wrap-area .section-title-wrap {
   max-width: 100%;
@@ -1168,9 +1209,10 @@ Services Area CSS
 .services-wrap-area.without-bg-color .section-title-wrap {
   max-width: 830px;
   padding-left: 45px;
+  color: var(--headingColor);
 }
 .services-wrap-area.without-bg-color .services-item {
-  background-color: #F2EFEB;
+  background-color: var(--cardBg);
 }
 .services-wrap-area.without-bg-color .services-item::before {
   background-image: url(/images/services/shape2.png);
@@ -1179,7 +1221,7 @@ Services Area CSS
 .services-item {
   margin-bottom: 25px;
   padding: 50px;
-  background-color: var(--whiteColor);
+  background-color: var(--cardBg);
   position: relative;
   z-index: 1;
   overflow: hidden;
@@ -1198,12 +1240,13 @@ Services Area CSS
   margin-bottom: 25px;
 }
 .services-item h3 a {
-  color: var(--blackColor);
+  color: var(--headingColor);
 }
 .services-item h3 a:hover {
   color: var(--primaryColor);
 }
 .services-item p {
+  color: var(--textColor);
   margin-bottom: 25px;
 }
 .services-item::before {
@@ -1290,7 +1333,7 @@ Features Area CSS
 }
 .features-content h2 span {
   color: transparent;
-  -webkit-text-stroke: 0.5px var(--whiteColor);
+  -webkit-text-stroke: 0.5px var(--headingColor);
   -webkit-user-select: none;
   -moz-user-select: none;
   user-select: none;
@@ -1328,6 +1371,9 @@ Features Area CSS
 }
 .features-content .inner-content {
   padding-left: 50px;
+}
+.features-content .about-one-content p {
+  color: var(--mutedColor);
 }
 .features-content .inner-content p {
   color: #9D9A97;
@@ -1406,7 +1452,7 @@ Recognition Area CSS
 }
 .recognition-content h2 span {
   color: transparent;
-  -webkit-text-stroke: 0.5px var(--whiteColor);
+  -webkit-text-stroke: 0.5px var(--headingColor);
   -webkit-user-select: none;
   -moz-user-select: none;
   user-select: none;
@@ -1602,12 +1648,18 @@ Projects Area CSS
 .projects-item .projects-image .icon a:hover {
   background-color: var(--whiteColor);
 }
+.project-card .project-content {
+  background: var(--cardBg);
+}
 .projects-item .projects-content {
   margin-top: 25px;
 }
 .projects-item .projects-content h3 {
   margin-bottom: 0;
   font-size: 24px;
+}
+.projects-item .about-one-content h2 span {
+  color: var(--subtitleColor);
 }
 .projects-item .projects-content h3 a {
   color: #BDBDBD;
@@ -1823,6 +1875,9 @@ Projects Area CSS
 .projects-area.without-wrap-border .projects-item .projects-content h3 a {
   color: var(--blackColor);
 }
+.projects-area.without-wrap-border .project-card .project-content span {
+  color: var(--mutedColor);
+}
 .projects-area.without-wrap-border .projects-item .projects-content h3 span {
   color: #9D9A97;
 }
@@ -1901,7 +1956,7 @@ Animation View Area CSS
 Process Area CSS
 =================================================*/
 .process-area {
-  background: #24231D;
+  background: var(--cardBg);
   overflow: hidden;
 }
 
@@ -2043,11 +2098,11 @@ Process Area CSS
 }
 .process-card .process-content h3 {
   font-size: 20px;
-  color: #BDBDBD;
+  color: var(--subtitleColor);
   margin-bottom: 15px;
 }
 .process-card .process-content p {
-  color: #9D9A97;
+  color: var(--mutedColor);
 }
 
 /*================================================
@@ -2076,7 +2131,7 @@ Client Area CSS
 }
 .client-content p {
   font-size: 24px;
-  color: #B6B4B2;
+  color: var(--mutedColor);
 }
 .client-content .client-information {
   text-align: center;
@@ -2096,7 +2151,7 @@ Client Area CSS
   font-size: 18px;
   font-weight: 500;
   margin-bottom: 0;
-  color: #BDBDBD;
+  color: var(--subtitleColor);
 }
 .client-content .client-information .title span {
   font-size: 14px;
@@ -2277,7 +2332,7 @@ Blog Area CSS
 }
 
 .blog-card {
-  background: #24231F;
+  background: var(--cardBg);
   margin-bottom: 25px;
   padding: 30px;
   position: relative;
@@ -2314,6 +2369,9 @@ Blog Area CSS
   padding-left: 0;
   margin-bottom: 0;
   display: flex;
+}
+.blog-card .blog-content p {
+  color: var(--mutedColor);
 }
 .blog-card .meta li {
   color: #9D9A97;
@@ -2543,16 +2601,16 @@ Contact Area CSS
   letter-spacing: 1.6px;
 }
 .contact-area.bg-white-wrap .contact-form-wrap .title h2 {
-  color: var(--blackColor);
+  color: var(--headingColor);
   margin-bottom: 0;
   font-weight: 400;
 }
 .contact-area.bg-white-wrap .contact-form-wrap form .form-group label {
-  color: var(--blackColor);
+  color: var(--headingColor);
 }
 .contact-area.bg-white-wrap .contact-form-wrap form .form-group .form-control {
-  border-bottom: 1px solid #EDEDED;
-  color: #9D9A97;
+  border-bottom: 1px solid var(--inputBorder);
+  color: var(--textColor);
 }
 .contact-area.bg-white-wrap .contact-form-wrap form .form-group .form-control::-moz-placeholder {
   color: #9D9A97;
@@ -2623,7 +2681,7 @@ Contact Area CSS
 }
 .contact-form-wrap .title h2 span {
   color: transparent;
-  -webkit-text-stroke: 0.5px var(--whiteColor);
+  -webkit-text-stroke: 0.5px var(--headingColor);
   -webkit-user-select: none;
   -moz-user-select: none;
   user-select: none;
@@ -2633,7 +2691,7 @@ Contact Area CSS
 }
 .contact-form-wrap form .form-group label {
   font-size: 14px;
-  color: var(--whiteColor);
+  color: var(--headingColor);
   letter-spacing: 1.3px;
   display: block;
   margin-bottom: 30px;
@@ -2650,9 +2708,9 @@ Contact Area CSS
   display: inline-block;
   width: 100%;
   padding: 0 0 15px 0;
-  color: #9D9A97;
+  color: var(--textColor);
   border: none;
-  border-bottom: 1px solid #3A3835;
+  border-bottom: 1px solid var(--inputBorder);
   box-shadow: unset;
   border-radius: 0;
   outline: 0;
@@ -2903,6 +2961,9 @@ Team Area CSS
 .team-area.different-wrap-color .team-left-content .team-card .team-social li a i {
   color: var(--primaryColor);
 }
+.team-area.different-wrap-color .team-card .blog-card .blog-content {
+  background: var(--cardBg);
+}
 .team-area.different-wrap-color .team-card .team-image .content {
   background: #F2EFEB;
 }
@@ -3031,7 +3092,7 @@ Page Banner Area CSS
 }
 
 .page-banner-inner {
-  background: #F2EFEB;
+  background: var(--cardBg);
   padding: 20px 30px;
 }
 .page-banner-inner .list {
@@ -3041,14 +3102,14 @@ Page Banner Area CSS
 }
 .page-banner-inner .list li {
   list-style-type: none;
-  color: #7C756E;
+  color: var(--mutedColor);
   font-size: 14px;
   display: inline-block;
   position: relative;
   margin-right: 30px;
 }
 .page-banner-inner .list li a {
-  color: var(--blackColor);
+  color: var(--headingColor);
 }
 .page-banner-inner .list li a:hover {
   color: var(--primaryColor);
@@ -3329,16 +3390,16 @@ Profile Authentication Area CSS
 .register-form form .form-group label {
   display: block;
   margin-bottom: 2px;
-  color: var(--blackColor);
+  color: var(--headingColor);
   font-size: 15px;
   font-weight: 500;
 }
 .register-form form .form-group .form-control {
   transition: var(--transition);
   border: none;
-  border-bottom: 1px solid #EDEDED;
+  border-bottom: 1px solid var(--inputBorder);
   background-color: transparent;
-  color: var(--blackColor);
+  color: var(--textColor);
   border-radius: 0;
   box-shadow: unset;
   height: 55px;
@@ -3387,24 +3448,24 @@ Profile Authentication Area CSS
 .forgot-password-box {
   padding: 50px;
   max-width: 650px;
-  background-color: var(--whiteColor);
-  box-shadow: rgba(149, 157, 165, 0.15) 0px 8px 24px;
+  background-color: var(--cardBg);
+  box-shadow: var(--navStickyShadow);
   margin-left: auto;
   margin-right: auto;
 }
 .forgot-password-box label {
   display: block;
   margin-bottom: 12px;
-  color: var(--blackColor);
+  color: var(--headingColor);
   font-size: 15px;
   font-weight: 500;
 }
 .forgot-password-box .form-control {
   transition: var(--transition);
-  border: 1px solid #f9f9f9;
-  background-color: #f9f9f9;
+  border: 1px solid var(--inputBorder);
+  background-color: var(--inputBg);
   font-size: 15px;
-  color: var(--blackColor);
+  color: var(--textColor);
   border-radius: 0;
   box-shadow: unset;
   height: 55px;
@@ -3718,8 +3779,8 @@ Pagination Area CSS
   border-radius: 0;
   position: relative;
   display: inline-block;
-  background: #F2EFEB;
-  color: var(--blackColor);
+  background: var(--cardBg);
+  color: var(--headingColor);
   transition: var(--transition);
   font-size: 15.5px;
   font-weight: 400;
@@ -3760,7 +3821,7 @@ Pagination Area CSS
 }
 
 .pricing-plan {
-  background-color: #F2EFEB;
+  background-color: var(--cardBg);
   padding: 50px 40px;
   margin-bottom: 25px;
 }
@@ -3836,7 +3897,7 @@ Pagination Area CSS
   margin-right: 0;
 }
 .author-content .content ul li a {
-  background-color: #F2EFEB;
+  background-color: var(--cardBg);
   display: inline-block;
   width: 30px;
   height: 30px;

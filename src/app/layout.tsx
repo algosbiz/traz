@@ -29,6 +29,8 @@ export const metadata: Metadata = {
   description: "React Nextjs Architecture & Interior Design Template",
 };
 
+import { ThemeProvider } from "@/components/Layout/ThemeProvider";
+
 export default function RootLayout({
   children,
 }: {
@@ -37,7 +39,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={jost.className}>
-        {children}
+        <ThemeProvider>
+          {children}
+        </ThemeProvider>
 
         {/* Preloader */}
         <Suspense fallback={null}>

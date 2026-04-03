@@ -23,8 +23,8 @@ Navbar Area CSS
   width: 100%;
   z-index: 999;
   position: sticky;
-  background-color: var(--blackColor);
-  box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.9);
+  background-color: var(--navStickyBg);
+  box-shadow: 0 2px 28px 0 var(--navStickyShadow);
   animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
 }
 .navbar.with-black-shadow {
@@ -50,7 +50,7 @@ Navbar Area CSS
   width: 30px;
   margin: 5px 0;
   display: block;
-  background: var(--whiteColor);
+  background: var(--navLinkColor);
 }
 .navbar .container-fluid {
   padding-left: 30px;
@@ -68,7 +68,7 @@ Navbar Area CSS
 }
 .navbar .navbar-nav .nav-item .nav-link {
   position: relative;
-  color: var(--whiteColor);
+  color: var(--navLinkColor);
   transition: var(--transition);
   font-size: 16px;
   font-weight: 400;
@@ -121,10 +121,10 @@ Navbar Area CSS
   border-left: 1px solid var(--primaryColor);
   position: absolute;
   visibility: hidden;
-  background: var(--whiteColor);
+  background: var(--backgroundColor);
   transition: all 0.2s ease-in-out;
   transform: translate3d(0, 18px, 0);
-  box-shadow: rgba(4, 4, 5, 0.2) 0px 7px 36px -8px;
+  box-shadow: var(--navStickyShadow);
 }
 .navbar .navbar-nav .nav-item .dropdown-menu .nav-item {
   margin: 0;
@@ -132,7 +132,7 @@ Navbar Area CSS
 .navbar .navbar-nav .nav-item .dropdown-menu .nav-item .nav-link {
   display: block;
   padding: 10px 25px;
-  color: var(--blackColor);
+  color: var(--textColor);
 }
 .navbar .navbar-nav .nav-item .dropdown-menu .nav-item .nav-link.active, .navbar .navbar-nav .nav-item .dropdown-menu .nav-item .nav-link:hover {
   color: var(--primaryColor);
@@ -253,21 +253,21 @@ Navbar Area CSS
   box-shadow: 0px 4px 34px 0px rgba(0, 0, 0, 0.03);
 }
 .navbar-with-different-color.with-box-shadow {
-  background: var(--whiteColor);
-  box-shadow: 0px 4px 34px 0px rgba(0, 0, 0, 0.03);
+  background: var(--backgroundColor);
+  box-shadow: 0px 4px 34px 0px var(--navStickyShadow);
 }
 .navbar-with-different-color.sticky {
-  background-color: var(--whiteColor);
-  box-shadow: 0px 4px 34px 0px rgba(0, 0, 0, 0.1);
+  background-color: var(--navStickyBg);
+  box-shadow: 0px 4px 34px 0px var(--navStickyShadow);
 }
 .navbar-with-different-color .navbar-toggler {
-  color: var(--blackColor);
+  color: var(--navLinkColor);
 }
 .navbar-with-different-color .navbar-toggler .burger-menu span {
-  background: var(--blackColor);
+  background: var(--navLinkColor);
 }
 .navbar-with-different-color .navbar-nav .nav-item .nav-link {
-  color: var(--blackColor);
+  color: var(--navLinkColor);
 }
 .navbar-with-different-color .navbar-nav .nav-item .nav-link:hover, .navbar-with-different-color .navbar-nav .nav-item .nav-link.active {
   color: var(--primaryColor);
@@ -276,13 +276,13 @@ Navbar Area CSS
   color: var(--primaryColor);
 }
 .navbar-with-different-color .navbar-nav .nav-item .dropdown-menu .nav-item .nav-link {
-  color: var(--blackColor);
+  color: var(--textColor);
 }
 .navbar-with-different-color .navbar-nav .nav-item .dropdown-menu .nav-item .nav-link.active, .navbar-with-different-color .navbar-nav .nav-item .dropdown-menu .nav-item .nav-link:hover {
   color: var(--primaryColor);
 }
 .navbar-with-different-color .navbar-nav .nav-item .dropdown-menu .nav-item .dropdown-menu .nav-item .nav-link {
-  color: var(--blackColor);
+  color: var(--textColor);
 }
 .navbar-with-different-color .navbar-nav .nav-item .dropdown-menu .nav-item .dropdown-menu .nav-item .nav-link.active, .navbar-with-different-color .navbar-nav .nav-item .dropdown-menu .nav-item .dropdown-menu .nav-item .nav-link:hover {
   color: var(--primaryColor);
@@ -333,7 +333,7 @@ Navbar Area CSS
 .navbar-toggler .icon-bar {
   width: 28px;
   transition: all 0.3s;
-  background: #f5f3f3;
+  background: var(--navLinkColor);
   height: 2px;
   display: block;
 }
@@ -368,7 +368,7 @@ Mobile Mnu Modal Area CSS
 .mobile-menu-modal .modal-content {
   border-radius: 0;
   border: none;
-  background: #fff;
+  background: var(--backgroundColor);
   height: 100%;
 }
 .mobile-menu-modal .modal-content .modal-body {
@@ -383,10 +383,10 @@ Mobile Mnu Modal Area CSS
 .mobile-menu-modal .modal-content .modal-body .accordion .accordion__item .accordion__heading .accordion__button {
   padding: 0;
   position: relative;
-  background-color: #fff;
+  background-color: var(--backgroundColor);
   font-size: 16px;
   font-weight: 400;
-  color: var(--blackColor);
+  color: var(--headingColor);
   display: block;
   padding: 4px 0;
   margin: 7px 0;
@@ -478,7 +478,7 @@ Search Modal Area CSS
 .search-modal-area .modal-content {
   border-radius: 0;
   border: none;
-  background: #24231D;
+  background: var(--backgroundColor);
 }
 .search-modal-area .modal-content .modal-body {
   padding: 45px;
@@ -687,7 +687,7 @@ Search Modal Area CSS
     padding: 6px 10px;
   }
   .navbar-with-different-color .navbar-toggler .icon-bar {
-    background: #3b3737;
+    background: var(--navLinkColor);
   }
 }
 /* Min width 992px to Max width 1199px */
