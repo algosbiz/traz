@@ -50,7 +50,7 @@ Projects Details Area CSS
   margin-bottom: 0;
 }
 .projects-details-desc .box-content {
-  background: #F2EFEB;
+  background: var(--cardBg);
   padding: 40px;
   margin-top: 30px;
   margin-bottom: 30px;
@@ -84,7 +84,7 @@ Projects Details Area CSS
 }
 
 .projects-details-side {
-  border: 1px solid #E7E0E0;
+  border: 1px solid var(--borderColor);
   padding: 30px;
 }
 .projects-details-side h3 {
@@ -100,7 +100,7 @@ Projects Details Area CSS
   list-style-type: none;
   margin-bottom: 30px;
   padding-bottom: 30px;
-  border-bottom: 1px dashed #E7E0E0;
+  border-bottom: 1px dashed var(--borderColor);
 }
 .projects-details-side .list li:last-child {
   margin-bottom: 0;
@@ -108,7 +108,7 @@ Projects Details Area CSS
   border-bottom: none;
 }
 .projects-details-side .list li span {
-  color: #7C756E;
+  color: var(--mutedColor);
   font-size: 14px;
   display: block;
   margin-bottom: 10px;
@@ -120,7 +120,7 @@ Projects Details Area CSS
   margin-bottom: 0;
 }
 .projects-details-side .list li h4 a {
-  color: var(--blackColor);
+  color: var(--headingColor);
 }
 
 /* Max width 767px */

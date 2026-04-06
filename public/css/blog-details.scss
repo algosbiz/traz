@@ -98,7 +98,7 @@ Blog Details Area CSS
     p {
         b {
             font-weight: 500;
-            color: var(--blackColor);
+            color: var(--headingColor);
         }
     }
     img {
@@ -121,7 +121,7 @@ Blog Details Area CSS
         background-image: url(/images/blog-details/shape.png);
         background-repeat: no-repeat;
         background-position: center center;
-        background-color: #F2EFEB;
+        background-color: var(--cardBg);
         padding: 65px 80px;
         text-align: center;
         margin: {
@@ -130,7 +130,7 @@ Blog Details Area CSS
         };
         p {
             font-size: 30px;
-            color: var(--blackColor);
+            color: var(--headingColor);
             margin-bottom: 0;
         }
         .shape {
@@ -148,8 +148,8 @@ Blog Details Area CSS
     .bd-tags {
         display: flex;
         align-items: center;
-        border-top: 1px dashed #E7E0E0;
-        border-bottom: 1px dashed #E7E0E0;
+        border-top: 1px dashed var(--borderColor);
+        border-bottom: 1px dashed var(--borderColor);
         margin: {
             top: 50px;
             bottom: 40px;
@@ -170,13 +170,13 @@ Blog Details Area CSS
             span {
                 font-size: 14px;
                 font-weight: 500;
-                color: var(--blackColor);
+                color: var(--headingColor);
             }
             a {
                 display: inline-block;
                 padding: 10px 15px;
-                background: #F4F4F4;
-                color: var(--blackColor);
+                background: var(--cardBg);
+                color: var(--headingColor);
                 font-size: 15px;
 
                 &:hover {
@@ -242,7 +242,7 @@ Blog Details Area CSS
 
             label {
                 font-size: 14px;
-                color: var(--blackColor);
+                color: var(--headingColor);
                 letter-spacing: 1.3px;
                 display: block;
                 margin-bottom: 30px;
@@ -260,19 +260,19 @@ Blog Details Area CSS
                 display: inline-block;
                 width: 100%;
                 padding: 0 0 15px 0;
-                color: #9D9A97;
+                color: var(--textColor);
                 border: none;
-                border-bottom: 1px solid #EDEDED;
+                border-bottom: 1px solid var(--inputBorder);
                 box-shadow: unset;
                 border-radius: 0;
                 outline: 0;
 
                 &::placeholder {
-                    color: #9D9A97;
+                    color: var(--mutedColor);
                     transition: var(--transition);
                 }
                 &:focus {
-                    border-bottom: 1px solid var(--blackColor);
+                    border-bottom: 1px solid var(--headingColor);
 
                     &::placeholder {
                         color: transparent;

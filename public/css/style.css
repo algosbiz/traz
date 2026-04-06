@@ -66,10 +66,12 @@ Default CSS
   --navStickyShadow: rgba(0, 0, 0, 0.1);
   --inputBg: transparent;
   --inputBorder: #E7E0E0;
+  --shapeOpacity: 1;
 }
 
 [data-theme='dark'] {
   --backgroundColor: var(--blackColor);
+  --paragraphColor: #B7B3AF;
   --textColor: #B7B3AF;
   --headingColor: #E1DBD6;
   --subtitleColor: #BDBDBD;
@@ -81,6 +83,7 @@ Default CSS
   --navStickyShadow: rgba(0, 0, 0, 0.9);
   --inputBg: transparent;
   --inputBorder: #3A3835;
+  --shapeOpacity: 0.15;
 }
 
 .theme-heading-color {
@@ -100,7 +103,7 @@ body {
 }
 
 p {
-  color: var(--paragraphColor);
+  color: var(--textColor);
   margin-bottom: 15px;
   line-height: 1.6;
   font-weight: 400;
@@ -116,12 +119,12 @@ p:last-child {
 
 a {
   transition: var(--transition);
-  color: var(--blackColor);
+  color: var(--headingColor);
   text-decoration: none;
   outline: 0 !important;
 }
 a:hover {
-  color: var(--blackColor);
+  color: var(--headingColor);
   text-decoration: none;
 }
 
@@ -1018,7 +1021,7 @@ About Area CSS
   margin-bottom: 0;
 }
 .our-mission-and-vision-accordion .accordion__item .accordion__button {
-  color: var(--blackColor);
+  color: var(--headingColor);
   position: relative;
   text-align: start;
   box-shadow: unset;
@@ -1029,7 +1032,7 @@ About Area CSS
   font-weight: 600;
   padding: 20px 70px 20px 30px;
   transition: var(--transition);
-  background: #F2EFEB;
+  background: var(--cardBg);
   border-radius: 0;
 }
 .our-mission-and-vision-accordion .accordion__item .accordion__button:before {
@@ -1115,18 +1118,18 @@ Services Area CSS
   margin-bottom: 25px;
 }
 .services-card h3 a {
-  color: #BDBDBD;
+  color: var(--headingColor);
 }
 .services-card h3 a:hover {
   color: var(--primaryColor);
 }
 .services-card p {
-  color: #9D9A97;
+  color: var(--textColor);
   margin-bottom: 25px;
 }
 
 .services-list-tabs {
-  border: 1px dashed #E7E0E0;
+  border: 1px dashed var(--borderColor);
 }
 .services-list-tabs .nav {
   padding-left: 0;
@@ -1136,11 +1139,11 @@ Services Area CSS
 }
 .services-list-tabs .nav .nav-item {
   display: block;
-  border-bottom: 1px dashed #E7E0E0;
+  border-bottom: 1px dashed var(--borderColor);
   background-color: transparent;
   font-size: 45px;
   font-weight: 700;
-  color: #B5B4B3;
+  color: var(--subtitleColor);
   padding: 55px 90px 55px 90px;
   line-height: 1;
   transition: var(--transition);
@@ -1150,16 +1153,16 @@ Services Area CSS
   border-bottom: none;
 }
 .services-list-tabs .nav .nav-item sup {
-  color: #9D9A97;
+  color: var(--mutedColor);
   font-weight: 400;
   font-size: var(--fontSize);
   top: -25px;
 }
 .services-list-tabs .nav .nav-item:hover, .services-list-tabs .nav .nav-item.active {
-  color: var(--blackColor);
+  color: var(--headingColor);
 }
 .services-list-tabs .tab-content {
-  border-left: 1px dashed #E7E0E0;
+  border-left: 1px dashed var(--borderColor);
 }
 .services-list-tabs .services-tab-content {
   padding: 50px;
@@ -1216,6 +1219,7 @@ Services Area CSS
 }
 .services-wrap-area.without-bg-color .services-item::before {
   background-image: url(/images/services/shape2.png);
+  opacity: var(--shapeOpacity);
 }
 
 .services-item {
@@ -1262,6 +1266,7 @@ Services Area CSS
   height: 370px;
   width: 180px;
   z-index: -1;
+  opacity: var(--shapeOpacity);
 }
 
 /*================================================
@@ -1277,7 +1282,7 @@ Overview Area CSS
 }
 .overview-area.wrap-color .overview-card h3 {
   padding-left: 0;
-  color: var(--blackColor);
+  color: var(--headingColor);
 }
 
 .overview-card {
@@ -1307,7 +1312,7 @@ Overview Area CSS
 }
 
 .overview-inner-area {
-  border-bottom: 1px dashed #E7E0E0;
+  border-bottom: 1px dashed var(--borderColor);
   padding-bottom: 40px;
 }
 
@@ -1512,17 +1517,17 @@ Recognition Area CSS
   padding-right: 45px;
 }
 .recognition-wrap-area .recognition-content h2 {
-  color: var(--blackColor);
-  border-bottom: 1px dashed #E7E0E0;
+  color: var(--headingColor);
+  border-bottom: 1px dashed var(--borderColor);
 }
 .recognition-wrap-area .recognition-content .list li {
-  border-bottom: 1px dashed #E7E0E0;
+  border-bottom: 1px dashed var(--borderColor);
 }
 .recognition-wrap-area .recognition-content .list li span {
-  color: #535050;
+  color: var(--mutedColor);
 }
 .recognition-wrap-area .recognition-content .list li h4 {
-  color: #535050;
+  color: var(--headingColor);
 }
 
 .recognition-right-content {
@@ -1720,7 +1725,7 @@ Projects Area CSS
   margin-bottom: 15px;
 }
 .projects-scroll-card .content h3 a {
-  color: var(--blackColor);
+  color: var(--headingColor);
 }
 .projects-scroll-card .content h3 span {
   color: #9D9A97;
@@ -1873,7 +1878,7 @@ Projects Area CSS
   border-left: none;
 }
 .projects-area.without-wrap-border .projects-item .projects-content h3 a {
-  color: var(--blackColor);
+  color: var(--headingColor);
 }
 .projects-area.without-wrap-border .project-card .project-content span {
   color: var(--mutedColor);
@@ -1887,11 +1892,11 @@ Projects Area CSS
 }
 .tabs-nav .tab-btn {
   border: none;
-  background: #F2EFEB;
+  background: var(--cardBg);
   display: inline-block;
   padding: 12px 20px;
   font-size: 15.8px;
-  color: var(--blackColor);
+  color: var(--headingColor);
   margin-right: 12px;
   margin-bottom: 10px;
 }
@@ -2202,7 +2207,7 @@ Client Area CSS
   top: 0;
   height: 100%;
   width: 580px;
-  background: #F4F4F4;
+  background: var(--cardBg);
   z-index: -1;
 }
 .client-wrap-area.with-margin-top::before {
@@ -2215,7 +2220,7 @@ Client Area CSS
   padding-left: calc(var(--bs-gutter-x) * 0.5);
 }
 .client-wrap-area.without-before-color .client-wrap-card {
-  border: 1px solid #f5f5f5;
+  border: 1px solid var(--borderColor);
 }
 .client-wrap-area.without-before-color .section-title-wrap {
   margin-left: 0;
@@ -2237,7 +2242,7 @@ Client Area CSS
   top: 100px;
   height: 670px;
   width: 660px;
-  background: #F4F4F4;
+  background: var(--cardBg);
   z-index: -1;
 }
 .client-wrap-area.with-two-style-wrap::after {
@@ -2247,12 +2252,12 @@ Client Area CSS
   bottom: 370px;
   height: 670px;
   width: 660px;
-  background: #F4F4F4;
+  background: var(--cardBg);
   z-index: -1;
 }
 
 .client-wrap-card {
-  background: var(--whiteColor);
+  background: var(--cardBg);
   box-shadow: 0px 2px 24px 0px rgba(0, 0, 0, 0.06);
   padding: 40px;
   margin-bottom: 25px;
@@ -2262,7 +2267,7 @@ Client Area CSS
 }
 .client-wrap-card p {
   font-size: 20px;
-  color: var(--blackColor);
+  color: var(--headingColor);
   margin-bottom: 0;
 }
 .client-wrap-card .info {
@@ -2506,11 +2511,11 @@ Blog Area CSS
   color: var(--primaryColor);
 }
 .blog-item .content.wrap-color {
-  background: #F4F4F4;
+  background: var(--cardBg);
   transition: var(--transition);
 }
 .blog-item .content.wrap-color h3 a {
-  color: var(--blackColor);
+  color: var(--headingColor);
 }
 .blog-item:hover .content {
   left: 5px;
@@ -2534,13 +2539,13 @@ Blog Area CSS
   left: 20px;
   top: 50%;
   transform: translateY(-50%);
-  color: var(--blackColor);
+  color: var(--headingColor);
   font-size: 18px;
 }
 .blog-search-box .form-group .form-control {
   display: inline-block;
-  border: 1px solid #E7E0E0;
-  background-color: var(--whiteColor);
+  border: 1px solid var(--borderColor);
+  background-color: var(--cardBg);
   height: 60px;
   width: 100%;
   padding: 15px 20px 15px 45px;
@@ -2548,15 +2553,15 @@ Blog Area CSS
   box-shadow: unset;
   outline: 0;
   font-size: 15px;
-  color: var(--paragraphColor);
+  color: var(--textColor);
 }
 .blog-search-box .form-group .form-control::-moz-placeholder {
-  color: var(--paragraphColor);
+  color: var(--mutedColor);
   -moz-transition: var(--transition);
   transition: var(--transition);
 }
 .blog-search-box .form-group .form-control::placeholder {
-  color: var(--paragraphColor);
+  color: var(--mutedColor);
   transition: var(--transition);
 }
 .blog-search-box .form-group .form-control:focus::-moz-placeholder {
@@ -2567,8 +2572,8 @@ Blog Area CSS
 }
 .blog-search-box .form-group .form-select {
   display: inline-block;
-  border: 1px solid #E7E0E0;
-  background-color: var(--whiteColor);
+  border: 1px solid var(--borderColor);
+  background-color: var(--cardBg);
   height: 60px;
   width: 100%;
   padding: 15px 20px;
@@ -2576,7 +2581,7 @@ Blog Area CSS
   box-shadow: unset;
   outline: 0;
   font-size: 15px;
-  color: var(--paragraphColor);
+  color: var(--textColor);
 }
 
 /*================================================
@@ -2625,16 +2630,16 @@ Contact Area CSS
   color: transparent;
 }
 .contact-area.bg-white-wrap .contact-info-list li {
-  color: #6C6661;
+  color: var(--mutedColor);
 }
 .contact-area.bg-white-wrap .contact-info-list li a {
-  color: #6C6661;
+  color: var(--mutedColor);
 }
 .contact-area.bg-white-wrap .contact-info-list li a:hover {
   color: var(--primaryColor);
 }
 .contact-area.bg-white-wrap .contact-info-list li .social li a {
-  color: var(--blackColor);
+  color: var(--headingColor);
 }
 .contact-area.bg-white-wrap .contact-info-list li .social li a:hover {
   color: var(--primaryColor);
@@ -2676,7 +2681,7 @@ Contact Area CSS
 }
 .contact-form-wrap .title h2 {
   font-size: 40px;
-  color: #E1DBD6;
+  color: var(--headingColor);
   margin-bottom: 18px;
 }
 .contact-form-wrap .title h2 span {
@@ -2734,7 +2739,7 @@ Contact Area CSS
   min-height: auto;
 }
 .contact-form-wrap form .form-group .form-select {
-  color: var(--blackColor) !important;
+  color: var(--textColor) !important;
   background-position: right 0 center;
 }
 .contact-form-wrap form .default-btn {
@@ -2953,10 +2958,10 @@ Team Area CSS
   z-index: -1;
 }
 .team-area.different-wrap-color::before {
-  background: #F2EFEB;
+  background: var(--cardBg);
 }
 .team-area.different-wrap-color .team-left-content .title h2 {
-  color: var(--blackColor);
+  color: var(--headingColor);
 }
 .team-area.different-wrap-color .team-left-content .team-card .team-social li a i {
   color: var(--primaryColor);
@@ -2965,10 +2970,10 @@ Team Area CSS
   background: var(--cardBg);
 }
 .team-area.different-wrap-color .team-card .team-image .content {
-  background: #F2EFEB;
+  background: var(--cardBg);
 }
 .team-area.different-wrap-color .team-card .team-image .content h3 {
-  color: var(--blackColor);
+  color: var(--headingColor);
 }
 .team-area.with-margin-top::before {
   display: none;
@@ -2986,7 +2991,7 @@ Team Area CSS
   top: 0;
   height: 100%;
   width: 1050px;
-  background: #F2EFEB;
+  background: var(--cardBg);
   z-index: -1;
 }
 .team-area.with-margin-top .team-left-content .team-card {
@@ -3120,7 +3125,7 @@ Page Banner Area CSS
   right: -17.5px;
   top: 50%;
   transform: translateY(-50%);
-  background-color: #7C756E;
+  background-color: var(--mutedColor);
   height: 2px;
   width: 5px;
 }
@@ -3140,7 +3145,7 @@ Box Style Area CSS
 }
 
 .box-style-inner {
-  background: #F2EFEB;
+  background: var(--cardBg);
   text-align: center;
   position: relative;
   z-index: 1;
@@ -3205,7 +3210,7 @@ FAQ Area CSS
   margin-bottom: 0;
 }
 .faq-accordion .accordion__item .accordion__button {
-  color: var(--blackColor);
+  color: var(--headingColor);
   position: relative;
   text-align: start;
   box-shadow: unset;
@@ -3217,7 +3222,7 @@ FAQ Area CSS
   font-weight: 500;
   padding: 20px 70px 20px 30px;
   transition: var(--transition);
-  background: #F2EFEB;
+  background: var(--cardBg);
   border-radius: 0;
 }
 .faq-accordion .accordion__item .accordion__button::before {
@@ -3267,16 +3272,16 @@ Profile Authentication Area CSS
 .login-form .form-group label {
   display: block;
   margin-bottom: 2px;
-  color: var(--blackColor);
+  color: var(--headingColor);
   font-size: 15px;
   font-weight: 500;
 }
 .login-form .form-group .form-control {
   transition: var(--transition);
   border: none;
-  border-bottom: 1px solid #EDEDED;
+  border-bottom: 1px solid var(--inputBorder);
   background-color: transparent;
-  color: var(--blackColor);
+  color: var(--textColor);
   border-radius: 0;
   box-shadow: unset;
   height: 55px;
@@ -3284,12 +3289,12 @@ Profile Authentication Area CSS
   padding: 0;
 }
 .login-form .form-group .form-control::-moz-placeholder {
-  color: var(--paragraphColor);
+  color: var(--mutedColor);
   -moz-transition: var(--transition);
   transition: var(--transition);
 }
 .login-form .form-group .form-control::placeholder {
-  color: var(--paragraphColor);
+  color: var(--mutedColor);
   transition: var(--transition);
 }
 .login-form .form-group .form-control:focus {
@@ -3306,7 +3311,7 @@ Profile Authentication Area CSS
   margin-bottom: 25px;
 }
 .login-form .form-bottom .form-check {
-  color: var(--paragraphColor);
+  color: var(--textColor);
 }
 .login-form .form-bottom .form-check a {
   color: var(--primaryColor);
@@ -3348,7 +3353,7 @@ Profile Authentication Area CSS
   margin-top: 20px;
 }
 .login-form .text p a {
-  color: var(--blackColor);
+  color: var(--headingColor);
   font-weight: 500;
 }
 .login-form .text p a:hover {
@@ -3592,7 +3597,7 @@ Widget Area CSS
 }
 
 .widget-area {
-  background: #F4F4F4;
+  background: var(--cardBg);
   padding: 40px;
   margin-left: 20px;
 }
@@ -3615,22 +3620,22 @@ Widget Area CSS
   height: 60px;
   border-radius: 0;
   background: transparent;
-  border: 1px solid #E7E0E0;
+  border: 1px solid var(--borderColor);
   font-weight: 400;
   outline: 0;
   box-shadow: unset;
-  color: var(--paragraphColor);
+  color: var(--textColor);
   padding: 15px 25px 15px 50px;
   width: 100%;
   font-size: 15px;
 }
 .widget-area .widget_search form .search-field::-moz-placeholder {
-  color: var(--paragraphColor);
+  color: var(--mutedColor);
   -moz-transition: var(--transition);
   transition: var(--transition);
 }
 .widget-area .widget_search form .search-field::placeholder {
-  color: var(--paragraphColor);
+  color: var(--mutedColor);
   transition: var(--transition);
 }
 .widget-area .widget_search form .search-field:focus::-moz-placeholder {
@@ -3644,7 +3649,7 @@ Widget Area CSS
   padding: 0;
   background-color: transparent;
   font-size: 22px;
-  color: var(--blackColor);
+  color: var(--headingColor);
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -3659,14 +3664,14 @@ Widget Area CSS
 .widget-area .widget_categories ul li {
   font-size: 14px;
   margin-bottom: 25px;
-  border-top: 1px dashed #E7E0E0;
+  border-top: 1px dashed var(--borderColor);
   padding-top: 25px;
   letter-spacing: 1.4px;
   display: flex;
   justify-content: space-between;
 }
 .widget-area .widget_categories ul li a {
-  color: var(--blackColor);
+  color: var(--headingColor);
   font-weight: 500;
 }
 .widget-area .widget_categories ul li a:hover {
@@ -3681,7 +3686,7 @@ Widget Area CSS
 .widget-area .widget_traz_posts_thumb .item {
   overflow: hidden;
   margin-bottom: 25px;
-  border-bottom: 1px dashed #E7E0E0;
+  border-bottom: 1px dashed var(--borderColor);
   padding-bottom: 25px;
 }
 .widget-area .widget_traz_posts_thumb .item:last-child {

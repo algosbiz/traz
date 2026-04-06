@@ -54,7 +54,7 @@ Projects Details Area CSS
     }
  
     .box-content {
-        background: #F2EFEB;
+        background: var(--cardBg);
         padding: 40px;
         margin: {
             top: 30px;
@@ -93,7 +93,7 @@ Projects Details Area CSS
     }
 }
 .projects-details-side {
-    border: 1px solid #E7E0E0;
+    border: 1px solid var(--borderColor);
     padding: 30px;
 
     h3 {
@@ -109,7 +109,7 @@ Projects Details Area CSS
             list-style-type: none;
             margin-bottom: 30px;
             padding-bottom: 30px;
-            border-bottom: 1px dashed #E7E0E0;
+            border-bottom: 1px dashed var(--borderColor);
 
             &:last-child {
                 margin-bottom: 0;
@@ -117,7 +117,7 @@ Projects Details Area CSS
                 border-bottom: none;
             }
             span {
-                color: #7C756E;
+                color: var(--mutedColor);
                 font-size: 14px;
                 display: block;
                 margin-bottom: 10px;
@@ -129,7 +129,7 @@ Projects Details Area CSS
                 margin-bottom: 0;
 
                 a {
-                    color: var(--blackColor);
+                    color: var(--headingColor);
                 }
             }
         }

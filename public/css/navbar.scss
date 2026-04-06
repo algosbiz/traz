@@ -149,7 +149,7 @@ Navbar Area CSS
                     .nav-link {
                         display: block;
                         padding: 10px 25px;
-                        color: var(--blackColor);
+                        color: var(--textColor);
                         
                         &.active, &:hover {
                             color: var(--primaryColor);
@@ -173,7 +173,7 @@ Navbar Area CSS
                         
                         .nav-item {
                             .nav-link {
-                                color: var(--blackColor);
+                                color: var(--textColor);
 
                                 &.active, &:hover {
                                     color: var(--primaryColor);
@@ -189,7 +189,7 @@ Navbar Area CSS
     
                                 .nav-item {
                                     .nav-link {
-                                        color: var(--blackColor);
+                                        color: var(--textColor);
     
                                         &.active, &:hover {
                                             color: var(--primaryColor);
@@ -205,7 +205,7 @@ Navbar Area CSS
             
                                         .nav-item {
                                             .nav-link {
-                                                color: var(--blackColor);
+                                                color: var(--textColor);
             
                                                 &.active, &:hover {
                                                     color: var(--primaryColor);

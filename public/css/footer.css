@@ -200,10 +200,10 @@ Copyright Area CSS
   width: 100%;
 }
 .copyright-area .copyright-area-content.white-wrap p span {
-  color: var(--blackColor);
+  color: var(--headingColor);
 }
 .copyright-area .copyright-area-content.white-wrap p a {
-  color: var(--blackColor);
+  color: var(--headingColor);
 }
 .copyright-area .copyright-area-content.white-wrap p a:hover {
   color: var(--primaryColor);

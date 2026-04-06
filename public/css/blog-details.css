@@ -93,7 +93,7 @@ Blog Details Area CSS
 }
 .blog-details-desc p b {
   font-weight: 500;
-  color: var(--blackColor);
+  color: var(--headingColor);
 }
 .blog-details-desc img {
   margin-bottom: 30px;
@@ -113,7 +113,7 @@ Blog Details Area CSS
   background-image: url(/images/blog-details/shape.png);
   background-repeat: no-repeat;
   background-position: center center;
-  background-color: #F2EFEB;
+  background-color: var(--cardBg);
   padding: 65px 80px;
   text-align: center;
   margin-top: 30px;
@@ -121,7 +121,7 @@ Blog Details Area CSS
 }
 .blog-details-desc blockquote p {
   font-size: 30px;
-  color: var(--blackColor);
+  color: var(--headingColor);
   margin-bottom: 0;
 }
 .blog-details-desc blockquote .shape {
@@ -138,8 +138,8 @@ Blog Details Area CSS
 .blog-details-desc .bd-tags {
   display: flex;
   align-items: center;
-  border-top: 1px dashed #E7E0E0;
-  border-bottom: 1px dashed #E7E0E0;
+  border-top: 1px dashed var(--borderColor);
+  border-bottom: 1px dashed var(--borderColor);
   margin-top: 50px;
   margin-bottom: 40px;
   padding-left: 0;
@@ -157,13 +157,13 @@ Blog Details Area CSS
 .blog-details-desc .bd-tags li span {
   font-size: 14px;
   font-weight: 500;
-  color: var(--blackColor);
+  color: var(--headingColor);
 }
 .blog-details-desc .bd-tags li a {
   display: inline-block;
   padding: 10px 15px;
-  background: #F4F4F4;
-  color: var(--blackColor);
+  background: var(--cardBg);
+  color: var(--headingColor);
   font-size: 15px;
 }
 .blog-details-desc .bd-tags li a:hover {
@@ -219,7 +219,7 @@ Blog Details Area CSS
 }
 .blog-details-desc .leave-comment-form .form-group label {
   font-size: 14px;
-  color: var(--blackColor);
+  color: var(--headingColor);
   letter-spacing: 1.3px;
   display: block;
   margin-bottom: 30px;
@@ -236,24 +236,24 @@ Blog Details Area CSS
   display: inline-block;
   width: 100%;
   padding: 0 0 15px 0;
-  color: #9D9A97;
+  color: var(--textColor);
   border: none;
-  border-bottom: 1px solid #EDEDED;
+  border-bottom: 1px solid var(--inputBorder);
   box-shadow: unset;
   border-radius: 0;
   outline: 0;
 }
 .blog-details-desc .leave-comment-form .form-group .form-control::-moz-placeholder {
-  color: #9D9A97;
+  color: var(--mutedColor);
   -moz-transition: var(--transition);
   transition: var(--transition);
 }
 .blog-details-desc .leave-comment-form .form-group .form-control::placeholder {
-  color: #9D9A97;
+  color: var(--mutedColor);
   transition: var(--transition);
 }
 .blog-details-desc .leave-comment-form .form-group .form-control:focus {
-  border-bottom: 1px solid var(--blackColor);
+  border-bottom: 1px solid var(--headingColor);
 }
 .blog-details-desc .leave-comment-form .form-group .form-control:focus::-moz-placeholder {
   color: transparent;
@@ -285,7 +285,7 @@ Blog Details Area CSS
 }
 .bd-social li a i {
   font-size: 15px;
-  color: var(--blackColor);
+  color: var(--headingColor);
   transition: var(--transition);
 }
 .bd-social li a i:hover {

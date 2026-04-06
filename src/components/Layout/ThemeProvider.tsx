@@ -28,6 +28,8 @@ export const ThemeProvider: React.FC<{ children: React.ReactNode }> = ({ childre
   useEffect(() => {
     // Apply theme to document
     document.documentElement.setAttribute("data-theme", theme);
+    document.documentElement.setAttribute("data-bs-theme", theme);
+    document.documentElement.style.colorScheme = theme;
     localStorage.setItem("theme", theme);
   }, [theme]);
 
