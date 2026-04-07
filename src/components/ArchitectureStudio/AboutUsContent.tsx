@@ -23,11 +23,11 @@ const AboutUsContent: React.FC = () => {
         ]}
       />
 
-      <div className="about-area ptb-100">
+      <div className="about-area pt-100">
         <div className="container">
           <div className="row justify-content-center align-items-center">
             <div className="col-lg-5 col-md-12">
-              <div 
+              <div
                 className="about-image-two"
                 data-aos="fade-up"
                 data-aos-delay="100"
@@ -50,7 +50,7 @@ const AboutUsContent: React.FC = () => {
             </div>
 
             <div className="col-lg-7 col-md-12">
-              <div 
+              <div
                 className="about-two-content"
                 data-aos="fade-up"
                 data-aos-delay="200"

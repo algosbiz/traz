@@ -5,7 +5,7 @@ import ServiceDetailsContent from "@/components/ServiceDetails/ServiceDetailsCon
 import Footer from "@/components/Layout/Footer";
 import Process from "@/components/ServiceDetails/Process";
 import Overview from "@/components/InteriorHome/Overview";
-import ServiceDescriptionSection from "@/components/ServiceDetails/ServiceDescriptionSection";
+import AboutUsContent from "@/components/ArchitectureStudio/AboutUsContent";
 
 export default function Page() {
   return (
@@ -18,7 +18,7 @@ export default function Page() {
 
       <Process />
       <Overview />
-      <ServiceDescriptionSection />
+      <AboutUsContent />
       <div className="ptb-100">
         <ContactFormStyleTwo />
       </div>
