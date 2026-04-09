@@ -13,7 +13,7 @@ import {
 const FaqsContent: React.FC = () => {
   return (
     <>
-      <div className="faq-area ptb-100">
+      <div className="faq-area pt-100">
         <div className="container">
           <div className="section-title-wrap">
             <span>FAQ</span>

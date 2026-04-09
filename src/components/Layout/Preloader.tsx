@@ -72,10 +72,17 @@ const Preloader: React.FC = () => {
     >
       <div className="loader">
         <div className="waviy">
-          <span>T</span>
-          <span>R</span>
+          <span>D</span>
+          <span>M</span>
+          <span>G</span>
+          <span>&nbsp;</span>
+          <span>M</span>
           <span>A</span>
-          <span>Z</span>
+          <span>S</span>
+          <span>O</span>
+          <span>N</span>
+          <span>R</span>
+          <span>Y</span>
         </div>
       </div>
     </div>

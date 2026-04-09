@@ -6,6 +6,7 @@ import Footer from "@/components/Layout/Footer";
 import Process from "@/components/ServiceDetails/Process";
 import Overview from "@/components/InteriorHome/Overview";
 import AboutUsContent from "@/components/ArchitectureStudio/AboutUsContent";
+import FaqsContent from "@/components/Faqs/FaqsContent";
 
 export default function Page() {
   return (
@@ -19,6 +20,7 @@ export default function Page() {
       <Process />
       <Overview />
       <AboutUsContent />
+      <FaqsContent />
       <div className="ptb-100">
         <ContactFormStyleTwo />
       </div>

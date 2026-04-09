@@ -10,11 +10,11 @@ const Overview: React.FC = () => {
   return (
     <>
       <div className="overview-area wrap-color">
-        <div className="container-fluid">
+        <div className="container">
           <div className="overview-inner-area">
             <div className="row justify-content-center">
               <div
-                className="col-lg-6 col-md-6"
+                className="col-lg-5 col-md-6"
                 data-aos="fade-up"
                 data-aos-delay="100"
                 data-aos-duration="600"
@@ -31,7 +31,7 @@ const Overview: React.FC = () => {
               </div>
 
               <div
-                className="col-lg-6 col-md-6"
+                className="col-lg-5 col-md-6"
                 data-aos="fade-up"
                 data-aos-delay="200"
                 data-aos-duration="600"
