@@ -6,7 +6,13 @@ import Image from "next/image";
 import overviewImg1 from "../../../public/images/overview/overview3.jpg";
 import overviewImg2 from "../../../public/images/overview/overview4.jpg";
 
-const Overview: React.FC = () => {
+interface OverviewProps {
+  fullWidth?: boolean;
+}
+
+const Overview: React.FC<OverviewProps> = ({ fullWidth = false }) => {
+  const columnClass = fullWidth ? "col-lg-6 col-md-6" : "col-lg-5 col-md-6";
+
   return (
     <>
       <div className="overview-area wrap-color">
@@ -14,7 +20,7 @@ const Overview: React.FC = () => {
           <div className="overview-inner-area">
             <div className="row justify-content-center">
               <div
-                className="col-lg-5 col-md-6"
+                className={columnClass}
                 data-aos="fade-up"
                 data-aos-delay="100"
                 data-aos-duration="600"
@@ -31,7 +37,7 @@ const Overview: React.FC = () => {
               </div>
 
               <div
-                className="col-lg-5 col-md-6"
+                className={columnClass}
                 data-aos="fade-up"
                 data-aos-delay="200"
                 data-aos-duration="600"

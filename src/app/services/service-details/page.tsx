@@ -18,7 +18,7 @@ export default function Page() {
       <ServiceDetailsContent />
 
       <Process />
-      <Overview />
+      <Overview fullWidth />
       <AboutUsContent />
       <FaqsContent />
       <div className="ptb-100">

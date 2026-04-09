@@ -68,6 +68,7 @@ Default CSS
   --inputBorder: #E7E0E0;
   --shapeOpacity: 1;
   --bannerOverlay: linear-gradient(180deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0.3) 100%);
+  --preloaderBg: #24231D;
 }
 
 [data-theme='dark'] {
@@ -86,6 +87,7 @@ Default CSS
   --inputBorder: #3A3835;
   --shapeOpacity: 0.15;
   --bannerOverlay: linear-gradient(180deg, rgba(22, 21, 18, 0.9) 0%, rgba(22, 21, 18, 0.3) 100%);
+  --preloaderBg: #24231D;
 }
 
 .theme-heading-color {
@@ -321,7 +323,7 @@ Preloader Area CSS
   right: 0;
   bottom: 0;
   z-index: 99999;
-  background: var(--primaryColor);
+  background: var(--preloaderBg);
 }
 .preloader-area .loader {
   left: 0;
