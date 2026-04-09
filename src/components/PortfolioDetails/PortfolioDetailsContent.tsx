@@ -30,7 +30,7 @@ const PortfolioDetailsContent: React.FC = () => {
                   crafting.
                 </p>
                 <p>
-                  Traz is a full-service design firm providing architecture,
+                  DMG Masonry is a full-service design firm providing architecture,
                   master planning, urban design, interior architecture, space
                   planning and programming. Our portfolio of completed work
                   includes highly acclaimed and award-winning projects for

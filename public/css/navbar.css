@@ -35,6 +35,28 @@ Navbar Area CSS
   padding-bottom: 0;
   margin-right: 0;
 }
+.navbar .navbar-brand-inner {
+  display: inline-flex;
+  align-items: center;
+  gap: 16px;
+}
+.navbar .navbar-brand-mark {
+  width: 52px;
+  min-width: 52px;
+  overflow: hidden;
+  display: block;
+}
+.navbar .navbar-brand-mark img {
+  width: 113px;
+  max-width: unset;
+}
+.navbar .navbar-brand-text {
+  color: var(--navLinkColor);
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -0.02em;
+}
 .navbar .navbar-toggler {
   color: var(--whiteColor);
   font-size: inherit;

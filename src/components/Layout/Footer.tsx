@@ -149,7 +149,7 @@ const Footer: React.FC = () => {
         <div className="container">
           <div className="copyright-area-content">
             <p>
-              © <span>Traz</span> Template, All Rights Reserved By
+              © <span>DMG Masonry</span> Template, All Rights Reserved By
               <a href="https://envytheme.com/" target="_blank">
                 {" "}
                 EnvyTheme

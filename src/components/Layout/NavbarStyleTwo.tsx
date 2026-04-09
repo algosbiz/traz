@@ -12,12 +12,14 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import Image from "next/image";
 
-import logo from "/public/images/black-logo.svg";
 import blackLogo from "/public/images/black-logo.svg";
+import logo from "/public/images/white-logo.svg";
 import ThemeToggle from "./ThemeToggle";
+import { useTheme } from "./ThemeProvider";
 
 const NavbarStyleTwo: React.FC = () => {
   const currentRoute = usePathname();
+  const { theme } = useTheme();
 
   const [menu] = useState<boolean>(true);
 
@@ -56,7 +58,17 @@ const NavbarStyleTwo: React.FC = () => {
       <nav className="navbar navbar-expand-lg navbar-with-different-color" id="navbar">
         <div className="container-fluid position-relative">
           <Link className="navbar-brand" href="/">
-            <Image src={logo} alt="Logo" width={113} height={54} />
+            <span className="navbar-brand-inner">
+              <span className="navbar-brand-mark">
+                <Image
+                  src={theme === "dark" ? logo : blackLogo}
+                  alt="DMG Masonry Logo"
+                  width={113}
+                  height={54}
+                />
+              </span>
+              <span className="navbar-brand-text">DMG Masonry</span>
+            </span>
           </Link>
 
           {/* Toggle navigation */}
@@ -491,13 +503,16 @@ const NavbarStyleTwo: React.FC = () => {
         <div className="modal-dialog modal-dialog-scrollable">
           <div className="modal-content">
             <div className="modal-header d-flex align-items-center justify-content-between">
-              <div>
-                <Image
-                  src={blackLogo}
-                  alt="Traz Logo"
-                  width={100}
-                  height={41}
-                />
+              <div className="navbar-brand-inner">
+                <span className="navbar-brand-mark">
+                  <Image
+                    src={blackLogo}
+                    alt="DMG Masonry Logo"
+                    width={113}
+                    height={54}
+                  />
+                </span>
+                <span className="navbar-brand-text">DMG Masonry</span>
               </div>
 
               <button

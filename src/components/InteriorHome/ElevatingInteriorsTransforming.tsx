@@ -24,7 +24,7 @@ const ElevatingInteriorsTransforming: React.FC = () => {
         <div className="container-fluid">
           <div className="elevating-content">
             <h2>Elevating Interiors: Transforming</h2>
-            <h3>Spaces with Traz Design Magic</h3>
+            <h3>Spaces with DMG Masonry Design Magic</h3>
 
             <div className="elevating-video">
               <Image src={elevatingImg} alt="elevating" width={184} height={184} />

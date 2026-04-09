@@ -35,7 +35,7 @@ const blogPostData = [
   {
     id: "1",
     image: "/images/blog/blog4.jpg",
-    title: "How Traz Redefines the Built Environment",
+    title: "How DMG Masonry Redefines the Built Environment",
     date: "Jul 13, 2023",
     link: "/single-blog/",
   },
@@ -70,21 +70,21 @@ const blogPostData = [
   {
     id: "6",
     image: "/images/blog/blog9.jpg",
-    title: "From Dull to Dazzling: Traz Inspirational Design",
+    title: "From Dull to Dazzling: DMG Masonry Inspirational Design",
     date: "Jul 18, 2023",
     link: "/single-blog/",
   },
   {
     id: "7",
     image: "/images/blog/blog10.jpg",
-    title: "The Power of Color: Traz Guide to Creating Vibrant",
+    title: "The Power of Color: DMG Masonry Guide to Creating Vibrant",
     date: "Jul 19, 2023",
     link: "/single-blog/",
   },
   {
     id: "8",
     image: "/images/blog/blog11.jpg",
-    title: "Effortless Elegance: Unveiling Traz Approach",
+    title: "Effortless Elegance: Unveiling DMG Masonry Approach",
     date: "Jul 20, 2023",
     link: "/single-blog/",
   },

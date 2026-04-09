@@ -23,7 +23,7 @@ const blogPostData = [
     id: "2",
     image: "/images/blog/blog2.jpg",
     title:
-      "From Concept to Construction: The Creative Journey of Traz In A Nutshell Architectural Marvels",
+      "From Concept to Construction: The Creative Journey of DMG Masonry In A Nutshell Architectural Marvels",
     category: "Interior",
     categoryLink: "/categories",
     date: "Jul 14, 2023",
@@ -43,7 +43,7 @@ const blogPostData = [
     id: "4",
     image: "/images/blog/blog2.jpg",
     title:
-      "From Concept to Construction: The Creative Journey of Traz In A Nutshell Architectural Marvels",
+      "From Concept to Construction: The Creative Journey of DMG Masonry In A Nutshell Architectural Marvels",
     category: "Interior",
     categoryLink: "/categories",
     date: "Jul 16, 2023",
@@ -58,7 +58,7 @@ const BlogPost: React.FC = () => {
         <div className="container">
           <div className="section-title d-flex justify-content-between align-items-center">
             <h2>
-              <span>Blog & Articles</span> Of Traz
+              <span>Blog & Articles</span> Of DMG Masonry
             </h2>
             <Link href="/blog">VISIT BLOG PAGE</Link>
           </div>

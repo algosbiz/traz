@@ -41,6 +41,29 @@ Navbar Area CSS
         };
         margin-right: 0;
     }
+    .navbar-brand-inner {
+        display: inline-flex;
+        align-items: center;
+        gap: 16px;
+    }
+    .navbar-brand-mark {
+        width: 52px;
+        min-width: 52px;
+        overflow: hidden;
+        display: block;
+
+        img {
+            width: 113px;
+            max-width: unset;
+        }
+    }
+    .navbar-brand-text {
+        color: var(--navLinkColor);
+        font-size: 22px;
+        font-weight: 700;
+        line-height: 1;
+        letter-spacing: -0.02em;
+    }
     .navbar-toggler {
         color: var(--whiteColor);
         font-size: inherit;

@@ -29,7 +29,7 @@ const ServiceDetailsContent: React.FC = () => {
                 <Image src={serviceImg} alt="service" width={1400} height={645} />
  
                 <p>
-                  Traz full-service design firm providing architecture, master
+                  DMG Masonry full-service design firm providing architecture, master
                   planning, urban design, interior architecture, space planning
                   and programming. Our portfolio completed work includes highly
                   acclaimed and award-winning projects for clients around the

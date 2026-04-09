@@ -20,7 +20,7 @@ const SingleBlogContent: React.FC = () => {
             <div className="title">
               <span>ARTICLES</span>
               <h2>
-                From Concept to Construction: The Creative Journey of Traz In A
+                From Concept to Construction: The Creative Journey of DMG Masonry In A
                 Nutshell Architectural Marvels
               </h2>
               <ul className="meta">
@@ -33,14 +33,14 @@ const SingleBlogContent: React.FC = () => {
 
             <Image src={blogImg} alt="image" width={1320} height={650} />
             <p>
-              Traz is a full-service design firm providing architecture,
+              DMG Masonry is a full-service design firm providing architecture,
               master planning, urban design, interior architecture, space
               planning and programming. Our portfolio of completed work includes
               highly acclaimed and award-winning projects for clients around the
               country.
             </p>
             <p>
-              Traz is a full-service design firm providing architecture,
+              DMG Masonry is a full-service design firm providing architecture,
               master planning, urban design, interior architecture, space
               planning and programming. Our portfolio of completed work includes
               highly acclaimed and award-winning projects for clients around the

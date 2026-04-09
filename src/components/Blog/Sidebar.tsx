@@ -11,7 +11,7 @@ const blogPostData = [
   {
     id: "1",
     image: "/images/blog/blog4.jpg",
-    title: "How Traz Redefines the Built Environment",
+    title: "How DMG Masonry Redefines the Built Environment",
     date: "Jul 13, 2023",
     link: "/single-blog/",
   },

@@ -124,7 +124,7 @@ const HeroBanner: React.FC = () => {
           </li>
           <li>
             <span>MAIL:</span>
-            <a href="mailto:trazteam@gmail.com">trazteam@gmail.com</a>
+            <a href="mailto:trazteam@gmail.com">DMG Masonry</a>
           </li>
         </ul>
       </div>

@@ -25,8 +25,8 @@ import { Jost } from "next/font/google";
 const jost = Jost({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Traz - React Nextjs Architecture & Interior Design Template",
-  description: "React Nextjs Architecture & Interior Design Template",
+  title: "DMG Masonry - React Nextjs Architecture & Interior Design Template",
+  description: "DMG Masonry - React Nextjs Architecture & Interior Design Template",
 };
 
 import { ThemeProvider } from "@/components/Layout/ThemeProvider";

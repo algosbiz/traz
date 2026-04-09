@@ -24,7 +24,7 @@ const HeroBanner: React.FC = () => {
             data-aos-once="false"
           >
             <h1>
-              Transforming Spaces with <b>Traz</b> Design Magic
+              Transforming Spaces with <b>DMG Masonry</b> Design Magic
             </h1>
           </div>
 

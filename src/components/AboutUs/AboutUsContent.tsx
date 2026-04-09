@@ -31,7 +31,7 @@ const AboutUsContent: React.FC = () => {
           <div className="about-three-title">
             <span>ABOUT US</span>
             <h2>
-              We Are <b>Traz.</b> We Create Unique And Sustainable Living
+              We Are <b>DMG Masonry.</b> We Create Unique And Sustainable Living
               Spaces, Designed For Sharing
             </h2>
           </div>
@@ -98,14 +98,14 @@ const AboutUsContent: React.FC = () => {
                       Our Job
                     </h2>
                     <p>
-                      Traz is a full-service design firm providing
+                      DMG Masonry is a full-service design firm providing
                       architecture, master planning, urban design, interior
                       architecture, space planning and programming. Our
                       portfolio of completed work includes highly acclaimed and
                       award-winning projects.
                     </p>
                     <p>
-                      At Traz, we believe that architecture goes beyond mere
+                      At DMG Masonry, we believe that architecture goes beyond mere
                       structures, it is an art form that shapes the way we live,
                       work, and interact with our surroundings. With a deep
                       understanding of the built environment and an unwavering

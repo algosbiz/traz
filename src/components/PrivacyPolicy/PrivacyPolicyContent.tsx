@@ -11,15 +11,15 @@ const PrivacyPolicyContent: React.FC = () => {
             <p>Last updated on July 12, 2024.</p>
 
             <p>
-              Hi there, we’re <strong>Traz</strong>, and welcome to our privacy
+              Hi there, we’re <strong>DMG Masonry</strong>, and welcome to our privacy
               policy which also applies to our customers.
               <br />
               This policy sets out how we handle your personal information if
-              you’re an <strong>Traz</strong> user or visitor to our site.
+              you’re an <strong>DMG Masonry</strong> user or visitor to our site.
             </p>
 
             <p>
-              When we say ‘we’, ‘us’, or <strong>‘Traz’</strong>, it’s because
+              When we say ‘we’, ‘us’, or <strong>‘DMG Masonry’</strong>, it’s because
               that’s who we are and we own and run the site.
               <br />
               If we say ‘policy’ we’re talking about this privacy policy. If we
@@ -114,10 +114,10 @@ const PrivacyPolicyContent: React.FC = () => {
             <p>
               We use cookies to identify and track visitors, their actions on
               the site, and their website access preferences. These cookies
-              contain visitors’ IP and time of visits. <strong>Traz</strong>{" "}
+              contain visitors’ IP and time of visits. <strong>DMG Masonry</strong>{" "}
               visitors who do not wish to have cookies placed on their browsers
               should set their browsers to refuse cookies before using the{" "}
-              <strong>Traz</strong> site.
+              <strong>DMG Masonry</strong> site.
             </p>
 
             <h4>How Long We Keep Your Personal Information</h4>
@@ -125,7 +125,7 @@ const PrivacyPolicyContent: React.FC = () => {
               We retain your personal information for as long as is necessary to
               provide the services to you and others and to comply with our
               legal obligations. If you no longer want us to use your personal
-              information or to provide you with the <strong>Traz</strong>{" "}
+              information or to provide you with the <strong>DMG Masonry</strong>{" "}
               services, you can request that we erase your personal information
               and close your account.
             </p>
