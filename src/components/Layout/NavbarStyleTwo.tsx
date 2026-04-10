@@ -12,8 +12,8 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import Image from "next/image";
 
-import blackLogo from "/public/images/black-logo.svg";
-import logo from "/public/images/white-logo.svg";
+import logoWebp from "/public/images/logo.webp";
+import whiteLogoWebp from "/public/images/whitelogo.webp";
 import ThemeToggle from "./ThemeToggle";
 import { useTheme } from "./ThemeProvider";
 
@@ -61,13 +61,13 @@ const NavbarStyleTwo: React.FC = () => {
             <span className="navbar-brand-inner">
               <span className="navbar-brand-mark">
                 <Image
-                  src={theme === "dark" ? logo : blackLogo}
+                  src={theme === "dark" ? whiteLogoWebp : logoWebp}
                   alt="DMG Masonry Logo"
-                  width={113}
-                  height={54}
+                  width={220}
+                  height={64}
+                  priority
                 />
               </span>
-              <span className="navbar-brand-text">DMG Masonry</span>
             </span>
           </Link>
 
@@ -506,13 +506,12 @@ const NavbarStyleTwo: React.FC = () => {
               <div className="navbar-brand-inner">
                 <span className="navbar-brand-mark">
                   <Image
-                    src={blackLogo}
+                    src={theme === "dark" ? whiteLogoWebp : logoWebp}
                     alt="DMG Masonry Logo"
-                    width={113}
-                    height={54}
+                    width={220}
+                    height={64}
                   />
                 </span>
-                <span className="navbar-brand-text">DMG Masonry</span>
               </div>
 
               <button

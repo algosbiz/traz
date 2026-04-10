@@ -13,13 +13,11 @@ const ThemeToggle: React.FC = () => {
         onClick={toggleTheme}
         style={{
           cursor: "pointer",
-          fontSize: "25px",
           color: "inherit",
           transition: "0.4s",
           display: "flex",
           alignItems: "center",
-          justifyContent: "center",
-          marginRight: "20px"
+          justifyContent: "center"
         }}
       >
         {theme === "light" ? (

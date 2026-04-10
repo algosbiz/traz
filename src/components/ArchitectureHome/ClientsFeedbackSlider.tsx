@@ -47,7 +47,7 @@ const clientsFeedbackData = [
 const ClientsFeedbackSlider: React.FC = () => {
   return (
     <>
-      <div className="client-area ptb-100">
+      <div className="client-area pt-100">
         <div className="container">
           <div className="section-title d-flex justify-content-center">
             <h2>

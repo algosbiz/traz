@@ -4,142 +4,105 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 
-import whiteLogo from "../../../public/images/white-logo.svg";
-import NewsletterForm from "./NewsletterForm";
+import whiteLogo from "../../../public/images/whitelogo.webp";
 
-// Social Links
-const socialLinksData = [
+const socialLinks = [
   {
-    id: "1",
-    name: "Facebook",
+    id: "facebook",
+    icon: "ri-facebook-fill",
+    label: "Facebook",
     link: "https://www.facebook.com/",
   },
   {
-    id: "2",
-    name: "Instagram",
+    id: "instagram",
+    icon: "ri-instagram-line",
+    label: "Instagram",
     link: "https://www.instagram.com/",
   },
   {
-    id: "3",
-    name: "Linkedin",
-    link: "https://www.linkedin.com/",
-  },
-  {
-    id: "4",
-    name: "Twitter",
-    link: "https://www.twitter.com/",
+    id: "whatsapp",
+    icon: "ri-whatsapp-line",
+    label: "WhatsApp",
+    link: "https://wa.me/14036198727",
   },
 ];
 
-// Page Links
-const pageLinksData = [
-  {
-    id: "1",
-    name: "Projects",
-    link: "/portfolio",
-  },
-  {
-    id: "2",
-    name: "News And Articles",
-    link: "/blog",
-  },
-  {
-    id: "3",
-    name: "Request a Quote",
-    link: "/request-quote",
-  },
-  {
-    id: "4",
-    name: "Services",
-    link: "/services",
-  },
+const masonryServices = [
+  "Masonry Repair",
+  "Stone Veneer",
+  "Hardscape Contractor",
+  "Chimney Repair",
+  "Custom Fire Pits",
+  "Outdoor Kitchen Contractor",
+  "Patio Stone Installation",
+  "Custom Pizza Oven",
+  "Retaining Wall Construction",
+  "Fireplace Installation",
 ];
 
 const Footer: React.FC = () => {
   return (
     <>
-      <footer className="footer-area pt-100 pb-75">
+      <footer className="footer-area">
         <div className="container">
-          <div className="row justify-content-center">
+          <div className="footer-inner">
             <div
-              className="col-lg-4 col-sm-6"
+              className="footer-brand-column"
               data-aos="fade-up"
               data-aos-delay="100"
               data-aos-duration="600"
               data-aos-once="true"
             >
-              <div className="single-footer-widget">
-                <div className="widget-logo">
-                  <Link href="/">
-                    <Image src={whiteLogo} alt="image" width={113} height={54} />
-                  </Link>
-                </div>
-                <p>
-                  We would love to be a part of your dream space or home
-                  project.
-                </p>
+              <Link href="/" className="footer-logo" aria-label="DMG Masonry Home">
+                <Image
+                  src={whiteLogo}
+                  alt="DMG Masonry Logo"
+                  width={220}
+                  height={64}
+                />
+              </Link>
+
+              <div className="footer-contact">
+                <h3>D.M.G Masonry LTD</h3>
+                <p>1111 - 46 Ave S.E., Calgary, Alberta T2G 2A5</p>
+                <a href="mailto:will@dmgmasonry.ca">will@dmgmasonry.ca</a>
+                <a href="tel:+14036198727" className="footer-phone">
+                  Call us: 1-403-619-8727
+                </a>
               </div>
+
+              <ul className="footer-socials">
+                {socialLinks.map((item) => (
+                  <li key={item.id}>
+                    <a
+                      href={item.link}
+                      target="_blank"
+                      rel="noreferrer"
+                      aria-label={item.label}
+                    >
+                      <i className={item.icon}></i>
+                    </a>
+                  </li>
+                ))}
+              </ul>
             </div>
 
             <div
-              className="col-lg-2 col-sm-6"
+              className="footer-services-column"
               data-aos="fade-up"
               data-aos-delay="200"
               data-aos-duration="600"
               data-aos-once="true"
             >
-              <div className="single-footer-widget ps-5">
-                <h3>FOLLOW US</h3>
+              <h2>Masonry Services in Calgary</h2>
 
-                {socialLinksData && (
-                  <ul className="social-link">
-                    {socialLinksData &&
-                      socialLinksData.map((value, i) => (
-                        <li key={i}>
-                          <a href={value.link} target="_blank">
-                            <i className="ri-arrow-right-line"></i> {value.name}
-                          </a>
-                        </li>
-                      ))}
-                  </ul>
-                )}
-              </div>
-            </div>
-
-            <div
-              className="col-lg-3 col-sm-6"
-              data-aos="fade-up"
-              data-aos-delay="300"
-              data-aos-duration="600"
-              data-aos-once="true"
-            >
-              <div className="single-footer-widget ps-5">
-                <h3>SITE MAP</h3>
-
-                {pageLinksData && (
-                  <ul className="quick-link">
-                    {pageLinksData &&
-                      pageLinksData.map((value, i) => (
-                        <li key={i}>
-                          <a href={value.link}>
-                            {value.name}
-                          </a>
-                        </li>
-                      ))}
-                  </ul>
-                )}
-              </div>
-            </div>
-
-            <div
-              className="col-lg-3 col-sm-6"
-              data-aos="fade-up"
-              data-aos-delay="400"
-              data-aos-duration="600"
-              data-aos-once="true"
-            >
-              {/* NewsletterForm */}
-              <NewsletterForm />
+              <ul className="footer-service-grid">
+                {masonryServices.map((service) => (
+                  <li key={service}>
+                    <Link href="/services/service-details/">{service}</Link>
+                  </li>
+                ))}
+              </ul>
             </div>
           </div>
         </div>
@@ -149,11 +112,7 @@ const Footer: React.FC = () => {
         <div className="container">
           <div className="copyright-area-content">
             <p>
-              © <span>DMG Masonry</span> Template, All Rights Reserved By
-              <a href="https://envytheme.com/" target="_blank">
-                {" "}
-                EnvyTheme
-              </a>
+              © <span>DMG Masonry</span>. Crafted spaces, built to last.
             </p>
           </div>
         </div>

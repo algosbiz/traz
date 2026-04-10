@@ -12,15 +12,14 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import Image from "next/image";
 
-import logo from "/public/images/white-logo.svg";
-import blackLogo from "/public/images/black-logo.svg";
+import logoWebp from "/public/images/logo.webp";
+import whiteLogoWebp from "/public/images/whitelogo.webp";
 import ThemeToggle from "./ThemeToggle";
 import { useTheme } from "./ThemeProvider";
 
 const Navbar: React.FC = () => {
   const currentRoute = usePathname();
   const { theme } = useTheme();
-
   const [menu] = useState<boolean>(true);
 
   useEffect(() => {
@@ -61,13 +60,13 @@ const Navbar: React.FC = () => {
             <span className="navbar-brand-inner">
               <span className="navbar-brand-mark">
                 <Image
-                  src={theme === "dark" ? logo : blackLogo}
+                  src={theme === "dark" ? whiteLogoWebp : logoWebp}
                   alt="DMG Masonry Logo"
-                  width={113}
-                  height={54}
+                  width={220}
+                  height={64}
+                  priority
                 />
               </span>
-              <span className="navbar-brand-text">DMG Masonry</span>
             </span>
           </Link>
 
@@ -508,13 +507,12 @@ const Navbar: React.FC = () => {
               <div className="navbar-brand-inner">
                 <span className="navbar-brand-mark">
                   <Image
-                    src={blackLogo}
+                    src={theme === "dark" ? whiteLogoWebp : logoWebp}
                     alt="DMG Masonry Logo"
-                    width={113}
-                    height={54}
+                    width={220}
+                    height={64}
                   />
                 </span>
-                <span className="navbar-brand-text">DMG Masonry</span>
               </div>
 
               <button

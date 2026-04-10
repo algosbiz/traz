@@ -72,17 +72,20 @@ const Preloader: React.FC = () => {
     >
       <div className="loader">
         <div className="waviy">
-          <span>D</span>
-          <span>M</span>
-          <span>G</span>
-          <span>&nbsp;</span>
-          <span>M</span>
-          <span>A</span>
-          <span>S</span>
-          <span>O</span>
-          <span>N</span>
-          <span>R</span>
-          <span>Y</span>
+          <div className="waviy-line">
+            <span>D</span>
+            <span>M</span>
+            <span>G</span>
+          </div>
+          <div className="waviy-line">
+            <span>M</span>
+            <span>A</span>
+            <span>S</span>
+            <span>O</span>
+            <span>N</span>
+            <span>R</span>
+            <span>Y</span>
+          </div>
         </div>
       </div>
     </div>

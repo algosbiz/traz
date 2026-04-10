@@ -31,6 +31,8 @@ Navbar Area CSS
   background-color: #0e0e0e;
 }
 .navbar .navbar-brand {
+  display: inline-flex;
+  align-items: center;
   padding-top: 0;
   padding-bottom: 0;
   margin-right: 0;
@@ -38,24 +40,18 @@ Navbar Area CSS
 .navbar .navbar-brand-inner {
   display: inline-flex;
   align-items: center;
-  gap: 16px;
+  gap: 0;
 }
 .navbar .navbar-brand-mark {
-  width: 52px;
-  min-width: 52px;
+  width: 220px;
+  min-width: 220px;
   overflow: hidden;
   display: block;
 }
 .navbar .navbar-brand-mark img {
-  width: 113px;
-  max-width: unset;
-}
-.navbar .navbar-brand-text {
-  color: var(--navLinkColor);
-  font-size: 22px;
-  font-weight: 700;
-  line-height: 1;
-  letter-spacing: -0.02em;
+  display: block;
+  width: 220px;
+  max-width: 100%;
 }
 .navbar .navbar-toggler {
   color: var(--whiteColor);
@@ -252,6 +248,14 @@ Navbar Area CSS
 }
 .navbar .others-option .option-item:last-child {
   margin-right: 0;
+}
+.navbar .others-option .option-item .theme-btn {
+  font-size: 22px;
+  color: #989898;
+  transition: var(--transition);
+}
+.navbar .others-option .option-item .theme-btn:hover {
+  color: var(--primaryColor);
 }
 .navbar .others-option .option-item .search-btn {
   font-size: 22px;
@@ -593,21 +597,25 @@ Search Modal Area CSS
 /* Max width 379px */
 @media only screen and (max-width: 379px) {
   .navbar .others-option {
-    top: 13px !important;
-    right: 50px !important;
+    top: 50% !important;
+    right: 46px !important;
+    transform: translateY(-50%) !important;
   }
   .navbar .others-option .option-item {
-    margin-right: 10px !important;
+    margin-right: 8px !important;
   }
   .navbar .others-option .option-item:last-child {
     margin-right: 0 !important;
   }
-  .navbar .others-option .option-item .search-btn {
-    font-size: 18px;
+  .navbar .navbar-brand-mark {
+    width: 142px;
+    min-width: 142px;
   }
-  .navbar .others-option .option-item .default-btn {
-    font-size: 10px !important;
-    padding: 4px 8px !important;
+  .navbar .navbar-brand-mark img {
+    width: 142px;
+  }
+  .navbar .others-option .option-item .search-btn {
+    font-size: 17px;
   }
 }
 /* Max width 767px */
@@ -617,9 +625,28 @@ Search Modal Area CSS
     padding-bottom: 10px;
   }
   .navbar .container-fluid {
+    display: flex;
+    align-items: center;
     padding-left: calc(var(--bs-gutter-x) * 0.5);
     padding-right: calc(var(--bs-gutter-x) * 0.5);
     max-width: 540px;
+    min-height: 56px;
+  }
+  .navbar .navbar-brand {
+    max-width: calc(100% - 142px);
+  }
+  .navbar .navbar-brand-mark {
+    width: 156px;
+    min-width: 156px;
+  }
+  .navbar .navbar-brand-mark img {
+    width: 156px;
+  }
+  .navbar .navbar-toggler {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
   }
   .search-modal-area .modal-content .modal-body {
     padding: 30px;
@@ -631,6 +658,13 @@ Search Modal Area CSS
   }
   .mobile-menu-modal .modal-dialog {
     width: 300px;
+  }
+  .mobile-menu-modal .modal-content .modal-header .navbar-brand-mark {
+    width: 156px;
+    min-width: 156px;
+  }
+  .mobile-menu-modal .modal-content .modal-header .navbar-brand-mark img {
+    width: 156px;
   }
 }
 /* Min width 768px to Max width 991px */
@@ -650,6 +684,10 @@ Search Modal Area CSS
   .navbar.sticky {
     padding-top: 10px;
     padding-bottom: 10px;
+  }
+  .navbar .container-fluid {
+    display: flex;
+    align-items: center;
   }
   .navbar .navbar-nav {
     overflow-y: scroll;
@@ -695,18 +733,52 @@ Search Modal Area CSS
   .navbar .others-option {
     margin-left: 0;
     position: absolute;
-    top: 10px;
-    right: 60px;
+    top: 50%;
+    right: 52px;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    height: 40px;
   }
   .navbar .others-option .option-item {
-    margin-right: 20px;
+    margin-right: 12px;
+    display: flex;
+    align-items: center;
   }
   .navbar .others-option .option-item:last-child {
     margin-right: 0;
   }
+  .navbar .others-option .option-item .theme-btn {
+    width: 28px;
+    height: 28px;
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+    font-size: 21px !important;
+    line-height: 1;
+  }
+  .navbar .others-option .option-item .theme-btn i {
+    display: block;
+    line-height: 1;
+  }
+  .navbar .others-option .option-item .search-btn {
+    width: 28px;
+    height: 28px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    line-height: 1;
+  }
+  .navbar .others-option .option-item .search-btn i {
+    display: block;
+    line-height: 1;
+  }
   .navbar .others-option .option-item .default-btn {
-    font-size: 12px;
-    padding: 6px 10px;
+    display: none;
+  }
+  .navbar .navbar-toggler {
+    padding: 10px;
   }
   .navbar-with-different-color .navbar-toggler .icon-bar {
     background: var(--navLinkColor);

@@ -7,7 +7,7 @@ import Process from "@/components/ServiceDetails/Process";
 import Overview from "@/components/InteriorHome/Overview";
 import AboutUsContent from "@/components/ArchitectureStudio/AboutUsContent";
 import FaqsContent from "@/components/Faqs/FaqsContent";
-
+import ClientsFeedbackSlider from "@/components/ArchitectureHome/ClientsFeedbackSlider";
 export default function Page() {
   return (
     <>
@@ -19,6 +19,7 @@ export default function Page() {
 
       <Process />
       <Overview fullWidth />
+      <ClientsFeedbackSlider />
       <AboutUsContent />
       <FaqsContent />
       <div className="ptb-100">

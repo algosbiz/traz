@@ -69,6 +69,19 @@ Default CSS
   --shapeOpacity: 1;
   --bannerOverlay: linear-gradient(180deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0.3) 100%);
   --preloaderBg: #24231D;
+  --footerBg: #C57E47;
+  --footerBgSolid: #BF7740;
+  --footerCopyrightBg: #AE6736;
+  --footerText: #FFF7F0;
+  --footerMutedText: rgba(255, 247, 240, 0.9);
+  --footerHeading: #FFF8F2;
+  --footerHover: #2A1B12;
+  --footerSocialBg: #1F1611;
+  --footerSocialHoverBg: #FFF7F0;
+  --footerSocialHoverText: #B96931;
+  --footerOverlayTop: rgba(255, 255, 255, 0.04);
+  --footerOverlayBottom: rgba(0, 0, 0, 0.03);
+  --footerImageFade: linear-gradient(180deg, rgba(191, 119, 64, 0.08) 0%, rgba(191, 119, 64, 0.82) 18%, #BF7740 42%);
 }
 
 [data-theme='dark'] {
@@ -88,6 +101,19 @@ Default CSS
   --shapeOpacity: 0.15;
   --bannerOverlay: linear-gradient(180deg, rgba(22, 21, 18, 0.9) 0%, rgba(22, 21, 18, 0.3) 100%);
   --preloaderBg: #24231D;
+  --footerBg: #24201C;
+  --footerBgSolid: #211D19;
+  --footerCopyrightBg: #181512;
+  --footerText: #F1E8DF;
+  --footerMutedText: rgba(241, 232, 223, 0.82);
+  --footerHeading: #FFF7F0;
+  --footerHover: #D8B798;
+  --footerSocialBg: #0F0F0F;
+  --footerSocialHoverBg: #F4E6D8;
+  --footerSocialHoverText: #201914;
+  --footerOverlayTop: rgba(255, 255, 255, 0.02);
+  --footerOverlayBottom: rgba(0, 0, 0, 0.16);
+  --footerImageFade: linear-gradient(180deg, rgba(36, 32, 28, 0.08) 0%, rgba(36, 32, 28, 0.84) 18%, #211D19 42%);
 }
 
 .theme-heading-color {
@@ -332,6 +358,16 @@ Preloader Area CSS
   position: absolute;
   transform: translateY(-48%);
 }
+.preloader-area .loader .waviy {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+}
+.preloader-area .loader .waviy .waviy-line {
+  display: flex;
+  justify-content: center;
+}
 .preloader-area .loader .waviy span {
   animation: flip 2s infinite;
   color: var(--whiteColor);
@@ -356,6 +392,19 @@ Preloader Area CSS
 @keyframes flip {
   0%, 80% {
     transform: rotateY(360deg);
+  }
+}
+@media only screen and (max-width: 767px) {
+  .preloader-area .loader {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .preloader-area .loader .waviy {
+    gap: 6px;
+  }
+  .preloader-area .loader .waviy .waviy-line:first-child span,
+  .preloader-area .loader .waviy .waviy-line:last-child span {
+    font-size: 34px;
   }
 }
 /*================================================

@@ -299,6 +299,16 @@ Preloader Area CSS
         transform: translateY(-48%);
 
         .waviy {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0;
+
+            .waviy-line {
+                display: flex;
+                justify-content: center;
+            }
+
             span {
                 animation: flip 2s infinite;
                 color: var(--whiteColor);
@@ -327,6 +337,27 @@ Preloader Area CSS
 @keyframes flip {
     0%, 80% {
         transform: rotateY(360deg) 
+    }
+}
+@media only screen and (max-width: 767px) {
+    .preloader-area {
+        .loader {
+            padding-left: 20px;
+            padding-right: 20px;
+
+            .waviy {
+                gap: 6px;
+
+                .waviy-line {
+                    &:first-child,
+                    &:last-child {
+                        span {
+                            font-size: 34px;
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 
