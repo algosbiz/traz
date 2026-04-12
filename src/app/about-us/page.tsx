@@ -15,7 +15,7 @@ export default function Page() {
     <>
       <NavbarStyleTwo />
 
-      <PageTitle 
+      <PageTitle
         title="About Us"
         homeText="Home"
         homeUrl="/"
@@ -23,7 +23,7 @@ export default function Page() {
 
       <AboutUsContent />
 
-      <LatestRecognition />
+      {/* <LatestRecognition /> */}
 
       <QuoteText />
 
@@ -35,14 +35,14 @@ export default function Page() {
 
       <TeamMemberStyle2 />
 
-      <div className="pt-100">
+      {/* <div className="pt-100">
         <Partner />
-      </div>
+      </div> */}
 
-      <div className="pb-100">
+      <div className="pb-100 pt-100">
         <ContactFormStyleTwo />
       </div>
-      
+
       <Footer />
     </>
   )
