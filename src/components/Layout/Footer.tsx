@@ -4,24 +4,23 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 
+import logoWebp from "../../../public/images/logo.webp";
 import whiteLogo from "../../../public/images/whitelogo.webp";
+import { useTheme } from "./ThemeProvider";
 
 const socialLinks = [
   {
     id: "facebook",
-    icon: "ri-facebook-fill",
     label: "Facebook",
     link: "https://www.facebook.com/",
   },
   {
     id: "instagram",
-    icon: "ri-instagram-line",
     label: "Instagram",
     link: "https://www.instagram.com/",
   },
   {
     id: "whatsapp",
-    icon: "ri-whatsapp-line",
     label: "WhatsApp",
     link: "https://wa.me/14036198727",
   },
@@ -41,6 +40,8 @@ const masonryServices = [
 ];
 
 const Footer: React.FC = () => {
+  const { theme } = useTheme();
+
   return (
     <>
       <footer className="footer-area">
@@ -55,10 +56,10 @@ const Footer: React.FC = () => {
             >
               <Link href="/" className="footer-logo" aria-label="DMG Masonry Home">
                 <Image
-                  src={whiteLogo}
+                  src={theme === "dark" ? whiteLogo : logoWebp}
                   alt="DMG Masonry Logo"
-                  width={220}
-                  height={64}
+                  width={160}
+                  height={52}
                 />
               </Link>
 
@@ -70,17 +71,23 @@ const Footer: React.FC = () => {
                   Call us: 1-403-619-8727
                 </a>
               </div>
+            </div>
 
-              <ul className="footer-socials">
+            <div
+              className="footer-links-column"
+              data-aos="fade-up"
+              data-aos-delay="150"
+              data-aos-duration="600"
+              data-aos-once="true"
+            >
+              <h3>Follow Us</h3>
+
+              <ul className="footer-links-list">
                 {socialLinks.map((item) => (
                   <li key={item.id}>
-                    <a
-                      href={item.link}
-                      target="_blank"
-                      rel="noreferrer"
-                      aria-label={item.label}
-                    >
-                      <i className={item.icon}></i>
+                    <a href={item.link} target="_blank" rel="noreferrer">
+                      <span className="footer-link-arrow">&rarr;</span>
+                      <span>{item.label}</span>
                     </a>
                   </li>
                 ))}
@@ -88,21 +95,45 @@ const Footer: React.FC = () => {
             </div>
 
             <div
-              className="footer-services-column"
+              className="footer-links-column"
               data-aos="fade-up"
               data-aos-delay="200"
               data-aos-duration="600"
               data-aos-once="true"
             >
-              <h2>Masonry Services in Calgary</h2>
+              <h3>Services</h3>
 
-              <ul className="footer-service-grid">
+              <ul className="footer-links-list footer-links-list-plain footer-services-list">
                 {masonryServices.map((service) => (
                   <li key={service}>
                     <Link href="/services/service-details/">{service}</Link>
                   </li>
                 ))}
               </ul>
+            </div>
+
+            <div
+              className="footer-newsletter-column"
+              data-aos="fade-up"
+              data-aos-delay="250"
+              data-aos-duration="600"
+              data-aos-once="true"
+            >
+              <h3>Subscribe Newsletter</h3>
+
+              <form className="footer-newsletter-form">
+                <input
+                  type="email"
+                  className="footer-newsletter-input"
+                  placeholder="Your Email Here"
+                  aria-label="Your Email Here"
+                />
+
+                <button type="submit" className="footer-newsletter-button">
+                  <span className="footer-link-arrow">&rarr;</span>
+                  <span>Subscribe Newsletter</span>
+                </button>
+              </form>
             </div>
           </div>
         </div>
@@ -112,7 +143,7 @@ const Footer: React.FC = () => {
         <div className="container">
           <div className="copyright-area-content">
             <p>
-              © <span>DMG Masonry</span>. Crafted spaces, built to last.
+              &copy; <span>DMG Masonry</span>. Crafted spaces, built to last.
             </p>
           </div>
         </div>

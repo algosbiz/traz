@@ -5,7 +5,7 @@ import React from "react";
 const TextSlide: React.FC = () => {
   return (
     <>
-      <div className="animation-view-area pb-100">
+      <div className="animation-view-area pt-100 pb-100">
         <div className="container-fluid">
           <div className="animation-view-content">
             <h1>

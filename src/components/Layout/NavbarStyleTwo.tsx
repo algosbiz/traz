@@ -72,7 +72,7 @@ const NavbarStyleTwo: React.FC = () => {
           </Link>
 
           {/* Toggle navigation */}
-          <button 
+          <button
             className={classTwo}
             type="button"
             data-toggle="collapse"
@@ -93,18 +93,17 @@ const NavbarStyleTwo: React.FC = () => {
               <li className="nav-item">
                 <Link
                   className="nav-link dropdown-toggle"
-                  href="#"
+                  href="/"
                   onClick={(e) => e.preventDefault()}
                 >
                   Home
                 </Link>
 
-                <ul className="dropdown-menu">
+                {/* <ul className="dropdown-menu">
                   <li className="nav-item">
                     <Link
-                      className={`nav-link ${
-                        currentRoute === "/" ? "active" : ""
-                      }`}
+                      className={`nav-link ${currentRoute === "/" ? "active" : ""
+                        }`}
                       href="/"
                     >
                       Architecture Home
@@ -113,9 +112,8 @@ const NavbarStyleTwo: React.FC = () => {
 
                   <li className="nav-item">
                     <Link
-                      className={`nav-link ${
-                        currentRoute === "/interior-home/" ? "active" : ""
-                      }`}
+                      className={`nav-link ${currentRoute === "/interior-home/" ? "active" : ""
+                        }`}
                       href="/interior-home/"
                     >
                       Interior Home
@@ -124,29 +122,27 @@ const NavbarStyleTwo: React.FC = () => {
 
                   <li className="nav-item">
                     <Link
-                      className={`nav-link ${
-                        currentRoute === "/architecture-studio/" ? "active" : ""
-                      }`}
+                      className={`nav-link ${currentRoute === "/architecture-studio/" ? "active" : ""
+                        }`}
                       href="/architecture-studio/"
                     >
                       Architecture Studio
                     </Link>
                   </li>
-                </ul>
+                </ul> */}
               </li>
 
               <li className="nav-item">
                 <Link
                   href="/about-us/"
-                  className={`nav-link ${
-                    currentRoute === "/about-us/" ? "active" : ""
-                  }`}
+                  className={`nav-link ${currentRoute === "/about-us/" ? "active" : ""
+                    }`}
                 >
                   About Us
                 </Link>
               </li>
 
-              <li className="nav-item">
+              {/* <li className="nav-item">
                 <Link
                   className="nav-link dropdown-toggle"
                   href="#"
@@ -159,9 +155,8 @@ const NavbarStyleTwo: React.FC = () => {
                   <li className="nav-item">
                     <Link
                       href="/portfolio/"
-                      className={`nav-link ${
-                        currentRoute === "/portfolio/" ? "active" : ""
-                      }`}
+                      className={`nav-link ${currentRoute === "/portfolio/" ? "active" : ""
+                        }`}
                     >
                       Portfolio Style 01
                     </Link>
@@ -170,9 +165,8 @@ const NavbarStyleTwo: React.FC = () => {
                   <li className="nav-item">
                     <Link
                       href="/portfolio-2/"
-                      className={`nav-link ${
-                        currentRoute === "/portfolio-2/" ? "active" : ""
-                      }`}
+                      className={`nav-link ${currentRoute === "/portfolio-2/" ? "active" : ""
+                        }`}
                     >
                       Portfolio Style 02
                     </Link>
@@ -181,17 +175,16 @@ const NavbarStyleTwo: React.FC = () => {
                   <li className="nav-item">
                     <Link
                       href="/portfolio/portfolio-details/"
-                      className={`nav-link ${
-                        currentRoute === "/portfolio/portfolio-details/"
+                      className={`nav-link ${currentRoute === "/portfolio/portfolio-details/"
                           ? "active"
                           : ""
-                      }`}
+                        }`}
                     >
                       Portfolio Details
                     </Link>
                   </li>
                 </ul>
-              </li>
+              </li> */}
 
               <li className="nav-item">
                 <Link
@@ -216,9 +209,8 @@ const NavbarStyleTwo: React.FC = () => {
                       <li className="nav-item">
                         <Link
                           href="/services/"
-                          className={`nav-link ${
-                            currentRoute === "/services/" ? "active" : ""
-                          }`}
+                          className={`nav-link ${currentRoute === "/services/" ? "active" : ""
+                            }`}
                         >
                           Services
                         </Link>
@@ -227,9 +219,8 @@ const NavbarStyleTwo: React.FC = () => {
                       <li className="nav-item">
                         <Link
                           href="/services/service-details/"
-                          className={`nav-link ${
-                            currentRoute === "/services/service-details/" ? "active" : ""
-                          }`}
+                          className={`nav-link ${currentRoute === "/services/service-details/" ? "active" : ""
+                            }`}
                         >
                           Services Details
                         </Link>
@@ -240,9 +231,8 @@ const NavbarStyleTwo: React.FC = () => {
                   <li className="nav-item">
                     <Link
                       href="/pricing/"
-                      className={`nav-link ${
-                        currentRoute === "/pricing/" ? "active" : ""
-                      }`}
+                      className={`nav-link ${currentRoute === "/pricing/" ? "active" : ""
+                        }`}
                     >
                       Pricing
                     </Link>
@@ -251,9 +241,8 @@ const NavbarStyleTwo: React.FC = () => {
                   <li className="nav-item">
                     <Link
                       href="/team/"
-                      className={`nav-link ${
-                        currentRoute === "/team/" ? "active" : ""
-                      }`}
+                      className={`nav-link ${currentRoute === "/team/" ? "active" : ""
+                        }`}
                     >
                       Team
                     </Link>
@@ -262,9 +251,8 @@ const NavbarStyleTwo: React.FC = () => {
                   <li className="nav-item">
                     <Link
                       href="/gallery/"
-                      className={`nav-link ${
-                        currentRoute === "/gallery/" ? "active" : ""
-                      }`}
+                      className={`nav-link ${currentRoute === "/gallery/" ? "active" : ""
+                        }`}
                     >
                       Gallery
                     </Link>
@@ -273,9 +261,8 @@ const NavbarStyleTwo: React.FC = () => {
                   <li className="nav-item">
                     <Link
                       href="/faq/"
-                      className={`nav-link ${
-                        currentRoute === "/faq/" ? "active" : ""
-                      }`}
+                      className={`nav-link ${currentRoute === "/faq/" ? "active" : ""
+                        }`}
                     >
                       FAQs
                     </Link>
@@ -284,9 +271,8 @@ const NavbarStyleTwo: React.FC = () => {
                   <li className="nav-item">
                     <Link
                       href="/testimonials/"
-                      className={`nav-link ${
-                        currentRoute === "/testimonials/" ? "active" : ""
-                      }`}
+                      className={`nav-link ${currentRoute === "/testimonials/" ? "active" : ""
+                        }`}
                     >
                       Testimonials
                     </Link>
@@ -305,9 +291,8 @@ const NavbarStyleTwo: React.FC = () => {
                       <li className="nav-item">
                         <Link
                           href="/login/"
-                          className={`nav-link ${
-                            currentRoute === "/login/" ? "active" : ""
-                          }`}
+                          className={`nav-link ${currentRoute === "/login/" ? "active" : ""
+                            }`}
                         >
                           Login
                         </Link>
@@ -316,9 +301,8 @@ const NavbarStyleTwo: React.FC = () => {
                       <li className="nav-item">
                         <Link
                           href="/register/"
-                          className={`nav-link ${
-                            currentRoute === "/register/" ? "active" : ""
-                          }`}
+                          className={`nav-link ${currentRoute === "/register/" ? "active" : ""
+                            }`}
                         >
                           Register
                         </Link>
@@ -329,9 +313,8 @@ const NavbarStyleTwo: React.FC = () => {
                   <li className="nav-item">
                     <Link
                       href="/privacy-policy/"
-                      className={`nav-link ${
-                        currentRoute === "/privacy-policy/" ? "active" : ""
-                      }`}
+                      className={`nav-link ${currentRoute === "/privacy-policy/" ? "active" : ""
+                        }`}
                     >
                       Privacy Policy
                     </Link>
@@ -340,9 +323,8 @@ const NavbarStyleTwo: React.FC = () => {
                   <li className="nav-item">
                     <Link
                       href="/terms-conditions/"
-                      className={`nav-link ${
-                        currentRoute === "/terms-conditions/" ? "active" : ""
-                      }`}
+                      className={`nav-link ${currentRoute === "/terms-conditions/" ? "active" : ""
+                        }`}
                     >
                       Terms & Conditions
                     </Link>
@@ -351,9 +333,8 @@ const NavbarStyleTwo: React.FC = () => {
                   <li className="nav-item">
                     <Link
                       href="/request-quote/"
-                      className={`nav-link ${
-                        currentRoute === "/request-quote/" ? "active" : ""
-                      }`}
+                      className={`nav-link ${currentRoute === "/request-quote/" ? "active" : ""
+                        }`}
                     >
                       Request A Quote
                     </Link>
@@ -361,7 +342,7 @@ const NavbarStyleTwo: React.FC = () => {
                 </ul>
               </li>
 
-              <li className="nav-item dropdown">
+              {/* <li className="nav-item dropdown">
                 <Link
                   className="nav-link dropdown-toggle"
                   href="#"
@@ -460,14 +441,13 @@ const NavbarStyleTwo: React.FC = () => {
                     </ul>
                   </li>
                 </ul>
-              </li>
+              </li> */}
 
               <li className="nav-item">
                 <Link
                   href="/contact-us/"
-                  className={`nav-link ${
-                    currentRoute === "/contact-us/" ? "active" : ""
-                  }`}
+                  className={`nav-link ${currentRoute === "/contact-us/" ? "active" : ""
+                    }`}
                 >
                   Contact Us
                 </Link>
@@ -496,9 +476,8 @@ const NavbarStyleTwo: React.FC = () => {
 
       {/* For Mobile Device */}
       <div
-        className={`modal mobile-menu-modal ${
-          isMobileMenuActive ? "show" : ""
-        }`}
+        className={`modal mobile-menu-modal ${isMobileMenuActive ? "show" : ""
+          }`}
       >
         <div className="modal-dialog modal-dialog-scrollable">
           <div className="modal-content">
@@ -536,9 +515,8 @@ const NavbarStyleTwo: React.FC = () => {
                     <ul className="menu-list">
                       <li>
                         <Link
-                          className={`nav-link ${
-                            currentRoute === "/" ? "active" : ""
-                          }`}
+                          className={`nav-link ${currentRoute === "/" ? "active" : ""
+                            }`}
                           href="/"
                         >
                           Architecture Home
@@ -547,9 +525,8 @@ const NavbarStyleTwo: React.FC = () => {
 
                       <li>
                         <Link
-                          className={`nav-link ${
-                            currentRoute === "/interior-home/" ? "active" : ""
-                          }`}
+                          className={`nav-link ${currentRoute === "/interior-home/" ? "active" : ""
+                            }`}
                           href="/interior-home/"
                         >
                           Interior Home
@@ -558,11 +535,10 @@ const NavbarStyleTwo: React.FC = () => {
 
                       <li>
                         <Link
-                          className={`nav-link ${
-                            currentRoute === "/architecture-studio/"
-                              ? "active"
-                              : ""
-                          }`}
+                          className={`nav-link ${currentRoute === "/architecture-studio/"
+                            ? "active"
+                            : ""
+                            }`}
                           href="/architecture-studio/"
                         >
                           Architecture Studio
@@ -574,9 +550,8 @@ const NavbarStyleTwo: React.FC = () => {
 
                 <Link
                   href="/about-us/"
-                  className={`nav-link ${
-                    currentRoute === "/about-us/" ? "active" : ""
-                  }`}
+                  className={`nav-link ${currentRoute === "/about-us/" ? "active" : ""
+                    }`}
                 >
                   About Us
                 </Link>
@@ -591,9 +566,8 @@ const NavbarStyleTwo: React.FC = () => {
                       <li>
                         <Link
                           href="/portfolio/"
-                          className={`nav-link ${
-                            currentRoute === "/portfolio/" ? "active" : ""
-                          }`}
+                          className={`nav-link ${currentRoute === "/portfolio/" ? "active" : ""
+                            }`}
                         >
                           Portfolio Style 01
                         </Link>
@@ -602,9 +576,8 @@ const NavbarStyleTwo: React.FC = () => {
                       <li>
                         <Link
                           href="/portfolio-2/"
-                          className={`nav-link ${
-                            currentRoute === "/portfolio-2/" ? "active" : ""
-                          }`}
+                          className={`nav-link ${currentRoute === "/portfolio-2/" ? "active" : ""
+                            }`}
                         >
                           Portfolio Style 02
                         </Link>
@@ -613,11 +586,10 @@ const NavbarStyleTwo: React.FC = () => {
                       <li>
                         <Link
                           href="/portfolio/portfolio-details/"
-                          className={`nav-link ${
-                            currentRoute === "/portfolio/portfolio-details/"
-                              ? "active"
-                              : ""
-                          }`}
+                          className={`nav-link ${currentRoute === "/portfolio/portfolio-details/"
+                            ? "active"
+                            : ""
+                            }`}
                         >
                           Portfolio Details
                         </Link>
@@ -636,9 +608,8 @@ const NavbarStyleTwo: React.FC = () => {
                       <li>
                         <Link
                           href="/services/"
-                          className={`nav-link ${
-                            currentRoute === "/services/" ? "active" : ""
-                          }`}
+                          className={`nav-link ${currentRoute === "/services/" ? "active" : ""
+                            }`}
                         >
                           Services
                         </Link>
@@ -647,11 +618,10 @@ const NavbarStyleTwo: React.FC = () => {
                       <li>
                         <Link
                           href="/services/service-details/"
-                          className={`nav-link ${
-                            currentRoute === "/services/service-details/"
-                              ? "active"
-                              : ""
-                          }`}
+                          className={`nav-link ${currentRoute === "/services/service-details/"
+                            ? "active"
+                            : ""
+                            }`}
                         >
                           Services Details
                         </Link>
@@ -660,9 +630,8 @@ const NavbarStyleTwo: React.FC = () => {
                       <li>
                         <Link
                           href="/pricing/"
-                          className={`nav-link ${
-                            currentRoute === "/pricing/" ? "active" : ""
-                          }`}
+                          className={`nav-link ${currentRoute === "/pricing/" ? "active" : ""
+                            }`}
                         >
                           Pricing
                         </Link>
@@ -671,9 +640,8 @@ const NavbarStyleTwo: React.FC = () => {
                       <li>
                         <Link
                           href="/team/"
-                          className={`nav-link ${
-                            currentRoute === "/team/" ? "active" : ""
-                          }`}
+                          className={`nav-link ${currentRoute === "/team/" ? "active" : ""
+                            }`}
                         >
                           Team
                         </Link>
@@ -682,9 +650,8 @@ const NavbarStyleTwo: React.FC = () => {
                       <li>
                         <Link
                           href="/gallery/"
-                          className={`nav-link ${
-                            currentRoute === "/gallery/" ? "active" : ""
-                          }`}
+                          className={`nav-link ${currentRoute === "/gallery/" ? "active" : ""
+                            }`}
                         >
                           Gallery
                         </Link>
@@ -693,9 +660,8 @@ const NavbarStyleTwo: React.FC = () => {
                       <li>
                         <Link
                           href="/faq/"
-                          className={`nav-link ${
-                            currentRoute === "/faq/" ? "active" : ""
-                          }`}
+                          className={`nav-link ${currentRoute === "/faq/" ? "active" : ""
+                            }`}
                         >
                           FAQs
                         </Link>
@@ -704,9 +670,8 @@ const NavbarStyleTwo: React.FC = () => {
                       <li>
                         <Link
                           href="/testimonials/"
-                          className={`nav-link ${
-                            currentRoute === "/testimonials/" ? "active" : ""
-                          }`}
+                          className={`nav-link ${currentRoute === "/testimonials/" ? "active" : ""
+                            }`}
                         >
                           Testimonials
                         </Link>
@@ -715,9 +680,8 @@ const NavbarStyleTwo: React.FC = () => {
                       <li>
                         <Link
                           href="/login/"
-                          className={`nav-link ${
-                            currentRoute === "/login/" ? "active" : ""
-                          }`}
+                          className={`nav-link ${currentRoute === "/login/" ? "active" : ""
+                            }`}
                         >
                           Login
                         </Link>
@@ -726,9 +690,8 @@ const NavbarStyleTwo: React.FC = () => {
                       <li>
                         <Link
                           href="/register/"
-                          className={`nav-link ${
-                            currentRoute === "/register/" ? "active" : ""
-                          }`}
+                          className={`nav-link ${currentRoute === "/register/" ? "active" : ""
+                            }`}
                         >
                           Register
                         </Link>
@@ -737,9 +700,8 @@ const NavbarStyleTwo: React.FC = () => {
                       <li>
                         <Link
                           href="/privacy-policy/"
-                          className={`nav-link ${
-                            currentRoute === "/privacy-policy/" ? "active" : ""
-                          }`}
+                          className={`nav-link ${currentRoute === "/privacy-policy/" ? "active" : ""
+                            }`}
                         >
                           Privacy Policy
                         </Link>
@@ -748,11 +710,10 @@ const NavbarStyleTwo: React.FC = () => {
                       <li>
                         <Link
                           href="/terms-conditions/"
-                          className={`nav-link ${
-                            currentRoute === "/terms-conditions/"
-                              ? "active"
-                              : ""
-                          }`}
+                          className={`nav-link ${currentRoute === "/terms-conditions/"
+                            ? "active"
+                            : ""
+                            }`}
                         >
                           Terms & Conditions
                         </Link>
@@ -761,9 +722,8 @@ const NavbarStyleTwo: React.FC = () => {
                       <li>
                         <Link
                           href="/request-quote/"
-                          className={`nav-link ${
-                            currentRoute === "/request-quote/" ? "active" : ""
-                          }`}
+                          className={`nav-link ${currentRoute === "/request-quote/" ? "active" : ""
+                            }`}
                         >
                           Request A Quote
                         </Link>
@@ -782,9 +742,8 @@ const NavbarStyleTwo: React.FC = () => {
                       <li>
                         <Link
                           href="/blog/"
-                          className={`nav-link ${
-                            currentRoute === "/blog/" ? "active" : ""
-                          }`}
+                          className={`nav-link ${currentRoute === "/blog/" ? "active" : ""
+                            }`}
                         >
                           Blog Grid
                         </Link>
@@ -793,11 +752,10 @@ const NavbarStyleTwo: React.FC = () => {
                       <li>
                         <Link
                           href="/blog-right-sidebar/"
-                          className={`nav-link ${
-                            currentRoute === "/blog-right-sidebar/"
-                              ? "active"
-                              : ""
-                          }`}
+                          className={`nav-link ${currentRoute === "/blog-right-sidebar/"
+                            ? "active"
+                            : ""
+                            }`}
                         >
                           Right Sidebar
                         </Link>
@@ -806,11 +764,10 @@ const NavbarStyleTwo: React.FC = () => {
                       <li>
                         <Link
                           href="/blog-left-sidebar/"
-                          className={`nav-link ${
-                            currentRoute === "/blog-left-sidebar/"
-                              ? "active"
-                              : ""
-                          }`}
+                          className={`nav-link ${currentRoute === "/blog-left-sidebar/"
+                            ? "active"
+                            : ""
+                            }`}
                         >
                           Left Sidebar
                         </Link>
@@ -819,9 +776,8 @@ const NavbarStyleTwo: React.FC = () => {
                       <li>
                         <Link
                           href="/single-blog/"
-                          className={`nav-link ${
-                            currentRoute === "/single-blog/" ? "active" : ""
-                          }`}
+                          className={`nav-link ${currentRoute === "/single-blog/" ? "active" : ""
+                            }`}
                         >
                           Single Blog
                         </Link>
@@ -830,9 +786,8 @@ const NavbarStyleTwo: React.FC = () => {
                       <li>
                         <Link
                           href="/author/"
-                          className={`nav-link ${
-                            currentRoute === "/author/" ? "active" : ""
-                          }`}
+                          className={`nav-link ${currentRoute === "/author/" ? "active" : ""
+                            }`}
                         >
                           Author
                         </Link>
@@ -841,9 +796,8 @@ const NavbarStyleTwo: React.FC = () => {
                       <li>
                         <Link
                           href="/categories/"
-                          className={`nav-link ${
-                            currentRoute === "/categories/" ? "active" : ""
-                          }`}
+                          className={`nav-link ${currentRoute === "/categories/" ? "active" : ""
+                            }`}
                         >
                           Categories
                         </Link>
@@ -852,9 +806,8 @@ const NavbarStyleTwo: React.FC = () => {
                       <li>
                         <Link
                           href="/tags/"
-                          className={`nav-link ${
-                            currentRoute === "/tags/" ? "active" : ""
-                          }`}
+                          className={`nav-link ${currentRoute === "/tags/" ? "active" : ""
+                            }`}
                         >
                           Tags
                         </Link>
@@ -865,9 +818,8 @@ const NavbarStyleTwo: React.FC = () => {
 
                 <Link
                   href="/contact-us/"
-                  className={`nav-link ${
-                    currentRoute === "/contact-us/" ? "active" : ""
-                  }`}
+                  className={`nav-link ${currentRoute === "/contact-us/" ? "active" : ""
+                    }`}
                 >
                   Contact Us
                 </Link>

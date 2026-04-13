@@ -15,7 +15,7 @@ const Overview: React.FC<OverviewProps> = ({ fullWidth = false }) => {
 
   return (
     <>
-      <div className="overview-area wrap-color">
+      <div className="overview-area wrap-color pt-100">
         <div className="container">
           <div className="overview-inner-area">
             <div className="row justify-content-center">

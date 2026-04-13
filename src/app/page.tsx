@@ -30,7 +30,7 @@ export default function Home() {
 
       <LatestRecognition />
 
-      <RecentProjects />
+      {/* <RecentProjects /> */}
 
       <TextSlide />
 
@@ -38,7 +38,7 @@ export default function Home() {
 
       <ClientsFeedbackSlider />
 
-      <BlogPost />
+      {/* <BlogPost /> */}
 
       <ContactForm />
 
