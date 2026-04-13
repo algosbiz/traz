@@ -22,6 +22,10 @@ const ContactForm: React.FC = () => {
     message: "",
   });
 
+  const [loading, setLoading] = useState(false);
+  const [success, setSuccess] = useState("");
+  const [error, setError] = useState("");
+
   const handleChange = (
     e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => {
@@ -30,12 +34,50 @@ const ContactForm: React.FC = () => {
       ...formData,
       [name]: value,
     });
+    // Clear messages on input
+    if (error) setError("");
+    if (success) setSuccess("");
   };
 
-  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    // Add your form submission logic here.
-    console.log("Form submitted:", formData);
+    setError("");
+    setSuccess("");
+
+    // Client-side validation
+    if (!formData.name || !formData.email || !formData.phone || !formData.message) {
+      setError("Please fill in all required fields.");
+      return;
+    }
+
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(formData.email)) {
+      setError("Please enter a valid email address.");
+      return;
+    }
+
+    setLoading(true);
+
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      });
+
+      const result = await response.json();
+
+      if (result.success) {
+        setSuccess(result.message);
+        setFormData({ name: "", email: "", phone: "", message: "" });
+      } else {
+        setError(result.message || "Something went wrong. Please try again.");
+      }
+    } catch {
+      setError("Network error. Please check your connection and try again.");
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -88,6 +130,7 @@ const ContactForm: React.FC = () => {
                           onChange={handleChange}
                           className="form-control"
                           placeholder="Jonathon Ronan"
+                          disabled={loading}
                         />
                       </div>
 
@@ -102,6 +145,7 @@ const ContactForm: React.FC = () => {
                           onChange={handleChange}
                           className="form-control"
                           placeholder="jonathonronana63@gmail.com"
+                          disabled={loading}
                         />
                       </div>
 
@@ -116,6 +160,7 @@ const ContactForm: React.FC = () => {
                           onChange={handleChange}
                           className="form-control"
                           placeholder="+0 321 546 2345"
+                          disabled={loading}
                         />
                       </div>
 
@@ -129,11 +174,29 @@ const ContactForm: React.FC = () => {
                           onChange={handleChange}
                           className="form-control"
                           placeholder="Write your message here..."
+                          disabled={loading}
                         ></textarea>
                       </div>
 
-                      <button type="submit" className="default-btn">
-                        Send Message Now
+                      {error && (
+                        <div className="alert alert-danger" role="alert" style={{ fontSize: "14px", marginBottom: "16px", borderRadius: "8px" }}>
+                          {error}
+                        </div>
+                      )}
+
+                      {success && (
+                        <div className="alert alert-success" role="alert" style={{ fontSize: "14px", marginBottom: "16px", borderRadius: "8px" }}>
+                          {success}
+                        </div>
+                      )}
+
+                      <button 
+                        type="submit" 
+                        className="default-btn"
+                        disabled={loading}
+                        style={{ opacity: loading ? 0.7 : 1, cursor: loading ? "not-allowed" : "pointer" }}
+                      >
+                        {loading ? "Sending..." : "Send Message Now"}
                       </button>
                     </form>
                   </div>
