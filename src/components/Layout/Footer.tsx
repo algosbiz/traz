@@ -65,7 +65,7 @@ const Footer: React.FC = () => {
 
               <div className="footer-contact">
                 <h3>D.M.G Masonry LTD</h3>
-                <p>1111 - 46 Ave S.E., Calgary, Alberta T2G 2A5</p>
+                <p>1111 - 46 Ave S.E., Calgary,<br />Alberta T2G 2A5</p>
                 <a href="mailto:will@dmgmasonry.ca">will@dmgmasonry.ca</a>
                 <a href="tel:+14036198727" className="footer-phone">
                   Call us: 1-403-619-8727

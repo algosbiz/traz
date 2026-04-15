@@ -9,7 +9,7 @@ Footer Area CSS
 
 .footer-inner {
   display: grid;
-  grid-template-columns: minmax(0, 1.35fr) minmax(180px, 0.8fr) minmax(180px, 0.8fr) minmax(260px, 1fr);
+  grid-template-columns: minmax(0, 1fr) minmax(180px, 0.8fr) minmax(280px, 1.2fr) minmax(260px, 1fr);
   gap: 52px;
   align-items: start;
 }
@@ -115,7 +115,12 @@ Footer Area CSS
 }
 
 .footer-services-list {
-  columns: 1;
+  columns: 2;
+  column-gap: 40px;
+}
+
+.footer-services-list li:nth-child(6) {
+  break-after: column;
 }
 
 .footer-newsletter-form {

@@ -1342,6 +1342,47 @@ Services Area CSS
   opacity: var(--shapeOpacity);
 }
 
+.services-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.pagination-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 44px;
+  height: 44px;
+  padding: 0 14px;
+  border: 1px solid var(--borderColor);
+  background: transparent;
+  color: var(--headingColor);
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.pagination-btn:hover {
+  border-color: var(--primaryColor);
+  color: var(--primaryColor);
+}
+
+.pagination-btn.active {
+  background-color: var(--primaryColor);
+  border-color: var(--primaryColor);
+  color: var(--whiteColor);
+}
+
+.pagination-btn.disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
 /*================================================
 Overview Area CSS
 =================================================*/

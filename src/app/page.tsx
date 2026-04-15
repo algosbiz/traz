@@ -12,6 +12,7 @@ import ClientsFeedbackSlider from "@/components/ArchitectureHome/ClientsFeedback
 import BlogPost from "@/components/ArchitectureHome/BlogPost";
 import ContactForm from "@/components/ContactUs/ContactForm";
 import Footer from "@/components/Layout/Footer";
+import ServiceDetailsContent from "@/components/ServiceDetails/ServiceDetailsContent";
 
 export default function Home() {
   return (
@@ -28,7 +29,8 @@ export default function Home() {
 
       <CoreFeatures />
 
-      <LatestRecognition />
+      {/* <LatestRecognition /> */}
+      <ServiceDetailsContent />
 
       {/* <RecentProjects /> */}
 
