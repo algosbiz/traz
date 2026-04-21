@@ -10,10 +10,10 @@ import arrowIcon from "../../../public/images/services-details/arrow.svg";
 const ServiceDetailsContent: React.FC = () => {
   return (
     <>
-      <div className="services-details-area ptb-100">
+      <div className="services-details-area pt-100">
         <div className="container">
-          <div className="row justify-content-center">
-            <div className="col-lg-9 col-md-12">
+          <div className="row justify-content-left">
+            <div className="col-lg-8 col-md-12">
               <div className="services-details-desc">
                 <div className="title">
                   <span>SERVICE</span>
@@ -27,7 +27,7 @@ const ServiceDetailsContent: React.FC = () => {
                 </div>
 
                 <Image src={serviceImg} alt="service" width={1400} height={645} />
- 
+
                 <p>
                   DMG Masonry full-service design firm providing architecture, master
                   planning, urban design, interior architecture, space planning
@@ -78,10 +78,9 @@ const ServiceDetailsContent: React.FC = () => {
               </div>
             </div>
 
-            <div className="col-lg-3 col-md-12">
-              {/* Sidebar */}
+            {/* <div className="col-lg-3 col-md-12">
               <Sidebar />
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

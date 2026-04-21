@@ -27,11 +27,11 @@ export default function Page() {
 
       <QuoteText />
 
-      <div className="ptb-100">
+      {/* <div className="ptb-100">
         <ClientsFeedbackSlider />
-      </div>
+      </div> */}
 
-      <TextSlide />
+      {/* <TextSlide /> */}
 
       <TeamMemberStyle2 />
 
