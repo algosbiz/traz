@@ -1,13 +1,16 @@
 "use client";
 
 import React from "react";
-import Sidebar from "./Sidebar";
 import Image from "next/image";
 
 import serviceImg from "../../../public/images/services-details/services-details1.jpg";
 import arrowIcon from "../../../public/images/services-details/arrow.svg";
+// You should move the generated image to public/images/ or use the absolute path if allowed
+// For now, I'll use a placeholder or assume the user will provide the path. 
+// But I can use the generated image path for now to show it works.
+import sidebarImg from "/public/images/sidebar-service.png"; 
 
-const ServiceDetailsContent: React.FC = () => {
+const ServiceDetailsContentTwo: React.FC = () => {
   return (
     <>
       <div className="services-details-area pt-100 pb-100">
@@ -78,8 +81,16 @@ const ServiceDetailsContent: React.FC = () => {
               </div>
             </div>
 
-            <div className="col-lg-3 col-md-12">
-              <Sidebar />
+            <div className="col-lg-4 col-md-12">
+              <div className="service-details-sidebar-image">
+                <Image 
+                  src={sidebarImg} 
+                  alt="sidebar" 
+                  width={400} 
+                  height={800} 
+                  style={{ width: '100%', height: 'auto', borderRadius: '10px' }}
+                />
+              </div>
             </div>
           </div>
         </div>
@@ -88,4 +99,4 @@ const ServiceDetailsContent: React.FC = () => {
   );
 };
 
-export default ServiceDetailsContent;
+export default ServiceDetailsContentTwo;

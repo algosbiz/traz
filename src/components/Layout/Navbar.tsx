@@ -191,10 +191,9 @@ const Navbar: React.FC = () => {
               <li className="nav-item">
                 <Link
                   className="nav-link dropdown-toggle"
-                  href="#"
-                  onClick={(e) => e.preventDefault()}
+                  href="/services/service-details/"
                 >
-                  Pages
+                  Services
                 </Link>
 
                 <ul className="dropdown-menu">
@@ -314,25 +313,7 @@ const Navbar: React.FC = () => {
                     </ul>
                   </li>
 
-                  <li className="nav-item">
-                    <Link
-                      href="/privacy-policy/"
-                      className={`nav-link ${currentRoute === "/privacy-policy/" ? "active" : ""
-                        }`}
-                    >
-                      Privacy Policy
-                    </Link>
-                  </li>
 
-                  <li className="nav-item">
-                    <Link
-                      href="/terms-conditions/"
-                      className={`nav-link ${currentRoute === "/terms-conditions/" ? "active" : ""
-                        }`}
-                    >
-                      Terms & Conditions
-                    </Link>
-                  </li>
 
                   <li className="nav-item">
                     <Link
@@ -597,7 +578,7 @@ const Navbar: React.FC = () => {
 
                 <AccordionItem uuid="c">
                   <AccordionItemHeading>
-                    <AccordionItemButton>Pages</AccordionItemButton>
+                    <AccordionItemButton>Services</AccordionItemButton>
                   </AccordionItemHeading>
 
                   <AccordionItemPanel>
@@ -694,27 +675,7 @@ const Navbar: React.FC = () => {
                         </Link>
                       </li>
 
-                      <li>
-                        <Link
-                          href="/privacy-policy/"
-                          className={`nav-link ${currentRoute === "/privacy-policy/" ? "active" : ""
-                            }`}
-                        >
-                          Privacy Policy
-                        </Link>
-                      </li>
 
-                      <li>
-                        <Link
-                          href="/terms-conditions/"
-                          className={`nav-link ${currentRoute === "/terms-conditions/"
-                            ? "active"
-                            : ""
-                            }`}
-                        >
-                          Terms & Conditions
-                        </Link>
-                      </li>
 
                       <li>
                         <Link

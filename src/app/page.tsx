@@ -13,6 +13,7 @@ import BlogPost from "@/components/ArchitectureHome/BlogPost";
 import ContactForm from "@/components/ContactUs/ContactForm";
 import Footer from "@/components/Layout/Footer";
 import ServiceDetailsContent from "@/components/ServiceDetails/ServiceDetailsContent";
+import ServiceDetailsContentTwo from "@/components/ServiceDetails/ServiceDetailsContentTwo";
 
 export default function Home() {
   return (
@@ -30,7 +31,7 @@ export default function Home() {
       <CoreFeatures />
 
       {/* <LatestRecognition /> */}
-      <ServiceDetailsContent />
+      <ServiceDetailsContentTwo />
 
       {/* <RecentProjects /> */}
 

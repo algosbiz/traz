@@ -145,6 +145,14 @@ const Footer: React.FC = () => {
             <p>
               &copy; <span>DMG Masonry</span>. Crafted spaces, built to last.
             </p>
+            <ul className="footer-bottom-links">
+              <li>
+                <Link href="/privacy-policy/">Privacy Policy</Link>
+              </li>
+              <li>
+                <Link href="/terms-conditions/">Terms & Conditions</Link>
+              </li>
+            </ul>
           </div>
         </div>
       </div>

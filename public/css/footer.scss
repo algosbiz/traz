@@ -211,6 +211,27 @@ Copyright Area CSS
                 color: #d1b092;
             }
         }
+
+        .footer-bottom-links {
+            list-style: none;
+            padding: 0;
+            margin: 10px 0 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+
+            li {
+                a {
+                    color: #a7a6a4;
+                    font-size: 13px;
+                    transition: 0.3s;
+
+                    &:hover {
+                        color: #ffffff;
+                    }
+                }
+            }
+        }
     }
 }
 

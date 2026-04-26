@@ -152,15 +152,14 @@ Navbar Area CSS
                 width: 250px;
                 margin-top: 0;
                 display: block;
-                padding: 12px 0;
-                border-radius: 10px;
-                border-left: 1px solid var(--primaryColor);
+                padding: 15px 0;
+                border-radius: 12px;
+                border: 1px solid rgba(0, 0, 0, 0.05);
                 position: absolute;
                 visibility: hidden;
                 background: var(--whiteColor);
-                transition: all 0.2s ease-in-out;
-                transform: translate3d(0, 18px, 0);
-                box-shadow: rgba(4, 4, 5, .20) 0px 7px 36px -8px;
+                transition: all 0.25s ease-in-out;
+                box-shadow: 0 15px 50px rgba(0, 0, 0, 0.15);
 
                 .nav-item {
                     margin: 0;
@@ -188,7 +187,6 @@ Navbar Area CSS
                         right: auto;
                         margin-top: 0;
                         visibility: hidden;
-                        transform: translate3d(0, 18px, 0);
                         
                         .nav-item {
                             .nav-link {
@@ -204,7 +202,6 @@ Navbar Area CSS
                                 left: -100%;
                                 right: auto;
                                 visibility: hidden;
-                                transform: translate3d(0, 18px, 0);
     
                                 .nav-item {
                                     .nav-link {
@@ -220,7 +217,6 @@ Navbar Area CSS
                                         left: 100%;
                                         right: auto;
                                         visibility: hidden;
-                                        transform: translate3d(0, 18px, 0);
             
                                         .nav-item {
                                             .nav-link {
@@ -252,7 +248,6 @@ Navbar Area CSS
                                         .dropdown-menu {
                                             opacity: 1;
                                             visibility: visible;
-                                            transform: translate3d(0, 0, 0);
                                         }
                                     }
                                 }
@@ -266,7 +261,6 @@ Navbar Area CSS
                                 .dropdown-menu {
                                     opacity: 1;
                                     visibility: visible;
-                                    transform: translate3d(0, 0, 0);
                                 }
                             }
                         }
@@ -279,9 +273,7 @@ Navbar Area CSS
                     &:hover {
                         .dropdown-menu {
                             opacity: 1;
-                            margin-top: 0;
                             visibility: visible;
-                            transform: translate3d(0, 0, 0);
                         }
                     }
                 }
@@ -290,7 +282,6 @@ Navbar Area CSS
                 .dropdown-menu {
                     opacity: 1;
                     visibility: visible;
-                    transform: translate3d(0, 0, 0);
                 }
             }
         }

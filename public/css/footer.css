@@ -183,6 +183,26 @@ Copyright Area CSS
   color: var(--footerAccent);
 }
 
+.footer-bottom-links {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.footer-bottom-links li a {
+  color: var(--footerMutedText);
+  font-size: 14px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-bottom-links li a:hover {
+  color: var(--footerHover);
+}
+
 /*================================================
 Back to Top CSS
 =================================================*/
