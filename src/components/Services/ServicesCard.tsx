@@ -9,70 +9,70 @@ import arrowIcon from "../../../public/images/arrow-right.svg";
 const servicesData = [
   {
     id: "1",
-    icon: "flaticon-mansory",
+    icon: "/images/icon/MasonryRepair.png",
     title: "Masonry Repair",
     text: "Expert brick and stone repair to restore the strength and beauty of your masonry structures.",
     link: "/services/service-details",
   },
   {
     id: "2",
-    icon: "flaticon-facade",
+    icon: "/images/icon/StoneVineer.png",
     title: "Stone Veneer",
     text: "Transform any surface with natural or manufactured stone veneer for a stunning, timeless look.",
     link: "/services/service-details",
   },
   {
     id: "3",
-    icon: "flaticon-picket",
+    icon: "/images/icon/HardscapeContractor.png",
     title: "Hardscape Contractor",
     text: "Professional hardscaping solutions including walkways, driveways, and outdoor living spaces.",
     link: "/services/service-details",
   },
   {
     id: "4",
-    icon: "flaticon-roof",
+    icon: "/images/icon/ChimneyRepair.png",
     title: "Chimney Repair",
     text: "Comprehensive chimney inspection, repair, and rebuilding services to keep your home safe.",
     link: "/services/service-details",
   },
   {
     id: "5",
-    icon: "flaticon-fireplace",
+    icon: "/images/icon/CustomFirePits.png",
     title: "Custom Fire Pits",
     text: "Design and build custom fire pits that become the centerpiece of your outdoor entertainment area.",
     link: "/services/service-details",
   },
   {
     id: "6",
-    icon: "flaticon-house-things",
+    icon: "/images/icon/OutdorKitchen.png",
     title: "Outdoor Kitchen Contractor",
     text: "Complete outdoor kitchen construction from design to finish, built for lasting enjoyment.",
     link: "/services/service-details",
   },
   {
     id: "7",
-    icon: "flaticon-flats",
+    icon: "/images/icon/PatioStone.png",
     title: "Patio Stone Installation",
     text: "Beautiful patio stone installations that enhance your outdoor space with elegance and durability.",
     link: "/services/service-details",
   },
   {
     id: "8",
-    icon: "flaticon-industrial-park",
+    icon: "/images/icon/CustomPizza.png",
     title: "Custom Pizza Oven",
     text: "Handcrafted brick and stone pizza ovens built for authentic wood-fired cooking experiences.",
     link: "/services/service-details",
   },
   {
     id: "9",
-    icon: "flaticon-bridges",
+    icon: "/images/icon/RetainingWauit.png",
     title: "Retaining Wall Construction",
     text: "Durable retaining walls engineered for structural integrity and aesthetic appeal.",
     link: "/services/service-details",
   },
   {
     id: "10",
-    icon: "flaticon-real-estate",
+    icon: "/images/icon/FirePlaceInsta.png",
     title: "Fireplace Installation",
     text: "Custom indoor and outdoor fireplace installations that add warmth and character to your space.",
     link: "/services/service-details",
@@ -115,7 +115,12 @@ const ServicesCard: React.FC = () => {
                 <div className="col-lg-4 col-md-6" key={value.id}>
                   <div className="services-item">
                     <div className="icon">
-                      <i className={value.icon}></i>
+                      <Image 
+                        src={value.icon} 
+                        alt={value.title} 
+                        width={60} 
+                        height={60} 
+                      />
                     </div>
                     <h3>
                       <Link href={value.link}>{value.title}</Link>

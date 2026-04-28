@@ -91,9 +91,8 @@ const Navbar: React.FC = () => {
             <ul className="navbar-nav ms-auto">
               <li className="nav-item">
                 <Link
-                  className="nav-link dropdown-toggle"
+                  className={`nav-link ${currentRoute === "/" ? "active" : ""}`}
                   href="/"
-                  onClick={(e) => e.preventDefault()}
                 >
                   Home
                 </Link>
