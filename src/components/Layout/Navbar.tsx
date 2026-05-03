@@ -16,6 +16,7 @@ import logoWebp from "/public/images/logo.webp";
 import whiteLogoWebp from "/public/images/whitelogo.webp";
 import ThemeToggle from "./ThemeToggle";
 import { useTheme } from "./ThemeProvider";
+import { servicesData } from "@/lib/servicesData";
 
 const Navbar: React.FC = () => {
   const currentRoute = usePathname();
@@ -93,7 +94,6 @@ const Navbar: React.FC = () => {
                 <Link
                   className="nav-link dropdown-toggle"
                   href="/"
-                  onClick={(e) => e.preventDefault()}
                 >
                   Home
                 </Link>
@@ -191,139 +191,23 @@ const Navbar: React.FC = () => {
               <li className="nav-item">
                 <Link
                   className="nav-link dropdown-toggle"
-                  href="/services/service-details/"
+                  href="/services/"
                 >
                   Services
                 </Link>
 
                 <ul className="dropdown-menu">
-                  <li className="nav-item">
-                    <Link
-                      className="nav-link dropdown-toggle"
-                      href="#"
-                      onClick={(e) => e.preventDefault()}
-                    >
-                      Services
-                    </Link>
+                  {servicesData && servicesData.map((value) => (
+                    <li className="nav-item" key={value.id}>
+                      <Link
+                        href={value.link}
+                        className={`nav-link ${currentRoute === value.link ? "active" : ""}`}
+                      >
+                        {value.title}
+                      </Link>
+                    </li>
+                  ))}
 
-                    <ul className="dropdown-menu">
-                      <li className="nav-item">
-                        <Link
-                          href="/services/"
-                          className={`nav-link ${currentRoute === "/services/" ? "active" : ""
-                            }`}
-                        >
-                          Services
-                        </Link>
-                      </li>
-
-                      <li className="nav-item">
-                        <Link
-                          href="/services/service-details/"
-                          className={`nav-link ${currentRoute === "/services/service-details/"
-                            ? "active"
-                            : ""
-                            }`}
-                        >
-                          Services Details
-                        </Link>
-                      </li>
-                    </ul>
-                  </li>
-
-                  <li className="nav-item">
-                    <Link
-                      href="/pricing/"
-                      className={`nav-link ${currentRoute === "/pricing/" ? "active" : ""
-                        }`}
-                    >
-                      Pricing
-                    </Link>
-                  </li>
-
-                  <li className="nav-item">
-                    <Link
-                      href="/team/"
-                      className={`nav-link ${currentRoute === "/team/" ? "active" : ""
-                        }`}
-                    >
-                      Team
-                    </Link>
-                  </li>
-
-                  <li className="nav-item">
-                    <Link
-                      href="/gallery/"
-                      className={`nav-link ${currentRoute === "/gallery/" ? "active" : ""
-                        }`}
-                    >
-                      Gallery
-                    </Link>
-                  </li>
-
-                  <li className="nav-item">
-                    <Link
-                      href="/faq/"
-                      className={`nav-link ${currentRoute === "/faq/" ? "active" : ""
-                        }`}
-                    >
-                      FAQs
-                    </Link>
-                  </li>
-
-                  <li className="nav-item">
-                    <Link
-                      href="/testimonials/"
-                      className={`nav-link ${currentRoute === "/testimonials/" ? "active" : ""
-                        }`}
-                    >
-                      Testimonials
-                    </Link>
-                  </li>
-
-                  <li className="nav-item">
-                    <Link
-                      className="nav-link dropdown-toggle"
-                      href="#"
-                      onClick={(e) => e.preventDefault()}
-                    >
-                      My Account
-                    </Link>
-
-                    <ul className="dropdown-menu">
-                      <li className="nav-item">
-                        <Link
-                          href="/login/"
-                          className={`nav-link ${currentRoute === "/login/" ? "active" : ""
-                            }`}
-                        >
-                          Login
-                        </Link>
-                      </li>
-
-                      <li className="nav-item">
-                        <Link
-                          href="/register/"
-                          className={`nav-link ${currentRoute === "/register/" ? "active" : ""
-                            }`}
-                        >
-                          Register
-                        </Link>
-                      </li>
-                    </ul>
-                  </li>
-
-
-
-                  <li className="nav-item">
-                    <Link
-                      href="/request-quote/"
-                      className={`nav-link ${currentRoute === "/request-quote/" ? "active" : ""
-                        }`}
-                    >
-                      Request A Quote
-                    </Link>
-                  </li>
                 </ul>
               </li>
 
@@ -583,109 +467,17 @@ const Navbar: React.FC = () => {
 
                   <AccordionItemPanel>
                     <ul className="menu-list">
-                      <li>
-                        <Link
-                          href="/services/"
-                          className={`nav-link ${currentRoute === "/services/" ? "active" : ""
-                            }`}
-                        >
-                          Services
-                        </Link>
-                      </li>
-
-                      <li>
-                        <Link
-                          href="/services/service-details/"
-                          className={`nav-link ${currentRoute === "/services/service-details/"
-                            ? "active"
-                            : ""
-                            }`}
-                        >
-                          Services Details
-                        </Link>
-                      </li>
-
-                      <li>
-                        <Link
-                          href="/pricing/"
-                          className={`nav-link ${currentRoute === "/pricing/" ? "active" : ""
-                            }`}
-                        >
-                          Pricing
-                        </Link>
-                      </li>
-
-                      <li>
-                        <Link
-                          href="/team/"
-                          className={`nav-link ${currentRoute === "/team/" ? "active" : ""
-                            }`}
-                        >
-                          Team
-                        </Link>
-                      </li>
-
-                      <li>
-                        <Link
-                          href="/gallery/"
-                          className={`nav-link ${currentRoute === "/gallery/" ? "active" : ""
-                            }`}
-                        >
-                          Gallery
-                        </Link>
-                      </li>
-
-                      <li>
-                        <Link
-                          href="/faq/"
-                          className={`nav-link ${currentRoute === "/faq/" ? "active" : ""
-                            }`}
-                        >
-                          FAQs
-                        </Link>
-                      </li>
-
-                      <li>
-                        <Link
-                          href="/testimonials/"
-                          className={`nav-link ${currentRoute === "/testimonials/" ? "active" : ""
-                            }`}
-                        >
-                          Testimonials
-                        </Link>
-                      </li>
-
-                      <li>
-                        <Link
-                          href="/login/"
-                          className={`nav-link ${currentRoute === "/login/" ? "active" : ""
-                            }`}
-                        >
-                          Login
-                        </Link>
-                      </li>
-
-                      <li>
-                        <Link
-                          href="/register/"
-                          className={`nav-link ${currentRoute === "/register/" ? "active" : ""
-                            }`}
-                        >
-                          Register
-                        </Link>
-                      </li>
-
-
-
-                      <li>
-                        <Link
-                          href="/request-quote/"
-                          className={`nav-link ${currentRoute === "/request-quote/" ? "active" : ""
-                            }`}
-                        >
-                          Request A Quote
-                        </Link>
-                      </li>
+                      {servicesData && servicesData.map((value) => (
+                        <li key={value.id}>
+                          <Link
+                            href={value.link}
+                            className={`nav-link ${currentRoute === value.link ? "active" : ""}`}
+                          >
+                            {value.title}
+                          </Link>
+                        </li>
+                      ))}
+                      
                     </ul>
                   </AccordionItemPanel>
                 </AccordionItem>

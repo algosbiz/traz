@@ -15,7 +15,7 @@ const ServiceDetailsContentTwo: React.FC = () => {
     <>
       <div className="services-details-area pt-100 pb-100">
         <div className="container">
-          <div className="row justify-content-left">
+          <div className="row">
             <div className="col-lg-8 col-md-12">
               <div className="services-details-desc">
                 <div className="title">
@@ -28,8 +28,25 @@ const ServiceDetailsContentTwo: React.FC = () => {
                     crafting.
                   </p>
                 </div>
+              </div>
+            </div>
+          </div>
 
-                <Image src={serviceImg} alt="service" width={1400} height={645} />
+          <div className="row justify-content-left">
+            <div className="col-lg-8 col-md-12">
+              <div className="services-details-desc">
+                <Image 
+                  src={serviceImg} 
+                  alt="service" 
+                  width={1400} 
+                  height={645} 
+                  style={{ 
+                    width: '100%', 
+                    height: '550px', 
+                    objectFit: 'cover', 
+                    borderRadius: '10px' 
+                  }}
+                />
 
                 <p>
                   DMG Masonry full-service design firm providing architecture, master
@@ -69,7 +86,7 @@ const ServiceDetailsContentTwo: React.FC = () => {
                   </div>
                 </div>
 
-                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, total rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
 
                 <p>
                   We design with people in mind and use every expertise at our
@@ -88,7 +105,12 @@ const ServiceDetailsContentTwo: React.FC = () => {
                   alt="sidebar" 
                   width={400} 
                   height={800} 
-                  style={{ width: '100%', height: 'auto', borderRadius: '10px' }}
+                  style={{ 
+                    width: '100%', 
+                    height: '550px', 
+                    objectFit: 'cover', 
+                    borderRadius: '10px' 
+                  }}
                 />
               </div>
             </div>
