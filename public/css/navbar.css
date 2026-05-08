@@ -396,24 +396,27 @@ Mobile Mnu Modal Area CSS
   border: none;
 }
 .mobile-menu-modal .modal-content .modal-body .accordion .accordion__item {
-  border: none;
+  border-bottom: 1px solid var(--borderColor);
 }
 .mobile-menu-modal .modal-content .modal-body .accordion .accordion__item .accordion__heading .accordion__button {
   padding: 0;
   position: relative;
-  background-color: var(--backgroundColor);
-  font-size: 16px;
-  font-weight: 400;
+  background-color: transparent !important;
+  font-size: 18px;
+  font-weight: 500;
   color: var(--headingColor);
   display: block;
-  padding: 4px 0;
-  margin: 7px 0;
+  padding: 10px 0;
+  margin: 0;
+  transition: var(--transition);
+  border: none;
 }
 .mobile-menu-modal .modal-content .modal-body .accordion .accordion__item .accordion__heading .accordion__button.active, .mobile-menu-modal .modal-content .modal-body .accordion .accordion__item .accordion__heading .accordion__button:hover {
   color: var(--primaryColor);
+  font-weight: 600;
 }
 .mobile-menu-modal .modal-content .modal-body .accordion .accordion__item .accordion__heading .accordion__button::after, .mobile-menu-modal .modal-content .modal-body .accordion .accordion__item .accordion__heading .accordion__button:focus {
-  background-color: #fff;
+  background-color: transparent;
   outline: 0;
 }
 .mobile-menu-modal .modal-content .modal-body .accordion .accordion__item .accordion__heading .accordion__button:before {
@@ -428,19 +431,23 @@ Mobile Mnu Modal Area CSS
 }
 .mobile-menu-modal .modal-content .modal-body .accordion .accordion__panel {
   background: var(--cardBg);
-  padding: 10px 20px;
-  margin-bottom: 15px;
+  padding: 5px 20px;
+  margin-bottom: 10px;
+  border-radius: 8px;
 }
 .mobile-menu-modal .modal-content .modal-body .nav-link {
-  font-size: 16px;
-  font-weight: 400;
+  font-size: 18px;
+  font-weight: 500;
   color: var(--headingColor);
   display: block;
-  padding: 4px 0;
-  margin: 7px 0;
+  padding: 10px 0;
+  margin: 0;
+  transition: var(--transition);
+  border-bottom: 1px solid var(--borderColor);
 }
 .mobile-menu-modal .modal-content .modal-body .nav-link.active, .mobile-menu-modal .modal-content .modal-body .nav-link:hover {
   color: var(--primaryColor);
+  font-weight: 600;
 }
 .mobile-menu-modal .modal-content .modal-body ul {
   padding: 0;
@@ -448,7 +455,12 @@ Mobile Mnu Modal Area CSS
   margin: 0;
 }
 .mobile-menu-modal .modal-content .modal-body ul li .nav-link {
-  font-size: 15px;
+  font-size: 16px;
+  padding: 8px 0;
+  color: var(--textColor);
+}
+.mobile-menu-modal .modal-content .modal-body ul li .nav-link:hover, .mobile-menu-modal .modal-content .modal-body ul li .nav-link.active {
+  color: var(--primaryColor);
 }
 .mobile-menu-modal .modal-content .btn-close {
   color: red;

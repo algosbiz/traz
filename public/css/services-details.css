@@ -87,7 +87,7 @@ Services Details Area CSS
   color: var(--headingColor);
   letter-spacing: 1.4px;
 }
-.services-details-info-side li a:hover {
+.services-details-info-side li a:hover, .services-details-info-side li.active a {
   color: var(--primaryColor);
 }
 .services-details-info-side li:last-child {

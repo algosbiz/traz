@@ -368,47 +368,13 @@ const Navbar: React.FC = () => {
 
             <div className="modal-body">
               <Accordion allowZeroExpanded>
-                <AccordionItem uuid="a">
-                  <AccordionItemHeading>
-                    <AccordionItemButton>Home</AccordionItemButton>
-                  </AccordionItemHeading>
-
-                  <AccordionItemPanel>
-                    <ul className="menu-list">
-                      <li>
-                        <Link
-                          className={`nav-link ${currentRoute === "/" ? "active" : ""
-                            }`}
-                          href="/"
-                        >
-                          Architecture Home
-                        </Link>
-                      </li>
-
-                      <li>
-                        <Link
-                          className={`nav-link ${currentRoute === "/interior-home/" ? "active" : ""
-                            }`}
-                          href="/interior-home/"
-                        >
-                          Interior Home
-                        </Link>
-                      </li>
-
-                      <li>
-                        <Link
-                          className={`nav-link ${currentRoute === "/architecture-studio/"
-                            ? "active"
-                            : ""
-                            }`}
-                          href="/architecture-studio/"
-                        >
-                          Architecture Studio
-                        </Link>
-                      </li>
-                    </ul>
-                  </AccordionItemPanel>
-                </AccordionItem>
+                <Link
+                  className={`nav-link ${currentRoute === "/" ? "active" : ""
+                    }`}
+                  href="/"
+                >
+                  Home
+                </Link>
 
                 <Link
                   href="/about-us/"
@@ -417,48 +383,6 @@ const Navbar: React.FC = () => {
                 >
                   About Us
                 </Link>
-
-                <AccordionItem uuid="b">
-                  <AccordionItemHeading>
-                    <AccordionItemButton>Portfolio</AccordionItemButton>
-                  </AccordionItemHeading>
-
-                  <AccordionItemPanel>
-                    <ul className="menu-list">
-                      <li>
-                        <Link
-                          href="/portfolio/"
-                          className={`nav-link ${currentRoute === "/portfolio/" ? "active" : ""
-                            }`}
-                        >
-                          Portfolio Style 01
-                        </Link>
-                      </li>
-
-                      <li>
-                        <Link
-                          href="/portfolio-2/"
-                          className={`nav-link ${currentRoute === "/portfolio-2/" ? "active" : ""
-                            }`}
-                        >
-                          Portfolio Style 02
-                        </Link>
-                      </li>
-
-                      <li>
-                        <Link
-                          href="/portfolio/portfolio-details/"
-                          className={`nav-link ${currentRoute === "/portfolio/portfolio-details/"
-                            ? "active"
-                            : ""
-                            }`}
-                        >
-                          Portfolio Details
-                        </Link>
-                      </li>
-                    </ul>
-                  </AccordionItemPanel>
-                </AccordionItem>
 
                 <AccordionItem uuid="c">
                   <AccordionItemHeading>
@@ -482,90 +406,6 @@ const Navbar: React.FC = () => {
                   </AccordionItemPanel>
                 </AccordionItem>
 
-                <AccordionItem uuid="d">
-                  <AccordionItemHeading>
-                    <AccordionItemButton>Blog</AccordionItemButton>
-                  </AccordionItemHeading>
-
-                  <AccordionItemPanel>
-                    <ul className="menu-list">
-                      <li>
-                        <Link
-                          href="/blog/"
-                          className={`nav-link ${currentRoute === "/blog/" ? "active" : ""
-                            }`}
-                        >
-                          Blog Grid
-                        </Link>
-                      </li>
-
-                      <li>
-                        <Link
-                          href="/blog-right-sidebar/"
-                          className={`nav-link ${currentRoute === "/blog-right-sidebar/"
-                            ? "active"
-                            : ""
-                            }`}
-                        >
-                          Right Sidebar
-                        </Link>
-                      </li>
-
-                      <li>
-                        <Link
-                          href="/blog-left-sidebar/"
-                          className={`nav-link ${currentRoute === "/blog-left-sidebar/"
-                            ? "active"
-                            : ""
-                            }`}
-                        >
-                          Left Sidebar
-                        </Link>
-                      </li>
-
-                      <li>
-                        <Link
-                          href="/single-blog/"
-                          className={`nav-link ${currentRoute === "/single-blog/" ? "active" : ""
-                            }`}
-                        >
-                          Single Blog
-                        </Link>
-                      </li>
-
-                      <li>
-                        <Link
-                          href="/author/"
-                          className={`nav-link ${currentRoute === "/author/" ? "active" : ""
-                            }`}
-                        >
-                          Author
-                        </Link>
-                      </li>
-
-                      <li>
-                        <Link
-                          href="/categories/"
-                          className={`nav-link ${currentRoute === "/categories/" ? "active" : ""
-                            }`}
-                        >
-                          Categories
-                        </Link>
-                      </li>
-
-                      <li>
-                        <Link
-                          href="/tags/"
-                          className={`nav-link ${currentRoute === "/tags/" ? "active" : ""
-                            }`}
-                        >
-                          Tags
-                        </Link>
-                      </li>
-                    </ul>
-                  </AccordionItemPanel>
-                </AccordionItem>
-
                 <Link
                   href="/contact-us/"
                   className={`nav-link ${currentRoute === "/contact-us/" ? "active" : ""
@@ -574,6 +414,14 @@ const Navbar: React.FC = () => {
                   Contact Us
                 </Link>
               </Accordion>
+
+              <div className="others-option d-lg-none mt-4">
+                <div className="option-item">
+                  <Link href="/request-quote" className="default-btn">
+                    Request A Quote
+                  </Link>
+                </div>
+              </div>
             </div>
           </div>
         </div>

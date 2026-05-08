@@ -7,7 +7,11 @@ import Image from "next/image";
 import serviceImg from "../../../public/images/services-details/services-details1.jpg";
 import arrowIcon from "../../../public/images/services-details/arrow.svg";
 
-const ServiceDetailsContent: React.FC = () => {
+interface ServiceDetailsContentProps {
+  title?: string;
+}
+
+const ServiceDetailsContent: React.FC<ServiceDetailsContentProps> = ({ title }) => {
   return (
     <>
       <div className="services-details-area pt-100 pb-100">
@@ -17,7 +21,7 @@ const ServiceDetailsContent: React.FC = () => {
               <div className="services-details-desc">
                 <div className="title">
                   <span>SERVICE</span>
-                  <h2>Interior Design</h2>
+                  <h2>{title || "Interior Design"}</h2>
                   <p>
                     We are leading architecture firm dedicated to creating
                     visionary designs that transcend expectations. With our team
