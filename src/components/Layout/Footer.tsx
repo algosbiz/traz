@@ -26,18 +26,7 @@ const socialLinks = [
   },
 ];
 
-const masonryServices = [
-  "Masonry Repair",
-  "Stone Veneer",
-  "Hardscape Contractor",
-  "Chimney Repair",
-  "Custom Fire Pits",
-  "Outdoor Kitchen Contractor",
-  "Patio Stone Installation",
-  "Custom Pizza Oven",
-  "Retaining Wall Construction",
-  "Fireplace Installation",
-];
+import { servicesData } from "@/lib/servicesData";
 
 const Footer: React.FC = () => {
   const { theme } = useTheme();
@@ -104,9 +93,9 @@ const Footer: React.FC = () => {
               <h3>Services</h3>
 
               <ul className="footer-links-list footer-links-list-plain footer-services-list">
-                {masonryServices.map((service) => (
-                  <li key={service}>
-                    <Link href="/services/service-details/">{service}</Link>
+                {servicesData && servicesData.map((value) => (
+                  <li key={value.id}>
+                    <Link href={value.link}>{value.title}</Link>
                   </li>
                 ))}
               </ul>

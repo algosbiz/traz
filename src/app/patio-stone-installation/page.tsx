@@ -14,9 +14,9 @@ export default function Page() {
     <>
       <NavbarStyleTwo />
 
-      <PageTitle title="Stone Veneer" homeText="Home" homeUrl="/" />
+      <PageTitle title="Patio Stone Installation" homeText="Home" homeUrl="/" />
 
-      <ServiceDetailsContent title="Professional Stone Veneer & Restoration Services" />
+      <ServiceDetailsContent title="Patio Stone Installation Services" />
 
       <Process />
       <Overview fullWidth />

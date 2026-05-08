@@ -14,9 +14,9 @@ export default function Page() {
     <>
       <NavbarStyleTwo />
 
-      <PageTitle title="Outdoor Kitchen Contractor" homeText="Home" homeUrl="/" />
+      <PageTitle title="Retaining Wall Construction" homeText="Home" homeUrl="/" />
 
-      <ServiceDetailsContent title="Professional Outdoor Kitchen Contractor & Restoration Services" />
+      <ServiceDetailsContent title="Retaining Wall Installation Calgary" />
 
       <Process />
       <Overview fullWidth />

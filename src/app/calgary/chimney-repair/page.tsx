@@ -14,9 +14,9 @@ export default function Page() {
     <>
       <NavbarStyleTwo />
 
-      <PageTitle title="Patio Stone Installation" homeText="Home" homeUrl="/" />
+      <PageTitle title="Chimney Repair" homeText="Home" homeUrl="/" />
 
-      <ServiceDetailsContent title="Professional Patio Stone Installation & Restoration Services" />
+      <ServiceDetailsContent title="Chimney Repair Calgary" />
 
       <Process />
       <Overview fullWidth />

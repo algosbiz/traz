@@ -10,24 +10,24 @@ import FaqsContent from "@/components/Faqs/FaqsContent";
 import ClientsFeedbackSlider from "@/components/ArchitectureHome/ClientsFeedbackSlider";
 
 export default function Page() {
-  return (
-    <>
-      <NavbarStyleTwo />
+    return (
+        <>
+            <NavbarStyleTwo />
 
-      <PageTitle title="Chimney Repair" homeText="Home" homeUrl="/" />
+            <PageTitle title="Custom Pizza Oven" homeText="Home" homeUrl="/" />
 
-      <ServiceDetailsContent title="Professional Chimney Repair & Restoration Services" />
+            <ServiceDetailsContent title="Foundation Repair Services" />
 
-      <Process />
-      <Overview fullWidth />
-      <ClientsFeedbackSlider />
-      <AboutUsContent />
-      <FaqsContent />
-      <div className="ptb-100">
-        <ContactFormStyleTwo />
-      </div>
+            <Process />
+            <Overview fullWidth />
+            <ClientsFeedbackSlider />
+            <AboutUsContent />
+            <FaqsContent />
+            <div className="ptb-100">
+                <ContactFormStyleTwo />
+            </div>
 
-      <Footer />
-    </>
-  );
+            <Footer />
+        </>
+    );
 }

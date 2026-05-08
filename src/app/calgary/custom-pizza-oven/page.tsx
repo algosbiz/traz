@@ -14,9 +14,9 @@ export default function Page() {
     <>
       <NavbarStyleTwo />
 
-      <PageTitle title="Hardscape Contractor" homeText="Home" homeUrl="/" />
+      <PageTitle title="Custom Pizza Oven" homeText="Home" homeUrl="/" />
 
-      <ServiceDetailsContent title="Professional Hardscape Contractor & Restoration Services" />
+      <ServiceDetailsContent title="Custom Pizza Oven Installation" />
 
       <Process />
       <Overview fullWidth />

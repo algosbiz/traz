@@ -14,9 +14,9 @@ export default function Page() {
     <>
       <NavbarStyleTwo />
 
-      <PageTitle title="Custom Pizza Oven" homeText="Home" homeUrl="/" />
+      <PageTitle title="Stone Veneer" homeText="Home" homeUrl="/" />
 
-      <ServiceDetailsContent title="Professional Custom Pizza Oven & Restoration Services" />
+      <ServiceDetailsContent title="Stone Veneer Installation Calgary" />
 
       <Process />
       <Overview fullWidth />

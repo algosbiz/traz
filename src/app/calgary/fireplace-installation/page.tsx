@@ -16,7 +16,7 @@ export default function Page() {
 
       <PageTitle title="Fireplace Installation" homeText="Home" homeUrl="/" />
 
-      <ServiceDetailsContent title="Professional Fireplace Installation & Restoration Services" />
+      <ServiceDetailsContent title="Outdoor Fireplace installation Calgary" />
 
       <Process />
       <Overview fullWidth />

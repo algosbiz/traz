@@ -14,9 +14,9 @@ export default function Page() {
     <>
       <NavbarStyleTwo />
 
-      <PageTitle title="Retaining Wall Construction" homeText="Home" homeUrl="/" />
+      <PageTitle title="Hardscape Contractor" homeText="Home" homeUrl="/" />
 
-      <ServiceDetailsContent title="Professional Retaining Wall Construction & Restoration Services" />
+      <ServiceDetailsContent title="Hardscape Contractor Services" />
 
       <Process />
       <Overview fullWidth />

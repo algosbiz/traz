@@ -16,7 +16,7 @@ export default function Page() {
 
       <PageTitle title="Custom Fire Pits" homeText="Home" homeUrl="/" />
 
-      <ServiceDetailsContent title="Professional Custom Fire Pits & Restoration Services" />
+      <ServiceDetailsContent title="Custom-Made Fire Pit Services" />
 
       <Process />
       <Overview fullWidth />
