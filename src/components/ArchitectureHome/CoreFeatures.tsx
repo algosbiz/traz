@@ -15,7 +15,7 @@ const CoreFeatures: React.FC = () => {
         <div className="container">
           <div className="row justify-content-center">
             <div className="col-lg-8 col-md-12">
-              <div 
+              <div
                 className="features-content"
                 data-aos="fade-up"
                 data-aos-delay="100"
@@ -23,15 +23,14 @@ const CoreFeatures: React.FC = () => {
                 data-aos-once="true"
               >
                 <h2>
-                  Form & Function: <span>Crafting Exquisite Spaces</span> with
-                  Flair Design
+                  Form & Function: <span>Masonry Work Designed</span>for Everyday Living
                 </h2>
 
                 <div className="row justify-content-center align-items-center">
                   <div className="col-lg-4 col-md-5">
                     <div className="inner-box">
                       <div className="title">
-                        <h3 className="counter">35</h3>
+                        <h3 className="counter">5+</h3>
                         <span>
                           YEARS OF <b>EXPERIENCE</b>
                         </span>
@@ -45,24 +44,23 @@ const CoreFeatures: React.FC = () => {
                   <div className="col-lg-8 col-md-7">
                     <div className="inner-content">
                       <p>
-                        We are a leading architecture firm dedicated to creating
-                        visionary designs that transcend expectations. With our
-                        team of highly skilled architects and designers, we
-                        specialize in crafting.
+                        Beyond repairs and installations, DMG Masonry helps create outdoor spaces that feel functional, durable, and built to fit naturally with your property. Our team handles brick repairs, restorations, and custom masonry work with a strong focus on durability and clean finishing.
                       </p>
 
                       <ul className="list">
                         <li>
                           <Image src={arrowIcon} alt="arrow" width={28} height={10} />
-                          Innovative Design Approach
+                          Custom outdoor masonry built around your space and needs
                         </li>
                         <li>
                           <Image src={arrowIcon} alt="arrow" width={28} height={10} />
-                          Highly Skilled Expertise and Specialization
+                          Strong attention to detail in every stage of the project
                         </li>
                         <li>
-                          <Image src={arrowIcon} alt="arrow" width={28} height={10} />A client-centric
-                          approach
+                          <Image src={arrowIcon} alt="arrow" width={28} height={10} />Durable finishes designed for long-term use
+                        </li>
+                        <li>
+                          <Image src={arrowIcon} alt="arrow" width={28} height={10} />Practical solutions with a clean and professional result
                         </li>
                       </ul>
 

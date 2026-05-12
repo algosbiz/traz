@@ -6,7 +6,6 @@ import Link from "next/link";
 import Image from "next/image";
 
 import shapeImg from "../../../public/images/main-banner/shape.png";
-import textShapeImg from "../../../public/images/main-banner/text.png";
 import arrowRightIcon from "../../../public/images/main-banner/arrow-right.svg";
 
 // Social Links
@@ -38,8 +37,9 @@ const HeroBanner: React.FC = () => {
       <FsLightbox
         toggler={toggler}
         sources={[
-          "https://www.youtube.com/embed/sVi2pdF1aIc?si=wuP0-H9KuJnEk0Js",
+          "https://dmgmasonry.ca/wp-content/uploads/2025/06/suite_home_renos-720p.mp4",
         ]}
+        types={["video"]}
       />
 
       <div className="main-banner-area">
@@ -51,7 +51,7 @@ const HeroBanner: React.FC = () => {
               data-aos-duration="600"
               data-aos-once="false"
             >
-              Aesthetix: Redefining Spaces with <span>Architectural Magic</span>
+              A Legacy of Timeless <span>Craftsmanship</span>
             </h1>
             <p
               data-aos="fade-up"
@@ -59,11 +59,10 @@ const HeroBanner: React.FC = () => {
               data-aos-duration="600"
               data-aos-once="false"
             >
-              Welcome to Esta Architects, where innovation meets elegance. We
-              are a leading architecture firm dedicated to creating visionary
-              designs that transcend expectations.
+              Welcome to DMG Masonry, where solid craftsmanship and carefully selected materials are at the core of every project. With a focus on detail and durability, we create work made to last for years to come.
+
             </p>
-            <div 
+            <div
               className="banner-btn"
               data-aos="fade-up"
               data-aos-delay="300"
@@ -76,7 +75,7 @@ const HeroBanner: React.FC = () => {
             </div>
           </div>
         </div>
-        
+
         <div
           className="main-banner-image"
           style={{ backgroundImage: `url(/images/main-banner/banner1.png)` }}
@@ -85,19 +84,41 @@ const HeroBanner: React.FC = () => {
           data-aos-duration="600"
           data-aos-once="false"
         ></div>
- 
+
         <div className="main-banner-wrap-shape">
           <Image src={shapeImg} alt="Shape" width={502} height={287} />
         </div>
 
         <div className="main-banner-video">
-          <Image src={textShapeImg} alt="Text Shape" width={182} height={182} />
+          <svg
+            viewBox="0 0 100 100"
+            width="182"
+            height="182"
+            style={{ animation: "rotateme 10s linear infinite" }}
+          >
+            <defs>
+              <path
+                id="circlePath"
+                d="M 50, 50 m -35, 0 a 35,35 0 1,1 70,0 a 35,35 0 1,1 -70,0"
+              />
+            </defs>
+            <text
+              fill="var(--headingColor)"
+              fontSize="11.5"
+              fontWeight="500"
+              letterSpacing="0.8"
+            >
+              <textPath href="#circlePath" startOffset="0%">
+                *Best Masonry Contractors in Calgary
+              </textPath>
+            </text>
+          </svg>
 
           <div onClick={() => setToggler(!toggler)} className="video-btn">
             <i className="ri-play-fill"></i>
           </div>
         </div>
-          
+
         {socialLinksData && (
           <ul className="main-banner-social">
             {socialLinksData &&

@@ -40,8 +40,7 @@ const AboutUsContent: React.FC = () => {
               >
                 <div className="title">
                   <h2>
-                    Who We Are: Leading <span>Architectural Agency</span> Who
-                    Create Unique Living Spaces
+                    Professional Masonry Services <span>in Calgary</span>
                   </h2>
                 </div>
 
@@ -55,28 +54,24 @@ const AboutUsContent: React.FC = () => {
                   <div className="col-lg-7">
                     <div className="inner-content">
                       <p>
-                        We are a leading architecture firm dedicated to creating
-                        visionary designs that transcend expectations. With our
-                        team of highly skilled architects and designers, we
-                        specialize in crafting.
+                        As an experienced masonry contractor in Calgary, we provide trusted masonry services for residential and commercial projects, from repairs and restorations to new installations. With a focus on quality workmanship and lasting results, every project is completed with careful attention to detail and craftsmanship.
                       </p>
 
                       <ul className="list">
                         <li>
                           <Image src={arrowIcon} alt="arrow" width={28} height={10} />
-                          Innovative Design Approach
+                          Masonry services for both residential and commercial projects
                         </li>
                         <li>
                           <Image src={arrowIcon} alt="arrow" width={28} height={10} />
-                          Highly Skilled Expertise and Specialization
+                          Skilled workmanship built on experience and attention to detail
                         </li>
                         <li>
-                          <Image src={arrowIcon} alt="arrow" width={28} height={10} />A client-centric
-                          approach for an architectural company
+                          <Image src={arrowIcon} alt="arrow" width={28} height={10} />Quality work with a focus on long-term durability
                         </li>
                         <li>
                           <Image src={arrowIcon} alt="arrow" width={28} height={10} />
-                          Sustainable Design Practices
+                          Custom masonry solutions designed to fit each project
                         </li>
                       </ul>
 
