@@ -51,7 +51,7 @@ const HeroBanner: React.FC = () => {
               data-aos-duration="600"
               data-aos-once="false"
             >
-              A Legacy of Timeless <span>Craftsmanship</span>
+              A Legacy of Timeless Masonry <span>Craftsmanship & Quality</span>
             </h1>
             <p
               data-aos="fade-up"
@@ -59,8 +59,7 @@ const HeroBanner: React.FC = () => {
               data-aos-duration="600"
               data-aos-once="false"
             >
-              Welcome to DMG Masonry, where solid craftsmanship and carefully selected materials are at the core of every project. With a focus on detail and durability, we create work made to last for years to come.
-
+              Welcome to DMG Masonry, where timeless craftsmanship and enduring materials define every project. With durability at the core, our work stands as a lasting legacy.
             </p>
             <div
               className="banner-btn"

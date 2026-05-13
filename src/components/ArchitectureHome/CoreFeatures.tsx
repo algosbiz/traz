@@ -23,7 +23,7 @@ const CoreFeatures: React.FC = () => {
                 data-aos-once="true"
               >
                 <h2>
-                  Form & Function: <span>Masonry Work Designed</span>for Everyday Living
+                  Form & Function: <span>Masonry Spaces Designed</span> to Last for Years
                 </h2>
 
                 <div className="row justify-content-center align-items-center">
@@ -44,29 +44,26 @@ const CoreFeatures: React.FC = () => {
                   <div className="col-lg-8 col-md-7">
                     <div className="inner-content">
                       <p>
-                        Beyond repairs and installations, DMG Masonry helps create outdoor spaces that feel functional, durable, and built to fit naturally with your property. Our team handles brick repairs, restorations, and custom masonry work with a strong focus on durability and clean finishing.
+                        DMG Masonry creates outdoor spaces that combine everyday function with timeless masonry design, helping your property maintain its strength and appearance for years to come.
                       </p>
 
                       <ul className="list">
                         <li>
                           <Image src={arrowIcon} alt="arrow" width={28} height={10} />
-                          Custom outdoor masonry built around your space and needs
+                          Outdoor masonry designed for long-term use
                         </li>
                         <li>
                           <Image src={arrowIcon} alt="arrow" width={28} height={10} />
-                          Strong attention to detail in every stage of the project
+                          Timeless masonry that complements your property
                         </li>
                         <li>
-                          <Image src={arrowIcon} alt="arrow" width={28} height={10} />Durable finishes designed for long-term use
-                        </li>
-                        <li>
-                          <Image src={arrowIcon} alt="arrow" width={28} height={10} />Practical solutions with a clean and professional result
+                          <Image src={arrowIcon} alt="arrow" width={28} height={10} />Practical layouts with clean professional finishing
                         </li>
                       </ul>
 
                       <div className="features-btn">
                         <Link href="#" className="default-btn">
-                          Our Core Features
+                          What We Offer
                         </Link>
                       </div>
                     </div>

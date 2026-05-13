@@ -40,7 +40,7 @@ const AboutUsContent: React.FC = () => {
               >
                 <div className="title">
                   <h2>
-                    Professional Masonry Services <span>in Calgary</span>
+                    Who We Are: Professional<span> Masonry Services</span> in Calgary
                   </h2>
                 </div>
 
@@ -54,30 +54,30 @@ const AboutUsContent: React.FC = () => {
                   <div className="col-lg-7">
                     <div className="inner-content">
                       <p>
-                        As an experienced masonry contractor in Calgary, we provide trusted masonry services for residential and commercial projects, from repairs and restorations to new installations. With a focus on quality workmanship and lasting results, every project is completed with careful attention to detail and craftsmanship.
+                        We provide professional masonry services in Calgary for residential and commercial projects, combining timeless craftsmanship with durable materials and quality workmanship built to last.
                       </p>
 
                       <ul className="list">
                         <li>
                           <Image src={arrowIcon} alt="arrow" width={28} height={10} />
-                          Masonry services for both residential and commercial projects
+                          Residential and commercial masonry projects
                         </li>
                         <li>
                           <Image src={arrowIcon} alt="arrow" width={28} height={10} />
-                          Skilled workmanship built on experience and attention to detail
+                          Timeless masonry built for long-term durability
                         </li>
                         <li>
-                          <Image src={arrowIcon} alt="arrow" width={28} height={10} />Quality work with a focus on long-term durability
+                          <Image src={arrowIcon} alt="arrow" width={28} height={10} />Experienced craftsmanship and detailed workmanship
                         </li>
                         <li>
                           <Image src={arrowIcon} alt="arrow" width={28} height={10} />
-                          Custom masonry solutions designed to fit each project
+                          Custom masonry solutions for every project
                         </li>
                       </ul>
 
                       <div className="about-btn">
                         <Link href="/about-us" className="default-btn">
-                          Know More About Us
+                          Get to Know Us
                         </Link>
                       </div>
                     </div>

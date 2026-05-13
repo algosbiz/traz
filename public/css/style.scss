@@ -55,6 +55,7 @@ Default CSS
     --fontSize: 17px;
     --transition: .6s;
 }
+
 body {
     margin: 0;
     padding: 0;
@@ -62,6 +63,7 @@ body {
     font-size: var(--fontSize);
     font-weight: 400;
 }
+
 p {
     color: var(--paragraphColor);
     margin-bottom: 15px;
@@ -72,10 +74,23 @@ p {
         margin-bottom: 0;
     }
 }
-.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     color: var(--blackColor);
     font-weight: bold;
 }
+
 a {
     transition: var(--transition);
     color: var(--blackColor);
@@ -87,9 +102,11 @@ a {
         text-decoration: none;
     }
 }
+
 :focus {
     outline: 0 !important;
 }
+
 .d-table {
     width: 100%;
     height: 100%;
@@ -98,35 +115,46 @@ a {
         vertical-align: middle;
     }
 }
+
 img {
     max-width: 100%;
     height: auto;
 }
+
 .ptb-100 {
     padding: {
         top: 100px;
         bottom: 100px;
-    };
+    }
+
+    ;
 }
+
 .pt-100 {
     padding-top: 100px;
 }
+
 .pb-100 {
     padding-bottom: 100px;
 }
+
 .ptb-75 {
     padding: {
         top: 75px;
         bottom: 75px;
-    };
+    }
+
+    ;
 }
+
 .pt-75 {
     padding-top: 75px;
 }
+
 .pb-75 {
     padding-bottom: 75px;
 }
-  
+
 // Section Area With Line CSS
 .section-area-with-line {
     position: relative;
@@ -141,7 +169,7 @@ img {
         margin: auto;
         width: 90vw;
         z-index: -1;
-    
+
         .line {
             position: absolute;
             height: 80%;
@@ -150,13 +178,15 @@ img {
             border: 1px dashed #f3f3f3;
             overflow: hidden;
             z-index: -1;
-            
+
             &:nth-child(1) {
                 margin-left: -25%;
             }
+
             &:nth-child(2) {
                 margin-left: 0;
             }
+
             &:nth-child(3) {
                 margin-left: 25%;
             }
@@ -192,7 +222,7 @@ Section Title CSS
         font-size: 40px;
         color: #E1DBD6;
         margin-bottom: 0;
-        
+
         span {
             color: transparent;
             -webkit-text-stroke: 0.5px var(--whiteColor);
@@ -201,6 +231,7 @@ Section Title CSS
             user-select: none;
         }
     }
+
     a {
         color: #9D9A97;
         font-weight: 500;
@@ -219,6 +250,7 @@ Section Title CSS
             background-color: var(--primaryColor);
             transition: var(--transition);
         }
+
         &:hover {
             color: var(--primaryColor);
 
@@ -245,11 +277,13 @@ Section Title CSS
         top: 8.8px;
         letter-spacing: 1px;
     }
+
     h2 {
         font-size: 40px;
-        font-weight: 400; 
+        font-weight: 400;
         margin-bottom: 0;
     }
+
     .link-btn {
         a {
             color: var(--primaryColor);
@@ -257,7 +291,7 @@ Section Title CSS
             font-size: 15px;
             letter-spacing: 1.5px;
             position: relative;
-    
+
             &::before {
                 position: absolute;
                 content: "";
@@ -269,9 +303,10 @@ Section Title CSS
                 background-color: var(--primaryColor);
                 transition: var(--transition);
             }
+
             &:hover {
                 color: var(--primaryColor);
-    
+
                 &::before {
                     width: 100%;
                 }
@@ -314,19 +349,26 @@ Preloader Area CSS
                 color: var(--whiteColor);
                 display: inline-block;
                 animation-delay: .2s;
+
                 font: {
                     size: 45px;
                     weight: 800;
-                };
+                }
+
+                ;
+
                 &:nth-child(2) {
                     animation-delay: .2s;
                 }
+
                 &:nth-child(3) {
                     animation-delay: .4s;
                 }
+
                 &:nth-child(4) {
                     animation-delay: .6s;
                 }
+
                 &:nth-child(5) {
                     animation-delay: .8s;
                 }
@@ -334,11 +376,15 @@ Preloader Area CSS
         }
     }
 }
+
 @keyframes flip {
-    0%, 80% {
-        transform: rotateY(360deg) 
+
+    0%,
+    80% {
+        transform: rotateY(360deg)
     }
 }
+
 @media only screen and (max-width: 767px) {
     .preloader-area {
         .loader {
@@ -349,6 +395,7 @@ Preloader Area CSS
                 gap: 6px;
 
                 .waviy-line {
+
                     &:first-child,
                     &:last-child {
                         span {
@@ -368,16 +415,23 @@ Main Banner Area CSS
     position: relative;
     z-index: 1;
     overflow: hidden;
+
     padding: {
         top: 100px;
         bottom: 375px;
-    };
+    }
+
+    ;
+
     .container-fluid {
         padding: {
             left: 30px;
             right: 30px;
-        };
+        }
+
+        ;
     }
+
     &::before {
         position: absolute;
         content: "";
@@ -389,6 +443,7 @@ Main Banner Area CSS
         background: linear-gradient(180deg, rgba(22, 21, 18, 0.90) 0%, rgba(22, 21, 18, 0.30) 100%);
     }
 }
+
 .main-banner-content {
     max-width: 840px;
     position: relative;
@@ -406,10 +461,13 @@ Main Banner Area CSS
             user-select: none;
         }
     }
+
     p {
         color: #B7B3AF;
         max-width: 625px;
+        font-size: 15px;
     }
+
     .banner-btn {
         margin-top: 30px;
 
@@ -424,6 +482,7 @@ Main Banner Area CSS
         }
     }
 }
+
 .main-banner-image {
     position: absolute;
     right: 80px;
@@ -433,11 +492,13 @@ Main Banner Area CSS
     height: 800px;
     background-size: cover;
 }
+
 .main-banner-wrap-shape {
     position: absolute;
     right: 115px;
     top: 35px;
 }
+
 .main-banner-video {
     position: absolute;
     right: 175px;
@@ -459,9 +520,10 @@ Main Banner Area CSS
             -webkit-background-clip: text;
             -moz-background-clip: text;
             background-clip: text;
-           -webkit-text-fill-color:transparent;
+            -webkit-text-fill-color: transparent;
         }
     }
+
     img {
         animation-name: rotateme;
         animation-duration: 10s;
@@ -469,14 +531,17 @@ Main Banner Area CSS
         animation-timing-function: linear;
     }
 }
+
 @keyframes rotateme {
     from {
         transform: rotate(0deg);
     }
+
     to {
         transform: rotate(360deg);
     }
 }
+
 .main-banner-social {
     padding-left: 0;
     margin-bottom: 0;
@@ -492,6 +557,7 @@ Main Banner Area CSS
         &:last-child {
             margin-bottom: 0;
         }
+
         a {
             i {
                 width: 25px;
@@ -512,6 +578,7 @@ Main Banner Area CSS
         }
     }
 }
+
 .main-banner-arrow {
     position: absolute;
     right: 0;
@@ -535,11 +602,13 @@ Main Banner Area CSS
             transform: translateY(-50%);
             margin: auto;
         }
+
         &:hover {
             background-color: var(--whiteColor);
         }
     }
 }
+
 .main-banner-info {
     padding-left: 0;
     margin-bottom: 0;
@@ -556,9 +625,11 @@ Main Banner Area CSS
         &:last-child {
             margin-bottom: 0;
         }
+
         span {
             color: #928C87;
         }
+
         a {
             color: #928C87;
 
@@ -580,6 +651,7 @@ Main Banner Animation Area CSS
     margin-left: auto;
     margin-right: auto;
 }
+
 .main-banner-animation {
     position: absolute;
     left: 0;
@@ -595,19 +667,23 @@ Main Banner Animation Area CSS
         position: relative;
         top: -1px;
     }
+
     &:hover {
         animation-play-state: paused;
-    } 
+    }
+
     h1 {
         display: none;
     }
 }
+
 @keyframes marquee-banner {
-    0% { 
-        transform: translateX(0); 
+    0% {
+        transform: translateX(0);
     }
-    100% { 
-        transform: translateX(-100%); 
+
+    100% {
+        transform: translateX(-100%);
     }
 }
 
@@ -625,13 +701,17 @@ Architecture Studio Banner Area CSS
         padding: {
             left: 0;
             right: 0;
-        };
+        }
+
+        ;
     }
 }
+
 .as-banner-image {
     .icv__control-line {
         display: none;
     }
+
     .icv__circle {
         width: 80px;
         height: 80px;
@@ -639,6 +719,7 @@ Architecture Studio Banner Area CSS
         box-shadow: unset !important;
         backdrop-filter: unset !important;
     }
+
     .icv__arrow-wrapper {
         position: relative;
         transform: unset !important;
@@ -657,11 +738,13 @@ Architecture Studio Banner Area CSS
             width: 50px;
             height: 25px;
         }
+
         &:last-child {
             &::before {
                 display: none;
             }
         }
+
         svg {
             display: none;
             transform: unset !important;
@@ -671,16 +754,21 @@ Architecture Studio Banner Area CSS
         }
     }
 }
+
 .as-banner-content {
     position: absolute;
     left: 0;
     top: 0;
     z-index: 9;
     max-width: 950px;
+
     padding: {
         top: 90px;
         left: 50px;
-    };
+    }
+
+    ;
+
     h1 {
         font-size: 80px;
         font-weight: 500;
@@ -697,6 +785,7 @@ Architecture Studio Banner Area CSS
         }
     }
 }
+
 .as-banner-bottom-content {
     background-color: var(--blackColor);
     padding: 30px;
@@ -712,6 +801,7 @@ Architecture Studio Banner Area CSS
         margin-bottom: 0;
         max-width: 465px;
     }
+
     a {
         color: var(--whiteColor);
         font-size: 15px;
@@ -729,6 +819,7 @@ Architecture Studio Banner Area CSS
             height: 1px;
             transition: var(--transition);
         }
+
         &:hover {
             color: var(--primaryColor);
 
@@ -748,6 +839,7 @@ About Area CSS
     z-index: 1;
     overflow: hidden;
 }
+
 .about-image-one {
     background-position: center center;
     background-size: cover;
@@ -762,17 +854,25 @@ About Area CSS
         bottom: 40px;
     }
 }
+
 .about-one-content {
     margin-left: -60px;
+
     padding: {
         top: 30px;
         bottom: 30px;
-    };
+    }
+
+    ;
+
     .title {
         margin: {
             left: 115px;
             bottom: 60px;
-        };
+        }
+
+        ;
+
         h2 {
             font-size: 40px;
             color: #E1DBD6;
@@ -788,10 +888,12 @@ About Area CSS
             }
         }
     }
+
     .inner-image {
         position: relative;
         z-index: 1;
     }
+
     .inner-content {
         padding-left: 25px;
 
@@ -799,6 +901,7 @@ About Area CSS
             color: #9D9A97;
             margin-bottom: 30px;
         }
+
         .list {
             padding-left: 0;
             margin-bottom: 0;
@@ -815,6 +918,7 @@ About Area CSS
                 &:last-child {
                     margin-bottom: 0;
                 }
+
                 img {
                     position: absolute;
                     left: 0;
@@ -823,6 +927,7 @@ About Area CSS
                 }
             }
         }
+
         .about-btn {
             margin-top: 55px;
 
@@ -837,6 +942,7 @@ About Area CSS
         }
     }
 }
+
 .about-text-wrap {
     position: absolute;
     right: 0;
@@ -860,21 +966,28 @@ About Area CSS
         top: 5.8px;
         letter-spacing: 1.6px;
     }
+
     h2 {
         font-size: 40px;
         font-weight: 400;
         margin-bottom: 20px;
         line-height: 1.3;
     }
+
     p {
         margin-bottom: 0;
     }
+
     .list {
         padding-left: 0;
+
         margin: {
             top: 25px;
             bottom: 0;
-        };
+        }
+
+        ;
+
         li {
             list-style-type: none;
             font-size: 18px;
@@ -886,6 +999,7 @@ About Area CSS
             &:last-child {
                 margin-bottom: 0;
             }
+
             img {
                 position: absolute;
                 left: 0;
@@ -894,14 +1008,16 @@ About Area CSS
             }
         }
     }
+
     .about-btn {
         margin-top: 30px;
     }
 }
+
 .about-image-two {
     position: relative;
     text-align: center;
-    
+
     .wrap-video {
         position: absolute;
         left: 0;
@@ -916,6 +1032,7 @@ About Area CSS
             animation-iteration-count: infinite;
             animation-timing-function: linear;
         }
+
         .video-btn {
             position: absolute;
             left: 0;
@@ -962,6 +1079,7 @@ About Area CSS
         top: 5.8px;
         letter-spacing: 1.6px;
     }
+
     h2 {
         font-size: 40px;
         font-weight: 400;
@@ -969,19 +1087,28 @@ About Area CSS
         line-height: 1.3;
     }
 }
+
 .about-three-left-content {
     border-right: 1px dashed #E7E0E0;
+
     padding: {
         top: 45px;
         right: 55px;
         bottom: 100px;
-    };
+    }
+
+    ;
+
     .list {
         padding-left: 0;
+
         margin: {
             top: 25px;
             bottom: 0;
-        };
+        }
+
+        ;
+
         li {
             list-style-type: none;
             font-size: 18px;
@@ -993,6 +1120,7 @@ About Area CSS
             &:last-child {
                 margin-bottom: 0;
             }
+
             img {
                 position: absolute;
                 left: 0;
@@ -1001,12 +1129,13 @@ About Area CSS
             }
         }
     }
+
     .about-image-wrap {
         position: relative;
         text-align: center;
         max-width: 500px;
         margin-top: 100px;
-        
+
         .wrap-video {
             position: absolute;
             left: 0;
@@ -1014,13 +1143,14 @@ About Area CSS
             top: 50%;
             transform: translateY(-50%);
             text-align: center;
-    
+
             img {
                 animation-name: rotateme;
                 animation-duration: 10s;
                 animation-iteration-count: infinite;
                 animation-timing-function: linear;
             }
+
             .video-btn {
                 position: absolute;
                 left: 0;
@@ -1028,7 +1158,7 @@ About Area CSS
                 top: 50%;
                 transform: translateY(-50%);
                 cursor: pointer;
-    
+
                 i {
                     display: inline-block;
                     height: 85px;
@@ -1040,7 +1170,7 @@ About Area CSS
                     text-align: center;
                     border-radius: 50%;
                     transition: var(--transition);
-    
+
                     &:hover {
                         background-color: var(--primaryColor);
                         color: var(--whiteColor);
@@ -1050,14 +1180,19 @@ About Area CSS
         }
     }
 }
+
 .about-three-right-content {
     position: relative;
     z-index: 1;
+
     padding: {
         top: 45px;
         left: 22px;
         bottom: 100px;
-    };
+    }
+
+    ;
+
     .about-wrap-content {
         margin-top: 100px;
 
@@ -1068,6 +1203,7 @@ About Area CSS
         }
     }
 }
+
 .our-mission-and-vision-accordion {
     .accordion__item {
         border: none;
@@ -1078,6 +1214,7 @@ About Area CSS
         &:last-child {
             margin-bottom: 0;
         }
+
         .accordion__button {
             color: var(--blackColor);
             position: relative;
@@ -1099,11 +1236,13 @@ About Area CSS
                 top: 28px;
             }
         }
+
         .accordion__panel {
             padding: 15px 0 0 30px;
         }
     }
 }
+
 .about-wrap-shape {
     position: absolute;
     right: 50px;
@@ -1117,6 +1256,7 @@ Services Area CSS
 .services-area {
     overflow: hidden;
 }
+
 .col-lg-4 {
     &:nth-child(1) {
         .services-card {
@@ -1137,12 +1277,14 @@ Services Area CSS
             }
         }
     }
+
     &:nth-child(2) {
         .services-card {
             border: 1.3px dashed #414040;
             border-left: none;
         }
     }
+
     &:nth-child(3) {
         .services-card {
             border: 1.3px dashed #414040;
@@ -1164,6 +1306,7 @@ Services Area CSS
         }
     }
 }
+
 .services-card {
     margin-bottom: 25px;
     padding: 50px;
@@ -1178,6 +1321,7 @@ Services Area CSS
             line-height: 0;
         }
     }
+
     h3 {
         font-size: 24px;
         margin-bottom: 25px;
@@ -1190,6 +1334,7 @@ Services Area CSS
             }
         }
     }
+
     p {
         color: #9D9A97;
         margin-bottom: 25px;
@@ -1220,30 +1365,37 @@ Services Area CSS
             &:last-child {
                 border-bottom: none;
             }
+
             sup {
                 color: #9D9A97;
                 font-weight: 400;
                 font-size: var(--fontSize);
                 top: -25px;
             }
-            &:hover, &.active {
+
+            &:hover,
+            &.active {
                 color: var(--blackColor);
             }
-            
+
         }
     }
+
     .tab-content {
         border-left: 1px dashed #E7E0E0;
     }
+
     .services-tab-content {
         padding: 50px;
 
         img {
             margin-bottom: 30px;
         }
+
         p {
             margin-bottom: 25px;
         }
+
         a {
             font-weight: 500;
             font-size: 15px;
@@ -1261,10 +1413,11 @@ Services Area CSS
                 height: 2px;
                 transition: var(--transition);
             }
+
             &:hover {
                 &::before {
                     width: 100%;
-                } 
+                }
             }
         }
     }
@@ -1282,6 +1435,7 @@ Services Area CSS
             padding-left: 45px;
         }
     }
+
     &.without-bg-color {
         background-color: transparent;
 
@@ -1289,6 +1443,7 @@ Services Area CSS
             max-width: 830px;
             padding-left: 45px;
         }
+
         .services-item {
             background-color: #F2EFEB;
 
@@ -1298,6 +1453,7 @@ Services Area CSS
         }
     }
 }
+
 .services-item {
     margin-bottom: 25px;
     padding: 50px;
@@ -1316,6 +1472,7 @@ Services Area CSS
             line-height: 0;
         }
     }
+
     h3 {
         font-size: 24px;
         margin-bottom: 25px;
@@ -1328,9 +1485,11 @@ Services Area CSS
             }
         }
     }
+
     p {
         margin-bottom: 25px;
     }
+
     &::before {
         position: absolute;
         content: "";
@@ -1355,8 +1514,11 @@ Overview Area CSS
         padding: {
             left: 30px;
             right: 30px;
-        };
+        }
+
+        ;
     }
+
     &.wrap-color {
         .overview-card {
             border-bottom: none;
@@ -1369,6 +1531,7 @@ Overview Area CSS
         }
     }
 }
+
 .overview-card {
     border-bottom: 1px dashed #414040;
     padding-bottom: 40px;
@@ -1380,20 +1543,26 @@ Overview Area CSS
             transition: var(--transition);
         }
     }
+
     h3 {
         margin-bottom: 0;
         font-size: 24px;
         color: #BDBDBD;
+
         padding: {
             top: 30px;
             left: 10px;
-        };
+        }
+
+        ;
+
         span {
             color: #9D9A97;
             font-size: var(--fontSize);
             font-weight: 400;
         }
     }
+
     &:hover {
         .image {
             img {
@@ -1416,12 +1585,16 @@ Features Area CSS
     z-index: 1;
     overflow: hidden;
 }
+
 .features-content {
     padding: {
         top: 15px;
         right: 25px;
         bottom: 15px;
-    };
+    }
+
+    ;
+
     h2 {
         font-size: 40px;
         color: #E1DBD6;
@@ -1436,6 +1609,7 @@ Features Area CSS
             user-select: none;
         }
     }
+
     .inner-box {
         background: #24231F;
         padding: 40px 35px 210px;
@@ -1451,6 +1625,7 @@ Features Area CSS
             margin-bottom: 12px;
             line-height: 1;
         }
+
         span {
             color: #9D9A97;
             font-size: 15px;
@@ -1462,6 +1637,7 @@ Features Area CSS
                 font-weight: 400;
             }
         }
+
         .wrap {
             position: absolute;
             right: -2px;
@@ -1469,6 +1645,7 @@ Features Area CSS
             z-index: -1;
         }
     }
+
     .inner-content {
         padding-left: 50px;
 
@@ -1476,6 +1653,7 @@ Features Area CSS
             color: #9D9A97;
             margin-bottom: 25px;
         }
+
         .list {
             padding-left: 0;
             margin-bottom: 0;
@@ -1492,6 +1670,7 @@ Features Area CSS
                 &:last-child {
                     margin-bottom: 0;
                 }
+
                 img {
                     position: absolute;
                     left: 0;
@@ -1500,6 +1679,7 @@ Features Area CSS
                 }
             }
         }
+
         .features-btn {
             margin-top: 40px;
 
@@ -1514,6 +1694,7 @@ Features Area CSS
         }
     }
 }
+
 .features-image {
     background-position: center center;
     background-size: cover;
@@ -1521,6 +1702,7 @@ Features Area CSS
     height: 100%;
     width: 100%;
 }
+
 .features-shape {
     position: absolute;
     right: 0;
@@ -1538,12 +1720,17 @@ Recognition Area CSS
     height: 100%;
     width: 100%;
 }
+
 .recognition-content {
     max-width: 635px;
+
     margin: {
         left: auto;
         right: 0;
-    };
+    }
+
+    ;
+
     h2 {
         font-size: 40px;
         color: #E1DBD6;
@@ -1559,6 +1746,7 @@ Recognition Area CSS
             user-select: none;
         }
     }
+
     .list {
         padding-left: 0;
         margin-bottom: 0;
@@ -1584,15 +1772,18 @@ Recognition Area CSS
                     margin-right: 20px;
                 }
             }
+
             span {
                 color: #DEDEDE;
                 font-size: 16px;
             }
+
             &:last-child {
                 margin-bottom: 0;
             }
         }
     }
+
     &.wrap-style {
         position: relative;
         padding-left: 50px;
@@ -1607,6 +1798,7 @@ Recognition Area CSS
             top: 8.8px;
             letter-spacing: 1.6px;
         }
+
         h2 {
             font-weight: 400;
         }
@@ -1623,6 +1815,7 @@ Recognition Area CSS
             color: var(--blackColor);
             border-bottom: 1px dashed #E7E0E0;
         }
+
         .list {
             li {
                 border-bottom: 1px dashed #E7E0E0;
@@ -1630,6 +1823,7 @@ Recognition Area CSS
                 span {
                     color: #535050;
                 }
+
                 h4 {
                     color: #535050;
                 }
@@ -1637,6 +1831,7 @@ Recognition Area CSS
         }
     }
 }
+
 .recognition-right-content {
     position: relative;
     padding-left: 20px;
@@ -1644,6 +1839,7 @@ Recognition Area CSS
     img {
         min-height: 420px;
     }
+
     .awards-box {
         background: var(--brown-gradient, linear-gradient(135deg, #D8B798 0%, #BA8D6D 100%));
         padding: 40px 35px 80px;
@@ -1660,6 +1856,7 @@ Recognition Area CSS
             margin-bottom: 12px;
             line-height: 1;
         }
+
         span {
             color: #F0ECE8;
             font-size: 15px;
@@ -1672,6 +1869,7 @@ Recognition Area CSS
             }
         }
     }
+
     .experience-box {
         background: #24231F;
         padding: 40px 35px 180px;
@@ -1690,6 +1888,7 @@ Recognition Area CSS
             margin-bottom: 12px;
             line-height: 1;
         }
+
         span {
             color: #9D9A97;
             font-size: 15px;
@@ -1701,6 +1900,7 @@ Recognition Area CSS
                 font-weight: 400;
             }
         }
+
         .wrap {
             position: absolute;
             right: -2px;
@@ -1724,15 +1924,19 @@ Projects Area CSS
             padding-right: 45px;
         }
     }
+
     &:nth-child(2) {
         .projects-inner-border {
             padding: {
                 left: 20px;
                 right: 20px;
                 top: 50px;
-            };
+            }
+
+            ;
         }
     }
+
     &:nth-child(3) {
         .projects-inner-border {
             border-left: 1px dashed #414040;
@@ -1740,6 +1944,7 @@ Projects Area CSS
         }
     }
 }
+
 .projects-item {
     margin-bottom: 70px;
 
@@ -1772,12 +1977,14 @@ Projects Area CSS
                     transform: translateY(-50%);
                     margin: auto;
                 }
+
                 &:hover {
                     background-color: var(--whiteColor);
                 }
             }
         }
     }
+
     .projects-content {
         margin-top: 25px;
 
@@ -1788,6 +1995,7 @@ Projects Area CSS
             a {
                 color: #BDBDBD;
             }
+
             span {
                 color: #9D9A97;
                 font-size: var(--fontSize);
@@ -1795,6 +2003,7 @@ Projects Area CSS
             }
         }
     }
+
     &:hover {
         .projects-image {
             .icon {
@@ -1804,6 +2013,7 @@ Projects Area CSS
         }
     }
 }
+
 .projects-btn {
     text-align: center;
 
@@ -1825,6 +2035,7 @@ Projects Area CSS
             background-color: var(--primaryColor);
             transition: var(--transition);
         }
+
         &:hover {
             color: var(--primaryColor);
 
@@ -1844,6 +2055,7 @@ Projects Area CSS
         overflow: hidden;
     }
 }
+
 .projects-scroll-card {
     .content {
         margin-top: 40px;
@@ -1852,10 +2064,11 @@ Projects Area CSS
             font-size: 24px;
             font-weight: 500;
             margin-bottom: 15px;
-    
+
             a {
                 color: var(--blackColor);
             }
+
             span {
                 color: #9D9A97;
                 font-size: 14px;
@@ -1863,9 +2076,11 @@ Projects Area CSS
                 font-weight: 400
             }
         }
+
         p {
             margin-bottom: 25px;
         }
+
         .projects-btn {
             font-size: 15px;
             font-weight: 500;
@@ -1883,6 +2098,7 @@ Projects Area CSS
                 height: 2px;
                 transition: var(--transition);
             }
+
             &:hover {
                 &::before {
                     width: 100%;
@@ -1891,12 +2107,16 @@ Projects Area CSS
         }
     }
 }
+
 .projects-scroll-thumb {
     margin: {
         left: 45px;
         right: 80px;
-    };
+    }
+
+    ;
 }
+
 .projects-scroll-button {
     position: relative;
 
@@ -1909,29 +2129,34 @@ Projects Area CSS
             display: none;
         }
     }
+
     .swiper-button-prev {
         position: absolute;
         left: -2px;
         top: -450px;
-        
+
         &:after {
             display: none;
         }
     }
 }
+
 .projects-scroll-slide {
     .projects-scroll-card {
         padding-right: 50px;
     }
+
     .project-lg-img {
         padding-left: 70px;
     }
+
     .swiper-pagination {
         .swiper-pagination-bullet {
             width: 12px;
             height: 12px;
 
-            &.swiper-pagination-bullet-active, &:hover {
+            &.swiper-pagination-bullet-active,
+            &:hover {
                 background-color: var(--primaryColor);
             }
         }
@@ -1941,23 +2166,26 @@ Projects Area CSS
 .projects-area {
     &.bg-wrap-with-black {
         background-color: var(--blackColor);
-        
+
         .section-title-wrap {
             padding-left: 35px;
 
             span {
                 left: -12px;
             }
+
             h2 {
                 color: var(--whiteColor);
             }
         }
+
         .col-lg-6 {
             &:nth-child(1) {
                 .projects-inner-border {
                     padding-right: 80px;
                 }
             }
+
             &:nth-child(2) {
                 .projects-inner-border {
                     padding-left: 80px;
@@ -1965,6 +2193,7 @@ Projects Area CSS
                 }
             }
         }
+
         .projects-item {
             margin-bottom: 60px;
             padding-left: 55px;
@@ -1993,6 +2222,7 @@ Projects Area CSS
                     }
                 }
             }
+
             .projects-content {
                 margin-top: 0;
                 position: absolute;
@@ -2001,12 +2231,16 @@ Projects Area CSS
 
                 h3 {
                     writing-mode: vertical-lr;
+
                     margin: {
                         left: 0;
                         right: 0;
-                    };
+                    }
+
+                    ;
                 }
             }
+
             &:hover {
                 .projects-image {
                     .projects-btn {
@@ -2016,12 +2250,14 @@ Projects Area CSS
                 }
             }
         }
+
         .projects-btn {
             a {
                 color: var(--primaryColor);
             }
         }
     }
+
     &.without-wrap-border {
         .section-title-wrap {
             max-width: 100%;
@@ -2031,29 +2267,34 @@ Projects Area CSS
                 max-width: 620px;
                 padding-left: 45px;
             }
+
             span {
                 font-size: 14.7px;
                 top: 7.8px;
             }
         }
+
         .col-lg-4 {
             &:nth-child(1) {
                 .projects-inner-border {
                     border-right: none;
                 }
             }
+
             &:nth-child(3) {
                 .projects-inner-border {
                     border-left: none;
                 }
             }
         }
+
         .projects-item {
             .projects-content {
                 h3 {
                     a {
                         color: var(--blackColor);
                     }
+
                     span {
                         color: #9D9A97;
                     }
@@ -2063,9 +2304,9 @@ Projects Area CSS
     }
 }
 
-.tabs-nav { 
+.tabs-nav {
     display: inline-block;
-    
+
     .tab-btn {
         border: none;
         background: #F2EFEB;
@@ -2075,15 +2316,17 @@ Projects Area CSS
         color: var(--blackColor);
         margin-right: 12px;
         margin-bottom: 10px;
-        
+
         &:last-child {
             margin-right: 0;
         }
+
         b {
             color: #928D80;
             font-weight: 400;
             font-size: 14px;
         }
+
         &.active {
             background-color: var(--primaryColor);
             color: var(--whiteColor);
@@ -2105,9 +2348,12 @@ Animation View Area CSS
         padding: {
             left: 0;
             right: 0;
-        };
+        }
+
+        ;
     }
 }
+
 .animation-view-content {
     h1 {
         white-space: nowrap;
@@ -2119,7 +2365,7 @@ Animation View Area CSS
         span {
             display: inline-block;
             margin: 0 10px;
-            
+
             &:nth-child(odd) {
                 color: transparent;
                 -webkit-text-stroke: 0.5px #9C9C9C;
@@ -2128,17 +2374,20 @@ Animation View Area CSS
                 user-select: none;
             }
         }
+
         &:hover {
             animation-play-state: paused;
-        } 
+        }
     }
 }
+
 @keyframes marquee {
-    0% { 
-        transform: translateX(0); 
+    0% {
+        transform: translateX(0);
     }
-    100% { 
-        transform: translateX(-66.6%); 
+
+    100% {
+        transform: translateX(-66.6%);
     }
 }
 
@@ -2149,6 +2398,7 @@ Process Area CSS
     background: #24231D;
     overflow: hidden;
 }
+
 .col-xl-3 {
     &:nth-child(1) {
         .process-card {
@@ -2168,6 +2418,7 @@ Process Area CSS
                 width: 2px;
                 height: 307px;
             }
+
             &::after {
                 position: absolute;
                 content: "";
@@ -2182,6 +2433,7 @@ Process Area CSS
             }
         }
     }
+
     &:nth-child(2) {
         .process-card {
             position: relative;
@@ -2200,6 +2452,7 @@ Process Area CSS
                 width: 2px;
                 height: 333px;
             }
+
             &::after {
                 position: absolute;
                 content: "";
@@ -2214,6 +2467,7 @@ Process Area CSS
             }
         }
     }
+
     &:nth-child(3) {
         .process-card {
             position: relative;
@@ -2232,6 +2486,7 @@ Process Area CSS
                 width: 2px;
                 height: 333px;
             }
+
             &::after {
                 position: absolute;
                 content: "";
@@ -2246,6 +2501,7 @@ Process Area CSS
             }
         }
     }
+
     &:nth-child(4) {
         .process-card {
             position: relative;
@@ -2264,6 +2520,7 @@ Process Area CSS
                 width: 2px;
                 height: 333px;
             }
+
             &::after {
                 position: absolute;
                 content: "";
@@ -2279,6 +2536,7 @@ Process Area CSS
         }
     }
 }
+
 .process-card {
     margin-bottom: 25px;
 
@@ -2296,14 +2554,16 @@ Process Area CSS
             top: 10px;
         }
     }
+
     .process-content {
         margin-top: 30px;
-        
+
         h3 {
             font-size: 20px;
             color: #BDBDBD;
             margin-bottom: 15px;
         }
+
         p {
             color: #9D9A97;
         }
@@ -2318,6 +2578,7 @@ Client Area CSS
     z-index: 1;
     overflow: hidden;
 }
+
 .client-swiper {
     .swiper-pagination {
         .swiper-pagination-bullet {
@@ -2327,15 +2588,17 @@ Client Area CSS
         }
     }
 }
+
 .client-content {
     text-align: center;
     max-width: 870px;
     margin: auto;
     padding-bottom: 40px;
-    
+
     .icon {
         margin-bottom: 20px;
     }
+
     p {
         font-size: 24px;
         color: #B6B4B2;
@@ -2353,6 +2616,7 @@ Client Area CSS
                 height: 70px;
             }
         }
+
         .title {
             transition: var(--transition);
             margin-top: 15px;
@@ -2363,6 +2627,7 @@ Client Area CSS
                 margin-bottom: 0;
                 color: #BDBDBD;
             }
+
             span {
                 font-size: 14px;
                 font-weight: 400;
@@ -2373,8 +2638,8 @@ Client Area CSS
         }
     }
 }
- 
- 
+
+
 .client-shape1 {
     position: absolute;
     bottom: 18%;
@@ -2382,6 +2647,7 @@ Client Area CSS
     transform: translateY(-18%) translateX(-8%);
     z-index: -1;
 }
+
 .client-shape2 {
     position: absolute;
     top: 18%;
@@ -2404,12 +2670,14 @@ Client Area CSS
             top: 15.8px;
         }
     }
+
     .container-fluid {
         position: relative;
         left: calc((100% - 1320px)/2);
         overflow: hidden;
         padding-left: 50px;
     }
+
     &::before {
         position: absolute;
         content: "";
@@ -2420,27 +2688,34 @@ Client Area CSS
         background: #F4F4F4;
         z-index: -1;
     }
+
     &.with-margin-top {
         &::before {
             margin-top: 100px;
         }
     }
+
     &.without-before-color {
         &::before {
             display: none;
         }
+
         .container-fluid {
             padding-left: calc(var(--bs-gutter-x) * .5);
         }
+
         .client-wrap-card {
             border: 1px solid #f5f5f5;
         }
+
         .section-title-wrap {
             margin-left: 0;
         }
+
         .container {
             position: relative;
         }
+
         .client-wrap-slide-arrow {
             padding-right: 0;
             margin-top: 0;
@@ -2449,6 +2724,7 @@ Client Area CSS
             bottom: 30px;
         }
     }
+
     &.with-two-style-wrap {
         &::before {
             position: absolute;
@@ -2460,6 +2736,7 @@ Client Area CSS
             background: #F4F4F4;
             z-index: -1;
         }
+
         &::after {
             position: absolute;
             content: "";
@@ -2472,6 +2749,7 @@ Client Area CSS
         }
     }
 }
+
 .client-wrap-card {
     background: var(--whiteColor);
     box-shadow: 0px 2px 24px 0px rgba(0, 0, 0, 0.06);
@@ -2481,11 +2759,13 @@ Client Area CSS
     .icon {
         margin-bottom: 15px;
     }
+
     p {
         font-size: 20px;
         color: var(--blackColor);
         margin-bottom: 0;
     }
+
     .info {
         margin-top: 30px;
 
@@ -2495,6 +2775,7 @@ Client Area CSS
                 border-radius: 50%;
             }
         }
+
         .title {
             margin-left: 15px;
 
@@ -2503,6 +2784,7 @@ Client Area CSS
                 font-weight: 500;
                 margin-bottom: 0;
             }
+
             span {
                 font-size: 14px;
                 color: var(--primaryColor);
@@ -2512,19 +2794,27 @@ Client Area CSS
         }
     }
 }
+
 .client-wrap-slide-arrow {
     display: flex;
     justify-content: flex-end;
     position: absolute;
     right: 0;
+
     padding: {
         left: 0;
         right: 350px;
-    };
+    }
+
+    ;
+
     margin: {
         top: 35px;
         bottom: 0;
-    };
+    }
+
+    ;
+
     li {
         list-style-type: none;
         margin-right: 20px;
@@ -2532,18 +2822,20 @@ Client Area CSS
         &:last-child {
             margin-right: 0;
         }
+
         .swiper-button-next {
             position: relative;
             right: 0;
-    
+
             &:after {
                 display: none;
             }
         }
+
         .swiper-button-prev {
             position: relative;
             right: 0;
-    
+
             &:after {
                 display: none;
             }
@@ -2556,7 +2848,7 @@ Blog Area CSS
 =================================================*/
 .blog-slider {
     .swiper-pagination {
-        position: initial; 
+        position: initial;
 
         .swiper-pagination-bullet {
             width: 10px;
@@ -2565,6 +2857,7 @@ Blog Area CSS
         }
     }
 }
+
 .blog-card {
     background: #24231F;
     margin-bottom: 25px;
@@ -2585,6 +2878,7 @@ Blog Area CSS
         z-index: -1;
         transition: var(--transition);
     }
+
     &::after {
         position: absolute;
         content: "";
@@ -2599,6 +2893,7 @@ Blog Area CSS
         opacity: 0;
         visibility: hidden;
     }
+
     .meta {
         padding-left: 0;
         margin-bottom: 0;
@@ -2617,9 +2912,11 @@ Blog Area CSS
                 right: -10px;
                 top: 0;
             }
+
             &:last-child::before {
                 display: none;
             }
+
             a {
                 color: #B4B3B3;
                 font-weight: 500;
@@ -2628,11 +2925,13 @@ Blog Area CSS
                     color: var(--primaryColor);
                 }
             }
+
             &:last-child {
                 margin-right: 0;
             }
         }
     }
+
     .content {
         margin-top: 250px;
 
@@ -2650,6 +2949,7 @@ Blog Area CSS
                 }
             }
         }
+
         .arrow-btn {
             color: #9D9A97;
             font-weight: 500;
@@ -2666,11 +2966,13 @@ Blog Area CSS
                 transform: translateY(-50%);
                 margin-top: -0.5px;
             }
+
             &:hover {
                 color: var(--primaryColor);
             }
         }
     }
+
     .wrap-shape {
         position: absolute;
         right: -2px;
@@ -2678,17 +2980,20 @@ Blog Area CSS
         z-index: -1;
         transition: var(--transition);
     }
+
     &:hover {
         &::before {
             height: 100%;
             opacity: 1;
             visibility: visible;
         }
+
         &::after {
             height: 100%;
             opacity: 1;
             visibility: visible;
         }
+
         .wrap-shape {
             opacity: 0;
             visibility: hidden;
@@ -2706,12 +3011,14 @@ Blog Area CSS
             padding-left: 45px;
         }
     }
+
     &.wrap-style {
         .blog-search-box {
             width: 200px;
         }
     }
 }
+
 .blog-item {
     margin-bottom: 25px;
     position: relative;
@@ -2722,6 +3029,7 @@ Blog Area CSS
             display: block;
         }
     }
+
     .content {
         background-color: var(--blackColor);
         padding: 25px 25px 25px 60px;
@@ -2740,6 +3048,7 @@ Blog Area CSS
             top: 25px;
             left: 20px;
         }
+
         h3 {
             margin-bottom: 0;
             font-size: 22px;
@@ -2754,6 +3063,7 @@ Blog Area CSS
                 }
             }
         }
+
         &.wrap-color {
             background: #F4F4F4;
             transition: var(--transition);
@@ -2765,6 +3075,7 @@ Blog Area CSS
             }
         }
     }
+
     &:hover {
         .content {
             left: 5px;
@@ -2772,7 +3083,7 @@ Blog Area CSS
 
             &.wrap-color {
                 background: var(--blackColor);
-    
+
                 h3 {
                     a {
                         color: var(--whiteColor);
@@ -2797,6 +3108,7 @@ Blog Area CSS
             color: var(--blackColor);
             font-size: 18px;
         }
+
         .form-control {
             display: inline-block;
             border: 1px solid #E7E0E0;
@@ -2814,12 +3126,14 @@ Blog Area CSS
                 color: var(--paragraphColor);
                 transition: var(--transition);
             }
+
             &:focus {
                 &::placeholder {
                     color: transparent;
                 }
             }
         }
+
         .form-select {
             display: inline-block;
             border: 1px solid #E7E0E0;
@@ -2850,6 +3164,7 @@ Contact Area CSS
                 min-height: 745px;
             }
         }
+
         .contact-form-wrap {
             .title {
                 span {
@@ -2862,17 +3177,20 @@ Contact Area CSS
                     top: 8.8px;
                     letter-spacing: 1.6px;
                 }
+
                 h2 {
                     color: var(--blackColor);
                     margin-bottom: 0;
                     font-weight: 400;
                 }
             }
+
             form {
                 .form-group {
                     label {
                         color: var(--blackColor);
                     }
+
                     .form-control {
                         border-bottom: 1px solid #EDEDED;
                         color: #9D9A97;
@@ -2880,6 +3198,7 @@ Contact Area CSS
                         &::placeholder {
                             color: #9D9A97;
                         }
+
                         &:focus {
                             &::placeholder {
                                 color: transparent;
@@ -2889,6 +3208,7 @@ Contact Area CSS
                 }
             }
         }
+
         .contact-info-list {
             li {
                 color: #6C6661;
@@ -2900,6 +3220,7 @@ Contact Area CSS
                         color: var(--primaryColor);
                     }
                 }
+
                 .social {
                     li {
                         a {
@@ -2913,21 +3234,25 @@ Contact Area CSS
                 }
             }
         }
+
         .contact-shape1 {
             top: 2%;
             right: 8%;
             transform: translateY(-2%) translateX(-8%);
         }
     }
+
     &.with-top-border {
         .container {
             border-top: 1px dashed #646464;
         }
+
         .contact-image {
             img {
                 min-height: 745px;
             }
         }
+
         .contact-form-wrap {
             .title {
                 span {
@@ -2940,6 +3265,7 @@ Contact Area CSS
                     top: 8.8px;
                     letter-spacing: 1.6px;
                 }
+
                 h2 {
                     color: var(--whiteColor);
                     margin-bottom: 0;
@@ -2949,11 +3275,13 @@ Contact Area CSS
         }
     }
 }
+
 .contact-image {
     img {
         min-height: 775px;
     }
 }
+
 .contact-form-wrap {
     .title {
         max-width: 550px;
@@ -2963,7 +3291,7 @@ Contact Area CSS
             font-size: 40px;
             color: #E1DBD6;
             margin-bottom: 18px;
-    
+
             span {
                 color: transparent;
                 -webkit-text-stroke: 0.5px var(--whiteColor);
@@ -2973,6 +3301,7 @@ Contact Area CSS
             }
         }
     }
+
     form {
         .form-group {
             margin-bottom: 40px;
@@ -2992,6 +3321,7 @@ Contact Area CSS
                     letter-spacing: 1.3px;
                 }
             }
+
             .form-control {
                 background-color: transparent;
                 display: inline-block;
@@ -3008,22 +3338,26 @@ Contact Area CSS
                     color: #9D9A97;
                     transition: var(--transition);
                 }
+
                 &:focus {
                     &::placeholder {
                         color: transparent;
                     }
                 }
             }
+
             textarea {
                 &.form-control {
                     min-height: auto;
                 }
             }
+
             .form-select {
                 color: var(--blackColor) !important;
                 background-position: right 0 center;
             }
         }
+
         .default-btn {
             border: none;
 
@@ -3033,6 +3367,7 @@ Contact Area CSS
         }
     }
 }
+
 .contact-info-list {
     padding-left: 30px;
     margin-bottom: 0;
@@ -3045,6 +3380,7 @@ Contact Area CSS
         &:last-child {
             margin-bottom: 0;
         }
+
         span {
             color: var(--primaryColor);
             font-size: 15px;
@@ -3053,6 +3389,7 @@ Contact Area CSS
             display: block;
             margin-bottom: 15px;
         }
+
         a {
             color: #9D9A97;
             display: block;
@@ -3061,23 +3398,30 @@ Contact Area CSS
             &:last-child {
                 margin-bottom: 0;
             }
+
             &:hover {
                 color: var(--primaryColor);
             }
         }
+
         .social {
             padding-left: 0;
             display: flex;
-            
+
             li {
                 display: inline-block;
+
                 margin: {
                     bottom: 0;
                     right: 25px;
-                };
+                }
+
+                ;
+
                 &:last-child {
                     margin-right: 0;
                 }
+
                 a {
                     color: var(--whiteColor);
 
@@ -3089,6 +3433,7 @@ Contact Area CSS
         }
     }
 }
+
 .contact-shape1 {
     position: absolute;
     top: 10%;
@@ -3118,9 +3463,12 @@ Elevating Area CSS
         padding: {
             left: 30px;
             right: 30px;
-        };
+        }
+
+        ;
     }
 }
+
 .elevating-content {
     position: relative;
     padding-right: 245px;
@@ -3130,11 +3478,13 @@ Elevating Area CSS
         margin-bottom: 20px;
         font-weight: 600;
     }
+
     h3 {
         margin-bottom: 0;
         font-size: 40px;
         font-weight: 400;
     }
+
     .elevating-video {
         position: absolute;
         right: 0;
@@ -3150,16 +3500,17 @@ Elevating Area CSS
             transform: translateY(-50%);
             text-align: center;
             cursor: pointer;
-            
+
             i {
                 font-size: 35px;
                 background: linear-gradient(135deg, rgba(216, 183, 152, 0.80) 0%, rgba(186, 141, 109, 0.80) 100%);
                 -webkit-background-clip: text;
                 -moz-background-clip: text;
                 background-clip: text;
-               -webkit-text-fill-color:transparent;
+                -webkit-text-fill-color: transparent;
             }
         }
+
         img {
             animation-name: rotateme;
             animation-duration: 10s;
@@ -3178,17 +3529,20 @@ Funfacts Area CSS
             padding-left: 25px;
         }
     }
+
     &:nth-child(3) {
         .funfacts-card {
             padding-left: 50px;
         }
     }
+
     &:nth-child(4) {
         .funfacts-card {
             padding-left: 145px;
         }
     }
 }
+
 .funfacts-card {
     margin-bottom: 25px;
 
@@ -3200,12 +3554,14 @@ Funfacts Area CSS
             position: relative;
             top: -3.5px;
         }
+
         &.text {
             position: relative;
             top: -3.5px;
             left: 2px;
         }
     }
+
     p {
         font-size: 15px;
         color: #9D9A97;
@@ -3220,36 +3576,44 @@ Partner Area CSS
         padding: {
             left: 30px;
             right: 30px;
-        };
+        }
+
+        ;
     }
 }
+
 .col-lg-2 {
     &:nth-child(1) {
         .partner-item {
             border-right: none;
         }
     }
+
     &:nth-child(2) {
         .partner-item {
             border-right: none;
         }
     }
+
     &:nth-child(3) {
         .partner-item {
             border-right: none;
         }
     }
+
     &:nth-child(4) {
         .partner-item {
             border-right: none;
         }
     }
+
     &:nth-child(5) {
         .partner-item {
             border-right: none;
         }
     }
 }
+
 .partner-item {
     margin-bottom: 25px;
     border: 1px dashed #E7E0E0;
@@ -3279,16 +3643,19 @@ Team Area CSS
         background-color: var(--blackColor);
         z-index: -1;
     }
+
     &.different-wrap-color {
         &::before {
             background: #F2EFEB;
         }
+
         .team-left-content {
             .title {
                 h2 {
                     color: var(--blackColor);
                 }
             }
+
             .team-card {
                 .team-social {
                     li {
@@ -3301,6 +3668,7 @@ Team Area CSS
                 }
             }
         }
+
         .team-card {
             .team-image {
                 .content {
@@ -3313,17 +3681,23 @@ Team Area CSS
             }
         }
     }
+
     &.with-margin-top {
         &::before {
             display: none;
         }
+
         .team-left-content {
             position: relative;
             z-index: 1;
+
             padding: {
                 top: 80px;
                 bottom: 80px;
-            };
+            }
+
+            ;
+
             &::before {
                 position: absolute;
                 content: "";
@@ -3334,24 +3708,32 @@ Team Area CSS
                 background: #F2EFEB;
                 z-index: -1;
             }
+
             .team-card {
                 margin-top: 0;
             }
         }
+
         .team-card {
             margin: {
                 top: 0;
                 bottom: 25px;
-            };
+            }
+
+            ;
         }
     }
 }
+
 .team-left-content {
     padding: {
         top: 100px;
         bottom: 100px;
         right: 65px;
-    };
+    }
+
+    ;
+
     .title {
         position: relative;
         padding-left: 45px;
@@ -3367,6 +3749,7 @@ Team Area CSS
             top: 8.8px;
             letter-spacing: 1.6px;
         }
+
         h2 {
             font-size: 40px;
             font-weight: 400;
@@ -3375,6 +3758,7 @@ Team Area CSS
             color: var(--whiteColor);
         }
     }
+
     .team-card {
         .team-social {
             li {
@@ -3387,6 +3771,7 @@ Team Area CSS
         }
     }
 }
+
 .team-card {
     position: relative;
     padding-left: 40px;
@@ -3410,6 +3795,7 @@ Team Area CSS
                 color: var(--whiteColor);
                 margin-bottom: 0;
             }
+
             span {
                 font-size: 15px;
                 display: block;
@@ -3418,6 +3804,7 @@ Team Area CSS
             }
         }
     }
+
     .team-social {
         padding-left: 0;
         margin-bottom: 0;
@@ -3433,6 +3820,7 @@ Team Area CSS
             &:last-child {
                 margin-bottom: 0;
             }
+
             a {
                 i {
                     color: var(--primaryColor);
@@ -3441,6 +3829,7 @@ Team Area CSS
         }
     }
 }
+
 .team-right-content {
     padding-left: 20px;
 }
@@ -3455,9 +3844,12 @@ Page Banner Area CSS
         padding: {
             left: 30px;
             right: 30px;
-        };
+        }
+
+        ;
     }
 }
+
 .page-banner-inner {
     background: #F2EFEB;
     padding: 20px 30px;
@@ -3482,6 +3874,7 @@ Page Banner Area CSS
                     color: var(--primaryColor);
                 }
             }
+
             &::before {
                 position: absolute;
                 content: "";
@@ -3492,6 +3885,7 @@ Page Banner Area CSS
                 height: 2px;
                 width: 5px;
             }
+
             &:last-child {
                 margin-right: 0;
 
@@ -3511,20 +3905,27 @@ Box Style Area CSS
         padding: {
             left: 30px;
             right: 30px;
-        };
+        }
+
+        ;
     }
 }
+
 .box-style-inner {
     background: #F2EFEB;
     text-align: center;
     position: relative;
     z-index: 1;
+
     padding: {
         top: 170px;
         bottom: 170px;
         left: 55px;
         right: 55px;
-    };
+    }
+
+    ;
+
     h3 {
         font-size: 40px;
         font-weight: 400;
@@ -3532,6 +3933,7 @@ Box Style Area CSS
         margin: auto;
         line-height: 1.4;
     }
+
     .wrap-shape {
         position: absolute;
         left: 0;
@@ -3548,13 +3950,14 @@ Projects Gallery Area CSS
 .projects-gallery-area {
     margin-top: 50px;
     overflow: hidden;
-    
+
     .title {
         font-size: 30px;
         font-weight: 400;
         margin-bottom: 40px;
     }
 }
+
 .projects-gallery-slide-swiper {
     overflow: unset;
 
@@ -3575,6 +3978,7 @@ FAQ Area CSS
         }
     }
 }
+
 .faq-accordion {
     .accordion__item {
         border: none;
@@ -3585,6 +3989,7 @@ FAQ Area CSS
         &:last-child {
             margin-bottom: 0;
         }
+
         .accordion__button {
             color: var(--blackColor);
             position: relative;
@@ -3607,6 +4012,7 @@ FAQ Area CSS
                 top: 28px;
             }
         }
+
         .accordion__panel {
             padding: 15px 0 0 30px;
         }
@@ -3639,14 +4045,17 @@ Profile Authentication Area CSS
                 width: 100px;
                 height: 2px;
             }
+
             b {
                 font-weight: 500;
             }
         }
+
         p {
             margin-bottom: 0;
         }
     }
+
     .form-group {
         margin-bottom: 25px;
 
@@ -3654,11 +4063,15 @@ Profile Authentication Area CSS
             display: block;
             margin-bottom: 2px;
             color: var(--blackColor);
+
             font: {
                 size: 15px;
                 weight: 500;
-            };
+            }
+
+            ;
         }
+
         .form-control {
             transition: var(--transition);
             border: none;
@@ -3670,53 +4083,61 @@ Profile Authentication Area CSS
             height: 55px;
             width: 100%;
             padding: 0;
+
             &::placeholder {
                 color: var(--paragraphColor);
                 transition: var(--transition);
             }
+
             &:focus {
                 border-color: var(--primaryColor);
                 background-color: transparent;
-                
+
                 &::placeholder {
                     color: transparent;
                 }
             }
         }
     }
+
     .form-bottom {
         margin-bottom: 25px;
 
         .form-check {
             color: var(--paragraphColor);
-            
+
             a {
                 color: var(--primaryColor);
-    
+
                 &:hover {
                     text-decoration: underline;
                 }
             }
+
             .form-check-input {
                 margin-top: 0.24em;
                 box-shadow: unset !important;
                 font-size: 15px;
-    
+
                 &[type=checkbox] {
                     border-radius: 0;
                 }
+
                 &:checked {
                     background-color: var(--primaryColor);
                     border-color: var(--primaryColor);
                 }
+
                 &:focus {
                     border-color: var(--primaryColor);
                 }
             }
+
             .form-check-label {
                 cursor: pointer;
             }
         }
+
         .forgot-password {
             text-decoration: underline;
             transition: var(--transition);
@@ -3726,14 +4147,16 @@ Profile Authentication Area CSS
             }
         }
     }
+
     .default-btn {
         display: block;
         width: 100%;
         border: none;
     }
+
     .text {
         margin-top: 20px;
-        
+
         p {
             a {
                 color: var(--blackColor);
@@ -3746,6 +4169,7 @@ Profile Authentication Area CSS
         }
     }
 }
+
 .register-form {
     max-width: 550px;
     margin: auto;
@@ -3769,14 +4193,17 @@ Profile Authentication Area CSS
                 width: 100px;
                 height: 2px;
             }
+
             b {
                 font-weight: 500;
             }
         }
+
         p {
             margin-bottom: 0;
         }
     }
+
     form {
         .form-group {
             margin-bottom: 25px;
@@ -3785,11 +4212,15 @@ Profile Authentication Area CSS
                 display: block;
                 margin-bottom: 2px;
                 color: var(--blackColor);
+
                 font: {
                     size: 15px;
                     weight: 500;
-                };
+                }
+
+                ;
             }
+
             .form-control {
                 transition: var(--transition);
                 border: none;
@@ -3801,32 +4232,37 @@ Profile Authentication Area CSS
                 height: 55px;
                 width: 100%;
                 padding: 0;
+
                 &::placeholder {
                     color: var(--paragraphColor);
                     transition: var(--transition);
                 }
+
                 &:focus {
                     border-color: var(--primaryColor);
                     background-color: transparent;
-                    
+
                     &::placeholder {
                         color: transparent;
                     }
                 }
             }
         }
+
         .default-btn {
             display: block;
             width: 100%;
             border: none;
         }
+
         .alert-text {
             font-size: 15.5px;
             font-style: italic;
         }
+
         .text {
             margin-top: 20px;
-            
+
             p {
                 a {
                     color: var(--blackColor);
@@ -3840,24 +4276,33 @@ Profile Authentication Area CSS
         }
     }
 }
+
 .forgot-password-box {
     padding: 50px;
     max-width: 650px;
     background-color: var(--whiteColor);
     box-shadow: rgba(149, 157, 165, 0.15) 0px 8px 24px;
+
     margin: {
         left: auto;
         right: auto;
-    };
+    }
+
+    ;
+
     label {
         display: block;
         margin-bottom: 12px;
         color: var(--blackColor);
+
         font: {
             size: 15px;
             weight: 500;
-        };
+        }
+
+        ;
     }
+
     .form-control {
         transition: var(--transition);
         border: 1px solid #f9f9f9;
@@ -3868,23 +4313,29 @@ Profile Authentication Area CSS
         box-shadow: unset;
         height: 55px;
         width: 100%;
+
         padding: {
             left: 20px;
             right: 20px;
-        };
+        }
+
+        ;
+
         &::placeholder {
             color: var(--paragraphColor);
             transition: var(--transition);
         }
+
         &:focus {
             border-color: var(--primaryColor);
             background-color: transparent;
-            
+
             &::placeholder {
                 color: transparent;
             }
         }
     }
+
     .default-btn {
         margin-top: 25px;
         border: none;
@@ -3895,7 +4346,19 @@ Profile Authentication Area CSS
 Privacy Policy Area CSS
 =================================================*/
 .privacy-policy-content {
-    .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+
+    .h1,
+    .h2,
+    .h3,
+    .h4,
+    .h5,
+    .h6,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
         font-size: 22px;
         font-weight: 500;
         margin-bottom: 15px;
@@ -3904,10 +4367,12 @@ Privacy Policy Area CSS
             margin-top: 30px;
         }
     }
+
     strong {
         color: var(--blackColor);
         font-weight: 500;
     }
+
     p {
         a {
             color: var(--primaryColor);
@@ -3917,18 +4382,21 @@ Privacy Policy Area CSS
             }
         }
     }
-    ul, ol {
+
+    ul,
+    ol {
         li {
             color: var(--paragraphColor);
             margin-bottom: 20px;
 
             a {
                 color: var(--primaryColor);
-    
+
                 &:hover {
                     text-decoration: underline;
                 }
             }
+
             &:last-child {
                 margin-bottom: 0;
             }
@@ -3940,7 +4408,19 @@ Privacy Policy Area CSS
 Terms & Conditions Area CSS
 =================================================*/
 .terms-conditions-content {
-    .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+
+    .h1,
+    .h2,
+    .h3,
+    .h4,
+    .h5,
+    .h6,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
         font-size: 22px;
         font-weight: 500;
         margin-bottom: 15px;
@@ -3949,10 +4429,12 @@ Terms & Conditions Area CSS
             margin-top: 30px;
         }
     }
+
     strong {
         color: var(--blackColor);
         font-weight: 500;
     }
+
     p {
         a {
             color: var(--primaryColor);
@@ -3962,18 +4444,21 @@ Terms & Conditions Area CSS
             }
         }
     }
-    ul, ol {
+
+    ul,
+    ol {
         li {
             color: var(--paragraphColor);
             margin-bottom: 20px;
 
             a {
                 color: var(--primaryColor);
-    
+
                 &:hover {
                     text-decoration: underline;
                 }
             }
+
             &:last-child {
                 margin-bottom: 0;
             }
@@ -3988,11 +4473,13 @@ Not Found Area CSS
     img {
         margin-bottom: 35px;
     }
+
     h3 {
         font-size: 30px;
         margin-bottom: 15px;
         font-weight: 500;
     }
+
     .default-btn {
         margin-top: 15px;
     }
@@ -4007,14 +4494,17 @@ Widget Area CSS
             left: 0;
             top: 0;
             right: 20px;
-        };
+        }
+
+        ;
     }
 }
+
 .widget-area {
     background: #F4F4F4;
     padding: 40px;
     margin-left: 20px;
- 
+
     .widget {
         margin-bottom: 55px;
 
@@ -4023,10 +4513,12 @@ Widget Area CSS
             font-size: 24px;
             font-weight: 400;
         }
+
         &:last-child {
             margin-bottom: 0;
         }
     }
+
     .widget_search {
         form {
             position: relative;
@@ -4044,17 +4536,19 @@ Widget Area CSS
                 padding: 15px 25px 15px 50px;
                 width: 100%;
                 font-size: 15px;
-        
+
                 &::placeholder {
                     color: var(--paragraphColor);
                     transition: var(--transition);
                 }
+
                 &:focus {
                     &::placeholder {
                         color: transparent;
                     }
                 }
             }
+
             button {
                 border: none;
                 padding: 0;
@@ -4069,6 +4563,7 @@ Widget Area CSS
             }
         }
     }
+
     .widget_categories {
         ul {
             padding-left: 0;
@@ -4092,17 +4587,20 @@ Widget Area CSS
                         color: var(--primaryColor);
                     }
                 }
+
                 span {
                     img {
                         max-width: 20px;
                     }
                 }
+
                 &:last-child {
                     margin-bottom: 0;
                 }
             }
         }
     }
+
     .widget_traz_posts_thumb {
         .item {
             overflow: hidden;
@@ -4115,6 +4613,7 @@ Widget Area CSS
                 border-bottom: none;
                 padding-bottom: 0;
             }
+
             .thumb {
                 float: left;
                 overflow: hidden;
@@ -4127,19 +4626,25 @@ Widget Area CSS
                     width: 90px;
                     height: 90px;
                     display: inline-block;
+
                     background: {
                         size: cover !important;
                         repeat: no-repeat;
                         position: center center !important;
-                    };
+                    }
+
+                    ;
+
                     &.bg1 {
                         background-image: url(/images/blog/blog1.jpg);
                     }
+
                     &.bg2 {
                         background-image: url(/images/blog/blog2.jpg);
                     }
                 }
             }
+
             .info {
                 overflow: hidden;
                 margin-top: 4.5px;
@@ -4158,6 +4663,7 @@ Widget Area CSS
                         }
                     }
                 }
+
                 span {
                     display: block;
                     margin-top: 10px;
@@ -4167,22 +4673,31 @@ Widget Area CSS
             }
         }
     }
+
     .widget_tag_cloud {
         .tagcloud {
             margin-bottom: -10px;
+
             a {
                 padding: 10px 15px;
                 display: inline-block;
                 background-color: var(--whiteColor);
                 color: var(--blackColor);
+
                 margin: {
                     right: 8px;
                     bottom: 10px;
-                };
+                }
+
+                ;
+
                 font: {
                     size: 15.5px;
                     weight: 400;
-                };
+                }
+
+                ;
+
                 &:hover {
                     color: var(--whiteColor);
                     background-color: var(--primaryColor);
@@ -4204,7 +4719,8 @@ Pagination Area CSS
         align-items: center;
         justify-content: center;
 
-        .next, .prev {
+        .next,
+        .prev {
             i {
                 font-size: 30px;
                 transition: var(--transition);
@@ -4216,9 +4732,10 @@ Pagination Area CSS
             }
         }
     }
+
     .page-numbers {
         width: 45px;
-        height: 45px; 
+        height: 45px;
         line-height: 45px;
         overflow: hidden;
         border-radius: 0;
@@ -4230,11 +4747,16 @@ Pagination Area CSS
         font-size: 15.5px;
         font-weight: 400;
         letter-spacing: 0.32px;
+
         margin: {
             left: 8px;
             right: 8px;
-        };
-        &:hover, &.current {
+        }
+
+        ;
+
+        &:hover,
+        &.current {
             color: var(--whiteColor);
             background: var(--primaryColor);
         }
@@ -4262,17 +4784,19 @@ Pagination Area CSS
             }
         }
     }
+
     .projects-area {
         &.bg-wrap-with-black {
             background-color: transparent;
 
             .pagination-area {
-                
+
                 .page-numbers {
                     background: #423E3A;
                     color: #B0ADA4;
-                    
-                    &:hover, &.current {
+
+                    &:hover,
+                    &.current {
                         color: var(--whiteColor);
                         background: var(--primaryColor);
                     }
@@ -4281,6 +4805,7 @@ Pagination Area CSS
         }
     }
 }
+
 .pricing-plan {
     background-color: #F2EFEB;
     padding: 50px 40px;
@@ -4292,13 +4817,16 @@ Pagination Area CSS
         color: var(--primaryColor);
         font-size: 17px;
     }
+
     p {
         font-size: 15px;
     }
+
     h2 {
         font-size: 35px;
         margin: 15px 0 30px;
     }
+
     ul {
         list-style-type: none;
         margin: 0;
@@ -4312,6 +4840,7 @@ Pagination Area CSS
             &:last-child {
                 margin-bottom: 0;
             }
+
             i {
                 position: absolute;
                 left: 0;
@@ -4322,6 +4851,7 @@ Pagination Area CSS
             }
         }
     }
+
     .default-btn {
         margin-top: 35px;
     }
@@ -4329,7 +4859,7 @@ Pagination Area CSS
 
 .author-content {
     margin-bottom: 50px;
-    
+
     img {
         width: 200px;
         height: 200px;
@@ -4338,6 +4868,7 @@ Pagination Area CSS
         margin-left: auto;
         margin-bottom: 20px;
     }
+
     .content {
         max-width: 450px;
         margin: auto;
@@ -4345,9 +4876,11 @@ Pagination Area CSS
         h3 {
             font-size: 20px;
         }
+
         p {
             font-size: 15px;
         }
+
         ul {
             list-style-type: none;
             padding: 0;
@@ -4380,6 +4913,7 @@ Pagination Area CSS
         }
     }
 }
+
 .search-title {
     margin-bottom: 30px;
 }

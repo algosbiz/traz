@@ -22,7 +22,7 @@ const ServiceDetailsContentTwo: React.FC = () => {
                   <span>SERVICE</span>
                   <h2>What Works and What to Consider in Masonry Services</h2>
                   <p>
-                    At DMG Masonry, we believe good masonry work starts with clear planning and the right expectations. Our role is to help clients understand where masonry performs best and what practical considerations need to be addressed, so every project is built to last and completed efficiently.
+                    At DMG Masonry, we believe good masonry work starts with clear planning and the right expectations. We help clients understand where masonry performs best so every project is built to last and completed efficiently.
                   </p>
                 </div>
               </div>
@@ -44,22 +44,49 @@ const ServiceDetailsContentTwo: React.FC = () => {
                     borderRadius: '10px'
                   }}
                 />
-                <h2>Why We Use Masonry Construction</h2>
                 <p>
-                  We work with masonry because it offers long-term performance and reliable structural strength across a wide range of projects. Masonry construction provides strong fire resistance and stands up well to weather, moisture, and everyday wear over time. Its durability allows masonry structures to support substantial loads, making it suitable for both residential and commercial applications.
+                  We works with masonry because it provides long-term durability, reliable structural strength, and timeless performance across residential and commercial projects. Its natural resistance to weather, moisture, fire, and everyday wear makes masonry a dependable solution designed to last for years.
+
 
                 </p>
 
-                <p>Masonry also offers natural thermal mass, which helps regulate indoor temperatures and improve energy efficiency. From a visual standpoint, it delivers a classic, timeless appearance that continues to add value to a property over the long term. With proper construction, masonry buildings typically last longer, require less maintenance, and often contribute to higher resale value. Masonry materials are also resistant to pests such as termites and ants, and in many cases, masonry labor can be a cost-effective alternative to wood construction.</p>
-                <h2>What We Consider During Masonry Planning</h2>
+                <p>Masonry also offers lasting visual appeal and practical long-term value for a property. With proper construction, masonry structures typically require less maintenance, improve energy efficiency through natural thermal mass, and maintain their strength and appearance over time. Its durability, pest resistance, and long lifespan continue to make masonry a trusted choice for timeless construction.
+                </p>
+                {/* <h2>What We Consider During Masonry Planning</h2> */}
 
-                <p>Because masonry materials are heavy, our team carefully plans handling, transportation, and installation to maintain safety and efficiency on site. Some materials may require advance sourcing, which is why we coordinate material selection early in the process to avoid delays.</p>
+                <div className="row justify-content-center">
+                  <div className="col-lg-6 col-sm-6">
+                    <ul className="list">
+                      <li>
+                        <Image src={arrowIcon} alt="arrow" width={28} height={10} />
+                        Weather Resistance
+                      </li>
+                      <li>
+                        <Image src={arrowIcon} alt="arrow" width={28} height={10} />
+                        Timeless Durability
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div className="col-lg-6 col-sm-6">
+                    <ul className="list">
+                      <li>
+                        <Image src={arrowIcon} alt="arrow" width={28} height={10} />
+                        Energy Efficiency
+                      </li>
+                      <li>
+                        <Image src={arrowIcon} alt="arrow" width={28} height={10} />Low Maintenance
+                      </li>
+                    </ul>
+                  </div>
+                </div>
 
                 <p>
-                  Proper masonry performance depends on a well-prepared foundation. We assess site conditions and foundation requirements to reduce the risk of cracking and structural issues. Weather is another key factor, as rain or extreme temperatures can affect construction schedules. Our team plans timelines carefully and adjusts workflows when needed to maintain quality.
+                  Proper masonry planning starts with careful coordination, material preparation, and experienced project management. Because masonry materials require precise handling and installation, our team plans each stage carefully to support safe workflows, efficient construction, and lasting structural performance.
                 </p>
 
-                <p>Masonry projects also require detailed coordination and experienced craftsmanship. We manage this by maintaining clear communication, realistic timelines, and consistent on-site supervision throughout the build.</p>
+                <p>At DMG Masonry, we focus on practical planning that supports both durability and long-term project quality. From foundation preparation to material selection and scheduling, every detail is considered to help masonry structures perform reliably over time.</p>
+                <p>Timeless masonry work requires more than durable materials alone. Through clear communication, realistic timelines, and consistent on-site supervision, our team carefully manages every stage of the project to maintain quality, efficiency, and long-term performance. By combining practical planning with experienced workmanship, we help create masonry projects designed to remain strong, functional, and visually lasting for years to come.</p>
               </div>
             </div>
 

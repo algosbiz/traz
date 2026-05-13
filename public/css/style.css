@@ -123,6 +123,7 @@ Default CSS
 .theme-heading-color {
   color: var(--headingColor) !important;
 }
+
 .theme-text-color {
   color: var(--textColor) !important;
 }
@@ -142,11 +143,23 @@ p {
   line-height: 1.6;
   font-weight: 400;
 }
+
 p:last-child {
   margin-bottom: 0;
 }
 
-.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   color: var(--headingColor);
   font-weight: bold;
 }
@@ -157,6 +170,7 @@ a {
   text-decoration: none;
   outline: 0 !important;
 }
+
 a:hover {
   color: var(--headingColor);
   text-decoration: none;
@@ -170,6 +184,7 @@ a:hover {
   width: 100%;
   height: 100%;
 }
+
 .d-table-cell {
   vertical-align: middle;
 }
@@ -209,6 +224,7 @@ img {
   position: relative;
   z-index: 1;
 }
+
 .section-area-with-line .lines {
   position: absolute;
   top: 0;
@@ -219,6 +235,7 @@ img {
   width: 90vw;
   z-index: -1;
 }
+
 .section-area-with-line .lines .line {
   position: absolute;
   height: 80%;
@@ -228,12 +245,15 @@ img {
   overflow: hidden;
   z-index: -1;
 }
+
 .section-area-with-line .lines .line:nth-child(1) {
   margin-left: -25%;
 }
+
 .section-area-with-line .lines .line:nth-child(2) {
   margin-left: 0;
 }
+
 .section-area-with-line .lines .line:nth-child(3) {
   margin-left: 25%;
 }
@@ -250,6 +270,7 @@ Default Btn Area CSS
   font-weight: 500;
   transition: var(--transition);
 }
+
 .default-btn:hover {
   background-color: var(--blackColor);
   color: var(--whiteColor);
@@ -261,11 +282,13 @@ Section Title CSS
 .section-title {
   margin-bottom: 50px;
 }
+
 .section-title h2 {
   font-size: 40px;
   color: var(--headingColor);
   margin-bottom: 0;
 }
+
 .section-title h2 span {
   color: transparent;
   -webkit-text-stroke: 0.5px var(--headingColor);
@@ -273,6 +296,7 @@ Section Title CSS
   -moz-user-select: none;
   user-select: none;
 }
+
 .section-title a {
   color: var(--subtitleColor);
   font-weight: 500;
@@ -280,6 +304,7 @@ Section Title CSS
   letter-spacing: 1.5px;
   position: relative;
 }
+
 .section-title a::before {
   position: absolute;
   content: "";
@@ -291,9 +316,11 @@ Section Title CSS
   background-color: var(--primaryColor);
   transition: var(--transition);
 }
+
 .section-title a:hover {
   color: var(--primaryColor);
 }
+
 .section-title a:hover::before {
   width: 100%;
 }
@@ -304,6 +331,7 @@ Section Title CSS
   padding-left: 45px;
   margin-bottom: 50px;
 }
+
 .section-title-wrap span {
   font-weight: 500;
   color: var(--primaryColor);
@@ -314,11 +342,13 @@ Section Title CSS
   top: 8.8px;
   letter-spacing: 1px;
 }
+
 .section-title-wrap h2 {
   font-size: 40px;
   font-weight: 400;
   margin-bottom: 0;
 }
+
 .section-title-wrap .link-btn a {
   color: var(--primaryColor);
   font-weight: 500;
@@ -326,6 +356,7 @@ Section Title CSS
   letter-spacing: 1.5px;
   position: relative;
 }
+
 .section-title-wrap .link-btn a::before {
   position: absolute;
   content: "";
@@ -337,9 +368,11 @@ Section Title CSS
   background-color: var(--primaryColor);
   transition: var(--transition);
 }
+
 .section-title-wrap .link-btn a:hover {
   color: var(--primaryColor);
 }
+
 .section-title-wrap .link-btn a:hover::before {
   width: 100%;
 }
@@ -355,6 +388,7 @@ Preloader Area CSS
   z-index: 99999;
   background: var(--preloaderBg);
 }
+
 .preloader-area .loader {
   left: 0;
   right: 0;
@@ -362,16 +396,19 @@ Preloader Area CSS
   position: absolute;
   transform: translateY(-48%);
 }
+
 .preloader-area .loader .waviy {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 0;
 }
+
 .preloader-area .loader .waviy .waviy-line {
   display: flex;
   justify-content: center;
 }
+
 .preloader-area .loader .waviy span {
   animation: flip 2s infinite;
   color: var(--whiteColor);
@@ -380,37 +417,47 @@ Preloader Area CSS
   font-size: 45px;
   font-weight: 800;
 }
+
 .preloader-area .loader .waviy span:nth-child(2) {
   animation-delay: 0.2s;
 }
+
 .preloader-area .loader .waviy span:nth-child(3) {
   animation-delay: 0.4s;
 }
+
 .preloader-area .loader .waviy span:nth-child(4) {
   animation-delay: 0.6s;
 }
+
 .preloader-area .loader .waviy span:nth-child(5) {
   animation-delay: 0.8s;
 }
 
 @keyframes flip {
-  0%, 80% {
+
+  0%,
+  80% {
     transform: rotateY(360deg);
   }
 }
+
 @media only screen and (max-width: 767px) {
   .preloader-area .loader {
     padding-left: 20px;
     padding-right: 20px;
   }
+
   .preloader-area .loader .waviy {
     gap: 6px;
   }
+
   .preloader-area .loader .waviy .waviy-line:first-child span,
   .preloader-area .loader .waviy .waviy-line:last-child span {
     font-size: 34px;
   }
 }
+
 /*================================================
 Main Banner Area CSS
 =================================================*/
@@ -421,10 +468,12 @@ Main Banner Area CSS
   padding-top: 100px;
   padding-bottom: 375px;
 }
+
 .main-banner-area .container-fluid {
   padding-left: 30px;
   padding-right: 30px;
 }
+
 .main-banner-area::before {
   position: absolute;
   content: "";
@@ -442,11 +491,13 @@ Main Banner Area CSS
   position: relative;
   z-index: 2;
 }
+
 .main-banner-content h1 {
   color: var(--headingColor);
   font-size: 70px;
   margin-bottom: 20px;
 }
+
 .main-banner-content h1 span {
   color: transparent;
   -webkit-text-stroke: 0.5px var(--headingColor);
@@ -454,27 +505,32 @@ Main Banner Area CSS
   -moz-user-select: none;
   user-select: none;
 }
+
 .main-banner-content p {
   color: var(--headingColor);
   max-width: 625px;
-  font-size: 20px;
-  line-height: 1.8;
+  font-size: 17px;
+  line-height: 2.1;
   font-weight: 400;
   text-shadow: 0 1px 1px rgba(255, 255, 255, 0.35);
 }
+
 [data-theme='dark'] .main-banner-content p {
   color: var(--mutedColor);
   text-shadow: none;
 }
+
 .main-banner-content .banner-btn {
   margin-top: 30px;
 }
+
 .main-banner-content .banner-btn .default-btn {
   background-color: transparent;
   border: 1px solid var(--primaryColor);
   padding: 15px 40px;
   color: var(--headingColor);
 }
+
 .main-banner-content .banner-btn .default-btn:hover {
   background-color: var(--primaryColor);
   color: var(--whiteColor);
@@ -503,6 +559,7 @@ Main Banner Area CSS
   top: 175px;
   z-index: 2;
 }
+
 .main-banner-video .video-btn {
   position: absolute;
   left: 0;
@@ -512,6 +569,7 @@ Main Banner Area CSS
   text-align: center;
   cursor: pointer;
 }
+
 .main-banner-video .video-btn i {
   font-size: 35px;
   background: linear-gradient(135deg, rgba(216, 183, 152, 0.8) 0%, rgba(186, 141, 109, 0.8) 100%);
@@ -520,6 +578,7 @@ Main Banner Area CSS
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
 .main-banner-video img {
   animation-name: rotateme;
   animation-duration: 10s;
@@ -531,10 +590,12 @@ Main Banner Area CSS
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
 }
+
 .main-banner-social {
   padding-left: 0;
   margin-bottom: 0;
@@ -543,13 +604,16 @@ Main Banner Area CSS
   bottom: 55px;
   z-index: 2;
 }
+
 .main-banner-social li {
   list-style-type: none;
   margin-bottom: 20px;
 }
+
 .main-banner-social li:last-child {
   margin-bottom: 0;
 }
+
 .main-banner-social li a i {
   width: 25px;
   height: 25px;
@@ -562,6 +626,7 @@ Main Banner Area CSS
   display: inline-block;
   text-align: center;
 }
+
 .main-banner-social li a i:hover {
   color: var(--primaryColor);
 }
@@ -573,6 +638,7 @@ Main Banner Area CSS
   display: flex;
   z-index: 2;
 }
+
 .main-banner-arrow a {
   display: inline-block;
   height: 80px;
@@ -582,6 +648,7 @@ Main Banner Area CSS
   position: relative;
   transition: var(--transition);
 }
+
 .main-banner-arrow a img {
   position: absolute;
   left: 0;
@@ -590,6 +657,7 @@ Main Banner Area CSS
   transform: translateY(-50%);
   margin: auto;
 }
+
 .main-banner-arrow a:hover {
   background-color: var(--whiteColor);
 }
@@ -602,20 +670,25 @@ Main Banner Area CSS
   bottom: 155px;
   writing-mode: vertical-lr;
 }
+
 .main-banner-info li {
   list-style-type: none;
   display: inline-block;
   margin-bottom: 50px;
 }
+
 .main-banner-info li:last-child {
   margin-bottom: 0;
 }
+
 .main-banner-info li span {
   color: #928C87;
 }
+
 .main-banner-info li a {
   color: #928C87;
 }
+
 .main-banner-info li a:hover {
   color: var(--primaryColor);
 }
@@ -641,15 +714,18 @@ Main Banner Animation Area CSS
   white-space: nowrap;
   animation: marquee-banner 7s linear infinite forwards;
 }
+
 .main-banner-animation img {
   min-height: 590px;
   min-width: 3000px;
   position: relative;
   top: -1px;
 }
+
 .main-banner-animation:hover {
   animation-play-state: paused;
 }
+
 .main-banner-animation h1 {
   display: none;
 }
@@ -658,10 +734,12 @@ Main Banner Animation Area CSS
   0% {
     transform: translateX(0);
   }
+
   100% {
     transform: translateX(-100%);
   }
 }
+
 /*================================================
 Architecture Studio Banner Area CSS
 =================================================*/
@@ -672,6 +750,7 @@ Architecture Studio Banner Area CSS
   overflow: hidden;
   border: 1px solid #000000;
 }
+
 .as-banner-area .container-fluid {
   padding-left: 0;
   padding-right: 0;
@@ -680,18 +759,21 @@ Architecture Studio Banner Area CSS
 .as-banner-image .icv__control-line {
   display: none;
 }
+
 .as-banner-image .icv__circle {
   width: 80px;
   height: 80px;
   background-color: var(--whiteColor);
   box-shadow: unset !important;
   -webkit-backdrop-filter: unset !important;
-          backdrop-filter: unset !important;
+  backdrop-filter: unset !important;
 }
+
 .as-banner-image .icv__arrow-wrapper {
   position: relative;
   transform: unset !important;
 }
+
 .as-banner-image .icv__arrow-wrapper::before {
   position: absolute;
   content: "";
@@ -706,9 +788,11 @@ Architecture Studio Banner Area CSS
   width: 50px;
   height: 25px;
 }
+
 .as-banner-image .icv__arrow-wrapper:last-child::before {
   display: none;
 }
+
 .as-banner-image .icv__arrow-wrapper svg {
   display: none;
   transform: unset !important;
@@ -726,11 +810,13 @@ Architecture Studio Banner Area CSS
   padding-top: 90px;
   padding-left: 50px;
 }
+
 .as-banner-content h1 {
   font-size: 80px;
   font-weight: 500;
   margin-bottom: 0;
 }
+
 .as-banner-content h1 b {
   background-color: var(--blackColor);
   color: var(--whiteColor);
@@ -751,11 +837,13 @@ Architecture Studio Banner Area CSS
   z-index: 9;
   width: 100%;
 }
+
 .as-banner-bottom-content p {
   color: #DAD8D7;
   margin-bottom: 0;
   max-width: 465px;
 }
+
 .as-banner-bottom-content a {
   color: var(--whiteColor);
   font-size: 15px;
@@ -763,6 +851,7 @@ Architecture Studio Banner Area CSS
   letter-spacing: 1.5px;
   position: relative;
 }
+
 .as-banner-bottom-content a::before {
   position: absolute;
   content: "";
@@ -773,9 +862,11 @@ Architecture Studio Banner Area CSS
   height: 1px;
   transition: var(--transition);
 }
+
 .as-banner-bottom-content a:hover {
   color: var(--primaryColor);
 }
+
 .as-banner-bottom-content a:hover::before {
   width: 100%;
   background-color: var(--primaryColor);
@@ -798,6 +889,7 @@ About Area CSS
   width: 100%;
   position: relative;
 }
+
 .about-image-one .arrow-shape {
   position: absolute;
   right: -70px;
@@ -809,16 +901,19 @@ About Area CSS
   padding-top: 30px;
   padding-bottom: 30px;
 }
+
 .about-one-content .title {
   margin-left: 115px;
   margin-bottom: 60px;
 }
+
 .about-one-content .title h2 {
   font-size: 40px;
   color: var(--headingColor);
   margin-bottom: 0;
   line-height: 1.3;
 }
+
 .about-one-content .title h2 span {
   color: transparent;
   -webkit-text-stroke: 0.5px var(--headingColor);
@@ -826,21 +921,26 @@ About Area CSS
   -moz-user-select: none;
   user-select: none;
 }
+
 .about-one-content .inner-image {
   position: relative;
   z-index: 2;
 }
+
 .about-one-content .inner-content {
   padding-left: 25px;
 }
+
 .about-one-content .inner-content p {
   color: var(--mutedColor);
   margin-bottom: 30px;
 }
+
 .about-one-content .inner-content .list {
   padding-left: 0;
   margin-bottom: 0;
 }
+
 .about-one-content .inner-content .list li {
   list-style-type: none;
   font-size: 18px;
@@ -850,23 +950,28 @@ About Area CSS
   position: relative;
   padding-left: 40px;
 }
+
 .about-one-content .inner-content .list li:last-child {
   margin-bottom: 0;
 }
+
 .about-one-content .inner-content .list li img {
   position: absolute;
   left: 0;
   top: 50%;
   transform: translateY(-50%);
 }
+
 .about-one-content .inner-content .about-btn {
   margin-top: 55px;
 }
+
 .about-one-content .inner-content .about-btn .default-btn {
   background-color: transparent;
   border: 1px solid var(--primaryColor);
   color: var(--headingColor);
 }
+
 .about-one-content .inner-content .about-btn .default-btn:hover {
   background-color: var(--primaryColor);
   color: var(--whiteColor);
@@ -884,6 +989,7 @@ About Area CSS
   padding-left: 45px;
   margin-left: 70px;
 }
+
 .about-two-content span {
   font-weight: 500;
   color: var(--primaryColor);
@@ -894,20 +1000,24 @@ About Area CSS
   top: 5.8px;
   letter-spacing: 1.6px;
 }
+
 .about-two-content h2 {
   font-size: 40px;
   font-weight: 400;
   margin-bottom: 20px;
   line-height: 1.3;
 }
+
 .about-two-content p {
   margin-bottom: 0;
 }
+
 .about-two-content .list {
   padding-left: 0;
   margin-top: 25px;
   margin-bottom: 0;
 }
+
 .about-two-content .list li {
   list-style-type: none;
   font-size: 18px;
@@ -916,15 +1026,18 @@ About Area CSS
   margin-bottom: 20px;
   padding-left: 38px;
 }
+
 .about-two-content .list li:last-child {
   margin-bottom: 0;
 }
+
 .about-two-content .list li img {
   position: absolute;
   left: 0;
   top: 50%;
   transform: translateY(-50%);
 }
+
 .about-two-content .about-btn {
   margin-top: 30px;
 }
@@ -933,6 +1046,7 @@ About Area CSS
   position: relative;
   text-align: center;
 }
+
 .about-image-two .wrap-video {
   position: absolute;
   left: 0;
@@ -941,12 +1055,14 @@ About Area CSS
   transform: translateY(-50%);
   text-align: center;
 }
+
 .about-image-two .wrap-video img {
   animation-name: rotateme;
   animation-duration: 10s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
 }
+
 .about-image-two .wrap-video .video-btn {
   position: absolute;
   left: 0;
@@ -955,6 +1071,7 @@ About Area CSS
   transform: translateY(-50%);
   cursor: pointer;
 }
+
 .about-image-two .wrap-video .video-btn i {
   display: inline-block;
   height: 85px;
@@ -967,6 +1084,7 @@ About Area CSS
   border-radius: 50%;
   transition: var(--transition);
 }
+
 .about-image-two .wrap-video .video-btn i:hover {
   background-color: var(--primaryColor);
   color: var(--whiteColor);
@@ -978,6 +1096,7 @@ About Area CSS
   padding-left: 45px;
   max-width: 915px;
 }
+
 .about-three-title span {
   font-weight: 500;
   color: var(--primaryColor);
@@ -988,6 +1107,7 @@ About Area CSS
   top: 5.8px;
   letter-spacing: 1.6px;
 }
+
 .about-three-title h2 {
   font-size: 40px;
   font-weight: 400;
@@ -1001,11 +1121,13 @@ About Area CSS
   padding-right: 55px;
   padding-bottom: 100px;
 }
+
 .about-three-left-content .list {
   padding-left: 0;
   margin-top: 25px;
   margin-bottom: 0;
 }
+
 .about-three-left-content .list li {
   list-style-type: none;
   font-size: 18px;
@@ -1014,21 +1136,25 @@ About Area CSS
   margin-bottom: 20px;
   padding-left: 38px;
 }
+
 .about-three-left-content .list li:last-child {
   margin-bottom: 0;
 }
+
 .about-three-left-content .list li img {
   position: absolute;
   left: 0;
   top: 50%;
   transform: translateY(-50%);
 }
+
 .about-three-left-content .about-image-wrap {
   position: relative;
   text-align: center;
   max-width: 500px;
   margin-top: 100px;
 }
+
 .about-three-left-content .about-image-wrap .wrap-video {
   position: absolute;
   left: 0;
@@ -1037,12 +1163,14 @@ About Area CSS
   transform: translateY(-50%);
   text-align: center;
 }
+
 .about-three-left-content .about-image-wrap .wrap-video img {
   animation-name: rotateme;
   animation-duration: 10s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
 }
+
 .about-three-left-content .about-image-wrap .wrap-video .video-btn {
   position: absolute;
   left: 0;
@@ -1051,6 +1179,7 @@ About Area CSS
   transform: translateY(-50%);
   cursor: pointer;
 }
+
 .about-three-left-content .about-image-wrap .wrap-video .video-btn i {
   display: inline-block;
   height: 85px;
@@ -1063,6 +1192,7 @@ About Area CSS
   border-radius: 50%;
   transition: var(--transition);
 }
+
 .about-three-left-content .about-image-wrap .wrap-video .video-btn i:hover {
   background-color: var(--primaryColor);
   color: var(--whiteColor);
@@ -1075,9 +1205,11 @@ About Area CSS
   padding-left: 22px;
   padding-bottom: 100px;
 }
+
 .about-three-right-content .about-wrap-content {
   margin-top: 100px;
 }
+
 .about-three-right-content .about-wrap-content h2 {
   font-size: 40px;
   font-weight: 400;
@@ -1090,9 +1222,11 @@ About Area CSS
   background-color: transparent;
   border-radius: 0;
 }
+
 .our-mission-and-vision-accordion .accordion__item:last-child {
   margin-bottom: 0;
 }
+
 .our-mission-and-vision-accordion .accordion__item .accordion__button {
   color: var(--headingColor);
   position: relative;
@@ -1108,15 +1242,18 @@ About Area CSS
   background: var(--cardBg);
   border-radius: 0;
 }
+
 .our-mission-and-vision-accordion .accordion__item .accordion__button:before {
   position: absolute;
   right: 10px;
   top: 28px;
 }
+
 .our-mission-and-vision-accordion .accordion__item {
   background: var(--cardBg);
   padding: 20px 30px;
 }
+
 .our-mission-and-vision-accordion .accordion__item .accordion__panel {
   padding: 15px 0 0 30px;
 }
@@ -1139,6 +1276,7 @@ Services Area CSS
   border: 1.3px dashed #414040;
   position: relative;
 }
+
 .col-lg-4:nth-child(1) .services-card::before {
   position: absolute;
   content: "";
@@ -1151,15 +1289,18 @@ Services Area CSS
   width: 87px;
   height: 12px;
 }
+
 .col-lg-4:nth-child(2) .services-card {
   border: 1.3px dashed #414040;
   border-left: none;
 }
+
 .col-lg-4:nth-child(3) .services-card {
   border: 1.3px dashed #414040;
   border-left: none;
   position: relative;
 }
+
 .col-lg-4:nth-child(3) .services-card::before {
   position: absolute;
   content: "";
@@ -1177,25 +1318,31 @@ Services Area CSS
   margin-bottom: 25px;
   padding: 50px;
 }
+
 .services-card .icon {
   line-height: 0;
   margin-bottom: 40px;
 }
+
 .services-card .icon i {
   font-size: 50px;
   color: var(--primaryColor);
   line-height: 0;
 }
+
 .services-card h3 {
   font-size: 24px;
   margin-bottom: 25px;
 }
+
 .services-card h3 a {
   color: var(--headingColor);
 }
+
 .services-card h3 a:hover {
   color: var(--primaryColor);
 }
+
 .services-card p {
   color: var(--textColor);
   margin-bottom: 25px;
@@ -1204,12 +1351,14 @@ Services Area CSS
 .services-list-tabs {
   border: 1px dashed var(--borderColor);
 }
+
 .services-list-tabs .nav {
   padding-left: 0;
   margin-bottom: 0;
   border: none;
   display: block;
 }
+
 .services-list-tabs .nav .nav-item {
   display: block;
   border-bottom: 1px dashed var(--borderColor);
@@ -1222,30 +1371,39 @@ Services Area CSS
   transition: var(--transition);
   cursor: pointer;
 }
+
 .services-list-tabs .nav .nav-item:last-child {
   border-bottom: none;
 }
+
 .services-list-tabs .nav .nav-item sup {
   color: var(--mutedColor);
   font-weight: 400;
   font-size: var(--fontSize);
   top: -25px;
 }
-.services-list-tabs .nav .nav-item:hover, .services-list-tabs .nav .nav-item.active {
+
+.services-list-tabs .nav .nav-item:hover,
+.services-list-tabs .nav .nav-item.active {
   color: var(--headingColor);
 }
+
 .services-list-tabs .tab-content {
   border-left: 1px dashed var(--borderColor);
 }
+
 .services-list-tabs .services-tab-content {
   padding: 50px;
 }
+
 .services-list-tabs .services-tab-content img {
   margin-bottom: 30px;
 }
+
 .services-list-tabs .services-tab-content p {
   margin-bottom: 25px;
 }
+
 .services-list-tabs .services-tab-content a {
   font-weight: 500;
   font-size: 15px;
@@ -1253,6 +1411,7 @@ Services Area CSS
   color: var(--primaryColor);
   position: relative;
 }
+
 .services-list-tabs .services-tab-content a::before {
   position: absolute;
   content: "";
@@ -1263,6 +1422,7 @@ Services Area CSS
   height: 2px;
   transition: var(--transition);
 }
+
 .services-list-tabs .services-tab-content a:hover::before {
   width: 100%;
 }
@@ -1271,25 +1431,31 @@ Services Area CSS
   padding: 50px;
   background-color: var(--cardBg);
 }
+
 .services-wrap-area .section-title-wrap {
   max-width: 100%;
   padding-left: 0;
 }
+
 .services-wrap-area .section-title-wrap .title {
   max-width: 830px;
   padding-left: 45px;
 }
+
 .services-wrap-area.without-bg-color {
   background-color: transparent;
 }
+
 .services-wrap-area.without-bg-color .section-title-wrap {
   max-width: 830px;
   padding-left: 45px;
   color: var(--headingColor);
 }
+
 .services-wrap-area.without-bg-color .services-item {
   background-color: var(--cardBg);
 }
+
 .services-wrap-area.without-bg-color .services-item::before {
   background-image: url(/images/services/shape2.png);
   opacity: var(--shapeOpacity);
@@ -1303,29 +1469,36 @@ Services Area CSS
   z-index: 1;
   overflow: hidden;
 }
+
 .services-item .icon {
   line-height: 0;
   margin-bottom: 40px;
 }
+
 .services-item .icon i {
   font-size: 50px;
   color: var(--primaryColor);
   line-height: 0;
 }
+
 .services-item h3 {
   font-size: 24px;
   margin-bottom: 25px;
 }
+
 .services-item h3 a {
   color: var(--headingColor);
 }
+
 .services-item h3 a:hover {
   color: var(--primaryColor);
 }
+
 .services-item p {
   color: var(--textColor);
   margin-bottom: 25px;
 }
+
 .services-item::before {
   position: absolute;
   content: "";
@@ -1390,10 +1563,12 @@ Overview Area CSS
   padding-left: 30px;
   padding-right: 30px;
 }
+
 .overview-area.wrap-color .overview-card {
   border-bottom: none;
   padding-bottom: 0;
 }
+
 .overview-area.wrap-color .overview-card h3 {
   padding-left: 0;
   color: var(--headingColor);
@@ -1403,12 +1578,15 @@ Overview Area CSS
   border-bottom: 1px dashed #414040;
   padding-bottom: 40px;
 }
+
 .overview-card .image {
   overflow: hidden;
 }
+
 .overview-card .image img {
   transition: var(--transition);
 }
+
 .overview-card h3 {
   margin-bottom: 0;
   font-size: 24px;
@@ -1416,11 +1594,13 @@ Overview Area CSS
   padding-top: 30px;
   padding-left: 10px;
 }
+
 .overview-card h3 span {
   color: var(--mutedColor);
   font-size: var(--fontSize);
   font-weight: 400;
 }
+
 .overview-card:hover .image img {
   transform: scale(1.2);
 }
@@ -1444,12 +1624,14 @@ Features Area CSS
   padding-right: 25px;
   padding-bottom: 15px;
 }
+
 .features-content h2 {
   font-size: 40px;
   color: var(--headingColor);
   margin-bottom: 40px;
   line-height: 1.3;
 }
+
 .features-content h2 span {
   color: transparent;
   -webkit-text-stroke: 0.5px var(--headingColor);
@@ -1457,6 +1639,7 @@ Features Area CSS
   -moz-user-select: none;
   user-select: none;
 }
+
 .features-content .inner-box {
   background: #24231F;
   padding: 40px 35px 210px;
@@ -1465,6 +1648,7 @@ Features Area CSS
   overflow: hidden;
   margin-right: -25px;
 }
+
 .features-content .inner-box h3 {
   font-size: 57px;
   color: var(--whiteColor);
@@ -1472,36 +1656,44 @@ Features Area CSS
   margin-bottom: 12px;
   line-height: 1;
 }
+
 .features-content .inner-box span {
   color: #9D9A97;
   font-size: 15px;
   font-weight: 400;
   letter-spacing: 1.5px;
 }
+
 .features-content .inner-box span b {
   display: block;
   font-weight: 400;
 }
+
 .features-content .inner-box .wrap {
   position: absolute;
   right: -2px;
   bottom: -2px;
   z-index: -1;
 }
+
 .features-content .inner-content {
   padding-left: 50px;
 }
+
 .features-content .about-one-content p {
   color: var(--mutedColor);
 }
+
 .features-content .inner-content p {
   color: var(--textColor);
   margin-bottom: 25px;
 }
+
 .features-content .inner-content .list {
   padding-left: 0;
   margin-bottom: 0;
 }
+
 .features-content .inner-content .list li {
   list-style-type: none;
   font-size: 18px;
@@ -1511,23 +1703,28 @@ Features Area CSS
   position: relative;
   padding-left: 40px;
 }
+
 .features-content .inner-content .list li:last-child {
   margin-bottom: 0;
 }
+
 .features-content .inner-content .list li img {
   position: absolute;
   left: 0;
   top: 50%;
   transform: translateY(-50%);
 }
+
 .features-content .inner-content .features-btn {
   margin-top: 40px;
 }
+
 .features-content .inner-content .features-btn .default-btn {
   background-color: transparent;
   border: 1px solid var(--primaryColor);
   color: var(--headingColor);
 }
+
 .features-content .inner-content .features-btn .default-btn:hover {
   background-color: var(--primaryColor);
   color: var(--whiteColor);
@@ -1564,6 +1761,7 @@ Recognition Area CSS
   margin-left: auto;
   margin-right: 0;
 }
+
 .recognition-content h2 {
   font-size: 40px;
   color: #E1DBD6;
@@ -1571,6 +1769,7 @@ Recognition Area CSS
   padding-bottom: 25px;
   border-bottom: 1px dashed #5F5F5F;
 }
+
 .recognition-content h2 span {
   color: transparent;
   -webkit-text-stroke: 0.5px var(--headingColor);
@@ -1578,16 +1777,19 @@ Recognition Area CSS
   -moz-user-select: none;
   user-select: none;
 }
+
 .recognition-content .list {
   padding-left: 0;
   margin-bottom: 0;
 }
+
 .recognition-content .list li {
   list-style-type: none;
   border-bottom: 1px dashed #5F5F5F;
   margin-bottom: 25px;
   padding-bottom: 25px;
 }
+
 .recognition-content .list li h4 {
   color: #DEDEDE;
   font-weight: 600;
@@ -1596,23 +1798,28 @@ Recognition Area CSS
   display: flex;
   align-items: center;
 }
+
 .recognition-content .list li h4 b {
   font-weight: 600;
   color: var(--primaryColor);
   font-size: var(--fontSize);
   margin-right: 20px;
 }
+
 .recognition-content .list li span {
   color: #DEDEDE;
   font-size: 16px;
 }
+
 .recognition-content .list li:last-child {
   margin-bottom: 0;
 }
+
 .recognition-content.wrap-style {
   position: relative;
   padding-left: 50px;
 }
+
 .recognition-content.wrap-style .sub {
   font-weight: 500;
   color: var(--primaryColor);
@@ -1623,6 +1830,7 @@ Recognition Area CSS
   top: 8.8px;
   letter-spacing: 1.6px;
 }
+
 .recognition-content.wrap-style h2 {
   font-weight: 400;
 }
@@ -1632,16 +1840,20 @@ Recognition Area CSS
   margin-top: 45px;
   padding-right: 45px;
 }
+
 .recognition-wrap-area .recognition-content h2 {
   color: var(--headingColor);
   border-bottom: 1px dashed var(--borderColor);
 }
+
 .recognition-wrap-area .recognition-content .list li {
   border-bottom: 1px dashed var(--borderColor);
 }
+
 .recognition-wrap-area .recognition-content .list li span {
   color: var(--mutedColor);
 }
+
 .recognition-wrap-area .recognition-content .list li h4 {
   color: var(--headingColor);
 }
@@ -1650,9 +1862,11 @@ Recognition Area CSS
   position: relative;
   padding-left: 20px;
 }
+
 .recognition-right-content img {
   min-height: 420px;
 }
+
 .recognition-right-content .awards-box {
   background: var(--brown-gradient, linear-gradient(135deg, #D8B798 0%, #BA8D6D 100%));
   padding: 40px 35px 80px;
@@ -1662,6 +1876,7 @@ Recognition Area CSS
   left: 20px;
   width: 100%;
 }
+
 .recognition-right-content .awards-box h3 {
   font-size: 57px;
   color: var(--whiteColor);
@@ -1669,16 +1884,19 @@ Recognition Area CSS
   margin-bottom: 12px;
   line-height: 1;
 }
+
 .recognition-right-content .awards-box span {
   color: #F0ECE8;
   font-size: 15px;
   font-weight: 400;
   letter-spacing: 1.5px;
 }
+
 .recognition-right-content .awards-box span b {
   display: block;
   font-weight: 400;
 }
+
 .recognition-right-content .experience-box {
   background: #24231F;
   padding: 40px 35px 180px;
@@ -1690,6 +1908,7 @@ Recognition Area CSS
   right: 0;
   width: 100%;
 }
+
 .recognition-right-content .experience-box h3 {
   font-size: 57px;
   color: var(--whiteColor);
@@ -1697,22 +1916,26 @@ Recognition Area CSS
   margin-bottom: 12px;
   line-height: 1;
 }
+
 .recognition-right-content .experience-box span {
   color: #9D9A97;
   font-size: 15px;
   font-weight: 400;
   letter-spacing: 1.5px;
 }
+
 .recognition-right-content .experience-box span b {
   display: block;
   font-weight: 400;
 }
+
 .recognition-right-content .experience-box .wrap {
   position: absolute;
   right: -2px;
   bottom: -2px;
   z-index: -1;
 }
+
 .recognition-right-content .experience-box .wrap img {
   min-height: unset;
 }
@@ -1724,11 +1947,13 @@ Projects Area CSS
   border-right: 1px dashed #414040;
   padding-right: 45px;
 }
+
 .col-lg-4:nth-child(2) .projects-inner-border {
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 50px;
 }
+
 .col-lg-4:nth-child(3) .projects-inner-border {
   border-left: 1px dashed #414040;
   padding-left: 45px;
@@ -1737,9 +1962,11 @@ Projects Area CSS
 .projects-item {
   margin-bottom: 70px;
 }
+
 .projects-item .projects-image {
   position: relative;
 }
+
 .projects-item .projects-image .icon {
   position: absolute;
   right: 0;
@@ -1748,6 +1975,7 @@ Projects Area CSS
   visibility: hidden;
   transition: var(--transition);
 }
+
 .projects-item .projects-image .icon a {
   display: inline-block;
   height: 80px;
@@ -1758,6 +1986,7 @@ Projects Area CSS
   position: relative;
   display: block;
 }
+
 .projects-item .projects-image .icon a img {
   position: absolute;
   left: 0;
@@ -1766,30 +1995,38 @@ Projects Area CSS
   transform: translateY(-50%);
   margin: auto;
 }
+
 .projects-item .projects-image .icon a:hover {
   background-color: var(--whiteColor);
 }
+
 .project-card .project-content {
   background: var(--cardBg);
 }
+
 .projects-item .projects-content {
   margin-top: 25px;
 }
+
 .projects-item .projects-content h3 {
   margin-bottom: 0;
   font-size: 24px;
 }
+
 .projects-item .about-one-content h2 span {
   color: var(--subtitleColor);
 }
+
 .projects-item .projects-content h3 a {
   color: var(--headingColor);
 }
+
 .projects-item .projects-content h3 span {
   color: var(--mutedColor);
   font-size: var(--fontSize);
   font-weight: 400;
 }
+
 .projects-item:hover .projects-image .icon {
   opacity: 1;
   visibility: visible;
@@ -1798,6 +2035,7 @@ Projects Area CSS
 .projects-btn {
   text-align: center;
 }
+
 .projects-btn a {
   color: var(--mutedColor);
   font-weight: 500;
@@ -1805,6 +2043,7 @@ Projects Area CSS
   letter-spacing: 1.5px;
   position: relative;
 }
+
 .projects-btn a::before {
   position: absolute;
   content: "";
@@ -1816,9 +2055,11 @@ Projects Area CSS
   background-color: var(--primaryColor);
   transition: var(--transition);
 }
+
 .projects-btn a:hover {
   color: var(--primaryColor);
 }
+
 .projects-btn a:hover::before {
   width: 100%;
 }
@@ -1826,6 +2067,7 @@ Projects Area CSS
 .projects-scroll-area {
   overflow: hidden;
 }
+
 .projects-scroll-area .container-fluid {
   position: relative;
   left: calc((100% - 1320px) / 2);
@@ -1835,23 +2077,28 @@ Projects Area CSS
 .projects-scroll-card .content {
   margin-top: 40px;
 }
+
 .projects-scroll-card .content h3 {
   font-size: 24px;
   font-weight: 500;
   margin-bottom: 15px;
 }
+
 .projects-scroll-card .content h3 a {
   color: var(--headingColor);
 }
+
 .projects-scroll-card .content h3 span {
   color: var(--mutedColor);
   font-size: 14px;
   letter-spacing: 1.4px;
   font-weight: 400;
 }
+
 .projects-scroll-card .content p {
   margin-bottom: 25px;
 }
+
 .projects-scroll-card .content .projects-btn {
   font-size: 15px;
   font-weight: 500;
@@ -1859,6 +2106,7 @@ Projects Area CSS
   color: var(--primaryColor);
   position: relative;
 }
+
 .projects-scroll-card .content .projects-btn::before {
   position: absolute;
   content: "";
@@ -1869,6 +2117,7 @@ Projects Area CSS
   height: 2px;
   transition: var(--transition);
 }
+
 .projects-scroll-card .content .projects-btn:hover::before {
   width: 100%;
 }
@@ -1881,19 +2130,23 @@ Projects Area CSS
 .projects-scroll-button {
   position: relative;
 }
+
 .projects-scroll-button .swiper-button-next {
   position: absolute;
   right: 32px;
   top: -450px;
 }
+
 .projects-scroll-button .swiper-button-next:after {
   display: none;
 }
+
 .projects-scroll-button .swiper-button-prev {
   position: absolute;
   left: -2px;
   top: -450px;
 }
+
 .projects-scroll-button .swiper-button-prev:after {
   display: none;
 }
@@ -1901,44 +2154,56 @@ Projects Area CSS
 .projects-scroll-slide .projects-scroll-card {
   padding-right: 50px;
 }
+
 .projects-scroll-slide .project-lg-img {
   padding-left: 70px;
 }
+
 .projects-scroll-slide .swiper-pagination .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
 }
-.projects-scroll-slide .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active, .projects-scroll-slide .swiper-pagination .swiper-pagination-bullet:hover {
+
+.projects-scroll-slide .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active,
+.projects-scroll-slide .swiper-pagination .swiper-pagination-bullet:hover {
   background-color: var(--primaryColor);
 }
 
 .projects-area.bg-wrap-with-black {
   background-color: var(--blackColor);
 }
+
 .projects-area.bg-wrap-with-black .section-title-wrap {
   padding-left: 35px;
 }
+
 .projects-area.bg-wrap-with-black .section-title-wrap span {
   left: -12px;
 }
+
 .projects-area.bg-wrap-with-black .section-title-wrap h2 {
   color: var(--whiteColor);
 }
+
 .projects-area.bg-wrap-with-black .col-lg-6:nth-child(1) .projects-inner-border {
   padding-right: 80px;
 }
+
 .projects-area.bg-wrap-with-black .col-lg-6:nth-child(2) .projects-inner-border {
   padding-left: 80px;
   border-left: 1px dashed #44433F;
 }
+
 .projects-area.bg-wrap-with-black .projects-item {
   margin-bottom: 60px;
   padding-left: 55px;
   position: relative;
 }
+
 .projects-area.bg-wrap-with-black .projects-item .projects-image {
   position: relative;
 }
+
 .projects-area.bg-wrap-with-black .projects-item .projects-image .projects-btn {
   position: absolute;
   right: 20px;
@@ -1954,51 +2219,64 @@ Projects Area CSS
   opacity: 0;
   visibility: hidden;
 }
+
 .projects-area.bg-wrap-with-black .projects-item .projects-image .projects-btn:hover {
   background-color: var(--primaryColor);
 }
+
 .projects-area.bg-wrap-with-black .projects-item .projects-content {
   margin-top: 0;
   position: absolute;
   left: 0;
   bottom: 2px;
 }
+
 .projects-area.bg-wrap-with-black .projects-item .projects-content h3 {
   writing-mode: vertical-lr;
   margin-left: 0;
   margin-right: 0;
 }
+
 .projects-area.bg-wrap-with-black .projects-item:hover .projects-image .projects-btn {
   opacity: 1;
   visibility: visible;
 }
+
 .projects-area.bg-wrap-with-black .projects-btn a {
   color: var(--primaryColor);
 }
+
 .projects-area.without-wrap-border .section-title-wrap {
   max-width: 100%;
   padding-left: 0;
 }
+
 .projects-area.without-wrap-border .section-title-wrap .title {
   max-width: 620px;
   padding-left: 45px;
 }
+
 .projects-area.without-wrap-border .section-title-wrap span {
   font-size: 14.7px;
   top: 7.8px;
 }
+
 .projects-area.without-wrap-border .col-lg-4:nth-child(1) .projects-inner-border {
   border-right: none;
 }
+
 .projects-area.without-wrap-border .col-lg-4:nth-child(3) .projects-inner-border {
   border-left: none;
 }
+
 .projects-area.without-wrap-border .projects-item .projects-content h3 a {
   color: var(--headingColor);
 }
+
 .projects-area.without-wrap-border .project-card .project-content span {
   color: var(--mutedColor);
 }
+
 .projects-area.without-wrap-border .projects-item .projects-content h3 span {
   color: var(--mutedColor);
 }
@@ -2006,6 +2284,7 @@ Projects Area CSS
 .tabs-nav {
   display: inline-block;
 }
+
 .tabs-nav .tab-btn {
   border: none;
   background: var(--cardBg);
@@ -2016,18 +2295,22 @@ Projects Area CSS
   margin-right: 12px;
   margin-bottom: 10px;
 }
+
 .tabs-nav .tab-btn:last-child {
   margin-right: 0;
 }
+
 .tabs-nav .tab-btn b {
   color: #928D80;
   font-weight: 400;
   font-size: 14px;
 }
+
 .tabs-nav .tab-btn.active {
   background-color: var(--primaryColor);
   color: var(--whiteColor);
 }
+
 .tabs-nav .tab-btn.active b {
   color: #EED5C3;
 }
@@ -2038,6 +2321,7 @@ Animation View Area CSS
 .animation-view-area {
   overflow: hidden;
 }
+
 .animation-view-area .container-fluid {
   padding-left: 0;
   padding-right: 0;
@@ -2050,10 +2334,12 @@ Animation View Area CSS
   color: #9C9C9C;
   animation: marquee 25s linear infinite forwards;
 }
+
 .animation-view-content h1 span {
   display: inline-block;
   margin: 0 10px;
 }
+
 .animation-view-content h1 span:nth-child(odd) {
   color: transparent;
   -webkit-text-stroke: 0.5px #9C9C9C;
@@ -2061,6 +2347,7 @@ Animation View Area CSS
   -moz-user-select: none;
   user-select: none;
 }
+
 .animation-view-content h1:hover {
   animation-play-state: paused;
 }
@@ -2069,10 +2356,12 @@ Animation View Area CSS
   0% {
     transform: translateX(0);
   }
+
   100% {
     transform: translateX(-66.6%);
   }
 }
+
 /*================================================
 Process Area CSS
 =================================================*/
@@ -2086,6 +2375,7 @@ Process Area CSS
   z-index: 1;
   padding: 25px 0 35px 25px;
 }
+
 .col-xl-3:nth-child(1) .process-card::before {
   position: absolute;
   content: "";
@@ -2098,6 +2388,7 @@ Process Area CSS
   width: 2px;
   height: 307px;
 }
+
 .col-xl-3:nth-child(1) .process-card::after {
   position: absolute;
   content: "";
@@ -2110,11 +2401,13 @@ Process Area CSS
   width: 404px;
   height: 12px;
 }
+
 .col-xl-3:nth-child(2) .process-card {
   position: relative;
   z-index: 1;
   padding: 25px 0 35px 25px;
 }
+
 .col-xl-3:nth-child(2) .process-card::before {
   position: absolute;
   content: "";
@@ -2127,6 +2420,7 @@ Process Area CSS
   width: 2px;
   height: 333px;
 }
+
 .col-xl-3:nth-child(2) .process-card::after {
   position: absolute;
   content: "";
@@ -2139,11 +2433,13 @@ Process Area CSS
   width: 404px;
   height: 12px;
 }
+
 .col-xl-3:nth-child(3) .process-card {
   position: relative;
   z-index: 1;
   padding: 25px 0 35px 25px;
 }
+
 .col-xl-3:nth-child(3) .process-card::before {
   position: absolute;
   content: "";
@@ -2156,6 +2452,7 @@ Process Area CSS
   width: 2px;
   height: 333px;
 }
+
 .col-xl-3:nth-child(3) .process-card::after {
   position: absolute;
   content: "";
@@ -2168,11 +2465,13 @@ Process Area CSS
   width: 404px;
   height: 12px;
 }
+
 .col-xl-3:nth-child(4) .process-card {
   position: relative;
   z-index: 1;
   padding: 25px 0 35px 25px;
 }
+
 .col-xl-3:nth-child(4) .process-card::before {
   position: absolute;
   content: "";
@@ -2185,6 +2484,7 @@ Process Area CSS
   width: 2px;
   height: 333px;
 }
+
 .col-xl-3:nth-child(4) .process-card::after {
   position: absolute;
   content: "";
@@ -2201,9 +2501,11 @@ Process Area CSS
 .process-card {
   margin-bottom: 25px;
 }
+
 .process-card .process-image {
   position: relative;
 }
+
 .process-card .process-image span {
   background: var(--brown-gradient, linear-gradient(135deg, #D8B798 0%, #BA8D6D 100%));
   background-clip: text;
@@ -2214,14 +2516,17 @@ Process Area CSS
   left: 10px;
   top: 10px;
 }
+
 .process-card .process-content {
   margin-top: 30px;
 }
+
 .process-card .process-content h3 {
   font-size: 20px;
   color: var(--subtitleColor);
   margin-bottom: 15px;
 }
+
 .process-card .process-content p {
   color: var(--mutedColor);
 }
@@ -2247,33 +2552,40 @@ Client Area CSS
   margin: auto;
   padding-bottom: 40px;
 }
+
 .client-content .icon {
   margin-bottom: 20px;
 }
+
 .client-content p {
   font-size: 24px;
   color: var(--mutedColor);
 }
+
 .client-content .client-information {
   text-align: center;
   transition: var(--transition);
   margin-top: 30px;
 }
+
 .client-content .client-information .image img {
   border-radius: 50%;
   width: 70px;
   height: 70px;
 }
+
 .client-content .client-information .title {
   transition: var(--transition);
   margin-top: 15px;
 }
+
 .client-content .client-information .title h3 {
   font-size: 18px;
   font-weight: 500;
   margin-bottom: 0;
   color: var(--subtitleColor);
 }
+
 .client-content .client-information .title span {
   font-size: 14px;
   font-weight: 400;
@@ -2303,19 +2615,23 @@ Client Area CSS
   position: relative;
   z-index: 1;
 }
+
 .client-wrap-area .section-title-wrap {
   max-width: 635px;
   margin-left: auto;
 }
+
 .client-wrap-area .section-title-wrap span {
   top: 15.8px;
 }
+
 .client-wrap-area .container-fluid {
   position: relative;
   left: calc((100% - 1320px) / 2);
   overflow: hidden;
   padding-left: 50px;
 }
+
 .client-wrap-area::before {
   position: absolute;
   content: "";
@@ -2326,24 +2642,31 @@ Client Area CSS
   background: var(--cardBg);
   z-index: -1;
 }
+
 .client-wrap-area.with-margin-top::before {
   margin-top: 100px;
 }
+
 .client-wrap-area.without-before-color::before {
   display: none;
 }
+
 .client-wrap-area.without-before-color .container-fluid {
   padding-left: calc(var(--bs-gutter-x) * 0.5);
 }
+
 .client-wrap-area.without-before-color .client-wrap-card {
   border: 1px solid var(--borderColor);
 }
+
 .client-wrap-area.without-before-color .section-title-wrap {
   margin-left: 0;
 }
+
 .client-wrap-area.without-before-color .container {
   position: relative;
 }
+
 .client-wrap-area.without-before-color .client-wrap-slide-arrow {
   padding-right: 0;
   margin-top: 0;
@@ -2351,6 +2674,7 @@ Client Area CSS
   right: 10px;
   bottom: 30px;
 }
+
 .client-wrap-area.with-two-style-wrap::before {
   position: absolute;
   content: "";
@@ -2361,6 +2685,7 @@ Client Area CSS
   background: var(--cardBg);
   z-index: -1;
 }
+
 .client-wrap-area.with-two-style-wrap::after {
   position: absolute;
   content: "";
@@ -2378,29 +2703,36 @@ Client Area CSS
   padding: 40px;
   margin-bottom: 25px;
 }
+
 .client-wrap-card .icon {
   margin-bottom: 15px;
 }
+
 .client-wrap-card p {
   font-size: 20px;
   color: var(--headingColor);
   margin-bottom: 0;
 }
+
 .client-wrap-card .info {
   margin-top: 30px;
 }
+
 .client-wrap-card .info .image img {
   max-width: 50px;
   border-radius: 50%;
 }
+
 .client-wrap-card .info .title {
   margin-left: 15px;
 }
+
 .client-wrap-card .info .title h3 {
   font-size: 18px;
   font-weight: 500;
   margin-bottom: 0;
 }
+
 .client-wrap-card .info .title span {
   font-size: 14px;
   color: var(--primaryColor);
@@ -2418,24 +2750,30 @@ Client Area CSS
   margin-top: 35px;
   margin-bottom: 0;
 }
+
 .client-wrap-slide-arrow li {
   list-style-type: none;
   margin-right: 20px;
 }
+
 .client-wrap-slide-arrow li:last-child {
   margin-right: 0;
 }
+
 .client-wrap-slide-arrow li .swiper-button-next {
   position: relative;
   right: 0;
 }
+
 .client-wrap-slide-arrow li .swiper-button-next:after {
   display: none;
 }
+
 .client-wrap-slide-arrow li .swiper-button-prev {
   position: relative;
   right: 0;
 }
+
 .client-wrap-slide-arrow li .swiper-button-prev:after {
   display: none;
 }
@@ -2446,6 +2784,7 @@ Blog Area CSS
 .blog-slider .swiper-pagination {
   position: initial;
 }
+
 .blog-slider .swiper-pagination .swiper-pagination-bullet {
   width: 10px;
   height: 10px;
@@ -2460,6 +2799,7 @@ Blog Area CSS
   z-index: 1;
   overflow: hidden;
 }
+
 .blog-card::before {
   background: rgba(36, 35, 31, 0.8);
   position: absolute;
@@ -2472,6 +2812,7 @@ Blog Area CSS
   z-index: -1;
   transition: var(--transition);
 }
+
 .blog-card::after {
   position: absolute;
   content: "";
@@ -2486,14 +2827,17 @@ Blog Area CSS
   opacity: 0;
   visibility: hidden;
 }
+
 .blog-card .meta {
   padding-left: 0;
   margin-bottom: 0;
   display: flex;
 }
+
 .blog-card .blog-content p {
   color: var(--mutedColor);
 }
+
 .blog-card .meta li {
   color: var(--mutedColor);
   list-style-type: none;
@@ -2501,40 +2845,50 @@ Blog Area CSS
   margin-right: 20px;
   position: relative;
 }
+
 .blog-card .meta li::before {
   content: "-";
   position: absolute;
   right: -10px;
   top: 0;
 }
+
 .blog-card .meta li:last-child::before {
   display: none;
 }
+
 .blog-card .meta li a {
   color: var(--subtitleColor);
   font-weight: 500;
 }
+
 .blog-card .meta li a:hover {
   color: var(--primaryColor);
 }
+
 .blog-card .meta li:last-child {
   margin-right: 0;
 }
+
 .blog-card .content {
   margin-top: 250px;
 }
+
 .blog-card .content h3 {
   font-size: 24px;
   font-weight: 400;
   line-height: 1.5;
   margin-bottom: 20px;
 }
+
 .blog-card .content h3 a {
   color: var(--whiteColor);
 }
+
 .blog-card .content h3 a:hover {
   color: var(--primaryColor);
 }
+
 .blog-card .content .arrow-btn {
   color: var(--mutedColor);
   font-weight: 500;
@@ -2543,6 +2897,7 @@ Blog Area CSS
   position: relative;
   padding-left: 30.5px;
 }
+
 .blog-card .content .arrow-btn img {
   color: var(--primaryColor);
   position: absolute;
@@ -2551,9 +2906,11 @@ Blog Area CSS
   transform: translateY(-50%);
   margin-top: -0.5px;
 }
+
 .blog-card .content .arrow-btn:hover {
   color: var(--primaryColor);
 }
+
 .blog-card .wrap-shape {
   position: absolute;
   right: -2px;
@@ -2561,16 +2918,19 @@ Blog Area CSS
   z-index: -1;
   transition: var(--transition);
 }
+
 .blog-card:hover::before {
   height: 100%;
   opacity: 1;
   visibility: visible;
 }
+
 .blog-card:hover::after {
   height: 100%;
   opacity: 1;
   visibility: visible;
 }
+
 .blog-card:hover .wrap-shape {
   opacity: 0;
   visibility: hidden;
@@ -2580,10 +2940,12 @@ Blog Area CSS
   max-width: 100%;
   padding-left: 0;
 }
+
 .blog-area .section-title-wrap .title {
   max-width: 570px;
   padding-left: 45px;
 }
+
 .blog-area.wrap-style .blog-search-box {
   width: 200px;
 }
@@ -2593,9 +2955,11 @@ Blog Area CSS
   position: relative;
   padding-left: 25px;
 }
+
 .blog-item .image a {
   display: block;
 }
+
 .blog-item .content {
   background-color: var(--blackColor);
   padding: 25px 25px 25px 60px;
@@ -2605,6 +2969,7 @@ Blog Area CSS
   bottom: 20px;
   transition: var(--transition);
 }
+
 .blog-item .content .date {
   font-size: 14px;
   font-weight: 500;
@@ -2614,32 +2979,40 @@ Blog Area CSS
   top: 25px;
   left: 20px;
 }
+
 .blog-item .content h3 {
   margin-bottom: 0;
   font-size: 22px;
   font-weight: 400;
   line-height: 1.5;
 }
+
 .blog-item .content h3 a {
   color: var(--whiteColor);
 }
+
 .blog-item .content h3 a:hover {
   color: var(--primaryColor);
 }
+
 .blog-item .content.wrap-color {
   background: var(--cardBg);
   transition: var(--transition);
 }
+
 .blog-item .content.wrap-color h3 a {
   color: var(--headingColor);
 }
+
 .blog-item:hover .content {
   left: 5px;
   bottom: 25px;
 }
+
 .blog-item:hover .content.wrap-color {
   background: var(--blackColor);
 }
+
 .blog-item:hover .content.wrap-color h3 a {
   color: var(--whiteColor);
 }
@@ -2647,9 +3020,11 @@ Blog Area CSS
 .blog-search-box {
   width: 530px;
 }
+
 .blog-search-box .form-group {
   position: relative;
 }
+
 .blog-search-box .form-group label {
   position: absolute;
   left: 20px;
@@ -2658,6 +3033,7 @@ Blog Area CSS
   color: var(--headingColor);
   font-size: 18px;
 }
+
 .blog-search-box .form-group .form-control {
   display: inline-block;
   border: 1px solid var(--borderColor);
@@ -2671,21 +3047,26 @@ Blog Area CSS
   font-size: 15px;
   color: var(--textColor);
 }
+
 .blog-search-box .form-group .form-control::-moz-placeholder {
   color: var(--mutedColor);
   -moz-transition: var(--transition);
   transition: var(--transition);
 }
+
 .blog-search-box .form-group .form-control::placeholder {
   color: var(--mutedColor);
   transition: var(--transition);
 }
+
 .blog-search-box .form-group .form-control:focus::-moz-placeholder {
   color: transparent;
 }
+
 .blog-search-box .form-group .form-control:focus::placeholder {
   color: transparent;
 }
+
 .blog-search-box .form-group .form-select {
   display: inline-block;
   border: 1px solid var(--borderColor);
@@ -2708,9 +3089,11 @@ Contact Area CSS
   z-index: 1;
   overflow: hidden;
 }
+
 .contact-area.bg-white-wrap .contact-image img {
   min-height: 745px;
 }
+
 .contact-area.bg-white-wrap .contact-form-wrap .title span {
   font-weight: 500;
   color: var(--primaryColor);
@@ -2721,56 +3104,72 @@ Contact Area CSS
   top: 8.8px;
   letter-spacing: 1.6px;
 }
+
 .contact-area.bg-white-wrap .contact-form-wrap .title h2 {
   color: var(--headingColor);
   margin-bottom: 0;
   font-weight: 400;
 }
+
 .contact-area.bg-white-wrap .contact-form-wrap form .form-group label {
   color: var(--headingColor);
 }
+
 .contact-area.bg-white-wrap .contact-form-wrap form .form-group .form-control {
   border-bottom: 1px solid var(--inputBorder);
   color: var(--textColor);
 }
+
 .contact-area.bg-white-wrap .contact-form-wrap form .form-group .form-control::-moz-placeholder {
   color: var(--mutedColor);
 }
+
 .contact-area.bg-white-wrap .contact-form-wrap form .form-group .form-control::placeholder {
   color: var(--mutedColor);
 }
+
 .contact-area.bg-white-wrap .contact-form-wrap form .form-group .form-control:focus::-moz-placeholder {
   color: transparent;
 }
+
 .contact-area.bg-white-wrap .contact-form-wrap form .form-group .form-control:focus::placeholder {
   color: transparent;
 }
+
 .contact-area.bg-white-wrap .contact-info-list li {
   color: var(--mutedColor);
 }
+
 .contact-area.bg-white-wrap .contact-info-list li a {
   color: var(--mutedColor);
 }
+
 .contact-area.bg-white-wrap .contact-info-list li a:hover {
   color: var(--primaryColor);
 }
+
 .contact-area.bg-white-wrap .contact-info-list li .social li a {
   color: var(--headingColor);
 }
+
 .contact-area.bg-white-wrap .contact-info-list li .social li a:hover {
   color: var(--primaryColor);
 }
+
 .contact-area.bg-white-wrap .contact-shape1 {
   top: 2%;
   right: 8%;
   transform: translateY(-2%) translateX(-8%);
 }
+
 .contact-area.with-top-border .container {
   border-top: 1px dashed #646464;
 }
+
 .contact-area.with-top-border .contact-image img {
   min-height: 745px;
 }
+
 .contact-area.with-top-border .contact-form-wrap .title span {
   font-weight: 500;
   color: var(--primaryColor);
@@ -2781,6 +3180,7 @@ Contact Area CSS
   top: 8.8px;
   letter-spacing: 1.6px;
 }
+
 .contact-area.with-top-border .contact-form-wrap .title h2 {
   color: var(--whiteColor);
   margin-bottom: 0;
@@ -2795,11 +3195,13 @@ Contact Area CSS
   max-width: 550px;
   margin-bottom: 35px;
 }
+
 .contact-form-wrap .title h2 {
   font-size: 40px;
   color: var(--headingColor);
   margin-bottom: 18px;
 }
+
 .contact-form-wrap .title h2 span {
   color: transparent;
   -webkit-text-stroke: 0.5px var(--headingColor);
@@ -2807,9 +3209,11 @@ Contact Area CSS
   -moz-user-select: none;
   user-select: none;
 }
+
 .contact-form-wrap form .form-group {
   margin-bottom: 40px;
 }
+
 .contact-form-wrap form .form-group label {
   font-size: 14px;
   color: var(--headingColor);
@@ -2817,6 +3221,7 @@ Contact Area CSS
   display: block;
   margin-bottom: 30px;
 }
+
 .contact-form-wrap form .form-group label span {
   background: var(--brown-gradient, linear-gradient(135deg, #D8B798 0%, #BA8D6D 100%));
   background-clip: text;
@@ -2824,6 +3229,7 @@ Contact Area CSS
   -webkit-text-fill-color: transparent;
   letter-spacing: 1.3px;
 }
+
 .contact-form-wrap form .form-group .form-control {
   background-color: transparent;
   display: inline-block;
@@ -2836,31 +3242,39 @@ Contact Area CSS
   border-radius: 0;
   outline: 0;
 }
+
 .contact-form-wrap form .form-group .form-control::-moz-placeholder {
   color: var(--mutedColor);
   -moz-transition: var(--transition);
   transition: var(--transition);
 }
+
 .contact-form-wrap form .form-group .form-control::placeholder {
   color: var(--mutedColor);
   transition: var(--transition);
 }
+
 .contact-form-wrap form .form-group .form-control:focus::-moz-placeholder {
   color: transparent;
 }
+
 .contact-form-wrap form .form-group .form-control:focus::placeholder {
   color: transparent;
 }
+
 .contact-form-wrap form .form-group textarea.form-control {
   min-height: auto;
 }
+
 .contact-form-wrap form .form-group .form-select {
   color: var(--textColor) !important;
   background-position: right 0 center;
 }
+
 .contact-form-wrap form .default-btn {
   border: none;
 }
+
 .contact-form-wrap form .default-btn:hover {
   background-color: #000000;
 }
@@ -2869,14 +3283,17 @@ Contact Area CSS
   padding-left: 30px;
   margin-bottom: 0;
 }
+
 .contact-info-list li {
   list-style-type: none;
   margin-bottom: 50px;
   color: var(--mutedColor);
 }
+
 .contact-info-list li:last-child {
   margin-bottom: 0;
 }
+
 .contact-info-list li span {
   color: var(--primaryColor);
   font-size: 15px;
@@ -2885,32 +3302,40 @@ Contact Area CSS
   display: block;
   margin-bottom: 15px;
 }
+
 .contact-info-list li a {
   color: var(--mutedColor);
   display: block;
   margin-bottom: 5px;
 }
+
 .contact-info-list li a:last-child {
   margin-bottom: 0;
 }
+
 .contact-info-list li a:hover {
   color: var(--primaryColor);
 }
+
 .contact-info-list li .social {
   padding-left: 0;
   display: flex;
 }
+
 .contact-info-list li .social li {
   display: inline-block;
   margin-bottom: 0;
   margin-right: 25px;
 }
+
 .contact-info-list li .social li:last-child {
   margin-right: 0;
 }
+
 .contact-info-list li .social li a {
   color: var(--whiteColor);
 }
+
 .contact-info-list li .social li a:hover {
   color: var(--primaryColor);
 }
@@ -2937,6 +3362,7 @@ Elevating Area CSS
 .elevating-area {
   overflow: hidden;
 }
+
 .elevating-area .container-fluid {
   padding-left: 30px;
   padding-right: 30px;
@@ -2946,16 +3372,19 @@ Elevating Area CSS
   position: relative;
   padding-right: 245px;
 }
+
 .elevating-content h2 {
   font-size: 80px;
   margin-bottom: 20px;
   font-weight: 600;
 }
+
 .elevating-content h3 {
   margin-bottom: 0;
   font-size: 40px;
   font-weight: 400;
 }
+
 .elevating-content .elevating-video {
   position: absolute;
   right: 0;
@@ -2963,6 +3392,7 @@ Elevating Area CSS
   transform: translateY(-50%);
   max-width: 170px;
 }
+
 .elevating-content .elevating-video .video-btn {
   position: absolute;
   left: 0;
@@ -2972,6 +3402,7 @@ Elevating Area CSS
   text-align: center;
   cursor: pointer;
 }
+
 .elevating-content .elevating-video .video-btn i {
   font-size: 35px;
   background: linear-gradient(135deg, rgba(216, 183, 152, 0.8) 0%, rgba(186, 141, 109, 0.8) 100%);
@@ -2980,6 +3411,7 @@ Elevating Area CSS
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
 .elevating-content .elevating-video img {
   animation-name: rotateme;
   animation-duration: 10s;
@@ -2993,9 +3425,11 @@ Funfacts Area CSS
 .col-lg-3:nth-child(2) .funfacts-card {
   padding-left: 25px;
 }
+
 .col-lg-3:nth-child(3) .funfacts-card {
   padding-left: 50px;
 }
+
 .col-lg-3:nth-child(4) .funfacts-card {
   padding-left: 145px;
 }
@@ -3003,19 +3437,23 @@ Funfacts Area CSS
 .funfacts-card {
   margin-bottom: 25px;
 }
+
 .funfacts-card h2 {
   font-size: 45px;
   margin-bottom: 5px;
 }
+
 .funfacts-card h2.plus {
   position: relative;
   top: -3.5px;
 }
+
 .funfacts-card h2.text {
   position: relative;
   top: -3.5px;
   left: 2px;
 }
+
 .funfacts-card p {
   font-size: 15px;
   color: var(--mutedColor);
@@ -3032,15 +3470,19 @@ Partner Area CSS
 .col-lg-2:nth-child(1) .partner-item {
   border-right: none;
 }
+
 .col-lg-2:nth-child(2) .partner-item {
   border-right: none;
 }
+
 .col-lg-2:nth-child(3) .partner-item {
   border-right: none;
 }
+
 .col-lg-2:nth-child(4) .partner-item {
   border-right: none;
 }
+
 .col-lg-2:nth-child(5) .partner-item {
   border-right: none;
 }
@@ -3050,6 +3492,7 @@ Partner Area CSS
   border: 1px dashed var(--borderColor);
   padding: 85px 70px;
 }
+
 .partner-item.without-border {
   padding: 0;
   border: none;
@@ -3063,6 +3506,7 @@ Team Area CSS
   z-index: 1;
   overflow: hidden;
 }
+
 .team-area::before {
   position: absolute;
   content: "";
@@ -3073,33 +3517,42 @@ Team Area CSS
   background-color: var(--blackColor);
   z-index: -1;
 }
+
 .team-area.different-wrap-color::before {
   background: var(--cardBg);
 }
+
 .team-area.different-wrap-color .team-left-content .title h2 {
   color: var(--headingColor);
 }
+
 .team-area.different-wrap-color .team-left-content .team-card .team-social li a i {
   color: var(--primaryColor);
 }
+
 .team-area.different-wrap-color .team-card .blog-card .blog-content {
   background: var(--cardBg);
 }
+
 .team-area.different-wrap-color .team-card .team-image .content {
   background: var(--cardBg);
 }
+
 .team-area.different-wrap-color .team-card .team-image .content h3 {
   color: var(--headingColor);
 }
+
 .team-area.with-margin-top::before {
   display: none;
 }
+
 .team-area.with-margin-top .team-left-content {
   position: relative;
   z-index: 1;
   padding-top: 80px;
   padding-bottom: 80px;
 }
+
 .team-area.with-margin-top .team-left-content::before {
   position: absolute;
   content: "";
@@ -3110,9 +3563,11 @@ Team Area CSS
   background: var(--cardBg);
   z-index: -1;
 }
+
 .team-area.with-margin-top .team-left-content .team-card {
   margin-top: 0;
 }
+
 .team-area.with-margin-top .team-card {
   margin-top: 0;
   margin-bottom: 25px;
@@ -3123,11 +3578,13 @@ Team Area CSS
   padding-bottom: 100px;
   padding-right: 65px;
 }
+
 .team-left-content .title {
   position: relative;
   padding-left: 45px;
   margin-bottom: 40px;
 }
+
 .team-left-content .title span {
   font-weight: 500;
   color: var(--primaryColor);
@@ -3138,6 +3595,7 @@ Team Area CSS
   top: 8.8px;
   letter-spacing: 1.6px;
 }
+
 .team-left-content .title h2 {
   font-size: 40px;
   font-weight: 400;
@@ -3145,6 +3603,7 @@ Team Area CSS
   margin-bottom: 0;
   color: var(--whiteColor);
 }
+
 .team-left-content .team-card .team-social li a i {
   color: var(--whiteColor);
 }
@@ -3154,9 +3613,11 @@ Team Area CSS
   padding-left: 40px;
   margin-top: 55px;
 }
+
 .team-card .team-image {
   position: relative;
 }
+
 .team-card .team-image .content {
   background-color: var(--blackColor);
   padding: 30px 25px;
@@ -3166,18 +3627,21 @@ Team Area CSS
   max-width: 250px;
   width: 100%;
 }
+
 .team-card .team-image .content h3 {
   font-size: 18px;
   font-weight: 500;
   color: var(--whiteColor);
   margin-bottom: 0;
 }
+
 .team-card .team-image .content span {
   font-size: 15px;
   display: block;
   margin-top: 8px;
   color: var(--primaryColor);
 }
+
 .team-card .team-social {
   padding-left: 0;
   margin-bottom: 0;
@@ -3185,14 +3649,17 @@ Team Area CSS
   left: 0;
   bottom: 0;
 }
+
 .team-card .team-social li {
   list-style-type: none;
   display: block;
   margin-bottom: 20px;
 }
+
 .team-card .team-social li:last-child {
   margin-bottom: 0;
 }
+
 .team-card .team-social li a i {
   color: var(--primaryColor);
 }
@@ -3207,6 +3674,7 @@ Page Banner Area CSS
 .page-banner-area {
   margin-top: 30px;
 }
+
 .page-banner-area .container-fluid {
   padding-left: 30px;
   padding-right: 30px;
@@ -3216,11 +3684,13 @@ Page Banner Area CSS
   background: var(--cardBg);
   padding: 20px 30px;
 }
+
 .page-banner-inner .list {
   padding-left: 0;
   margin-bottom: 0;
   display: flex;
 }
+
 .page-banner-inner .list li {
   list-style-type: none;
   color: var(--mutedColor);
@@ -3229,12 +3699,15 @@ Page Banner Area CSS
   position: relative;
   margin-right: 30px;
 }
+
 .page-banner-inner .list li a {
   color: var(--headingColor);
 }
+
 .page-banner-inner .list li a:hover {
   color: var(--primaryColor);
 }
+
 .page-banner-inner .list li::before {
   position: absolute;
   content: "";
@@ -3245,9 +3718,11 @@ Page Banner Area CSS
   height: 2px;
   width: 5px;
 }
+
 .page-banner-inner .list li:last-child {
   margin-right: 0;
 }
+
 .page-banner-inner .list li:last-child::before {
   display: none;
 }
@@ -3270,6 +3745,7 @@ Box Style Area CSS
   padding-left: 55px;
   padding-right: 55px;
 }
+
 .box-style-inner h3 {
   font-size: 40px;
   font-weight: 400;
@@ -3277,6 +3753,7 @@ Box Style Area CSS
   margin: auto;
   line-height: 1.4;
 }
+
 .box-style-inner .wrap-shape {
   position: absolute;
   left: 0;
@@ -3293,6 +3770,7 @@ Projects Gallery Area CSS
   margin-top: 50px;
   overflow: hidden;
 }
+
 .projects-gallery-area .title {
   font-size: 30px;
   font-weight: 400;
@@ -3302,6 +3780,7 @@ Projects Gallery Area CSS
 .projects-gallery-slide-swiper {
   overflow: unset;
 }
+
 .projects-gallery-slide-swiper .swiper-wrapper {
   align-items: center;
 }
@@ -3312,6 +3791,7 @@ FAQ Area CSS
 .faq-area .section-title-wrap {
   max-width: 570px;
 }
+
 .faq-area .section-title-wrap span {
   top: 12.8px;
 }
@@ -3322,9 +3802,11 @@ FAQ Area CSS
   background-color: transparent;
   border-radius: 0;
 }
+
 .faq-accordion .accordion__item:last-child {
   margin-bottom: 0;
 }
+
 .faq-accordion .accordion__item .accordion__button {
   color: var(--headingColor);
   position: relative;
@@ -3341,11 +3823,13 @@ FAQ Area CSS
   background: var(--cardBg);
   border-radius: 0;
 }
+
 .faq-accordion .accordion__item .accordion__button::before {
   position: absolute;
   right: 20px;
   top: 28px;
 }
+
 .faq-accordion .accordion__item .accordion__panel {
   padding: 15px 0 0 30px;
 }
@@ -3357,9 +3841,11 @@ Profile Authentication Area CSS
   max-width: 550px;
   margin: auto;
 }
+
 .login-form .content {
   margin-bottom: 25px;
 }
+
 .login-form .content h3 {
   font-size: 30px;
   margin-bottom: 20px;
@@ -3367,6 +3853,7 @@ Profile Authentication Area CSS
   position: relative;
   font-weight: 400;
 }
+
 .login-form .content h3::before {
   position: absolute;
   content: "";
@@ -3376,15 +3863,19 @@ Profile Authentication Area CSS
   width: 100px;
   height: 2px;
 }
+
 .login-form .content h3 b {
   font-weight: 500;
 }
+
 .login-form .content p {
   margin-bottom: 0;
 }
+
 .login-form .form-group {
   margin-bottom: 25px;
 }
+
 .login-form .form-group label {
   display: block;
   margin-bottom: 2px;
@@ -3392,6 +3883,7 @@ Profile Authentication Area CSS
   font-size: 15px;
   font-weight: 500;
 }
+
 .login-form .form-group .form-control {
   transition: var(--transition);
   border: none;
@@ -3404,74 +3896,94 @@ Profile Authentication Area CSS
   width: 100%;
   padding: 0;
 }
+
 .login-form .form-group .form-control::-moz-placeholder {
   color: var(--mutedColor);
   -moz-transition: var(--transition);
   transition: var(--transition);
 }
+
 .login-form .form-group .form-control::placeholder {
   color: var(--mutedColor);
   transition: var(--transition);
 }
+
 .login-form .form-group .form-control:focus {
   border-color: var(--primaryColor);
   background-color: transparent;
 }
+
 .login-form .form-group .form-control:focus::-moz-placeholder {
   color: transparent;
 }
+
 .login-form .form-group .form-control:focus::placeholder {
   color: transparent;
 }
+
 .login-form .form-bottom {
   margin-bottom: 25px;
 }
+
 .login-form .form-bottom .form-check {
   color: var(--textColor);
 }
+
 .login-form .form-bottom .form-check a {
   color: var(--primaryColor);
 }
+
 .login-form .form-bottom .form-check a:hover {
   text-decoration: underline;
 }
+
 .login-form .form-bottom .form-check .form-check-input {
   margin-top: 0.24em;
   box-shadow: unset !important;
   font-size: 15px;
 }
+
 .login-form .form-bottom .form-check .form-check-input[type=checkbox] {
   border-radius: 0;
 }
+
 .login-form .form-bottom .form-check .form-check-input:checked {
   background-color: var(--primaryColor);
   border-color: var(--primaryColor);
 }
+
 .login-form .form-bottom .form-check .form-check-input:focus {
   border-color: var(--primaryColor);
 }
+
 .login-form .form-bottom .form-check .form-check-label {
   cursor: pointer;
 }
+
 .login-form .form-bottom .forgot-password {
   text-decoration: underline;
   transition: var(--transition);
 }
+
 .login-form .form-bottom .forgot-password:hover {
   color: var(--primaryColor);
 }
+
 .login-form .default-btn {
   display: block;
   width: 100%;
   border: none;
 }
+
 .login-form .text {
   margin-top: 20px;
 }
+
 .login-form .text p a {
   color: var(--headingColor);
   font-weight: 500;
 }
+
 .login-form .text p a:hover {
   color: var(--primaryColor);
 }
@@ -3480,9 +3992,11 @@ Profile Authentication Area CSS
   max-width: 550px;
   margin: auto;
 }
+
 .register-form .content {
   margin-bottom: 25px;
 }
+
 .register-form .content h3 {
   font-size: 30px;
   margin-bottom: 20px;
@@ -3490,6 +4004,7 @@ Profile Authentication Area CSS
   position: relative;
   font-weight: 400;
 }
+
 .register-form .content h3::before {
   position: absolute;
   content: "";
@@ -3499,15 +4014,19 @@ Profile Authentication Area CSS
   width: 100px;
   height: 2px;
 }
+
 .register-form .content h3 b {
   font-weight: 500;
 }
+
 .register-form .content p {
   margin-bottom: 0;
 }
+
 .register-form form .form-group {
   margin-bottom: 25px;
 }
+
 .register-form form .form-group label {
   display: block;
   margin-bottom: 2px;
@@ -3515,6 +4034,7 @@ Profile Authentication Area CSS
   font-size: 15px;
   font-weight: 500;
 }
+
 .register-form form .form-group .form-control {
   transition: var(--transition);
   border: none;
@@ -3527,41 +4047,51 @@ Profile Authentication Area CSS
   width: 100%;
   padding: 0;
 }
+
 .register-form form .form-group .form-control::-moz-placeholder {
   color: var(--mutedColor);
   -moz-transition: var(--transition);
   transition: var(--transition);
 }
+
 .register-form form .form-group .form-control::placeholder {
   color: var(--mutedColor);
   transition: var(--transition);
 }
+
 .register-form form .form-group .form-control:focus {
   border-color: var(--primaryColor);
   background-color: transparent;
 }
+
 .register-form form .form-group .form-control:focus::-moz-placeholder {
   color: transparent;
 }
+
 .register-form form .form-group .form-control:focus::placeholder {
   color: transparent;
 }
+
 .register-form form .default-btn {
   display: block;
   width: 100%;
   border: none;
 }
+
 .register-form form .alert-text {
   font-size: 15.5px;
   font-style: italic;
 }
+
 .register-form form .text {
   margin-top: 20px;
 }
+
 .register-form form .text p a {
   color: var(--headingColor);
   font-weight: 500;
 }
+
 .register-form form .text p a:hover {
   color: var(--primaryColor);
 }
@@ -3574,6 +4104,7 @@ Profile Authentication Area CSS
   margin-left: auto;
   margin-right: auto;
 }
+
 .forgot-password-box label {
   display: block;
   margin-bottom: 12px;
@@ -3581,6 +4112,7 @@ Profile Authentication Area CSS
   font-size: 15px;
   font-weight: 500;
 }
+
 .forgot-password-box .form-control {
   transition: var(--transition);
   border: 1px solid var(--inputBorder);
@@ -3594,25 +4126,31 @@ Profile Authentication Area CSS
   padding-left: 20px;
   padding-right: 20px;
 }
+
 .forgot-password-box .form-control::-moz-placeholder {
   color: var(--mutedColor);
   -moz-transition: var(--transition);
   transition: var(--transition);
 }
+
 .forgot-password-box .form-control::placeholder {
   color: var(--mutedColor);
   transition: var(--transition);
 }
+
 .forgot-password-box .form-control:focus {
   border-color: var(--primaryColor);
   background-color: transparent;
 }
+
 .forgot-password-box .form-control:focus::-moz-placeholder {
   color: transparent;
 }
+
 .forgot-password-box .form-control:focus::placeholder {
   color: transparent;
 }
+
 .forgot-password-box .default-btn {
   margin-top: 25px;
   border: none;
@@ -3621,70 +4159,138 @@ Profile Authentication Area CSS
 /*================================================
 Privacy Policy Area CSS
 =================================================*/
-.privacy-policy-content .h1, .privacy-policy-content .h2, .privacy-policy-content .h3, .privacy-policy-content .h4, .privacy-policy-content .h5, .privacy-policy-content .h6, .privacy-policy-content h1, .privacy-policy-content h2, .privacy-policy-content h3, .privacy-policy-content h4, .privacy-policy-content h5, .privacy-policy-content h6 {
+.privacy-policy-content .h1,
+.privacy-policy-content .h2,
+.privacy-policy-content .h3,
+.privacy-policy-content .h4,
+.privacy-policy-content .h5,
+.privacy-policy-content .h6,
+.privacy-policy-content h1,
+.privacy-policy-content h2,
+.privacy-policy-content h3,
+.privacy-policy-content h4,
+.privacy-policy-content h5,
+.privacy-policy-content h6 {
   font-size: 22px;
   font-weight: 500;
   margin-bottom: 15px;
 }
-.privacy-policy-content .h1:not(:first-child), .privacy-policy-content .h2:not(:first-child), .privacy-policy-content .h3:not(:first-child), .privacy-policy-content .h4:not(:first-child), .privacy-policy-content .h5:not(:first-child), .privacy-policy-content .h6:not(:first-child), .privacy-policy-content h1:not(:first-child), .privacy-policy-content h2:not(:first-child), .privacy-policy-content h3:not(:first-child), .privacy-policy-content h4:not(:first-child), .privacy-policy-content h5:not(:first-child), .privacy-policy-content h6:not(:first-child) {
+
+.privacy-policy-content .h1:not(:first-child),
+.privacy-policy-content .h2:not(:first-child),
+.privacy-policy-content .h3:not(:first-child),
+.privacy-policy-content .h4:not(:first-child),
+.privacy-policy-content .h5:not(:first-child),
+.privacy-policy-content .h6:not(:first-child),
+.privacy-policy-content h1:not(:first-child),
+.privacy-policy-content h2:not(:first-child),
+.privacy-policy-content h3:not(:first-child),
+.privacy-policy-content h4:not(:first-child),
+.privacy-policy-content h5:not(:first-child),
+.privacy-policy-content h6:not(:first-child) {
   margin-top: 30px;
 }
+
 .privacy-policy-content strong {
   color: var(--headingColor);
   font-weight: 500;
 }
+
 .privacy-policy-content p a {
   color: var(--primaryColor);
 }
+
 .privacy-policy-content p a:hover {
   text-decoration: underline;
 }
-.privacy-policy-content ul li, .privacy-policy-content ol li {
+
+.privacy-policy-content ul li,
+.privacy-policy-content ol li {
   color: var(--textColor);
   margin-bottom: 20px;
 }
-.privacy-policy-content ul li a, .privacy-policy-content ol li a {
+
+.privacy-policy-content ul li a,
+.privacy-policy-content ol li a {
   color: var(--primaryColor);
 }
-.privacy-policy-content ul li a:hover, .privacy-policy-content ol li a:hover {
+
+.privacy-policy-content ul li a:hover,
+.privacy-policy-content ol li a:hover {
   text-decoration: underline;
 }
-.privacy-policy-content ul li:last-child, .privacy-policy-content ol li:last-child {
+
+.privacy-policy-content ul li:last-child,
+.privacy-policy-content ol li:last-child {
   margin-bottom: 0;
 }
 
 /*================================================
 Terms & Conditions Area CSS
 =================================================*/
-.terms-conditions-content .h1, .terms-conditions-content .h2, .terms-conditions-content .h3, .terms-conditions-content .h4, .terms-conditions-content .h5, .terms-conditions-content .h6, .terms-conditions-content h1, .terms-conditions-content h2, .terms-conditions-content h3, .terms-conditions-content h4, .terms-conditions-content h5, .terms-conditions-content h6 {
+.terms-conditions-content .h1,
+.terms-conditions-content .h2,
+.terms-conditions-content .h3,
+.terms-conditions-content .h4,
+.terms-conditions-content .h5,
+.terms-conditions-content .h6,
+.terms-conditions-content h1,
+.terms-conditions-content h2,
+.terms-conditions-content h3,
+.terms-conditions-content h4,
+.terms-conditions-content h5,
+.terms-conditions-content h6 {
   font-size: 22px;
   font-weight: 500;
   margin-bottom: 15px;
 }
-.terms-conditions-content .h1:not(:first-child), .terms-conditions-content .h2:not(:first-child), .terms-conditions-content .h3:not(:first-child), .terms-conditions-content .h4:not(:first-child), .terms-conditions-content .h5:not(:first-child), .terms-conditions-content .h6:not(:first-child), .terms-conditions-content h1:not(:first-child), .terms-conditions-content h2:not(:first-child), .terms-conditions-content h3:not(:first-child), .terms-conditions-content h4:not(:first-child), .terms-conditions-content h5:not(:first-child), .terms-conditions-content h6:not(:first-child) {
+
+.terms-conditions-content .h1:not(:first-child),
+.terms-conditions-content .h2:not(:first-child),
+.terms-conditions-content .h3:not(:first-child),
+.terms-conditions-content .h4:not(:first-child),
+.terms-conditions-content .h5:not(:first-child),
+.terms-conditions-content .h6:not(:first-child),
+.terms-conditions-content h1:not(:first-child),
+.terms-conditions-content h2:not(:first-child),
+.terms-conditions-content h3:not(:first-child),
+.terms-conditions-content h4:not(:first-child),
+.terms-conditions-content h5:not(:first-child),
+.terms-conditions-content h6:not(:first-child) {
   margin-top: 30px;
 }
+
 .terms-conditions-content strong {
   color: var(--headingColor);
   font-weight: 500;
 }
+
 .terms-conditions-content p a {
   color: var(--primaryColor);
 }
+
 .terms-conditions-content p a:hover {
   text-decoration: underline;
 }
-.terms-conditions-content ul li, .terms-conditions-content ol li {
+
+.terms-conditions-content ul li,
+.terms-conditions-content ol li {
   color: var(--textColor);
   margin-bottom: 20px;
 }
-.terms-conditions-content ul li a, .terms-conditions-content ol li a {
+
+.terms-conditions-content ul li a,
+.terms-conditions-content ol li a {
   color: var(--primaryColor);
 }
-.terms-conditions-content ul li a:hover, .terms-conditions-content ol li a:hover {
+
+.terms-conditions-content ul li a:hover,
+.terms-conditions-content ol li a:hover {
   text-decoration: underline;
 }
-.terms-conditions-content ul li:last-child, .terms-conditions-content ol li:last-child {
+
+.terms-conditions-content ul li:last-child,
+.terms-conditions-content ol li:last-child {
   margin-bottom: 0;
 }
 
@@ -3694,11 +4300,13 @@ Not Found Area CSS
 .not-found-content img {
   margin-bottom: 35px;
 }
+
 .not-found-content h3 {
   font-size: 30px;
   margin-bottom: 15px;
   font-weight: 500;
 }
+
 .not-found-content .default-btn {
   margin-top: 15px;
 }
@@ -3717,20 +4325,25 @@ Widget Area CSS
   padding: 40px;
   margin-left: 20px;
 }
+
 .widget-area .widget {
   margin-bottom: 55px;
 }
+
 .widget-area .widget .widget-title {
   margin-bottom: 25px;
   font-size: 24px;
   font-weight: 400;
 }
+
 .widget-area .widget:last-child {
   margin-bottom: 0;
 }
+
 .widget-area .widget_search form {
   position: relative;
 }
+
 .widget-area .widget_search form .search-field {
   display: inline-block;
   height: 60px;
@@ -3745,21 +4358,26 @@ Widget Area CSS
   width: 100%;
   font-size: 15px;
 }
+
 .widget-area .widget_search form .search-field::-moz-placeholder {
   color: var(--mutedColor);
   -moz-transition: var(--transition);
   transition: var(--transition);
 }
+
 .widget-area .widget_search form .search-field::placeholder {
   color: var(--mutedColor);
   transition: var(--transition);
 }
+
 .widget-area .widget_search form .search-field:focus::-moz-placeholder {
   color: transparent;
 }
+
 .widget-area .widget_search form .search-field:focus::placeholder {
   color: transparent;
 }
+
 .widget-area .widget_search form button {
   border: none;
   padding: 0;
@@ -3772,11 +4390,13 @@ Widget Area CSS
   left: 20px;
   transition: var(--transition);
 }
+
 .widget-area .widget_categories ul {
   padding-left: 0;
   margin-bottom: 0;
   list-style-type: none;
 }
+
 .widget-area .widget_categories ul li {
   font-size: 14px;
   margin-bottom: 25px;
@@ -3786,30 +4406,37 @@ Widget Area CSS
   display: flex;
   justify-content: space-between;
 }
+
 .widget-area .widget_categories ul li a {
   color: var(--headingColor);
   font-weight: 500;
 }
+
 .widget-area .widget_categories ul li a:hover {
   color: var(--primaryColor);
 }
+
 .widget-area .widget_categories ul li span img {
   max-width: 20px;
 }
+
 .widget-area .widget_categories ul li:last-child {
   margin-bottom: 0;
 }
+
 .widget-area .widget_traz_posts_thumb .item {
   overflow: hidden;
   margin-bottom: 25px;
   border-bottom: 1px dashed var(--borderColor);
   padding-bottom: 25px;
 }
+
 .widget-area .widget_traz_posts_thumb .item:last-child {
   margin-bottom: 0;
   border-bottom: none;
   padding-bottom: 0;
 }
+
 .widget-area .widget_traz_posts_thumb .item .thumb {
   float: left;
   overflow: hidden;
@@ -3818,6 +4445,7 @@ Widget Area CSS
   height: 90px;
   margin-right: 20px;
 }
+
 .widget-area .widget_traz_posts_thumb .item .thumb .fullimage {
   width: 90px;
   height: 90px;
@@ -3826,37 +4454,46 @@ Widget Area CSS
   background-repeat: no-repeat;
   background-position: center center !important;
 }
+
 .widget-area .widget_traz_posts_thumb .item .thumb .fullimage.bg1 {
   background-image: url(/images/blog/blog1.jpg);
 }
+
 .widget-area .widget_traz_posts_thumb .item .thumb .fullimage.bg2 {
   background-image: url(/images/blog/blog2.jpg);
 }
+
 .widget-area .widget_traz_posts_thumb .item .info {
   overflow: hidden;
   margin-top: 4.5px;
 }
+
 .widget-area .widget_traz_posts_thumb .item .info .title {
   margin-bottom: 0;
   line-height: 1.5;
   font-size: 17px;
   font-weight: 500;
 }
+
 .widget-area .widget_traz_posts_thumb .item .info .title a {
   display: inline-block;
 }
+
 .widget-area .widget_traz_posts_thumb .item .info .title a:hover {
   color: var(--primaryColor);
 }
+
 .widget-area .widget_traz_posts_thumb .item .info span {
   display: block;
   margin-top: 10px;
   font-size: 14px;
   color: var(--primaryColor);
 }
+
 .widget-area .widget_tag_cloud .tagcloud {
   margin-bottom: -10px;
 }
+
 .widget-area .widget_tag_cloud .tagcloud a {
   padding: 10px 15px;
   display: inline-block;
@@ -3867,6 +4504,7 @@ Widget Area CSS
   font-size: 15.5px;
   font-weight: 400;
 }
+
 .widget-area .widget_tag_cloud .tagcloud a:hover {
   color: var(--whiteColor);
   background-color: var(--primaryColor);
@@ -3879,19 +4517,25 @@ Pagination Area CSS
   margin-top: 20px;
   text-align: center;
 }
+
 .pagination-area .nav-links {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.pagination-area .nav-links .next i, .pagination-area .nav-links .prev i {
+
+.pagination-area .nav-links .next i,
+.pagination-area .nav-links .prev i {
   font-size: 30px;
   transition: var(--transition);
   color: var(--mutedColor);
 }
-.pagination-area .nav-links .next i:hover, .pagination-area .nav-links .prev i:hover {
+
+.pagination-area .nav-links .next i:hover,
+.pagination-area .nav-links .prev i:hover {
   color: var(--primaryColor);
 }
+
 .pagination-area .page-numbers {
   width: 45px;
   height: 45px;
@@ -3909,7 +4553,9 @@ Pagination Area CSS
   margin-left: 8px;
   margin-right: 8px;
 }
-.pagination-area .page-numbers:hover, .pagination-area .page-numbers.current {
+
+.pagination-area .page-numbers:hover,
+.pagination-area .page-numbers.current {
   color: var(--whiteColor);
   background: var(--primaryColor);
 }
@@ -3917,26 +4563,34 @@ Pagination Area CSS
 .full-bg-black-color {
   background-color: var(--blackColor);
 }
+
 .full-bg-black-color .page-banner-inner {
   background: #423E3A;
 }
+
 .full-bg-black-color .page-banner-inner .list li {
   color: #A8A39F;
 }
+
 .full-bg-black-color .page-banner-inner .list li a {
   color: var(--whiteColor) !important;
 }
+
 .full-bg-black-color .page-banner-inner .list li a:hover {
   color: var(--primaryColor) !important;
 }
+
 .full-bg-black-color .projects-area.bg-wrap-with-black {
   background-color: transparent;
 }
+
 .full-bg-black-color .projects-area.bg-wrap-with-black .pagination-area .page-numbers {
   background: #423E3A;
   color: #B0ADA4;
 }
-.full-bg-black-color .projects-area.bg-wrap-with-black .pagination-area .page-numbers:hover, .full-bg-black-color .projects-area.bg-wrap-with-black .pagination-area .page-numbers.current {
+
+.full-bg-black-color .projects-area.bg-wrap-with-black .pagination-area .page-numbers:hover,
+.full-bg-black-color .projects-area.bg-wrap-with-black .pagination-area .page-numbers.current {
   color: var(--whiteColor);
   background: var(--primaryColor);
 }
@@ -3946,32 +4600,39 @@ Pagination Area CSS
   padding: 50px 40px;
   margin-bottom: 25px;
 }
+
 .pricing-plan h4 {
   font-weight: 400;
   text-transform: uppercase;
   color: var(--primaryColor);
   font-size: 17px;
 }
+
 .pricing-plan p {
   font-size: 15px;
 }
+
 .pricing-plan h2 {
   font-size: 35px;
   margin: 15px 0 30px;
 }
+
 .pricing-plan ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
+
 .pricing-plan ul li {
   position: relative;
   padding-left: 25px;
   margin-bottom: 12px;
 }
+
 .pricing-plan ul li:last-child {
   margin-bottom: 0;
 }
+
 .pricing-plan ul li i {
   position: absolute;
   left: 0;
@@ -3980,6 +4641,7 @@ Pagination Area CSS
   font-size: 20px;
   line-height: 1;
 }
+
 .pricing-plan .default-btn {
   margin-top: 35px;
 }
@@ -3987,6 +4649,7 @@ Pagination Area CSS
 .author-content {
   margin-bottom: 50px;
 }
+
 .author-content img {
   width: 200px;
   height: 200px;
@@ -3995,28 +4658,35 @@ Pagination Area CSS
   margin-left: auto;
   margin-bottom: 20px;
 }
+
 .author-content .content {
   max-width: 450px;
   margin: auto;
 }
+
 .author-content .content h3 {
   font-size: 20px;
 }
+
 .author-content .content p {
   font-size: 15px;
 }
+
 .author-content .content ul {
   list-style-type: none;
   padding: 0;
   margin: 25px 0 0;
 }
+
 .author-content .content ul li {
   display: inline-block;
   margin-right: 10px;
 }
+
 .author-content .content ul li:last-child {
   margin-right: 0;
 }
+
 .author-content .content ul li a {
   background-color: var(--cardBg);
   display: inline-block;
@@ -4027,6 +4697,7 @@ Pagination Area CSS
   line-height: 30px;
   font-size: 16px;
 }
+
 .author-content .content ul li a:hover {
   background-color: var(--primaryColor);
   color: #fff;
@@ -4034,4 +4705,6 @@ Pagination Area CSS
 
 .search-title {
   margin-bottom: 30px;
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*# sourceMappingURL=style.css.map */

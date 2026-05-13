@@ -85,7 +85,7 @@ const ContactForm: React.FC = () => {
       <div className="contact-area ptb-100">
         <div className="container">
           <div className="row justify-content-center">
-            <div 
+            <div
               className="col-lg-5 col-md-12 pe-5"
               data-aos="fade-up"
               data-aos-delay="100"
@@ -98,7 +98,7 @@ const ContactForm: React.FC = () => {
             </div>
 
             <div className="col-lg-7 col-md-12 ps-5">
-              <div 
+              <div
                 className="contact-form-wrap"
                 data-aos="fade-up"
                 data-aos-delay="200"
@@ -107,12 +107,10 @@ const ContactForm: React.FC = () => {
               >
                 <div className="title">
                   <h2>
-                    <span>Contact,</span> Let&apos;s Talk
+                    <span>Start Your</span> Masonry Project
                   </h2>
                   <p>
-                    Let&apos;s bring your project to life. Let us know how we
-                    can best help you. We are a leading architecture firm
-                    dedicated to creating designs.
+                    Let&apos;s discuss your masonry project and how we can help create a timeless results for your property. Our team provides masonry solutions built for lasting quality.
                   </p>
                 </div>
 
@@ -190,8 +188,8 @@ const ContactForm: React.FC = () => {
                         </div>
                       )}
 
-                      <button 
-                        type="submit" 
+                      <button
+                        type="submit"
                         className="default-btn"
                         disabled={loading}
                         style={{ opacity: loading ? 0.7 : 1, cursor: loading ? "not-allowed" : "pointer" }}

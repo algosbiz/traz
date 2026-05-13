@@ -21,35 +21,35 @@ export default function Home() {
       uuid: "faq-repair-1",
       question: "What masonry services do you provide in Calgary?",
       answers: [
-        "We provide complete masonry services in Calgary, including brick, stone, and concrete block construction, as well as repairs, restorations, and new installations for residential and commercial properties."
+        "We provide complete masonry services in Calgary, including brick, stone, and concrete block construction for residential and commercial properties. Our work also includes masonry repairs, restorations, and custom installations designed to maintain long-term durability, timeless appearance, and lasting structural performance."
       ]
     },
     {
       uuid: "faq-repair-2",
       question: "How do we know if masonry is the right choice for our project?",
       answers: [
-        "We review your project goals, budget, and site conditions, then recommend masonry solutions that offer the best balance of durability, appearance, and long-term performance."
+        "Our team reviews your project goals, budget, property layout, and site conditions before recommending the most suitable masonry solution. We focus on helping clients choose materials and construction methods that provide timeless style, reliable durability, and long-term value for the property."
       ]
     },
     {
       uuid: "faq-repair-3",
       question: "Can masonry withstand Calgary’s weather conditions?",
       answers: [
-        "Yes. We use materials and installation methods designed to perform well in Calgary’s climate, including freeze-thaw cycles, moisture exposure, and seasonal temperature changes."
+        "Yes, we work on both new masonry construction and repair projects. From cracked brickwork and deteriorated mortar to complete masonry installations, our goal is to restore or build masonry structures that remain functional, durable, and visually timeless for years to come."
       ]
     },
     {
       uuid: "faq-repair-4",
       question: "Do you handle both new construction and masonry repairs?",
       answers: [
-        "Yes, we work on both new masonry construction and repair projects, including cracked brickwork, deteriorated mortar, and structural masonry issues."
+        "Yes, we work on both new masonry construction and repair projects. From cracked brickwork and deteriorated mortar to complete masonry installations, our goal is to restore or build masonry structures that remain functional, durable, and visually timeless for years to come."
       ]
     },
     {
       uuid: "faq-repair-5",
       question: "How do we get started with a masonry project?",
       answers: [
-        "Simply contact our team to discuss your project. We’ll assess your needs, provide professional guidance, and prepare a clear estimate before any work begins."
+        "Simply contact our team to discuss your project and masonry goals. We will review your needs, assess the site conditions, and provide professional guidance with a clear estimate so the project can move forward with careful planning and long-term performance in mind."
       ]
     }
   ];
