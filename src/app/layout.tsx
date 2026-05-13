@@ -1,18 +1,6 @@
-import "../../node_modules/bootstrap/dist/css/bootstrap.min.css";
-import "../../public/css/animate.min.css";
-import "remixicon/fonts/remixicon.css";
-import "swiper/css/bundle";
-import 'react-accessible-accordion/dist/fancy-example.css';
-import "../../public/css/flaticon_astle.css";
-import "../../public/css/navbar.css";
-import "../../public/css/services-details.css";
-import "../../public/css/portfolio-details.css";
-import "../../public/css/blog-details.css";
-import "../../public/css/footer.css";
-// Globals Styles
-import "../../public/css/style.css";
-// Globals Responsive Styles
-import "../../public/css/responsive.css";
+// All CSS consolidated into a single file to guarantee cascade ordering
+// in production builds (fixes responsive styles being overridden on Vercel)
+import "@/styles/globals.css";
 
 import React, { Suspense } from "react";
 import AosAnimation from "@/components/Layout/AosAnimation";

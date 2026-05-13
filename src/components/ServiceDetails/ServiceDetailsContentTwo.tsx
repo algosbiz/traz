@@ -90,7 +90,7 @@ const ServiceDetailsContentTwo: React.FC = () => {
               </div>
             </div>
 
-            <div className="col-lg-4 col-md-12">
+            <div className="col-lg-4 col-md-12 mt-4 mt-lg-0">
               <div className="service-details-sidebar-image">
                 <Image
                   src={sidebarImg}

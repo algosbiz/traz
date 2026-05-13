@@ -1,0 +1,32 @@
+/*
+ * Global CSS Entry File
+ * 
+ * All CSS imports are consolidated here in a single file
+ * to guarantee correct cascade ordering in production builds.
+ * Next.js production builds may reorder CSS chunks when imported
+ * separately in layout.tsx, causing responsive styles to be 
+ * overridden by base styles.
+ */
+
+/* Third-party libraries */
+@import "bootstrap/dist/css/bootstrap.min.css";
+@import "remixicon/fonts/remixicon.css";
+@import "swiper/css/bundle";
+@import "react-accessible-accordion/dist/fancy-example.css";
+
+/* Base styles */
+@import "../../public/css/animate.min.css";
+@import "../../public/css/flaticon_astle.css";
+
+/* Component styles */
+@import "../../public/css/navbar.css";
+@import "../../public/css/services-details.css";
+@import "../../public/css/portfolio-details.css";
+@import "../../public/css/blog-details.css";
+@import "../../public/css/footer.css";
+
+/* Global styles */
+@import "../../public/css/style.css";
+
+/* Responsive overrides - MUST be last to ensure proper cascade */
+@import "../../public/css/responsive.css";
