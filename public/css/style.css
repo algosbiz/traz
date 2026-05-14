@@ -88,10 +88,10 @@ Default CSS
 
 [data-theme='dark'] {
   --backgroundColor: var(--blackColor);
-  --paragraphColor: #B7B3AF;
-  --textColor: #B7B3AF;
-  --headingColor: #E1DBD6;
-  --subtitleColor: #BDBDBD;
+  --paragraphColor: #ffffff;
+  --textColor: #ffffff;
+  --headingColor: #ffffff;
+  --subtitleColor: #ffffff;
   --mutedColor: #9D9A97;
   --cardBg: #24231D;
   --borderColor: #3A3835;
@@ -106,9 +106,9 @@ Default CSS
   --footerBg: #1d1814;
   --footerBgSolid: #1a1613;
   --footerCopyrightBg: #110f0d;
-  --footerText: #f1e8df;
-  --footerMutedText: rgba(241, 232, 223, 0.64);
-  --footerHeading: #fff8f2;
+  --footerText: #ffffff;
+  --footerMutedText: #ffffff;
+  --footerHeading: #ffffff;
   --footerHover: #ddb691;
   --footerSocialBg: #0f0d0b;
   --footerSocialHoverBg: #f4e6d8;

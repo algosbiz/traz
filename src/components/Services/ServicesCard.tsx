@@ -48,8 +48,9 @@ const ServicesCard: React.FC = () => {
                       <Image
                         src={value.icon}
                         alt={value.title}
-                        width={60}
-                        height={60}
+                        width={80}
+                        height={80}
+                        style={{ borderRadius: "12px", objectFit: "cover" }}
                       />
                     </div>
                     <h3>

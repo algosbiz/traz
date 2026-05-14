@@ -9,6 +9,7 @@ const TextSlide: React.FC = () => {
         <div className="container-fluid">
           <div className="animation-view-content">
             <h1>
+              <span>Timeless Stone Masonry Contractor</span>
               <span>Creative Architecture Design Agency</span>
               <span>Best Architecture Design Agency</span>
               <span>Creative Interior Design Agency</span>
