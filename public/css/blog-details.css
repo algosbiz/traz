@@ -168,7 +168,7 @@ Blog Details Area CSS
 }
 .blog-details-desc .bd-tags li a:hover {
   background-color: var(--primaryColor);
-  color: var(--whiteColor);
+  color: var(--whiteTextColor);
 }
 .blog-details-desc .bd-previous-next-post .prev-and-next-title {
   margin-bottom: 35px;

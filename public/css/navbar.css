@@ -54,7 +54,7 @@ Navbar Area CSS
   max-width: 100%;
 }
 .navbar .navbar-toggler {
-  color: var(--whiteColor);
+  color: var(--whiteTextColor);
   font-size: inherit;
   box-shadow: unset;
   border: none;
@@ -260,11 +260,11 @@ Navbar Area CSS
 }
 .navbar .others-option .option-item .default-btn {
   background-color: var(--primaryColor);
-  color: var(--whiteColor);
+  color: var(--whiteTextColor);
 }
 .navbar .others-option .option-item .default-btn:hover {
   background-color: #000000;
-  color: var(--whiteColor);
+  color: var(--whiteTextColor);
 }
 
 .navbar-with-different-color {
@@ -523,7 +523,7 @@ Search Modal Area CSS
 .search-modal-area .modal-content .modal-body .search-form form .form-control {
   display: inline-block;
   width: 100%;
-  color: var(--whiteColor);
+  color: var(--whiteTextColor);
   height: 60px;
   outline: 0;
   box-shadow: unset;
@@ -534,12 +534,12 @@ Search Modal Area CSS
   transition: var(--transition);
 }
 .search-modal-area .modal-content .modal-body .search-form form .form-control::-moz-placeholder {
-  color: var(--whiteColor);
+  color: var(--whiteTextColor);
   -moz-transition: var(--transition);
   transition: var(--transition);
 }
 .search-modal-area .modal-content .modal-body .search-form form .form-control::placeholder {
-  color: var(--whiteColor);
+  color: var(--whiteTextColor);
   transition: var(--transition);
 }
 .search-modal-area .modal-content .modal-body .search-form form .form-control:focus::-moz-placeholder {
@@ -553,7 +553,7 @@ Search Modal Area CSS
   padding: 0;
   height: 60px;
   font-size: 20px;
-  color: var(--whiteColor);
+  color: var(--whiteTextColor);
   display: inline-block;
   background-color: transparent;
   position: absolute;
@@ -566,7 +566,7 @@ Search Modal Area CSS
   color: var(--primaryColor);
 }
 .search-modal-area .modal-content .btn-close {
-  color: var(--whiteColor) !important;
+  color: var(--whiteTextColor) !important;
   font-size: 20px;
   outline: 0 !important;
   line-height: initial;

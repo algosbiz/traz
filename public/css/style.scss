@@ -51,6 +51,7 @@ Default CSS
     --primaryColor: #BA8D6D;
     --blackColor: #161512;
     --whiteColor: #ffffff;
+    --whiteTextColor: #f7f7f7;
     --paragraphColor: #7C7772;
     --fontSize: 17px;
     --transition: .6s;
@@ -201,14 +202,14 @@ Default Btn Area CSS
     display: inline-block;
     padding: 15px 30px;
     background-color: var(--primaryColor);
-    color: var(--whiteColor);
+    color: var(--whiteTextColor);
     font-size: 18px;
     font-weight: 500;
     transition: var(--transition);
 
     &:hover {
         background-color: var(--blackColor);
-        color: var(--whiteColor);
+        color: var(--whiteTextColor);
     }
 }
 
@@ -346,7 +347,7 @@ Preloader Area CSS
 
             span {
                 animation: flip 2s infinite;
-                color: var(--whiteColor);
+                color: var(--whiteTextColor);
                 display: inline-block;
                 animation-delay: .2s;
 
@@ -566,7 +567,7 @@ Main Banner Area CSS
                 background-color: #000000;
                 border-radius: 100%;
                 font-size: 15px;
-                color: var(--whiteColor);
+                color: var(--whiteTextColor);
                 transition: var(--transition);
                 display: inline-block;
                 text-align: center;
@@ -776,7 +777,7 @@ Architecture Studio Banner Area CSS
 
         b {
             background-color: var(--blackColor);
-            color: var(--whiteColor);
+            color: var(--whiteTextColor);
             font-weight: bold;
             display: inline-block;
             line-height: 1;
@@ -803,7 +804,7 @@ Architecture Studio Banner Area CSS
     }
 
     a {
-        color: var(--whiteColor);
+        color: var(--whiteTextColor);
         font-size: 15px;
         font-weight: 500;
         letter-spacing: 1.5px;
@@ -1055,7 +1056,7 @@ About Area CSS
 
                 &:hover {
                     background-color: var(--primaryColor);
-                    color: var(--whiteColor);
+                    color: var(--whiteTextColor);
                 }
             }
         }
@@ -1173,7 +1174,7 @@ About Area CSS
 
                     &:hover {
                         background-color: var(--primaryColor);
-                        color: var(--whiteColor);
+                        color: var(--whiteTextColor);
                     }
                 }
             }
@@ -1620,7 +1621,7 @@ Features Area CSS
 
         h3 {
             font-size: 57px;
-            color: var(--whiteColor);
+            color: var(--whiteTextColor);
             font-weight: 400;
             margin-bottom: 12px;
             line-height: 1;
@@ -1851,7 +1852,7 @@ Recognition Area CSS
 
         h3 {
             font-size: 57px;
-            color: var(--whiteColor);
+            color: var(--whiteTextColor);
             font-weight: 400;
             margin-bottom: 12px;
             line-height: 1;
@@ -1883,7 +1884,7 @@ Recognition Area CSS
 
         h3 {
             font-size: 57px;
-            color: var(--whiteColor);
+            color: var(--whiteTextColor);
             font-weight: 400;
             margin-bottom: 12px;
             line-height: 1;
@@ -2175,7 +2176,7 @@ Projects Area CSS
             }
 
             h2 {
-                color: var(--whiteColor);
+                color: var(--whiteTextColor);
             }
         }
 
@@ -2207,7 +2208,7 @@ Projects Area CSS
                     right: 20px;
                     bottom: 20px;
                     background-color: var(--blackColor);
-                    color: var(--whiteColor);
+                    color: var(--whiteTextColor);
                     font-size: 15px;
                     font-weight: 500;
                     letter-spacing: 1.5px;
@@ -2329,7 +2330,7 @@ Projects Area CSS
 
         &.active {
             background-color: var(--primaryColor);
-            color: var(--whiteColor);
+            color: var(--whiteTextColor);
 
             b {
                 color: #EED5C3;
@@ -2942,7 +2943,7 @@ Blog Area CSS
             margin-bottom: 20px;
 
             a {
-                color: var(--whiteColor);
+                color: var(--whiteTextColor);
 
                 &:hover {
                     color: var(--primaryColor);
@@ -3056,7 +3057,7 @@ Blog Area CSS
             line-height: 1.5;
 
             a {
-                color: var(--whiteColor);
+                color: var(--whiteTextColor);
 
                 &:hover {
                     color: var(--primaryColor);
@@ -3086,7 +3087,7 @@ Blog Area CSS
 
                 h3 {
                     a {
-                        color: var(--whiteColor);
+                        color: var(--whiteTextColor);
                     }
                 }
             }
@@ -3267,7 +3268,7 @@ Contact Area CSS
                 }
 
                 h2 {
-                    color: var(--whiteColor);
+                    color: var(--whiteTextColor);
                     margin-bottom: 0;
                     font-weight: 400;
                 }
@@ -3308,7 +3309,7 @@ Contact Area CSS
 
             label {
                 font-size: 14px;
-                color: var(--whiteColor);
+                color: var(--whiteTextColor);
                 letter-spacing: 1.3px;
                 display: block;
                 margin-bottom: 30px;
@@ -3423,7 +3424,7 @@ Contact Area CSS
                 }
 
                 a {
-                    color: var(--whiteColor);
+                    color: var(--whiteTextColor);
 
                     &:hover {
                         color: var(--primaryColor);
@@ -3755,7 +3756,7 @@ Team Area CSS
             font-weight: 400;
             line-height: 1.3;
             margin-bottom: 0;
-            color: var(--whiteColor);
+            color: var(--whiteTextColor);
         }
     }
 
@@ -3764,7 +3765,7 @@ Team Area CSS
             li {
                 a {
                     i {
-                        color: var(--whiteColor);
+                        color: var(--whiteTextColor);
                     }
                 }
             }
@@ -3792,7 +3793,7 @@ Team Area CSS
             h3 {
                 font-size: 18px;
                 font-weight: 500;
-                color: var(--whiteColor);
+                color: var(--whiteTextColor);
                 margin-bottom: 0;
             }
 
@@ -4699,7 +4700,7 @@ Widget Area CSS
                 ;
 
                 &:hover {
-                    color: var(--whiteColor);
+                    color: var(--whiteTextColor);
                     background-color: var(--primaryColor);
                 }
             }
@@ -4757,7 +4758,7 @@ Pagination Area CSS
 
         &:hover,
         &.current {
-            color: var(--whiteColor);
+            color: var(--whiteTextColor);
             background: var(--primaryColor);
         }
     }
@@ -4775,7 +4776,7 @@ Pagination Area CSS
                 color: #A8A39F;
 
                 a {
-                    color: var(--whiteColor) !important;
+                    color: var(--whiteTextColor) !important;
 
                     &:hover {
                         color: var(--primaryColor) !important;
@@ -4797,7 +4798,7 @@ Pagination Area CSS
 
                     &:hover,
                     &.current {
-                        color: var(--whiteColor);
+                        color: var(--whiteTextColor);
                         background: var(--primaryColor);
                     }
                 }

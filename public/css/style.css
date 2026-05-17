@@ -50,6 +50,7 @@ Default CSS
   --primaryColor: #BA8D6D;
   --blackColor: #161512;
   --whiteColor: #ffffff;
+  --whiteTextColor: #f7f7f7;
   --paragraphColor: #7C7772;
   --fontSize: 17px;
   --transition: .6s;
@@ -88,14 +89,15 @@ Default CSS
 
 [data-theme='dark'] {
   --backgroundColor: var(--blackColor);
-  --paragraphColor: #ffffff;
-  --textColor: #ffffff;
-  --headingColor: #ffffff;
-  --subtitleColor: #ffffff;
+  --paragraphColor: #f7f7f7;
+  --textColor: #f7f7f7;
+  --headingColor: #f7f7f7;
+  --subtitleColor: #f7f7f7;
+  --whiteTextColor: #f7f7f7;
   --mutedColor: #9D9A97;
   --cardBg: #24231D;
   --borderColor: #3A3835;
-  --navLinkColor: var(--whiteColor);
+  --navLinkColor: var(--whiteTextColor);
   --navStickyBg: var(--blackColor);
   --navStickyShadow: rgba(0, 0, 0, 0.9);
   --inputBg: transparent;
@@ -106,9 +108,9 @@ Default CSS
   --footerBg: #1d1814;
   --footerBgSolid: #1a1613;
   --footerCopyrightBg: #110f0d;
-  --footerText: #ffffff;
-  --footerMutedText: #ffffff;
-  --footerHeading: #ffffff;
+  --footerText: #f7f7f7;
+  --footerMutedText: #f7f7f7;
+  --footerHeading: #f7f7f7;
   --footerHover: #ddb691;
   --footerSocialBg: #0f0d0b;
   --footerSocialHoverBg: #f4e6d8;
@@ -265,7 +267,7 @@ Default Btn Area CSS
   display: inline-block;
   padding: 15px 30px;
   background-color: var(--primaryColor);
-  color: var(--whiteColor);
+  color: var(--whiteTextColor);
   font-size: 18px;
   font-weight: 500;
   transition: var(--transition);
@@ -273,7 +275,7 @@ Default Btn Area CSS
 
 .default-btn:hover {
   background-color: var(--blackColor);
-  color: var(--whiteColor);
+  color: var(--whiteTextColor);
 }
 
 /*================================================
@@ -411,7 +413,7 @@ Preloader Area CSS
 
 .preloader-area .loader .waviy span {
   animation: flip 2s infinite;
-  color: var(--whiteColor);
+  color: var(--whiteTextColor);
   display: inline-block;
   animation-delay: 0.2s;
   font-size: 45px;
@@ -533,7 +535,7 @@ Main Banner Area CSS
 
 .main-banner-content .banner-btn .default-btn:hover {
   background-color: var(--primaryColor);
-  color: var(--whiteColor);
+  color: var(--whiteTextColor);
 }
 
 .main-banner-image {
@@ -621,7 +623,7 @@ Main Banner Area CSS
   background-color: #000000;
   border-radius: 100%;
   font-size: 15px;
-  color: var(--whiteColor);
+  color: var(--whiteTextColor);
   transition: var(--transition);
   display: inline-block;
   text-align: center;
@@ -819,7 +821,7 @@ Architecture Studio Banner Area CSS
 
 .as-banner-content h1 b {
   background-color: var(--blackColor);
-  color: var(--whiteColor);
+  color: var(--whiteTextColor);
   font-weight: bold;
   display: inline-block;
   line-height: 1;
@@ -845,7 +847,7 @@ Architecture Studio Banner Area CSS
 }
 
 .as-banner-bottom-content a {
-  color: var(--whiteColor);
+  color: var(--whiteTextColor);
   font-size: 15px;
   font-weight: 500;
   letter-spacing: 1.5px;
@@ -974,7 +976,7 @@ About Area CSS
 
 .about-one-content .inner-content .about-btn .default-btn:hover {
   background-color: var(--primaryColor);
-  color: var(--whiteColor);
+  color: var(--whiteTextColor);
 }
 
 .about-text-wrap {
@@ -1087,7 +1089,7 @@ About Area CSS
 
 .about-image-two .wrap-video .video-btn i:hover {
   background-color: var(--primaryColor);
-  color: var(--whiteColor);
+  color: var(--whiteTextColor);
 }
 
 .about-three-title {
@@ -1195,7 +1197,7 @@ About Area CSS
 
 .about-three-left-content .about-image-wrap .wrap-video .video-btn i:hover {
   background-color: var(--primaryColor);
-  color: var(--whiteColor);
+  color: var(--whiteTextColor);
 }
 
 .about-three-right-content {
@@ -1547,7 +1549,7 @@ Services Area CSS
 .pagination-btn.active {
   background-color: var(--primaryColor);
   border-color: var(--primaryColor);
-  color: var(--whiteColor);
+  color: var(--whiteTextColor);
 }
 
 .pagination-btn.disabled {
@@ -1651,7 +1653,7 @@ Features Area CSS
 
 .features-content .inner-box h3 {
   font-size: 57px;
-  color: var(--whiteColor);
+  color: var(--whiteTextColor);
   font-weight: 400;
   margin-bottom: 12px;
   line-height: 1;
@@ -1727,7 +1729,7 @@ Features Area CSS
 
 .features-content .inner-content .features-btn .default-btn:hover {
   background-color: var(--primaryColor);
-  color: var(--whiteColor);
+  color: var(--whiteTextColor);
 }
 
 .features-image {
@@ -1879,7 +1881,7 @@ Recognition Area CSS
 
 .recognition-right-content .awards-box h3 {
   font-size: 57px;
-  color: var(--whiteColor);
+  color: var(--whiteTextColor);
   font-weight: 400;
   margin-bottom: 12px;
   line-height: 1;
@@ -1911,7 +1913,7 @@ Recognition Area CSS
 
 .recognition-right-content .experience-box h3 {
   font-size: 57px;
-  color: var(--whiteColor);
+  color: var(--whiteTextColor);
   font-weight: 400;
   margin-bottom: 12px;
   line-height: 1;
@@ -2182,7 +2184,7 @@ Projects Area CSS
 }
 
 .projects-area.bg-wrap-with-black .section-title-wrap h2 {
-  color: var(--whiteColor);
+  color: var(--whiteTextColor);
 }
 
 .projects-area.bg-wrap-with-black .col-lg-6:nth-child(1) .projects-inner-border {
@@ -2209,7 +2211,7 @@ Projects Area CSS
   right: 20px;
   bottom: 20px;
   background-color: var(--blackColor);
-  color: var(--whiteColor);
+  color: var(--whiteTextColor);
   font-size: 15px;
   font-weight: 500;
   letter-spacing: 1.5px;
@@ -2308,7 +2310,7 @@ Projects Area CSS
 
 .tabs-nav .tab-btn.active {
   background-color: var(--primaryColor);
-  color: var(--whiteColor);
+  color: var(--whiteTextColor);
 }
 
 .tabs-nav .tab-btn.active b {
@@ -2882,7 +2884,7 @@ Blog Area CSS
 }
 
 .blog-card .content h3 a {
-  color: var(--whiteColor);
+  color: var(--whiteTextColor);
 }
 
 .blog-card .content h3 a:hover {
@@ -2988,7 +2990,7 @@ Blog Area CSS
 }
 
 .blog-item .content h3 a {
-  color: var(--whiteColor);
+  color: var(--whiteTextColor);
 }
 
 .blog-item .content h3 a:hover {
@@ -3014,7 +3016,7 @@ Blog Area CSS
 }
 
 .blog-item:hover .content.wrap-color h3 a {
-  color: var(--whiteColor);
+  color: var(--whiteTextColor);
 }
 
 .blog-search-box {
@@ -3182,7 +3184,7 @@ Contact Area CSS
 }
 
 .contact-area.with-top-border .contact-form-wrap .title h2 {
-  color: var(--whiteColor);
+  color: var(--whiteTextColor);
   margin-bottom: 0;
   font-weight: 400;
 }
@@ -3333,7 +3335,7 @@ Contact Area CSS
 }
 
 .contact-info-list li .social li a {
-  color: var(--whiteColor);
+  color: var(--whiteTextColor);
 }
 
 .contact-info-list li .social li a:hover {
@@ -3601,11 +3603,11 @@ Team Area CSS
   font-weight: 400;
   line-height: 1.3;
   margin-bottom: 0;
-  color: var(--whiteColor);
+  color: var(--whiteTextColor);
 }
 
 .team-left-content .team-card .team-social li a i {
-  color: var(--whiteColor);
+  color: var(--whiteTextColor);
 }
 
 .team-card {
@@ -3631,7 +3633,7 @@ Team Area CSS
 .team-card .team-image .content h3 {
   font-size: 18px;
   font-weight: 500;
-  color: var(--whiteColor);
+  color: var(--whiteTextColor);
   margin-bottom: 0;
 }
 
@@ -4506,7 +4508,7 @@ Widget Area CSS
 }
 
 .widget-area .widget_tag_cloud .tagcloud a:hover {
-  color: var(--whiteColor);
+  color: var(--whiteTextColor);
   background-color: var(--primaryColor);
 }
 
@@ -4556,7 +4558,7 @@ Pagination Area CSS
 
 .pagination-area .page-numbers:hover,
 .pagination-area .page-numbers.current {
-  color: var(--whiteColor);
+  color: var(--whiteTextColor);
   background: var(--primaryColor);
 }
 
@@ -4573,7 +4575,7 @@ Pagination Area CSS
 }
 
 .full-bg-black-color .page-banner-inner .list li a {
-  color: var(--whiteColor) !important;
+  color: var(--whiteTextColor) !important;
 }
 
 .full-bg-black-color .page-banner-inner .list li a:hover {
@@ -4591,7 +4593,7 @@ Pagination Area CSS
 
 .full-bg-black-color .projects-area.bg-wrap-with-black .pagination-area .page-numbers:hover,
 .full-bg-black-color .projects-area.bg-wrap-with-black .pagination-area .page-numbers.current {
-  color: var(--whiteColor);
+  color: var(--whiteTextColor);
   background: var(--primaryColor);
 }
 
