@@ -13,27 +13,111 @@ import ClientsFeedbackSlider from "@/components/ArchitectureHome/ClientsFeedback
 const masonryRepairFaqs = [
   {
     uuid: "faq-repair-1",
-    question: "How long does masonry repair usually take?",
+    question: "What types of masonry problems do you repair",
     answers: [
-      "The duration of a masonry repair project depends heavily on the extent of the damage and the size of the area being worked on. Minor crack repairs or spot pointing might take only a few hours to a single day.",
-      "For larger restorations, such as rebuilding a retaining wall or extensive chimney repair, the process can take several days to a week. We always provide a clear timeline before starting any work."
+      "TWe handle a wide range of masonry issues including cracked or failing mortar joints, damaged or shifting bricks, localized stone deterioration, and structural cracks. Each repair is carried out to restore both stability and long-term performance of the structure."
     ]
   },
   {
     uuid: "faq-repair-2",
-    question: "Do you offer warranties on your masonry repair work?",
+    question: "When should masonry be repaired instead of just monitored?",
     answers: [
-      "Yes, we stand behind the quality of our craftsmanship. All of our masonry repair services come with a warranty to give you peace of mind.",
-      "The specific terms of the warranty depend on the type of repair and materials used, which we will discuss with you during the consultation."
+      "Masonry should be repaired as soon as signs of movement, widening cracks, or deteriorating mortar become visible. Delaying repairs can allow moisture to enter the structure, which may lead to more serious damage over time, especially in climates with frequent weather changes."
     ]
   },
   {
     uuid: "faq-repair-3",
-    question: "Can you match the new mortar to my existing brickwork?",
+    question: "Do you offer partial repairs or full restoration work?",
     answers: [
-      "Absolutely. One of the most important aspects of masonry repair is ensuring the new work blends seamlessly with the old.",
-      "We carefully analyze the color, texture, and composition of your existing mortar and bricks to create a custom match. While weathering can cause slight variations, our goal is to make the repair as unnoticeable as possible."
+      "Yes, we provide both targeted masonry repairs and full restoration services. The approach depends on the condition of the structure, allowing us to address specific problem areas while ensuring the overall integrity and durability of the masonry."
     ]
+  },
+  {
+    uuid: "faq-repair-4",
+    question: "Will repaired areas match the existing masonry?",
+    answers: [
+      "We carefully match materials, textures, and joint finishes to ensure repaired sections blend naturally with the existing brick or stonework. The goal is to maintain a consistent and cohesive appearance across the structure."
+    ]
+  },
+  {
+    uuid: "faq-repair-5",
+    question: "How does the masonry repair process begin?",
+    answers: [
+      "Every project begins with a detailed on-site assessment. We evaluate the condition of the masonry, identify both visible damage and underlying causes, and then recommend the most effective repair approach to ensure long-term stability and performance."
+    ]
+  }
+];
+
+// Tahapan proses spesifik untuk Masonry Repair
+const masonryProcessSteps = [
+  {
+    id: "1",
+    number: "1",
+    image: "/images/process/process1.jpg",
+    title: "Inspect The Damage",
+    text: "We assess cracks and structural issues to identify the condition.",
+    aosDelay: "100",
+  },
+  {
+    id: "2",
+    number: "2",
+    image: "/images/process/process2.jpg",
+    title: "Plan The Repair",
+    text: "We determine the most effective repair approach for lasting results.",
+    aosDelay: "200",
+  },
+  {
+    id: "3",
+    number: "3",
+    image: "/images/process/process3.jpg",
+    title: "Restore The Masonry",
+    text: "Brick, stone, and mortar are repaired with durable materials.",
+    aosDelay: "300",
+  },
+  {
+    id: "4",
+    number: "4",
+    image: "/images/process/process4.jpg",
+    title: "Ensure Lasting Performance",
+    text: "Repairs are completed with attention to durability and appearance.",
+    aosDelay: "400",
+  },
+];
+
+// Overview spesifik untuk Masonry Repair
+import overviewImg1 from "../../../../public/images/overview/overview3.jpg";
+import overviewImg2 from "../../../../public/images/overview/overview4.jpg";
+
+const masonryOverviewItems = [
+  {
+    image: overviewImg1,
+    titleNormal: "Brick & Mortar",
+    titleHighlight: "Restoration",
+    aosDelay: "100"
+  },
+  {
+    image: overviewImg2,
+    titleNormal: "Stone Masonry",
+    titleHighlight: "Refurbishing",
+    aosDelay: "200"
+  }
+];
+
+// Testimonial klien spesifik untuk Masonry Repair
+const masonryFeedbacks = [
+  {
+    id: "1",
+    feedbackText: "They completely restored our 1950s brick chimney. The color matching was so perfect you can't even tell where the new mortar begins. Outstanding craftsmanship!",
+    image: "/images/client/user1.png",
+    name: "David H.",
+    designation: "Calgary Homeowner",
+  },
+  {
+    id: "2",
+    feedbackText: "Professional from start to finish. They fixed our retaining wall quickly and left the yard spotless. I highly recommend DMG Masonry for any stone work.",
+    image: "/images/client/user2.png",
+    name: "Sarah Jenkins",
+    designation: "Property Manager",
   }
 ];
 
@@ -44,22 +128,68 @@ export default function Page() {
 
       <PageTitle title="Masonry Repair" homeText="Home" homeUrl="/" />
 
-      <ServiceDetailsContent title="Professional Masonry Repair & Restoration Services" />
-
-      <Process />
-      <Overview fullWidth />
-      <ClientsFeedbackSlider />
-      <AboutUsContent />
-      
-      {/* Memanggil FaqsContent dengan prop khusus halaman ini */}
-      <FaqsContent 
-        faqs={masonryRepairFaqs} 
-        title="Frequently Asked Questions - Masonry Repair" 
-        subtitle="REPAIR FAQ" 
+      <ServiceDetailsContent
+        title="Professional Masonry Repair & Restoration Services"
+        subtitle="SERVICE"
+        description1="At DMG Masonry, we provide masonry repair and restoration services designed to restore strength, stability, and timeless appearance for residential and commercial properties, helping structures perform reliably for years to come."
+        paragraphs={[
+          "Over time, masonry can experience cracks, surface wear, moisture damage, and structural deterioration caused by weather exposure and everyday use. Our team handles masonry repairs carefully using reliable techniques and quality materials to restore both function and appearance while maintaining the original character of the structure.",
+          "Masonry restoration also helps extend the lifespan and long-term value of a property. With proper repair work and ongoing upkeep, masonry surfaces can remain durable, visually consistent, and resistant to further deterioration over time. Restoration work also supports better structural performance while preserving the timeless look of brick and stone construction."
+        ]}
+        benefits={[
+          "Structural Stability",
+          "Timeless Appearance",
+          "Long-Term Protection",
+          "Reliable Restoration",
+        ]}
+        extraParagraphs={[
+          "Every masonry repair project requires a clear understanding of the structure, existing damage, and long-term performance goals. Our team carefully reviews the condition of the masonry to recommend repair and restoration solutions that support lasting durability and reliable structural integrity.",
+          "DMG Masonry approaches restoration work with a focus on preserving both strength and appearance. Whether repairing cracked brickwork, worn mortar joints, or damaged stone surfaces, we aim to restore masonry in a way that feels consistent with the original structure while improving long-term performance.",
+          "Long-lasting masonry restoration requires the right combination of durable materials, experienced craftsmanship, and careful execution throughout every stage of the repair process. With precision workmanship and close attention to detail, we help masonry structures maintain their strength, stability, functionality, and timeless appearance while supporting reliable long-term performance for years to come."
+        ]}
       />
-      
+
+      <Process
+        title="Our Masonry Repair Process"
+        steps={masonryProcessSteps}
+      />
+
+      <Overview
+        fullWidth
+        items={masonryOverviewItems}
+      />
+
+      <ClientsFeedbackSlider
+        titleNormal="What Calgary Residents"
+        titleHighlight="Say About Us"
+        feedbacks={masonryFeedbacks}
+      />
+
+      <AboutUsContent
+        subtitle="WHY CHOOSE US"
+        title="Signs Your Masonry May Need Restoration"
+        description="Small masonry issues can develop into larger structural problems if left untreated. We identify early signs of deterioration before they affect the structure’s strength, stability, and appearance."
+        listItems={[
+          "Cracked or deteriorating mortar joints",
+          "Bulging or shifting brickwork",
+          "Visible structural cracking",
+          "Moisture-related masonry damage"
+        ]}
+        buttonText="Contact Our Team"
+        buttonLink="/contact-us"
+      />
+
+      <FaqsContent
+        faqs={masonryRepairFaqs}
+        title="Frequently Asked Questions - Masonry Repair"
+        subtitle="REPAIR FAQ"
+      />
+
       <div className="ptb-100">
-        <ContactFormStyleTwo />
+        <ContactFormStyleTwo
+          title="Restore Your Masonry"
+          subtitle="REQUEST A QUOTE"
+        />
       </div>
 
       <Footer />

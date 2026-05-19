@@ -9,18 +9,38 @@ import aboutImg from "../../../public/images/about/about4.png";
 import videoCircleImg from "../../../public/images/about/wrap.png";
 import arrowIcon from "../../../public/images/about/arrow2.svg";
 
-const AboutUsContent: React.FC = () => {
+interface AboutUsProps {
+  subtitle?: string;
+  title?: string;
+  description?: string;
+  listItems?: string[];
+  videoUrl?: string;
+  buttonText?: string;
+  buttonLink?: string;
+}
+
+const AboutUsContent: React.FC<AboutUsProps> = ({
+  subtitle = "ABOUT US",
+  title = "We Create Unique And Sustainable Living Spaces, Designed For Sharing",
+  description = "We are a leading architecture firm dedicated to creating visionary designs that transcend expectations. With our team of highly skilled architects and designers, we specialize in crafting.",
+  listItems = [
+    "Innovative Design Approach",
+    "Highly Skilled Expertise and Specialization",
+    "A client-centric approach for an architectural company",
+    "Sustainable Design Practices"
+  ],
+  videoUrl = "https://www.youtube.com/embed/sVi2pdF1aIc?si=wuP0-H9KuJnEk0Js",
+  buttonText = "Know More About Us",
+  buttonLink = "/about-us"
+}) => {
   // To open the lightbox change the value of the "toggler" prop.
   const [toggler, setToggler] = useState<boolean>(false);
 
   return (
     <>
-      {/* Use here youtube Embed video link */}
       <FsLightbox
         toggler={toggler}
-        sources={[
-          "https://www.youtube.com/embed/sVi2pdF1aIc?si=wuP0-H9KuJnEk0Js",
-        ]}
+        sources={[videoUrl]}
       />
 
       <div className="about-area pt-100">
@@ -57,40 +77,22 @@ const AboutUsContent: React.FC = () => {
                 data-aos-duration="600"
                 data-aos-once="true"
               >
-                <span>ABOUT US</span>
-                <h2>
-                  We Create Unique And Sustainable Living Spaces, Designed For
-                  Sharing
-                </h2>
-                <p>
-                  We are a leading architecture firm dedicated to creating
-                  visionary designs that transcend expectations. With our team
-                  of highly skilled architects and designers, we specialize in
-                  crafting.
-                </p>
+                <span>{subtitle}</span>
+                <h2>{title}</h2>
+                <p>{description}</p>
 
                 <ul className="list">
-                  <li>
-                    <Image src={arrowIcon} alt="arrow" width={28} height={10} />
-                    Innovative Design Approach
-                  </li>
-                  <li>
-                    <Image src={arrowIcon} alt="arrow" width={28} height={10} />
-                    Highly Skilled Expertise and Specialization
-                  </li>
-                  <li>
-                    <Image src={arrowIcon} alt="arrow" width={28} height={10} />A client-centric
-                    approach for an architectural company
-                  </li>
-                  <li>
-                    <Image src={arrowIcon} alt="arrow" width={28} height={10} />
-                    Sustainable Design Practices
-                  </li>
+                  {listItems.map((item, index) => (
+                    <li key={index}>
+                      <Image src={arrowIcon} alt="arrow" width={28} height={10} />
+                      {item}
+                    </li>
+                  ))}
                 </ul>
 
                 <div className="about-btn">
-                  <Link href="/about-us" className="default-btn">
-                    Know More About Us
+                  <Link href={buttonLink} className="default-btn">
+                    {buttonText}
                   </Link>
                 </div>
               </div>

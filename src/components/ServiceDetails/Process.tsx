@@ -38,7 +38,24 @@ const processData = [
   },
 ];
 
-const Process: React.FC = () => {
+export interface ProcessStep {
+  id: string;
+  number: string;
+  image: string;
+  title: string;
+  text: string;
+  aosDelay: string;
+}
+
+interface ProcessProps {
+  steps?: ProcessStep[];
+  title?: string;
+}
+
+const Process: React.FC<ProcessProps> = ({ 
+  steps = processData,
+  title = "Steps That We Follow For This Service"
+}) => {
   return (
     <>
       <div className="process-area pt-100 pb-75">
@@ -51,14 +68,14 @@ const Process: React.FC = () => {
             data-aos-once="true"
           >
             <h2>
-            Steps That We Follow For This Service
+              {title}
             </h2>
           </div>
 
-          {processData && (
+          {steps && (
             <div className="row justify-content-center">
-              {processData &&
-                processData.map((value, i) => (
+              {steps &&
+                steps.map((value, i) => (
                   <div
                     className="col-xl-3 col-sm-6"
                     data-aos="fade-up"

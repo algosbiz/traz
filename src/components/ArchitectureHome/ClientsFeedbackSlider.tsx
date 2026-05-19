@@ -9,7 +9,15 @@ import quoteIcon from "../../../public/images/client/quote.svg";
 import shape1 from "../../../public/images/client/shape1.png";
 import shape2 from "../../../public/images/client/shape2.png";
 
-const clientsFeedbackData = [
+export interface FeedbackItem {
+  id: string;
+  feedbackText: string;
+  image: string;
+  name: string;
+  designation: string;
+}
+
+const defaultClientsFeedbackData: FeedbackItem[] = [
   {
     id: "1",
     feedbackText:
@@ -44,18 +52,28 @@ const clientsFeedbackData = [
   },
 ];
 
-const ClientsFeedbackSlider: React.FC = () => {
+interface ClientsFeedbackProps {
+  titleNormal?: string;
+  titleHighlight?: string;
+  feedbacks?: FeedbackItem[];
+}
+
+const ClientsFeedbackSlider: React.FC<ClientsFeedbackProps> = ({
+  titleNormal = "Our Clients",
+  titleHighlight = "Talk For Us",
+  feedbacks = defaultClientsFeedbackData
+}) => {
   return (
     <>
       <div className="client-area pt-100">
         <div className="container">
           <div className="section-title d-flex justify-content-center">
             <h2>
-              <span>Our Clients</span> Talk For Us
+              <span>{titleNormal}</span> {titleHighlight}
             </h2>
           </div>
 
-          {clientsFeedbackData && (
+          {feedbacks && feedbacks.length > 0 && (
             <Swiper
               pagination={{
                 dynamicBullets: true,
@@ -69,32 +87,31 @@ const ClientsFeedbackSlider: React.FC = () => {
               modules={[Autoplay, Pagination]}
               className="client-swiper"
             >
-              {clientsFeedbackData &&
-                clientsFeedbackData.map((value, i) => (
-                  <SwiperSlide key={i}>
-                    <div className="client-content">
-                      <div className="icon">
-                        <Image src={quoteIcon} alt="quote" width={56} height={56} />
-                      </div>
-                      <p>{value.feedbackText}</p>
+              {feedbacks.map((value, i) => (
+                <SwiperSlide key={i}>
+                  <div className="client-content">
+                    <div className="icon">
+                      <Image src={quoteIcon} alt="quote" width={56} height={56} />
+                    </div>
+                    <p>{value.feedbackText}</p>
 
-                      <div className="client-information">
-                        <div className="image">
-                          <Image
-                            src={value.image}
-                            alt="image"
-                            width={70}
-                            height={70}
-                          />
-                        </div>
-                        <div className="title">
-                          <h3>{value.name}</h3>
-                          <span>{value.designation}</span>
-                        </div>
+                    <div className="client-information">
+                      <div className="image">
+                        <Image
+                          src={value.image}
+                          alt="image"
+                          width={70}
+                          height={70}
+                        />
+                      </div>
+                      <div className="title">
+                        <h3>{value.name}</h3>
+                        <span>{value.designation}</span>
                       </div>
                     </div>
-                  </SwiperSlide>
-                ))}
+                  </div>
+                </SwiperSlide>
+              ))}
             </Swiper>
           )}
         </div>

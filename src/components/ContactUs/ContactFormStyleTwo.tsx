@@ -14,7 +14,15 @@ interface FormData {
   message: string;
 }
 
-const ContactFormStyleTwo: React.FC = () => {
+interface ContactFormProps {
+  title?: string;
+  subtitle?: string;
+}
+
+const ContactFormStyleTwo: React.FC<ContactFormProps> = ({
+  title = "Contact Us Anytime, We Are Always There For You",
+  subtitle = "CONTACT"
+}) => {
   const [formData, setFormData] = useState<FormData>({
     name: "",
     email: "",
@@ -104,8 +112,8 @@ const ContactFormStyleTwo: React.FC = () => {
             >
               <div className="contact-form-wrap">
                 <div className="title">
-                  <span>CONTACT</span>
-                  <h2>Contact Us Anytime, We Are Always There For You</h2>
+                  <span>{subtitle}</span>
+                  <h2>{title}</h2>
                 </div>
 
                 <div className="row align-items-center">

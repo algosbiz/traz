@@ -50,7 +50,7 @@ const ServicesCard: React.FC = () => {
                         alt={value.title}
                         width={80}
                         height={80}
-                        style={{ borderRadius: "12px", objectFit: "cover" }}
+                        style={{ borderRadius: "0px", objectFit: "cover" }}
                       />
                     </div>
                     <h3>
