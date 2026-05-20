@@ -17,7 +17,7 @@ interface ServiceDetailsContentProps {
   extraParagraphs?: string[];
 }
 
-const ServiceDetailsContent: React.FC<ServiceDetailsContentProps> = ({ 
+const ServiceDetailsContent: React.FC<ServiceDetailsContentProps> = ({
   title,
   subtitle = "SERVICE",
   mainImage = serviceImg,
@@ -35,7 +35,7 @@ const ServiceDetailsContent: React.FC<ServiceDetailsContentProps> = ({
               <div className="services-details-desc">
                 <div className="title">
                   <span>{subtitle}</span>
-                  <h2>{title || "Interior Design"}</h2>
+                  <h1>{title || "Interior Design"}</h1>
                   <p>
                     {description1 || "We are leading architecture firm dedicated to creating visionary designs that transcend expectations. With our team of highly skilled architects and designers, we specialize in crafting."}
                   </p>
