@@ -13,20 +13,39 @@ import ClientsFeedbackSlider from "@/components/ArchitectureHome/ClientsFeedback
 const firePitsFaqs = [
   {
     uuid: "faq-firepit-1",
-    question: "Do I need a permit to build a custom fire pit in Calgary?",
+    question: "Do you build both gas and wood-burning fire pits?",
     answers: [
-      "Wood-burning fire pits must comply with Calgary's Fire Bylaw, which dictates safe clearances (typically at least 2 meters from buildings, property lines, and combustible materials) and height limits.",
-      "For natural gas fire pits, a gas permit and professional hookup are required. We handle all planning and safety guidelines to ensure your installation is fully compliant."
-    ]
+      "Yes. We design and install both gas-fueled and wood-burning fire pits depending on the property layout, intended use, and outdoor design preferences. Each installation is planned carefully to support safe and reliable long-term performance.",
+    ],
   },
   {
     uuid: "faq-firepit-2",
-    question: "Why should I choose a custom fire pit over a store-bought metal bowl?",
+    question: "Can the fire pit design be customized?",
     answers: [
-      "Custom masonry fire pits are highly durable structures built to survive the elements for decades, unlike cheap metal bowls that rust and crack within a couple of seasons.",
-      "Additionally, a custom-built unit is tailored to blend seamlessly with your patio architecture and significantly increases your home's equity."
-    ]
-  }
+      "Absolutely. Our team customizes the shape, size, material finish, and overall layout of each fire pit to complement the surrounding outdoor space while matching the property’s style and functional needs.",
+    ],
+  },
+  {
+    uuid: "faq-firepit-3",
+    question: "Can a fire pit be integrated into an existing outdoor area?",
+    answers: [
+      "Yes. Fire pits can be incorporated into patios, seating areas, and other hardscape features to create a more cohesive and functional outdoor environment. We carefully plan the layout to ensure the installation feels naturally connected to the space.",
+    ],
+  },
+  {
+    uuid: "faq-firepit-4",
+    question: "Are custom fire pits designed with safety in mind?",
+    answers: [
+      "Yes. Every fire pit installation is completed using reliable construction methods and planned according to appropriate safety practices and local requirements. Proper spacing, material selection, and installation techniques all contribute to long-term safe use.",
+    ],
+  },
+  {
+    uuid: "faq-firepit-5",
+    question: "How long does a custom fire pit typically last?",
+    answers: [
+      "With proper construction and durable materials, a professionally built fire pit can remain functional and visually appealing for many years. Regular maintenance and quality workmanship also help support long-term outdoor durability and performance.",
+    ],
+  },
 ];
 
 // Tahapan proses spesifik untuk Custom Fire Pits
@@ -35,7 +54,7 @@ const firePitsProcessSteps = [
     id: "1",
     number: "1",
     image: "/images/process/process1.jpg",
-    title: "Site & Clearance",
+    title: "Review The Space",
     text: "We map out the ideal location, keeping safe distances from overhanging trees and property boundaries.",
     aosDelay: "100",
   },
@@ -43,24 +62,24 @@ const firePitsProcessSteps = [
     id: "2",
     number: "2",
     image: "/images/process/process2.jpg",
-    title: "Concrete Base",
-    text: "We dig and pour a solid, gravel-packed concrete pad to prevent shifting from frost.",
+    title: "Plan The Design",
+    text: "Materials, fuel type, and functionality are carefully planned.",
     aosDelay: "200",
   },
   {
     id: "3",
     number: "3",
     image: "/images/process/process3.jpg",
-    title: "Inner Core",
-    text: "We construct the structural core using high-temperature firebrick and heavy-duty gas line plumbing (if gas-fired).",
+    title: "Build The Fire Pit",
+    text: "The structure is installed using durable masonry materials.",
     aosDelay: "300",
   },
   {
     id: "4",
     number: "4",
     image: "/images/process/process4.jpg",
-    title: "Stone Cladding",
-    text: "We finish the exterior with your choice of natural flagstone, veneer, or capstones.",
+    title: "Complete The Finishing",
+    text: "WFinal details support safe use and visual balance.",
     aosDelay: "400",
   },
 ];
@@ -109,67 +128,63 @@ export default function Page() {
 
       <PageTitle title="Custom Fire Pits" homeText="Home" homeUrl="/" />
 
-      <ServiceDetailsContent 
-        title="Custom-Made Fire Pit Construction Services" 
+      <ServiceDetailsContent
+        title="Custom-Made Fire Pit Services"
         subtitle="CUSTOM FIRE PITS"
-        description1="Bring warmth and luxury to your backyard with custom stone or brick outdoor fire pits constructed by Calgary's premier hardscaping builders."
+        description1="A custom fire pit can transform an outdoor area into a more comfortable and inviting space for gathering and relaxation. Our fire pit services create durable outdoor features that combine practical function with timeless design for lasting enjoyment and visual appeal."
         paragraphs={[
-          "A custom-built fire pit is more than just a place to warm up; it's a stunning architectural focal point that invites conversations and creates unforgettable evenings. We construct durable fire pits using premium natural stone, architectural concrete block, or brick, built to withstand Calgary's cold climate.",
-          "We design fire pits tailored to your space, offering wood-burning and gas-powered solutions. Whether you prefer a rustic campfire aesthetic or a sleek, contemporary linear gas table, our expert craftsmanship guarantees safety and absolute durability."
+          "Outdoor fire features must be built to handle regular use, changing weather conditions, and long-term exposure to heat and moisture. Using reliable construction methods and durable masonry materials, we create fire pits designed to maintain both structural stability and consistent visual appearance over time.",
+          "Outdoor fire features must be built to handle regular use, changing weather conditions, and long-term exposure to heat and moisture. Using reliable construction methods and durable masonry materials, we create fire pits designed to maintain both structural stability and consistent visual appearance over time.",
         ]}
         benefits={[
-          "Natural Stone & Brick Options",
-          "Gas & Wood-Burning Fire Pits",
-          "Custom Built-in Seating Walls",
-          "High-Temp Firebrick Linings",
-          "Seamless Patio Integration",
-          "Safe, Professional Ventilation"
+          "Custom Fire Pit Designs",
+          "Integrated Outdoor Features",
+          "Durable Masonry Construction",
+          "Safe Professional Installation",
         ]}
         extraParagraphs={[
-          "Every fire pit we build is lined with professional refractory firebrick and high-temperature mortar, ensuring the outer stone never cracks from intense heat exposure.",
-          "Let's upgrade your outdoor living space. Contact us today to discuss fire pit layouts, material choices, and local safety clearances for a custom build."
+          "Careful planning is an important part of every fire pit project. Layout, material selection, fuel type, and overall functionality are all carefully considered to ensure the final installation complements the outdoor space while supporting reliable performance, practical everyday use and long-term functionality.",
+          "Our team designs and builds fire pits in a range of styles, from modern outdoor features to more rustic masonry layouts, with quality craftsmanship maintained throughout each stage of construction. Every installation is completed with clean finishing, dependable functionality, and durable construction suited for outdoor living spaces.",
+          "Well-built outdoor fire features depend on experienced workmanship, durable materials, and proper installation practices. By combining practical construction methods with timeless outdoor design, we create fire pit spaces that remain functional, visually appealing, and naturally integrated into the overall character of the property.",
         ]}
       />
 
-      <Process 
-        title="Steps to Building Your Custom Fire Pit"
+      <Process
+        title="Our Fire Pit Installation Process"
         steps={firePitsProcessSteps}
       />
-      
-      <Overview 
-        fullWidth 
-        items={firePitsOverviewItems} 
+
+      <Overview fullWidth items={firePitsOverviewItems} />
+
+      <ClientsFeedbackSlider
+        titleNormal="Hear From Our"
+        titleHighlight="Happy Fire Pit Owners"
+        feedbacks={firePitsFeedbacks}
       />
-      
-      <ClientsFeedbackSlider 
-        titleNormal="Hear From Our" 
-        titleHighlight="Happy Fire Pit Owners" 
-        feedbacks={firePitsFeedbacks} 
-      />
-      
-      <AboutUsContent 
+
+      <AboutUsContent
         subtitle="WHY CHOOSE US"
-        title="Expert Fire Pit Builders in Calgary"
-        description="We combine landscape architecture with expert masonry to build fire pits that are both breathtakingly beautiful and engineered for absolute safety."
+        title="Outdoor Fire Features Built for Lasting Comfort"
+        description="An expertly crafted fire pit can create a more inviting outdoor setting while adding practical value and lasting character to the property. Our custom fire pit solutions create safe and dependable gathering areas for outdoor living."
         listItems={[
-          "Bylaw Compliant Designs",
-          "Safe Gas & Wood Implementations",
-          "Durable Materials for Extreme Temperatures",
-          "Custom Tailored to Your Backyard Space"
+          "Safe and reliable construction",
+          "Custom outdoor fire pit designs",
+          "Built for everyday outdoor use",
+          "Long-term durability and comfort",
         ]}
-        buttonText="Get a Free Estimate"
+        buttonText="Plan Your Project"
         buttonLink="/contact-us"
       />
-      
-      <FaqsContent 
-        faqs={firePitsFaqs} 
-        title="Custom Fire Pit Construction FAQs" 
-        subtitle="FIRE PIT FAQ" 
+
+      <FaqsContent
+        faqs={firePitsFaqs}
+        title="Custom Fire Pit Construction FAQs"
+        subtitle="FIRE PIT FAQ"
       />
-      
+
       <div className="ptb-100">
-        <ContactFormStyleTwo 
-          title="Let's Design Your Dream Fire Pit"
+        <ContactFormStyleTwo
+          title="Create Your Ideal Fire Pit"
           subtitle="REQUEST A QUOTE"
         />
       </div>

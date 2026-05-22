@@ -13,19 +13,39 @@ import ClientsFeedbackSlider from "@/components/ArchitectureHome/ClientsFeedback
 const hardscapeFaqs = [
   {
     uuid: "faq-hardscape-1",
-    question: "What is the difference between hardscaping and landscaping?",
+    question: "What hardscape services do you provide?",
     answers: [
-      "Landscaping generally refers to the living, organic elements of a yard, such as grass, plants, and trees (often called softscaping).",
-      "Hardscaping refers to the non-living structural elements like stone patios, retaining walls, walkways, and fire pits. Hardscaping provides the permanent foundation and structure for your outdoor space."
-    ]
+      "We provide full hardscape construction services, including patios, walkways, retaining walls, driveways, and outdoor stone features. We also handle repairs and upgrades to improve both functionality and long-term performance of existing outdoor spaces.",
+    ],
   },
   {
     uuid: "faq-hardscape-2",
-    question: "Do you provide 3D designs before starting a hardscaping project?",
+    question: "Can hardscape designs be customized to my property?",
     answers: [
-      "Yes! For larger hardscape projects, we can provide detailed 3D renderings and layout plans so you can visualize exactly how your new stone patios and retaining walls will look in your backyard before we ever break ground."
-    ]
-  }
+      "Yes. Every project is planned based on your property layout, intended use, and design preferences. Our goal is to create outdoor spaces that feel practical, visually balanced, and suited to long-term everyday use.",
+    ],
+  },
+  {
+    uuid: "faq-hardscape-3",
+    question: "What materials are used for hardscape construction?",
+    answers: [
+      "We work with durable materials such as natural stone, concrete pavers, and other masonry products depending on the project requirements. Material selection is based on performance, appearance, and long-term outdoor durability.",
+    ],
+  },
+  {
+    uuid: "faq-hardscape-4",
+    question: "Do you repair existing hardscape structures?",
+    answers: [
+      "Yes. We assess existing patios, pathways, and retaining walls to identify issues and provide suitable repair or upgrade solutions. The focus is on restoring stability, functionality, and overall appearance.",
+    ],
+  },
+  {
+    uuid: "faq-hardscape-5",
+    question: "How long does a hardscape project usually take?",
+    answers: [
+      "Project timelines vary depending on size, design complexity, and site conditions. We provide clear scheduling from the beginning so the construction process remains organized and expectations are transparent throughout the project.",
+    ],
+  },
 ];
 
 // Tahapan proses spesifik untuk Hardscape Contractor
@@ -34,32 +54,32 @@ const hardscapeProcessSteps = [
     id: "1",
     number: "1",
     image: "/images/process/process1.jpg",
-    title: "Consultation & Design",
-    text: "We meet on-site to discuss your vision, take measurements, and propose materials and layout designs.",
+    title: "Evaluate The Project Area",
+    text: "We review site conditions and outdoor layout before construction begins.",
     aosDelay: "100",
   },
   {
     id: "2",
     number: "2",
     image: "/images/process/process2.jpg",
-    title: "Excavation & Base",
-    text: "We excavate the area and install heavy-duty gravel bases with proper drainage grading.",
+    title: "Prepare The Base",
+    text: "Grading and foundation preparation help support long-term stability.",
     aosDelay: "200",
   },
   {
     id: "3",
     number: "3",
     image: "/images/process/process3.jpg",
-    title: "Stone Construction",
-    text: "Our masons build the retaining walls, patios, and features using precise cutting and laying techniques.",
+    title: "Install The Features",
+    text: "Outdoor surfaces and structures are built with durable materials.",
     aosDelay: "300",
   },
   {
     id: "4",
     number: "4",
     image: "/images/process/process4.jpg",
-    title: "Finishing Touches",
-    text: "We apply polymeric sand, wash the stone, and conduct a final walkthrough to ensure complete satisfaction.",
+    title: "Refine The Final Result",
+    text: "Finishing details improve functionality, appearance, and durability",
     aosDelay: "400",
   },
 ];
@@ -108,67 +128,63 @@ export default function Page() {
 
       <PageTitle title="Hardscape Contractor" homeText="Home" homeUrl="/" />
 
-      <ServiceDetailsContent 
-        title="Professional Hardscaping Solutions" 
+      <ServiceDetailsContent
+        title="Hardscape Contractor Services"
         subtitle="HARDSCAPING"
-        description1="Transform your outdoor living spaces with custom stone patios, elegant walkways, and structural retaining walls designed by Calgary's top hardscape contractors."
+        description1="A well-designed outdoor space should feel functional, durable, and naturally connected to the property. Our hardscape contractor services build patios, retaining walls, pathways, and outdoor surfaces designed for long-term performance with a timeless appearance."
         paragraphs={[
-          "Hardscaping is the foundation of any beautiful landscape. It provides structure, functionality, and enduring beauty to your property. We specialize in designing and installing premium hardscape elements that seamlessly blend with your home's architecture and natural surroundings.",
-          "Our team handles everything from interlocking stone driveways to multi-level backyard oasis complete with fire features and seating walls. We use only the highest quality natural stone, brick, and concrete pavers to ensure your investment lasts for decades despite Calgary's harsh winters."
+          "Outdoor hardscape features are constantly exposed to weather changes, moisture, ground movement, and everyday use. Using durable materials and reliable construction methods, we create hardscape surfaces designed to maintain their structure, stability, and visual quality over time while supporting long-term outdoor durability and performance.",
+          "Thoughtful hardscape construction also improves the usability and overall value of a property. Carefully planned layouts, clean finishing, and practical design choices help outdoor spaces remain visually balanced, low-maintenance, and functional for years to come while creating a more cohesive and comfortable outdoor environment.",
         ]}
         benefits={[
-          "Interlocking Stone Driveways",
-          "Custom Patios & Walkways",
-          "Structural Retaining Walls",
-          "Outdoor Fire Pits & Kitchens",
-          "Engineered Drainage Solutions",
-          "Durable Freeze-Thaw Resistance"
+          "Custom Outdoor Design",
+          "Durable Surface Construction",
+          "Long-Term Outdoor Performance",
+          "Functional Hardscape Solutions",
         ]}
         extraParagraphs={[
-          "A well-executed hardscape design not only expands your usable living space but also significantly increases the market value of your home.",
-          "Let us help you build the backyard of your dreams. Contact our hardscaping design team today to schedule an on-site consultation."
+          "Every hardscape project requires careful planning before construction begins. Site layout, drainage conditions, material selection, and intended use all play an important role in creating outdoor spaces that perform reliably over time while maintaining proper functionality, stability, and visual balance throughout the property.",
+          "From patios and driveways to retaining walls and walkways, our team approaches each project with attention to detail and practical construction methods. The goal is to create outdoor features that complement the property while supporting everyday functionality, long-term durability, and a clean, cohesive outdoor appearance.",
+          "Strong hardscape construction depends on experienced workmanship, durable materials, and careful execution throughout every stage of the project. Through reliable installation practices and timeless outdoor design, we help create hardscape spaces that remain stable, functional, visually lasting, and well-suited for long-term outdoor use over the long term.",
         ]}
       />
 
-      <Process 
-        title="Our Hardscaping Process"
+      <Process
+        title="Our Hardscape Project Process"
         steps={hardscapeProcessSteps}
       />
-      
-      <Overview 
-        fullWidth 
-        items={hardscapeOverviewItems} 
+
+      <Overview fullWidth items={hardscapeOverviewItems} />
+
+      <ClientsFeedbackSlider
+        titleNormal="Hear From Our"
+        titleHighlight="Hardscaping Clients"
+        feedbacks={hardscapeFeedbacks}
       />
-      
-      <ClientsFeedbackSlider 
-        titleNormal="Hear From Our" 
-        titleHighlight="Hardscaping Clients" 
-        feedbacks={hardscapeFeedbacks} 
-      />
-      
-      <AboutUsContent 
+
+      <AboutUsContent
         subtitle="WHY CHOOSE US"
-        title="Calgary's Trusted Hardscape Specialists"
-        description="We believe that a beautiful hardscape starts with a rock-solid foundation. Our strict adherence to deep excavation and proper base compaction guarantees that your patios and walls will never sink or shift."
+        title="COutdoor Spaces Built for Long-Term Use"
+        description="Well-planned hardscape construction creates outdoor spaces that are functional, durable, and visually balanced. We careful planning and installation support long-term usability."
         listItems={[
-          "Industry-Leading Base Preparation",
-          "Expert Masons and Installers",
-          "Comprehensive Warranty on Workmanship",
-          "Clear Communication and Reliable Timelines"
+          "Thoughtful outdoor planning",
+          "Stable and durable construction",
+          "Functional everyday use",
+          "Timeless outdoor appearance",
         ]}
-        buttonText="Get a Free Estimate"
+        buttonText="Discuss Your Project"
         buttonLink="/contact-us"
       />
-      
-      <FaqsContent 
-        faqs={hardscapeFaqs} 
-        title="Hardscaping Frequently Asked Questions" 
-        subtitle="HARDSCAPE FAQ" 
+
+      <FaqsContent
+        faqs={hardscapeFaqs}
+        title="Frequently Asked Questions"
+        subtitle="FAQ"
       />
-      
+
       <div className="ptb-100">
-        <ContactFormStyleTwo 
-          title="Schedule Your Hardscape Consultation"
+        <ContactFormStyleTwo
+          title="Upgrade Your Outdoors"
           subtitle="REQUEST A QUOTE"
         />
       </div>

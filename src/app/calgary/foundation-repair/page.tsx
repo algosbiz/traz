@@ -13,19 +13,43 @@ import ClientsFeedbackSlider from "@/components/ArchitectureHome/ClientsFeedback
 const foundationFaqs = [
   {
     uuid: "faq-foundation-1",
-    question: "How do I know if a foundation crack is structural or just cosmetic?",
+    question: "What are the common signs of foundation damage?",
     answers: [
-      "Cosmetic cracks are usually hairline thin (less than 1/8 inch) and run vertically. They are normal shrinkage cracks from concrete curing.",
-      "Structural cracks are wider than 1/4 inch, run horizontally or diagonally, cause stairs or doors to jam, or show visible water leakage. These require professional structural repair immediately."
-    ]
+      "Foundation issues can appear in several ways, including wall or floor cracks, uneven surfaces, sticking doors or windows, and signs of moisture near the structure. Identifying these issues early can help prevent more extensive structural problems over time.",
+    ],
   },
   {
     uuid: "faq-foundation-2",
-    question: "What is polyurethane injection and how does it seal cracks?",
+    question:
+      "Do you provide foundation repair for both residential and commercial properties?",
     answers: [
-      "Polyurethane is a flexible, expanding foam injected into concrete cracks. When it meets moisture, it expands up to 20 times its volume, completely filling the crack from inside to outside, creating a permanent water-tight rubber gasket."
-    ]
-  }
+      "Yes. We handle foundation repair projects for both residential and commercial structures, with repair approaches planned according to the condition, size, and structural requirements of each property.",
+    ],
+  },
+  {
+    uuid: "faq-foundation-3",
+    question:
+      "Can foundation problems become worse if repairs are delayed?",
+    answers: [
+      "Absolutely. Foundation damage can gradually progress over time, leading to larger cracks, structural movement, moisture intrusion, and increased repair complexity if left unaddressed.",
+    ],
+  },
+  {
+    uuid: "faq-foundation-4",
+    question:
+      "How do you determine the appropriate foundation repair solution?",
+    answers: [
+      "Our process begins with a detailed assessment of the foundation condition, including the type, location, and severity of the damage. Based on our findings, we recommend repair methods that best support long-term structural stability and performance.",
+    ],
+  },
+  {
+    uuid: "faq-foundation-5",
+    question:
+      "Will foundation repair affect daily activities on the property?",
+    answers: [
+      "The level of disruption depends on the scope and location of the repair work. Our team plans projects carefully to maintain safe and efficient workflows while helping minimize interruptions throughout the repair process.",
+    ],
+  },
 ];
 
 // Tahapan proses spesifik untuk Foundation Repair
@@ -34,32 +58,32 @@ const foundationProcessSteps = [
     id: "1",
     number: "1",
     image: "/images/process/process1.jpg",
-    title: "Excavate & Prep",
-    text: "We excavate the exterior soil to expose the foundation crack and thoroughly clean the concrete surface.",
+    title: "Inspect the Foundation",
+    text: "We assess structural movement, cracks, and foundation conditions.",
     aosDelay: "100",
   },
   {
     id: "2",
     number: "2",
     image: "/images/process/process2.jpg",
-    title: "Crack Injection",
-    text: "We inject high-pressure polyurethane or structural epoxy deep into the crack, sealing it from front to back.",
+    title: "Plan the Repair",
+    text: "We determine the right solution for the structure and damage level.",
     aosDelay: "200",
   },
   {
     id: "3",
     number: "3",
     image: "/images/process/process3.jpg",
-    title: "Waterproof Wrap",
-    text: "We apply an elastomeric membrane and dimpled drainage sheet over the concrete to redirect soil water away.",
+    title: "Complete the Repairs",
+    text: "Foundation areas are reinforced using reliable repair methods and materials.",
     aosDelay: "300",
   },
   {
     id: "4",
     number: "4",
     image: "/images/process/process4.jpg",
-    title: "Drain Pipe & Soil",
-    text: "We lay gravel-packed weeping tile pipes, backfill with drainage gravel, and compact the soil back in place.",
+    title: "Ensure Long-Term Stability",
+    text: "Final work is completed with focus on strength, durability, and performance.",
     aosDelay: "400",
   },
 ];
@@ -73,32 +97,34 @@ const foundationOverviewItems = [
     image: overviewImg1,
     titleNormal: "Basement Crack",
     titleHighlight: "Injection",
-    aosDelay: "100"
+    aosDelay: "100",
   },
   {
     image: overviewImg2,
     titleNormal: "Exterior Concrete",
     titleHighlight: "Waterproofing",
-    aosDelay: "200"
-  }
+    aosDelay: "200",
+  },
 ];
 
 // Testimonial klien spesifik untuk Foundation Repair
 const foundationFeedbacks = [
   {
     id: "1",
-    feedbackText: "They stopped the leak in our basement wall completely with their epoxy injection system. The basement has been bone dry ever since the heavy rains.",
+    feedbackText:
+      "They stopped the leak in our basement wall completely with their epoxy injection system. The basement has been bone dry ever since the heavy rains.",
     image: "/images/client/user1.png",
     name: "Thomas G.",
     designation: "Calgary Homeowner",
   },
   {
     id: "2",
-    feedbackText: "Honest assessment and very thorough exterior waterproofing work. I finally have peace of mind that my foundation is solid.",
+    feedbackText:
+      "Honest assessment and very thorough exterior waterproofing work. I finally have peace of mind that my foundation is solid.",
     image: "/images/client/user2.png",
     name: "Emily W.",
     designation: "Homeowner",
-  }
+  },
 ];
 
 export default function Page() {
@@ -108,67 +134,63 @@ export default function Page() {
 
       <PageTitle title="Foundation Repair" homeText="Home" homeUrl="/" />
 
-      <ServiceDetailsContent 
-        title="Structural Foundation Crack Repair & Waterproofing" 
+      <ServiceDetailsContent
+        title="Professional Foundation Repair Services"
         subtitle="FOUNDATION REPAIR"
-        description1="Protect your home's stability and prevent structural damage with expert basement crack injection and foundation waterproofing services in Calgary."
+        description1="Foundation problems can affect the safety and condition of a property if left unresolved. DMG Masonry provides foundation repair services to correct structural issues and reinforce weakened areas."
         paragraphs={[
-          "A home is only as strong as its foundation. In Calgary, changing soil moisture and ground movement can cause concrete foundations to crack and settle. Small cracks can eventually allow water to leak into your basement, leading to mold, mildew, and major structural failure.",
-          "We provide expert structural foundation repair, utilizing high-pressure polyurethane and epoxy crack injections, concrete underpinning, and comprehensive exterior drainage membrane waterproofing to secure your home."
+          "Cracked foundation walls, uneven floors, sticking doors, and visible structural movement are often signs of underlying foundation issues. These problems can result from soil settlement, moisture exposure, or shifting structural loads over time. Our team carefully inspects the condition of the foundation to determine the cause and recommend repairs suited to the structure's specific needs.",
+          "Repairing foundation damage early can help limit further deterioration and reduce the risk of additional structural complications. Proper repair work also helps improve the overall reliability of the building while protecting against moisture intrusion and ongoing movement that may impact surrounding areas of the property.",
         ]}
         benefits={[
-          "Polyurethane Crack Injection",
-          "Epoxy Structural Stitching",
-          "Exterior Waterproofing Barriers",
-          "Basement Weeping Tile Fixes",
-          "Sump Pump Pit Installations",
-          "Structural Underpinning Support"
+          "Foundation Reinforcement",
+          "Residential & Commercial Work",
+          "Foundation Crack Repairs",
+          "Structural Stability",
         ]}
         extraParagraphs={[
-          "By fixing foundation cracks from both the inside and outside, we seal water out for good and reinforce the structural stability of your concrete walls.",
-          "Don't wait for your basement to flood. Contact our foundation repair experts today for an inspection and professional quote."
+          "Before beginning any foundation repair work, our team takes time to understand how the structure has been affected and what factors may be contributing to the issue. Settlement patterns, moisture exposure, and overall structural behavior are carefully reviewed to determine the most appropriate repair approach for the property.",
+          "Foundation repairs should do more than temporarily cover visible damage. Our goal is to correct underlying structural concerns while improving the overall stability of the building. From repairing foundation cracks to reinforcing weakened sections, every solution is carried out with long-term durability and dependable performance in mind.",
+          "A properly repaired foundation plays an important role in protecting the condition and value of a property over time. With experienced workmanship and careful construction practices, DMG Masonry delivers foundation repair solutions designed to help structures remain secure, stable, and structurally reliable for years ahead.",
         ]}
       />
 
-      <Process 
-        title="Our Foundation Repair Steps"
+      <Process
+        title="Our Masonry Repair Process"
         steps={foundationProcessSteps}
       />
-      
-      <Overview 
-        fullWidth 
-        items={foundationOverviewItems} 
+
+      <Overview fullWidth items={foundationOverviewItems} />
+
+      <ClientsFeedbackSlider
+        titleNormal="What Clients Say"
+        titleHighlight="About Our Foundation Repairs"
+        feedbacks={foundationFeedbacks}
       />
-      
-      <ClientsFeedbackSlider 
-        titleNormal="What Clients Say" 
-        titleHighlight="About Our Foundation Repairs" 
-        feedbacks={foundationFeedbacks} 
-      />
-      
-      <AboutUsContent 
+
+      <AboutUsContent
         subtitle="WHY CHOOSE US"
-        title="Trusted Foundation Waterproofing Experts"
-        description="A compromised foundation is not something to take lightly. We use industry-leading epoxy and polyurethane resins to permanently stop leaks and stabilize concrete walls."
+        title="Protecting Structural Stability from the Foundation Up"
+        description="Foundation damage can affect the safety and performance of a building if not repaired properly. Our team provides foundation repair services focused on structural stability."
         listItems={[
-          "Permanent Crack Injection Repairs",
-          "Thorough Exterior Drainage Implementations",
-          "Certified Structural Assessments",
-          "Guaranteed Waterproof Solutions"
+          "Foundation Issue Assessment",
+          "Condition-Based Repairs",
+          "Durable Structural Support",
+          "Residential & Commercial Solutions",
         ]}
-        buttonText="Get a Free Inspection"
+        buttonText="See What We Do"
         buttonLink="/contact-us"
       />
-      
-      <FaqsContent 
-        faqs={foundationFaqs} 
-        title="Foundation Repair Frequently Asked Questions" 
-        subtitle="FOUNDATION FAQ" 
+
+      <FaqsContent
+        faqs={foundationFaqs}
+        title="Frequently Asked Questions"
+        subtitle="FOUNDATION FAQ"
       />
-      
+
       <div className="ptb-100">
-        <ContactFormStyleTwo 
-          title="Schedule Your Foundation Inspection"
+        <ContactFormStyleTwo
+          title="Restore Strength to Your Foundation"
           subtitle="REQUEST A QUOTE"
         />
       </div>

@@ -9,62 +9,82 @@ import AboutUsContent from "@/components/ArchitectureStudio/AboutUsContent";
 import FaqsContent from "@/components/Faqs/FaqsContent";
 import ClientsFeedbackSlider from "@/components/ArchitectureHome/ClientsFeedbackSlider";
 
-// Data FAQ khusus untuk halaman Retaining Walls
+// Data FAQ khusus untuk halaman Retaining Wall
 const retainingWallFaqs = [
   {
     uuid: "faq-retaining-1",
-    question: "When does a retaining wall need engineering approval in Calgary?",
+    question: "Why is proper drainage important for retaining walls?",
     answers: [
-      "Under Calgary bylaws, any retaining wall exceeding 1.2 meters (approx. 4 feet) in height requires structural engineering designs, soil testing, and a building permit.",
-      "We handle all necessary drawings, coordinate with engineers, and secure all permits to make sure your structural walls are fully certified and safe."
-    ]
+      "Drainage plays a critical role in retaining wall performance. Without proper water management, pressure can build behind the wall over time, which may affect structural stability. Our retaining wall installations are planned with drainage considerations to support long-term durability and reliable performance.",
+    ],
   },
   {
     uuid: "faq-retaining-2",
-    question: "How do you prevent retaining walls from shifting or collapsing over time?",
+    question: "What materials are commonly used for retaining walls?",
     answers: [
-      "We prevent shifting by: constructing a deep, highly compacted gravel base, embedding the first course below grade, installing structural geogrid soil anchors, and providing 100% gravel backfill with dedicated perforated drainage pipes to eliminate hydrostatic water pressure."
-    ]
-  }
+      "We work with a variety of retaining wall materials including natural stone, concrete blocks, modular wall systems, and other masonry products. Material selection depends on site conditions, structural needs, visual style, and overall project goals.",
+    ],
+  },
+  {
+    uuid: "faq-retaining-3",
+    question: "Can retaining walls be installed on sloped properties?",
+    answers: [
+      "Yes. Retaining walls are often used to help manage elevation changes and improve the usability of sloped outdoor spaces. Before construction begins, we assess the site conditions carefully to determine the most appropriate wall structure and installation approach.",
+    ],
+  },
+  {
+    uuid: "faq-retaining-4",
+    question: "Do retaining wall projects require permits or inspections?",
+    answers: [
+      "Some retaining wall projects may require permits depending on wall size, location, and local regulations. When required, our team helps coordinate the necessary approvals and ensures the work aligns with applicable building standards.",
+    ],
+  },
+  {
+    uuid: "faq-retaining-5",
+    question: "How long does a retaining wall typically last?",
+    answers: [
+      "When constructed with proper drainage, quality materials, and reliable installation methods, retaining walls can remain structurally stable and visually consistent for many years. Long-term performance also depends on site conditions and ongoing maintenance over time.",
+    ],
+  },
 ];
 
-// Tahapan proses spesifik untuk Retaining Walls
+// Tahapan proses spesifik untuk Retaining Wall
 const retainingWallProcessSteps = [
   {
     id: "1",
     number: "1",
     image: "/images/process/process1.jpg",
-    title: "Excavation & Base",
-    text: "We dig a trench and pack down a thick road-gravel foundation for a perfectly level, solid footing.",
+    title: "Evaluate The Site",
+    text: "We assess grading, drainage, and soil conditions before installation begins.",
     aosDelay: "100",
   },
   {
     id: "2",
     number: "2",
     image: "/images/process/process2.jpg",
-    title: "Base Block",
-    text: "We carefully set the crucial first course of blocks below ground level, checking level in all directions.",
+    title: "Plan The Wall Structure",
+    text: "Layout, materials, and wall support requirements are carefully prepared.",
     aosDelay: "200",
   },
   {
     id: "3",
     number: "3",
     image: "/images/process/process3.jpg",
-    title: "Drainage Backfill",
-    text: "We lay perforated drain tile and backfill the space behind the blocks with clean crushed gravel for optimal drainage.",
+    title: "Build The Retaining Wall",
+    text: "The wall is constructed using durable materials and proper installation methods.",
     aosDelay: "300",
   },
   {
     id: "4",
     number: "4",
     image: "/images/process/process4.jpg",
-    title: "Staking & Cap",
-    text: "We stack upper blocks with slight setbacks and glue heavy capstones on top with high-strength construction adhesive.",
+    title: "Complete The Finishing",
+    text: "Final adjustments help ensure structural support and a clean overall appearance.",
     aosDelay: "400",
   },
 ];
 
-// Overview spesifik untuk Retaining Walls
+// Overview spesifik untuk Retaining Wall
 import overviewImg1 from "../../../../public/images/overview/overview3.jpg";
 import overviewImg2 from "../../../../public/images/overview/overview4.jpg";
 
@@ -73,32 +93,34 @@ const retainingWallOverviewItems = [
     image: overviewImg1,
     titleNormal: "Segmental Block",
     titleHighlight: "Retaining Walls",
-    aosDelay: "100"
+    aosDelay: "100",
   },
   {
     image: overviewImg2,
     titleNormal: "Natural Boulder",
     titleHighlight: "Terraced Slopes",
-    aosDelay: "200"
-  }
+    aosDelay: "200",
+  },
 ];
 
-// Testimonial klien spesifik untuk Retaining Walls
+// Testimonial klien spesifik untuk Retaining Wall
 const retainingWallFeedbacks = [
   {
     id: "1",
-    feedbackText: "The team built a massive 3-tier retaining wall in our backyard. It looks stunning and has completely solved our erosion problem. True professionals.",
+    feedbackText:
+      "The team built a massive 3-tier retaining wall in our backyard. It looks stunning and has completely solved our erosion problem. True professionals.",
     image: "/images/client/user1.png",
     name: "James W.",
     designation: "Calgary Homeowner",
   },
   {
     id: "2",
-    feedbackText: "I was extremely impressed with their focus on proper drainage and engineering. The wall is rock solid.",
+    feedbackText:
+      "I was extremely impressed with their focus on proper drainage and engineering. The wall is rock solid.",
     image: "/images/client/user2.png",
     name: "Karen S.",
     designation: "Property Developer",
-  }
+  },
 ];
 
 export default function Page() {
@@ -106,69 +128,69 @@ export default function Page() {
     <>
       <NavbarStyleTwo />
 
-      <PageTitle title="Retaining Wall Construction" homeText="Home" homeUrl="/" />
+      <PageTitle
+        title="Retaining Wall Construction"
+        homeText="Home"
+        homeUrl="/"
+      />
 
-      <ServiceDetailsContent 
-        title="Engineered Retaining Wall Construction" 
+      <ServiceDetailsContent
+        title="Retaining Wall Installation Calgary"
         subtitle="RETAINING WALLS"
-        description1="Protect your property from erosion and reclaim sloped land with robust, beautiful concrete block and natural stone retaining walls."
+        description1="Retaining walls help manage sloped landscapes while improving the structure and appearance of an outdoor space. At DMG Masonry, we build retaining walls designed for dependable support, proper drainage, and a clean finish that fits naturally with the property."
         paragraphs={[
-          "A retaining wall must do two things exceptionally well: support hundreds of tons of soil pressure and water weight, and elevate the look of your landscape. If not properly engineered, water buildup and winter frost will cause walls to bulge and collapse.",
-          "We design and build robust retaining walls using interlocking concrete block systems, heavy natural boulders, or structural timber. Our projects are backed by proper gravel backfill, soil geogrid reinforcement, and dedicated weeping tile drainage systems."
+          "A properly built retaining wall helps reduce soil movement, erosion, and water-related issues that can affect the stability of the landscape over time. Our team carefully plans each installation to ensure the wall performs reliably while maintaining a balanced and visually cohesive appearance within the outdoor environment.",
+          "Beyond structural support, retaining walls can also help define outdoor spaces and improve long-term property functionality. Whether used for elevation changes, garden areas, or landscape organization, a professionally installed retaining wall adds both durability and visual structure to the property.",
         ]}
         benefits={[
-          "Interlocking Segmental Blocks",
-          "Natural Boulder & Stone Walls",
-          "Slope Stabilization & Terracing",
-          "Integrated Drainage Systems",
-          "Soil Reinforcement Geogrids",
-          "Engineered Structural Strength"
+          "Structural Support",
+          "Durable Wall Construction",
+          "Proper Drainage Solutions",
+          "Clean Landscape Integration",
         ]}
         extraParagraphs={[
-          "Water pressure is the number one cause of retaining wall failure. We install heavy-duty drainage pipes behind every wall, allowing water to exit safely and avoiding frost heaving.",
-          "Whether you need a small garden wall to terrace a flower bed or a massive engineered wall to secure a steep slope, we provide certified, safe construction. Call today to schedule a site survey."
+          "Proper planning is an essential part of any retaining wall installation. Before construction begins, we evaluate soil conditions, grading, drainage flow, and site layout to determine the most suitable wall structure for the property while helping support long-term stability and performance.",
+          "At DMG Masonry, we build retaining walls using a variety of materials and finish options to match different landscape styles and structural needs. Whether using natural stone, concrete block, or modular retaining wall systems, our installations are designed to provide dependable support while maintaining a clean and cohesive outdoor appearance.",
+          "Strong retaining wall construction depends on proper site preparation, reliable materials, and consistent workmanship throughout the installation process. By focusing on structural support, drainage efficiency, and durable construction methods, we create retaining walls built to handle changing outdoor conditions while maintaining their overall appearance and functionality.",
         ]}
       />
 
-      <Process 
-        title="Steps We Follow For Retaining Walls"
+      <Process
+        title="Our Retaining Wall Installation Process"
         steps={retainingWallProcessSteps}
       />
-      
-      <Overview 
-        fullWidth 
-        items={retainingWallOverviewItems} 
+
+      <Overview fullWidth items={retainingWallOverviewItems} />
+
+      <ClientsFeedbackSlider
+        titleNormal="Hear From Our"
+        titleHighlight="Retaining Wall Clients"
+        feedbacks={retainingWallFeedbacks}
       />
-      
-      <ClientsFeedbackSlider 
-        titleNormal="Hear From Our" 
-        titleHighlight="Retaining Wall Clients" 
-        feedbacks={retainingWallFeedbacks} 
-      />
-      
-      <AboutUsContent 
+
+      <AboutUsContent
         subtitle="WHY CHOOSE US"
-        title="Calgary's Structural Wall Specialists"
-        description="We don't just stack blocks; we engineer reliable structures. Our retaining walls are built strictly to code with high-strength geogrid soil stabilization techniques."
+        title="Built to Support Sloped Outdoor Spaces"
+        description="Retaining walls help support uneven ground and improve outdoor usability. We build retaining wall systems with dependable performance and a clean appearance for residential and commercial properties."
         listItems={[
-          "Advanced Geogrid Stabilization",
-          "Comprehensive Drainage Solutions",
-          "Permit and Engineering Management",
-          "Durable Products Built for Calgary Frost"
+          "Helps stabilize uneven terrain",
+          "Creates cleaner and more usable outdoor areas",
+          "Constructed with durable retaining wall materials",
+          "Designed to complement the surrounding landscape",
         ]}
-        buttonText="Get a Free Site Assessment"
+        buttonText="Start Your Project"
         buttonLink="/contact-us"
       />
-      
-      <FaqsContent 
-        faqs={retainingWallFaqs} 
-        title="Retaining Wall Construction FAQs" 
-        subtitle="RETAINING FAQ" 
+
+      <FaqsContent
+        faqs={retainingWallFaqs}
+        title="Frequently Asked Questions"
+        subtitle="RETAINING WALL FAQ"
       />
-      
+
       <div className="ptb-100">
-        <ContactFormStyleTwo 
-          title="Schedule Your Wall Site Survey"
+        <ContactFormStyleTwo
+          title="Start Your Retaining Wall Project"
           subtitle="REQUEST A QUOTE"
         />
       </div>

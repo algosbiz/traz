@@ -13,18 +13,39 @@ import ClientsFeedbackSlider from "@/components/ArchitectureHome/ClientsFeedback
 const outdoorKitchenFaqs = [
   {
     uuid: "faq-kitchen-1",
-    question: "Do I need plumbing and electrical for an outdoor kitchen?",
+    question: "Can you build outdoor kitchens for smaller outdoor spaces?",
     answers: [
-      "While not strictly mandatory, adding a sink (plumbing) and electrical outlets (for blenders, refrigerators, or lighting) dramatically increases the functionality of your outdoor kitchen. We coordinate all utility lines during the base construction phase."
-    ]
+      "Yes. We design outdoor kitchens to make the most of available space while maintaining functionality, movement flow, and practical cooking use. Even compact areas can be transformed into efficient outdoor cooking and gathering spaces.",
+    ],
   },
   {
     uuid: "faq-kitchen-2",
-    question: "What are the best countertop materials for outdoor kitchens in Calgary?",
+    question: "Do you install built-in BBQ features and appliances?",
     answers: [
-      "We highly recommend sealed granite, quartzite, or polished concrete. These materials are incredibly durable, heat-resistant, and capable of withstanding Calgary's freezing winter temperatures without cracking."
-    ]
-  }
+      "Absolutely. We build fully integrated outdoor kitchens that can include built-in grills, sinks, storage solutions, pizza ovens, and other cooking appliances based on the project design and requirements.",
+    ],
+  },
+  {
+    uuid: "faq-kitchen-3",
+    question: "Are outdoor kitchens built to withstand weather conditions?",
+    answers: [
+      "Yes. We use durable materials and reliable construction methods designed to perform well in outdoor environments, including exposure to moisture, heat, and seasonal weather changes.",
+    ],
+  },
+  {
+    uuid: "faq-kitchen-4",
+    question: "Can outdoor kitchens include seating and lighting areas?",
+    answers: [
+      "Yes. Many of our projects include integrated seating, bar areas, prep stations, and lighting features to create a more functional and comfortable outdoor entertainment space.",
+    ],
+  },
+  {
+    uuid: "faq-kitchen-5",
+    question: "How is the cost of an outdoor kitchen determined?",
+    answers: [
+      "Pricing depends on layout, material selection, size, and the features included in the design. We provide clear and detailed quotations so clients understand the scope and investment before the project begins.",
+    ],
+  },
 ];
 
 // Tahapan proses spesifik untuk Outdoor Kitchen
@@ -33,32 +54,32 @@ const outdoorKitchenProcessSteps = [
     id: "1",
     number: "1",
     image: "/images/process/process1.jpg",
-    title: "Layout & Utilities",
-    text: "We map the layout and run all necessary gas lines, electrical conduits, and water pipes safely underground.",
+    title: "Assess The Space",
+    text: "We review layout, needs, and available outdoor area before starting.",
     aosDelay: "100",
   },
   {
     id: "2",
     number: "2",
     image: "/images/process/process2.jpg",
-    title: "Structural Frame",
-    text: "We build a robust, non-combustible steel-stud or masonry block frame to support heavy appliances.",
+    title: "Plan The Setup",
+    text: "Cooking needs, materials, and design are prepared for a functional layout.",
     aosDelay: "200",
   },
   {
     id: "3",
     number: "3",
     image: "/images/process/process3.jpg",
-    title: "Stone & Veneer",
-    text: "We clad the exterior structure with your choice of premium natural stone, brick, or cultured veneer.",
+    title: "Build The Kitchen",
+    text: "We construct BBQ and cooking areas with durable materials and methods.",
     aosDelay: "300",
   },
   {
     id: "4",
     number: "4",
     image: "/images/process/process4.jpg",
-    title: "Appliance Fitting",
-    text: "We install the granite countertops, drop in the grills, connect utilities, and test all functions.",
+    title: "Finalize The Details",
+    text: "Finishing work ensures usability, clean look, and long-term performance.",
     aosDelay: "400",
   },
 ];
@@ -105,69 +126,69 @@ export default function Page() {
     <>
       <NavbarStyleTwo />
 
-      <PageTitle title="Outdoor Kitchen Contractor" homeText="Home" homeUrl="/" />
+      <PageTitle
+        title="Outdoor Kitchen Contractor"
+        homeText="Home"
+        homeUrl="/"
+      />
 
-      <ServiceDetailsContent 
-        title="Custom Outdoor Kitchen Design & Construction" 
+      <ServiceDetailsContent
+        title="Outdoor Kitchen BBQ Contractor"
         subtitle="OUTDOOR KITCHENS"
-        description1="Transform your backyard into the ultimate entertainment hub with a fully custom, luxury outdoor kitchen built by Calgary's premier hardscaping professionals."
+        description1="A professionally designed outdoor kitchen creates a space where cooking, dining, and gathering happen in one connected outdoor environment. Our outdoor kitchen contractor services create practical and timeless cooking spaces that complement your property."
         paragraphs={[
-          "An outdoor kitchen expands your living space and completely elevates your summer grilling experience. We design and build high-end outdoor cooking areas that seamlessly integrate built-in BBQ grills, smokers, outdoor refrigerators, and custom sinks.",
-          "Because outdoor kitchens are exposed to harsh weather, we construct our kitchen islands using heavy-duty, non-combustible materials like steel framing and concrete blocks. We finish them with stunning granite countertops and premium stone veneers that are guaranteed to endure Calgary's freeze-thaw cycles."
+          "Outdoor cooking spaces experience continuous exposure to heat, moisture, changing temperatures, and everyday activity. Through reliable installation methods and carefully selected materials, we construct outdoor kitchens designed to remain dependable, visually consistent, and suitable for regular use throughout the seasons.",
+          "Thoughtful outdoor layouts can also improve how a space feels and functions over time. From built-in grills and preparation counters to bar seating and entertainment areas, every feature is planned to create a welcoming outdoor setting that feels organized, comfortable, and naturally integrated with the surrounding space.",
         ]}
         benefits={[
-          "Custom Built-in BBQ Islands",
-          "Granite & Concrete Countertops",
-          "Outdoor Refrigerators & Sinks",
-          "Natural Stone & Brick Cladding",
-          "Integrated Patio Seating Areas",
-          "Safe Gas & Electrical Lines"
+          "Personalized Layouts",
+          "BBQ & Entertainment Integration",
+          "Reliable Outdoor Construction",
+          "Everyday-use Spaces",
         ]}
         extraParagraphs={[
-          "Whether you want a simple grill station or a massive U-shaped kitchen complete with a wood-fired pizza oven and bar seating, we bring your vision to life.",
-          "Start planning your dream backyard today. Contact us for a free, no-obligation outdoor kitchen design consultation."
+          "Planning is an important part of every outdoor kitchen project. Layout, cooking requirements, available space, and material selection are all reviewed carefully to ensure the final design supports both usability and long-term performance while fitting naturally with the overall outdoor environment and how the space will be used day to day.",
+          "From simple barbecue stations to more complete outdoor cooking setups, each project we handle is approached with a focus on practical construction and clean execution. Every detail is considered to ensure the space works well in real use, not just in design, while also maintaining a balanced and functional layout that suits the property.",
+          "Long-term performance comes down to the combination of proper construction methods, quality materials, and careful installation. With this approach, we create outdoor kitchens that remain functional, visually consistent, and reliable over time, even with regular outdoor use and changing conditions.",
         ]}
       />
 
-      <Process 
-        title="Our Kitchen Construction Process"
+      <Process
+        title="Our Outdoor Kitchen Process"
         steps={outdoorKitchenProcessSteps}
       />
-      
-      <Overview 
-        fullWidth 
-        items={outdoorKitchenOverviewItems} 
+
+      <Overview fullWidth items={outdoorKitchenOverviewItems} />
+
+      <ClientsFeedbackSlider
+        titleNormal="What Backyard Chefs"
+        titleHighlight="Say About Our Work"
+        feedbacks={outdoorKitchenFeedbacks}
       />
-      
-      <ClientsFeedbackSlider 
-        titleNormal="What Backyard Chefs" 
-        titleHighlight="Say About Our Work" 
-        feedbacks={outdoorKitchenFeedbacks} 
-      />
-      
-      <AboutUsContent 
+
+      <AboutUsContent
         subtitle="WHY CHOOSE US"
-        title="Calgary's Leading Outdoor Kitchen Builders"
-        description="Building an outdoor kitchen requires a unique blend of structural masonry, utility plumbing, and landscape design. We handle the entire project from start to finish so you don't have to juggle multiple contractors."
+        title="Outdoor Kitchens Designed for Living and Gathering"
+        description="Outdoor kitchen spaces work best when planned around how people cook, gather, and spend time outside. Our approach focuses on creating functional layouts that support everyday use and social outdoor experiences."
         listItems={[
-          "Turnkey Construction (Design to Finish)",
-          "Expert Gas and Electrical Coordination",
-          "Premium Weather-Resistant Materials",
-          "Custom Designs to Fit Any Patio Size"
+          "Practical cooking layouts",
+          "Integrated outdoor features",
+          "Comfortable gathering spaces",
+          "Functional outdoor experience",
         ]}
-        buttonText="Get a Free Consultation"
+        buttonText="Talk to Our Team"
         buttonLink="/contact-us"
       />
-      
-      <FaqsContent 
-        faqs={outdoorKitchenFaqs} 
-        title="Outdoor Kitchen Construction FAQs" 
-        subtitle="KITCHEN FAQ" 
+
+      <FaqsContent
+        faqs={outdoorKitchenFaqs}
+        title="Frequently Asked Questions"
+        subtitle="KITCHEN FAQ"
       />
-      
+
       <div className="ptb-100">
-        <ContactFormStyleTwo 
-          title="Ready to Build Your Outdoor Kitchen?"
+        <ContactFormStyleTwo
+          title="Build Your Perfect Outdoor Kitchen"
           subtitle="REQUEST A QUOTE"
         />
       </div>
