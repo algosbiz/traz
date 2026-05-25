@@ -164,7 +164,7 @@ export default function Page() {
 
       <AboutUsContent
         subtitle="WHY CHOOSE US"
-        title="COutdoor Spaces Built for Long-Term Use"
+        title="Outdoor Spaces Built for Long-Term Use"
         description="Well-planned hardscape construction creates outdoor spaces that are functional, durable, and visually balanced. We careful planning and installation support long-term usability."
         listItems={[
           "Thoughtful outdoor planning",

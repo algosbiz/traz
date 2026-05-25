@@ -55,7 +55,7 @@ const patioStoneProcessSteps = [
     number: "1",
     image: "/images/process/process1.jpg",
     title: "Assess The Site",
-    text: "We evaluate ground conditions, drainage, and layout before installation begins.",
+    text: "We evaluate ground conditions, drainage, and layout prior to installation.",
     aosDelay: "100",
   },
   {

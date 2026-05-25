@@ -55,7 +55,7 @@ const stoneVeneerProcessSteps = [
     number: "1",
     image: "/images/process/process1.jpg",
     title: "Evaluate The Project",
-    text: "We review the space, surface conditions, and installation requirements.",
+    text: "We review the space, surface conditions, and installation needs.",
     aosDelay: "100",
   },
   {

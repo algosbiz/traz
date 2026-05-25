@@ -55,7 +55,7 @@ const chimneyProcessSteps = [
     number: "1",
     image: "/images/process/process1.jpg",
     title: "Inspect The Chimney",
-    text: "We assess cracks, damage, and overall chimney condition.We inspect the flue, flashing, brickwork, and crown to find all structural and leak issues.",
+    text: "We assess cracks, damage, and overall chimney condition.",
     aosDelay: "100",
   },
   {

@@ -55,7 +55,7 @@ const firePitsProcessSteps = [
     number: "1",
     image: "/images/process/process1.jpg",
     title: "Review The Space",
-    text: "We map out the ideal location, keeping safe distances from overhanging trees and property boundaries.",
+    text: "We assess the layout and installation area before construction.",
     aosDelay: "100",
   },
   {
@@ -79,7 +79,7 @@ const firePitsProcessSteps = [
     number: "4",
     image: "/images/process/process4.jpg",
     title: "Complete The Finishing",
-    text: "WFinal details support safe use and visual balance.",
+    text: "Final details support safe use and visual balance.",
     aosDelay: "400",
   },
 ];
