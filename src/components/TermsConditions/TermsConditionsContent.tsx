@@ -8,148 +8,141 @@ const TermsConditionsContent: React.FC = () => {
       <div className="privacy-policy-area ptb-100">
         <div className="container">
           <div className="privacy-policy-content">
-            <p>Last updated on July 12, 2024.</p>
+            <p>Last Updated: May, 2026</p>
 
             <p>
-              Hi there, we’re <strong>DMG Masonry</strong>, and welcome to our privacy
-              policy which also applies to our customers.
+              Welcome to <strong>DMG Masonry</strong>. By accessing or using our
+              website, you agree to comply with the following Terms &amp;
+              Conditions. These terms are intended to provide clear expectations
+              regarding the use of our website, communication with our team, and
+              the information provided through our services.
+            </p>
+
+            <p>If you do not agree with these terms, please discontinue use of the website.</p>
+
+            <h4>Website Use</h4>
+            <p>
+              This website is intended to provide general information about our
+              masonry services, project capabilities, and company information
+              for residential and commercial clients. You agree to use this
+              website responsibly and only for lawful purposes. Any misuse of
+              the website, including attempts to interfere with website
+              functionality, security, or content, is strictly prohibited.
+            </p>
+
+            <h4>Service Information</h4>
+            <p>
+              <strong>DMG Masonry</strong> works to provide accurate and
+              up-to-date information regarding our masonry services, project
+              details, and website content.
+            </p>
+            <p>
+              However, all information provided on this website is for general
+              informational purposes only and may be updated, modified, or
+              removed without notice. Service availability, project timelines,
+              and pricing may vary depending on project scope, material
+              availability, weather conditions, and site requirements.
+            </p>
+            <p>
+              Submitting a contact request through this website does not
+              guarantee project acceptance or scheduling availability.
+            </p>
+
+            <h4>Estimates &amp; Project Communication</h4>
+            <p>
+              Project estimates, timelines, and recommendations provided through
+              consultations or communication with our team are based on the
+              information available at the time of review.
+            </p>
+            <p>
+              Final project scope, pricing, scheduling, and material
+              requirements may change depending on site conditions, structural
+              findings, project modifications, or additional work requirements
+              identified during the planning or construction process. Clear
+              communication and proper project coordination help support
+              efficient scheduling and long-term project quality.
+            </p>
+
+            <h4>Limitation Of Liability</h4>
+            <p>
+              While we work to maintain accurate website information and
+              reliable website functionality, <strong>DMG Masonry</strong> does
+              not guarantee uninterrupted access to the website or that all
+              information will always remain fully current or error-free.
+            </p>
+            <p>
+              To the fullest extent permitted by law, we are not liable for any
+              direct, indirect, incidental, or consequential damages resulting
+              from the use of this website, reliance on website information, or
+              temporary website unavailability.
+            </p>
+
+            <h4>User Responsibilities</h4>
+            <p>Users of this website agree not to:</p>
+            <ul>
+              <li>Use the website for unlawful purposes</li>
+              <li>Attempt unauthorized access to website systems</li>
+              <li>Disrupt website functionality or security</li>
+              <li>Submit false, misleading, or harmful information</li>
+              <li>Copy or misuse website content without permission</li>
+            </ul>
+            <p>
+              Users are responsible for ensuring that information submitted
+              through the website is accurate and appropriate.
+            </p>
+
+            <h4>Privacy</h4>
+            <p>
+              Use of this website is also subject to our Privacy Policy, which
+              explains how personal information may be collected, used, and
+              protected through our website and business operations.
+            </p>
+
+            <h4>Changes To These Terms</h4>
+            <p>
+              <strong>DMG Masonry</strong> may update these Terms &amp;
+              Conditions periodically to reflect changes in business operations,
+              legal requirements, or website functionality. Updated versions
+              will remain available on this page with the revised effective
+              date.
+            </p>
+
+            <h4>Contact DMG Masonry</h4>
+            <p>
+              If you have questions regarding these Terms &amp; Conditions,
+              please contact our team directly.
+            </p>
+            <p>
+              <strong>Call</strong>
               <br />
-              This policy sets out how we handle your personal information if
-              you’re an <strong>DMG Masonry</strong> user or visitor to our site.
+              <a href="tel:+14036198727">1-403-619-8727</a>
             </p>
-
             <p>
-              When we say ‘we’, ‘us’, or <strong>‘DMG Masonry’</strong>, it’s because
-              that’s who we are and we own and run the site.
+              <strong>Facebook</strong>
               <br />
-              If we say ‘policy’ we’re talking about this Terms & Conditions. If we
-              say ‘user terms’ we’re talking about the rules for using the site.
-              The rules vary by product; each product makes them separately
-              available and seeks consent to them separately to this policy.
+              <a
+                href="https://facebook.com/DMGMasonry/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                facebook.com/DMGMasonry/
+              </a>
             </p>
-
-            <h4>The Type Of Personal Information We Collect</h4>
             <p>
-              We collect certain personal information about visitors and users
-              of our site.
+              <strong>Instagram</strong>
               <br />
-              The most common types of information we collect include things
-              like: user-names, member names, email addresses, other contact
-              details, support queries, and item comments (if applicable).
-            </p>
-
-            <h4>How We Collect Personal Information</h4>
-            <p>
-              We collect personal information directly when you provide it to
-              us, automatically as you navigate through the site.
+              <a
+                href="https://instagram.com/d.m.gmasonry/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                instagram.com/d.m.gmasonry/
+              </a>
             </p>
             <p>
-              We collect your personal information when you provide it to us
-              when you complete membership registration and buy items or
-              services on our site, subscribe to a newsletter, email list,
-              submit feedback or send us a communication.
-            </p>
-
-            <h4>How We Use Personal Information</h4>
-            <p>
-              This data is intended to identify you as our{" "}
-              <a href="#">customer subscriber</a> and deliver
-              products/information and other marketing elements. Visitors aren’t
-              allowed to purchase any product or subscribe to the newsletter or
-              make a comment anonymously. So, this information is the only means
-              we can identify you and allow you to make these actions on the
-              site.
-            </p>
-
-            <h4>When We Disclose Your Personal Information</h4>
-            <p>
-              We won’t disclose your data to third parties in a way as to reveal
-              any of your personal information like email, name, etc. (subject
-              to laws and regulations). Only our <i>authorities</i> have access
-              to your data and no third-party access to your data from us.
-            </p>
-
-            <h4>How We Keep Your Personal Information Secure</h4>
-            <p>
-              We store personal information on secure servers managed by us, and
-              our service providers and files are kept in a secure location.
-              Personal{" "}
-              <a href="#" target="_blank">
-                information
-              </a>{" "}
-              that we store is protected by security and access controls,
-              including username and password authentication, two-factor
-              authentication, and data encryption where appropriate.
-            </p>
-
-            <h4>How You Can Access Your Personal Information</h4>
-            <p>
-              You can access some of the personal information we collect by
-              logging in to your account. You also have the right to request
-              access to other personal information we hold about you and to
-              request corrections of any errors in that data. Contact our
-              support using the contact details to make an access or correction
-              request.
-            </p>
-
-            <h4>Marketing Choices Regarding Your Personal Information</h4>
-            <p>
-              Where we have your consent to do so (e.g., if you have subscribed
-              to one of our email lists or have indicated that you are
-              interested in receiving offers or information from us), we send
-              you marketing communications by email about products and services
-              that we feel may be of interest to you. You can ‘opt-out’ of such
-              communications if you prefer not to receive them in the future by
-              using the “unsubscribe” facility provided in the communication.
-            </p>
-            <p>
-              You also have choices about <u>cookies</u>, as described below. By
-              modifying your browser preferences, you can accept all cookies, be
-              notified when a cookie is set, or reject all cookies. If you
-              reject cookies, some parts of our site may not work properly in
-              your case.
-            </p>
-
-            <h4>Cookies (Not The Type You Eat!) And Web Analytics</h4>
-            <p>
-              We use cookies to identify and track visitors, their actions on
-              the site, and their website access preferences. These cookies
-              contain visitors’ IP and time of visits. <strong>DMG Masonry</strong>{" "}
-              visitors who do not wish to have cookies placed on their browsers
-              should set their browsers to refuse cookies before using the{" "}
-              <strong>DMG Masonry</strong> site.
-            </p>
-
-            <h4>How Long We Keep Your Personal Information</h4>
-            <p>
-              We retain your personal information for as long as is necessary to
-              provide the services to you and others and to comply with our
-              legal obligations. If you no longer want us to use your personal
-              information or to provide you with the <strong>DMG Masonry</strong>{" "}
-              services, you can request that we erase your personal information
-              and close your account.
-            </p>
-
-            <h4>When We Need To Update This Policy</h4>
-            <p>
-              We will need to change this policy from time to time to ensure it
-              stays up to date with the latest legal requirements and any
-              changes to our privacy management practices. When changing the
-              policy, we will notify you about such changes; where required, a
-              copy of the latest version of this policy will always be available
-              on this page.
-            </p>
-
-            <h4>How You Can Contact Us</h4>
-            <p>
-              If you have any questions about our privacy practices or how we
-              have been managing your personal information, please get in touch
-              with our support at{" "}
-              <a href="mailto:will@dmgmasonry.ca">will@dmgmasonry.ca</a>.
-            </p>
-            <p>
-              Both personal information and personal data have the same meaning
-              in the context of this Terms & Conditions.
+              <strong>Email</strong>
+              <br />
+              <a href="mailto:will@dmgmasonry.ca">will@dmgmasonry.ca</a>
             </p>
           </div>
         </div>
