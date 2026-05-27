@@ -136,7 +136,7 @@ export default function Page() {
 
       <ServiceDetailsContent
         title="Professional Foundation Repair Services"
-        subtitle="FOUNDATION REPAIR"
+        subtitle="SERVICE"
         description1="Foundation problems can affect the safety and condition of a property if left unresolved. DMG Masonry provides foundation repair services to correct structural issues and reinforce weakened areas."
         paragraphs={[
           "Cracked foundation walls, uneven floors, sticking doors, and visible structural movement are often signs of underlying foundation issues. These problems can result from soil settlement, moisture exposure, or shifting structural loads over time. Our team carefully inspects the condition of the foundation to determine the cause and recommend repairs suited to the structure's specific needs.",

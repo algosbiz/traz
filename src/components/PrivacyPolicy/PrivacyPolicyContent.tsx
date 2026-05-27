@@ -145,7 +145,7 @@ const PrivacyPolicyContent: React.FC = () => {
               If you have any questions about our privacy practices or how we
               have been managing your personal information, please get in touch
               with our support at{" "}
-              <a href="mailto:hello@traz.com">hello@traz.com</a>.
+              <a href="mailto:will@dmgmasonry.ca">will@dmgmasonry.ca</a>.
             </p>
             <p>
               Both personal information and personal data have the same meaning

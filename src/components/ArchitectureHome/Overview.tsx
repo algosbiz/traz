@@ -24,7 +24,7 @@ const Overview: React.FC = () => {
                   <Image src={overviewImg1} alt="overview" width={1320} height={780} />
                 </div>
                 <h3>
-                  Masonry <span>Repair</span>
+                  Outdor Kitchen <span>Contractor</span>
                 </h3>
               </div>
             </div>

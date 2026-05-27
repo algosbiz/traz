@@ -130,7 +130,7 @@ export default function Page() {
 
       <ServiceDetailsContent
         title="Custom-Made Fire Pit Services"
-        subtitle="CUSTOM FIRE PITS"
+        subtitle="SERVICE"
         description1="A custom fire pit can transform an outdoor area into a more comfortable and inviting space for gathering and relaxation. Our fire pit services create durable outdoor features that combine practical function with timeless design for lasting enjoyment and visual appeal."
         paragraphs={[
           "Outdoor fire features must be built to handle regular use, changing weather conditions, and long-term exposure to heat and moisture. Using reliable construction methods and durable masonry materials, we create fire pits designed to maintain both structural stability and consistent visual appearance over time.",

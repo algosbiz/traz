@@ -136,7 +136,7 @@ export default function Page() {
 
       <ServiceDetailsContent
         title="Outdoor Fireplace Installation Calgary"
-        subtitle="FIREPLACES"
+        subtitle="SERVICE"
         description1="At DMG Masonry, we create custom fireplace installations that add warmth, comfort, and visual character to residential and commercial properties while providing dependable performance and lasting durability."
         paragraphs={[
           "Outdoor fireplaces create a natural gathering space where people can relax and enjoy their backyard comfortably through different seasons. Whether installed on a patio, deck, or garden area, each fireplace is designed to fit naturally within the outdoor setting while adding both functionality and character to the space.",

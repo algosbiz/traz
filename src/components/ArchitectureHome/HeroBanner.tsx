@@ -13,17 +13,17 @@ const socialLinksData = [
   {
     id: "1",
     icon: "ri-facebook-line",
-    link: "https://www.facebook.com/",
+    link: "https://www.facebook.com/DMGMasonry/",
   },
   {
     id: "2",
     icon: "ri-instagram-line",
-    link: "https://www.instagram.com/",
+    link: "https://www.instagram.com/d.m.gmasonry/",
   },
   {
     id: "3",
-    icon: "ri-twitter-line",
-    link: "https://www.twitter.com/",
+    icon: "ri-whatsapp-line",
+    link: "https://wa.me/14036198727",
   },
 ];
 
@@ -140,11 +140,11 @@ const HeroBanner: React.FC = () => {
         <ul className="main-banner-info">
           <li>
             <span>CALL:</span>
-            <a href="tel:3214264567">+321 426 4567</a>
+            <a href="tel:+14036198727">1-403-619-8727</a>
           </li>
           <li>
             <span>MAIL:</span>
-            <a href="mailto:trazteam@gmail.com">DMG Masonry</a>
+            <a href="mailto:will@dmgmasonry.ca">will@dmgmasonry.ca</a>
           </li>
         </ul>
       </div>

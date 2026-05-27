@@ -136,7 +136,7 @@ export default function Page() {
 
       <ServiceDetailsContent
         title="Patio Stone Installation Services"
-        subtitle="PATIO STONE"
+        subtitle="SERVICE"
         description1="A properly installed patio stone surface can improve both the function and appearance of an outdoor space. Our patio stone installation services at DMG Masonry focus on building stable, well-structured surfaces for everyday use and long-term durability in Calgary's climate."
         paragraphs={[
           "Outdoor patio areas are exposed to constant movement, seasonal weather changes, and moisture over time. At DMG Masonry, we install patio stones using dependable construction methods and carefully selected materials to ensure the surface remains stable, properly aligned, and visually consistent through years of use.",

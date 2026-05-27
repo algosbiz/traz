@@ -133,7 +133,7 @@ export default function Page() {
 
       <ServiceDetailsContent
         title="Custom Pizza Oven Installation"
-        subtitle="CUSTOM PIZZA OVENS"
+        subtitle="SERVICE"
         description1="Outdoor pizza ovens bring a different rhythm to outdoor living, where cooking, heat, and gathering come together in one space. We design and build custom pizza ovens that are made to perform reliably while fitting naturally into any outdoor environments."
         paragraphs={[
           "Built for high-temperature cooking and year-round exposure, each pizza oven requires careful material selection and precise construction. We use durable masonry systems designed to retain heat efficiently, handle repeated use, and maintain structural stability through changing weather conditions, ensuring consistent performance.",

@@ -136,7 +136,7 @@ export default function Page() {
 
       <ServiceDetailsContent
         title="Retaining Wall Installation Calgary"
-        subtitle="RETAINING WALLS"
+        subtitle="SERVICE"
         description1="Retaining walls help manage sloped landscapes while improving the structure and appearance of an outdoor space. At DMG Masonry, we build retaining walls designed for dependable support, proper drainage, and a clean finish that fits naturally with the property."
         paragraphs={[
           "A properly built retaining wall helps reduce soil movement, erosion, and water-related issues that can affect the stability of the landscape over time. Our team carefully plans each installation to ensure the wall performs reliably while maintaining a balanced and visually cohesive appearance within the outdoor environment.",

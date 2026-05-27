@@ -134,7 +134,7 @@ export default function Page() {
 
       <ServiceDetailsContent
         title="Outdoor Kitchen BBQ Contractor"
-        subtitle="OUTDOOR KITCHENS"
+        subtitle="SERVICE"
         description1="A professionally designed outdoor kitchen creates a space where cooking, dining, and gathering happen in one connected outdoor environment. Our outdoor kitchen contractor services create practical and timeless cooking spaces that complement your property."
         paragraphs={[
           "Outdoor cooking spaces experience continuous exposure to heat, moisture, changing temperatures, and everyday activity. Through reliable installation methods and carefully selected materials, we construct outdoor kitchens designed to remain dependable, visually consistent, and suitable for regular use throughout the seasons.",

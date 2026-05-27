@@ -7,17 +7,17 @@ const socialLinksData = [
   {
     id: "1",
     icon: "ri-facebook-line",
-    link: "https://www.facebook.com/",
+    link: "https://www.facebook.com/DMGMasonry/",
   },
   {
     id: "2",
     icon: "ri-instagram-line",
-    link: "https://www.instagram.com/",
+    link: "https://www.instagram.com/d.m.gmasonry/",
   },
   {
     id: "3",
-    icon: "ri-twitter-line",
-    link: "https://www.twitter.com/",
+    icon: "ri-whatsapp-line",
+    link: "https://wa.me/14036198727",
   },
 ];
 
@@ -27,13 +27,13 @@ const ContactInfo: React.FC = () => {
       <ul className="contact-info-list">
         <li>
           <span>ADDRESS</span>
-          123 Maple Street Toronto, Ontario M1A 1A1 Canada
+          1111 - 46 Ave S.E., Calgary, Alberta T2G 2A5
         </li>
 
         <li>
           <span>CONTACT</span>
-          <a href="mailto:helltraz@gmail.com">helltraz@gmail.com</a>
-          <a href="tel:15551234567">+1 555-123-4567</a>
+          <a href="mailto:will@dmgmasonry.ca">will@dmgmasonry.ca</a>
+          <a href="tel:+14036198727">1-403-619-8727</a>
         </li>
 
         <li>

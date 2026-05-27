@@ -130,7 +130,7 @@ export default function Page() {
 
       <ServiceDetailsContent
         title="Hardscape Contractor Services"
-        subtitle="HARDSCAPING"
+        subtitle="SERVICE"
         description1="A well-designed outdoor space should feel functional, durable, and naturally connected to the property. Our hardscape contractor services build patios, retaining walls, pathways, and outdoor surfaces designed for long-term performance with a timeless appearance."
         paragraphs={[
           "Outdoor hardscape features are constantly exposed to weather changes, moisture, ground movement, and everyday use. Using durable materials and reliable construction methods, we create hardscape surfaces designed to maintain their structure, stability, and visual quality over time while supporting long-term outdoor durability and performance.",

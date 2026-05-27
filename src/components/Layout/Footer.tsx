@@ -12,12 +12,12 @@ const socialLinks = [
   {
     id: "facebook",
     label: "Facebook",
-    link: "https://www.facebook.com/",
+    link: "https://www.facebook.com/DMGMasonry/",
   },
   {
     id: "instagram",
     label: "Instagram",
-    link: "https://www.instagram.com/",
+    link: "https://www.instagram.com/d.m.gmasonry/",
   },
   {
     id: "whatsapp",

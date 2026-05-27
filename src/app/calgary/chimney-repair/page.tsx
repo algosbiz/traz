@@ -130,7 +130,7 @@ export default function Page() {
 
       <ServiceDetailsContent
         title="Chimney Repair Services in Calgary"
-        subtitle="CHIMNEY REPAIR"
+        subtitle="SERVICE"
         description1="Chimneys are constantly exposed to moisture, temperature changes, and weather conditions that can weaken masonry over time. Our chimney repair services help restore safe performance, reliable function, and long-term durability for any property."
         paragraphs={[
           "Cracked mortar joints, loose brickwork, water penetration, and surface deterioration are common signs of chimney damage. Through detailed inspections and careful repair methods, damaged areas are restored using durable materials that help maintain both structural stability and the original appearance of the chimney.",

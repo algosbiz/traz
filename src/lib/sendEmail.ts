@@ -154,7 +154,7 @@ export async function sendContactAutoReply(data: ContactFormData): Promise<void>
     </div>
 
     <p style="margin:0 0 8px;color:#555;font-size:14px;">
-      If you need immediate assistance, feel free to call us at <a href="tel:15551234567" style="color:#0f3460;font-weight:600;">+1 555-123-4567</a>.
+      If you need immediate assistance, feel free to call us at <a href="tel:+14036198727" style="color:#0f3460;font-weight:600;">1-403-619-8727</a>.
     </p>
 
     <p style="margin:24px 0 0;color:#333;font-size:14px;">
@@ -251,7 +251,7 @@ export async function sendQuoteAutoReply(data: QuoteFormData): Promise<void> {
     </div>
 
     <p style="margin:0 0 8px;color:#555;font-size:14px;line-height:1.7;">
-      We typically respond to quote requests within <strong>2–3 business days</strong>. If your project is urgent, please call us directly at <a href="tel:15551234567" style="color:#0f3460;font-weight:600;">+1 555-123-4567</a>.
+      We typically respond to quote requests within <strong>2–3 business days</strong>. If your project is urgent, please call us directly at <a href="tel:+14036198727" style="color:#0f3460;font-weight:600;">1-403-619-8727</a>.
     </p>
 
     <p style="margin:24px 0 0;color:#333;font-size:14px;">

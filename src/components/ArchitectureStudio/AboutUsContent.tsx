@@ -1,12 +1,13 @@
 "use client";
 
-import React, { useState } from "react";
-import FsLightbox from "fslightbox-react";
+import React from "react";
+// import React, { useState } from "react";
+// import FsLightbox from "fslightbox-react";
 import Link from "next/link";
 import Image from "next/image";
 
 import aboutImg from "../../../public/images/about/about4.png";
-import videoCircleImg from "../../../public/images/about/wrap.png";
+// import videoCircleImg from "../../../public/images/about/wrap.png";
 import arrowIcon from "../../../public/images/about/arrow2.svg";
 
 interface AboutUsProps {
@@ -34,14 +35,14 @@ const AboutUsContent: React.FC<AboutUsProps> = ({
   buttonLink = "/about-us"
 }) => {
   // To open the lightbox change the value of the "toggler" prop.
-  const [toggler, setToggler] = useState<boolean>(false);
+  // const [toggler, setToggler] = useState<boolean>(false);
 
   return (
     <>
-      <FsLightbox
+      {/* <FsLightbox
         toggler={toggler}
         sources={[videoUrl]}
-      />
+      /> */}
 
       <div className="about-area pt-100">
         <div className="container">
@@ -56,7 +57,7 @@ const AboutUsContent: React.FC<AboutUsProps> = ({
               >
                 <Image src={aboutImg} alt="image" width={1052} height={1120} />
 
-                <div className="wrap-video">
+                {/* <div className="wrap-video">
                   <Image src={videoCircleImg} alt="image" width={184} height={184} />
 
                   <div
@@ -65,7 +66,7 @@ const AboutUsContent: React.FC<AboutUsProps> = ({
                   >
                     <i className="ri-play-fill"></i>
                   </div>
-                </div>
+                </div> */}
               </div>
             </div>
 

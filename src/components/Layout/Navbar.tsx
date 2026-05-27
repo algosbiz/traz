@@ -43,9 +43,17 @@ const Navbar: React.FC = () => {
 
   // SearchModal
   const [isActive, setActive] = useState<boolean>(false);
+  const [searchQuery, setSearchQuery] = useState<string>("");
+
   const handleToggleSearchModal = () => {
     setActive(!isActive);
+    if (isActive) setSearchQuery("");
   };
+
+  const filteredServices = servicesData.filter((service) =>
+    service.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
+    service.link.toLowerCase().includes(searchQuery.toLowerCase())
+  );
 
   // Mobile Menu
   const [isMobileMenuActive, setMobileMenuActive] = useState<boolean>(false);
@@ -321,10 +329,62 @@ const Navbar: React.FC = () => {
           <div className="others-option d-flex align-items-center">
             <ThemeToggle />
 
-            <div className="option-item">
-              <div className="search-btn" onClick={handleToggleSearchModal}>
+            <div className="option-item position-relative">
+              <div className="search-btn" onClick={handleToggleSearchModal} style={{ cursor: 'pointer' }}>
                 <i className="ri-search-line"></i>
               </div>
+
+              {isActive && (
+                <div 
+                  className="search-dropdown shadow-sm" 
+                  style={{
+                    position: "absolute",
+                    top: "100%",
+                    right: 0,
+                    width: "280px",
+                    backgroundColor: "var(--whiteColor)",
+                    padding: "15px",
+                    borderRadius: "8px",
+                    zIndex: 999,
+                    marginTop: "15px",
+                    border: "1px solid var(--borderColor)"
+                  }}
+                >
+                  <form onSubmit={(e) => e.preventDefault()}>
+                    <input
+                      type="text"
+                      className="form-control"
+                      placeholder="Search services..."
+                      value={searchQuery}
+                      onChange={(e) => setSearchQuery(e.target.value)}
+                      autoFocus
+                      style={{ marginBottom: "10px", fontSize: "14px" }}
+                    />
+                  </form>
+                  {searchQuery && (
+                    <ul style={{ listStyle: "none", padding: 0, margin: 0, maxHeight: "250px", overflowY: "auto" }}>
+                      {filteredServices.length > 0 ? (
+                        filteredServices.map((service) => (
+                          <li key={service.id} style={{ borderBottom: "1px solid var(--borderColor)", padding: "10px 0" }}>
+                            <Link 
+                              href={service.link}
+                              onClick={() => {
+                                setActive(false);
+                                setSearchQuery("");
+                              }}
+                              style={{ color: "var(--headingColor)", textDecoration: "none", display: "block", fontSize: "15px", fontWeight: 500 }}
+                            >
+                              {service.title}
+                            </Link>
+                          </li>
+                        ))
+                      ) : (
+                        <li style={{ padding: "10px 0", fontSize: "14px", color: "var(--paragraphColor)" }}>No services found</li>
+                      )}
+                    </ul>
+                  )}
+                </div>
+              )}
             </div>
 
             <div className="option-item">
@@ -429,38 +489,7 @@ const Navbar: React.FC = () => {
         <div className="close-overlay" onClick={handleToggleMobileMenu}></div>
       </div>
 
-      {/* Search Form */}
-      <div className={`modal search-modal-area ${isActive ? "show" : ""}`}>
-        <div className="modal-dialog modal-dialog-centered">
-          <div className="modal-content">
-            <button
-              type="button"
-              className="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-              onClick={handleToggleSearchModal}
-            >
-              <i className="ri-close-line"></i>
-            </button>
-            <div className="modal-body">
-              <div className="search-form">
-                <form>
-                  <input
-                    type="text"
-                    className="form-control"
-                    placeholder="Search here"
-                  />
-                  <button type="submit">
-                    <i className="ri-search-line"></i>
-                  </button>
-                </form>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div className="close-overlay" onClick={handleToggleSearchModal}></div>
-      </div>
+      {/* Search Modal Removed - Replaced with Dropdown */}
     </>
   );
 };
