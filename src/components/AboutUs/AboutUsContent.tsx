@@ -31,8 +31,8 @@ const AboutUsContent: React.FC = () => {
           <div className="about-three-title">
             <span>ABOUT US</span>
             <h2>
-              We Are <b>DMG Masonry.</b> We Create Unique And Sustainable Living
-              Spaces, Designed For Sharing
+              Built on <b>Quality Workmanship</b> and Long-Lasting Masonry
+              Solutions
             </h2>
           </div>
 
@@ -45,43 +45,72 @@ const AboutUsContent: React.FC = () => {
               <div className="col-lg-6 col-md-12">
                 <div className="about-three-left-content">
                   <p className="mb-0">
-                    We are leading architecture firm dedicated to creating
-                    visionary designs that transcend expectations. With our team
-                    of highly skilled architects and designers, we specialize in
-                    crafting.
+                    At DMG Masonry, we create durable and visually timeless
+                    masonry and hardscape spaces for residential and commercial
+                    properties in Calgary, combining quality workmanship,
+                    practical design, and long-lasting performance.
                   </p>
 
                   <ul className="list">
                     <li>
-                      <Image src={arrowIcon} alt="arrow" width={28} height={10} />
-                      Innovative Design Approach
+                      <Image
+                        src={arrowIcon}
+                        alt="arrow"
+                        width={28}
+                        height={10}
+                      />
+                      Durable Masonry & Hardscape Solutions
                     </li>
                     <li>
-                      <Image src={arrowIcon} alt="arrow" width={28} height={10} />
-                      Highly Skilled Expertise and Specialization
+                      <Image
+                        src={arrowIcon}
+                        alt="arrow"
+                        width={28}
+                        height={10}
+                      />
+                      Skilled Workmanship & Reliable Construction
                     </li>
                     <li>
-                      <Image src={arrowIcon} alt="arrow" width={28} height={10} /> A client-centric
-                      approach for an architectural company
+                      <Image
+                        src={arrowIcon}
+                        alt="arrow"
+                        width={28}
+                        height={10}
+                      />{" "}
+                      Custom Outdoor Spaces Built Around Your Needs company
                     </li>
                     <li>
-                      <Image src={arrowIcon} alt="arrow" width={28} height={10} />
-                      Sustainable Design Practices
+                      <Image
+                        src={arrowIcon}
+                        alt="arrow"
+                        width={28}
+                        height={10}
+                      />
+                      Quality-Focused Planning & Execution
                     </li>
                   </ul>
 
                   <div className="about-image-wrap">
-                    <Image src={videoThumb} alt="image" width={1052} height={1120} />
-
+                    <Image
+                      src={videoThumb}
+                      alt="image"
+                      width={1052}
+                      height={1120}
+                    />
                     <div className="wrap-video">
-                      <Image src={videoCircleImg} alt="image" width={184} height={184} />
+                      {/* <Image
+                        src={videoCircleImg}
+                        alt="image"
+                        width={184}
+                        height={184}
+                      />
 
                       <div
                         className="video-btn text-decoration-none"
                         onClick={() => setToggler(!toggler)}
                       >
                         <i className="ri-play-fill"></i>
-                      </div>
+                      </div> */}
                     </div>
                   </div>
                 </div>
@@ -94,22 +123,25 @@ const AboutUsContent: React.FC = () => {
 
                   <div className="about-wrap-content">
                     <h2>
-                      Architecture & Interior Is Where We Belong, We Really Love
-                      Our Job
+                      Quality Masonry Work Built Through Experience, Planning,
+                      and Precision
                     </h2>
                     <p>
-                      DMG Masonry is a full-service design firm providing
-                      architecture, master planning, urban design, interior
-                      architecture, space planning and programming. Our
-                      portfolio of completed work includes highly acclaimed and
-                      award-winning projects.
+                      DMG Masonry provides residential and commercial masonry
+                      services throughout Calgary, including masonry repair,
+                      retaining walls, patio stone installation, stone veneer,
+                      outdoor kitchens, fireplaces, pizza ovens, and custom
+                      hardscape construction. Every project is completed with a
+                      focus on durability, proper construction methods, and
+                      long-term performance.
                     </p>
                     <p>
-                      At DMG Masonry, we believe that architecture goes beyond mere
-                      structures, it is an art form that shapes the way we live,
-                      work, and interact with our surroundings. With a deep
-                      understanding of the built environment and an unwavering
-                      commitment.
+                      We approach each project by understanding the property,
+                      project goals, and practical requirements before
+                      construction begins. From repairs and restorations to
+                      custom outdoor features, our team works carefully to
+                      ensure every installation remains functional, structurally
+                      sound, and visually consistent over time.
                     </p>
                   </div>
                 </div>

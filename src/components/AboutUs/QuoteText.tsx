@@ -12,8 +12,8 @@ const QuoteText: React.FC = () => {
         <div className="container-fluid">
           <div className="box-style-inner">
             <h3>
-              We Meet New People Everyday Coming With New Dreams & Hope Which We
-              Try To Make Them True
+              We Help Every Client Create Functional and Long-Lasting Masonry
+              Spaces Designed for Everyday Living
             </h3>
             <div className="wrap-shape">
               <Image src={shapeImg} alt="image" width={260} height={276} />

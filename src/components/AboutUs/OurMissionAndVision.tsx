@@ -22,9 +22,11 @@ const OurMissionAndVision: React.FC = () => {
           </AccordionItemHeading>
           <AccordionItemPanel>
             <p>
-              Our organizational sprit believes that where design meets passion
-              & love with space, good architecture happens here. We are a
-              leading architecture firm dedicated to creating visionary designs.
+              Our mission is to provide masonry work that combines durability,
+              functionality, and clean finishing through dependable construction
+              methods and experienced workmanship. We aim to deliver projects
+              that meet our clients needs while maintaining long-term quality
+              and structural reliability.
             </p>
           </AccordionItemPanel>
         </AccordionItem>
@@ -35,9 +37,11 @@ const OurMissionAndVision: React.FC = () => {
           </AccordionItemHeading>
           <AccordionItemPanel>
             <p>
-              Our organizational sprit believes that where design meets passion
-              & love with space, good architecture happens here. We are a
-              leading architecture firm dedicated to creating visionary designs.
+              Our vision is to continue building a strong reputation in Calgary
+              through consistent workmanship, honest communication, and masonry
+              solutions designed to perform well for years to come. We believe
+              quality construction should add lasting value to every property we
+              work on.
             </p>
           </AccordionItemPanel>
         </AccordionItem>

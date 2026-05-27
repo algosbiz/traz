@@ -20,8 +20,8 @@ interface ContactFormProps {
 }
 
 const ContactFormStyleTwo: React.FC<ContactFormProps> = ({
-  title = "Contact Us Anytime, We Are Always There For You",
-  subtitle = "CONTACT"
+  title = "Contact Our Team to Discuss Your Masonry Project",
+  subtitle = "CONTACT",
 }) => {
   const [formData, setFormData] = useState<FormData>({
     name: "",
@@ -35,7 +35,7 @@ const ContactFormStyleTwo: React.FC<ContactFormProps> = ({
   const [error, setError] = useState("");
 
   const handleChange = (
-    e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+    e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
   ) => {
     const { name, value } = e.target;
     setFormData({
@@ -51,7 +51,12 @@ const ContactFormStyleTwo: React.FC<ContactFormProps> = ({
     setError("");
     setSuccess("");
 
-    if (!formData.name || !formData.email || !formData.phone || !formData.message) {
+    if (
+      !formData.name ||
+      !formData.email ||
+      !formData.phone ||
+      !formData.message
+    ) {
       setError("Please fill in all required fields.");
       return;
     }
@@ -91,7 +96,7 @@ const ContactFormStyleTwo: React.FC<ContactFormProps> = ({
       <div className="contact-area bg-white-wrap">
         <div className="container">
           <div className="row justify-content-center">
-            <div 
+            <div
               className="col-lg-5 col-md-12 pe-5"
               data-aos="fade-up"
               data-aos-delay="100"
@@ -99,12 +104,17 @@ const ContactFormStyleTwo: React.FC<ContactFormProps> = ({
               data-aos-once="true"
             >
               <div className="contact-image">
-                <Image src={contactImg} alt="contact" width={700} height={1012} />
+                <Image
+                  src={contactImg}
+                  alt="contact"
+                  width={700}
+                  height={1012}
+                />
               </div>
             </div>
 
-            <div 
-              className="col-lg-7 col-md-12 position-relative ps-5" 
+            <div
+              className="col-lg-7 col-md-12 position-relative ps-5"
               data-aos="fade-up"
               data-aos-delay="200"
               data-aos-duration="600"
@@ -179,22 +189,41 @@ const ContactFormStyleTwo: React.FC<ContactFormProps> = ({
                       </div>
 
                       {error && (
-                        <div className="alert alert-danger" role="alert" style={{ fontSize: "14px", marginBottom: "16px", borderRadius: "8px" }}>
+                        <div
+                          className="alert alert-danger"
+                          role="alert"
+                          style={{
+                            fontSize: "14px",
+                            marginBottom: "16px",
+                            borderRadius: "8px",
+                          }}
+                        >
                           {error}
                         </div>
                       )}
 
                       {success && (
-                        <div className="alert alert-success" role="alert" style={{ fontSize: "14px", marginBottom: "16px", borderRadius: "8px" }}>
+                        <div
+                          className="alert alert-success"
+                          role="alert"
+                          style={{
+                            fontSize: "14px",
+                            marginBottom: "16px",
+                            borderRadius: "8px",
+                          }}
+                        >
                           {success}
                         </div>
                       )}
 
-                      <button 
-                        type="submit" 
+                      <button
+                        type="submit"
                         className="default-btn"
                         disabled={loading}
-                        style={{ opacity: loading ? 0.7 : 1, cursor: loading ? "not-allowed" : "pointer" }}
+                        style={{
+                          opacity: loading ? 0.7 : 1,
+                          cursor: loading ? "not-allowed" : "pointer",
+                        }}
                       >
                         {loading ? "Sending..." : "Send Message Now"}
                       </button>
