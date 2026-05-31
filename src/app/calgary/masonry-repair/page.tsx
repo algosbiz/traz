@@ -53,7 +53,7 @@ const masonryProcessSteps = [
   {
     id: "1",
     number: "1",
-    image: "/images/process/process1.jpg",
+    image: "/images/services/service/masonry_repair/2.webp",
     title: "Inspect The Damage",
     text: "We assess cracks and structural issues to identify the condition.",
     aosDelay: "100",
@@ -61,7 +61,7 @@ const masonryProcessSteps = [
   {
     id: "2",
     number: "2",
-    image: "/images/process/process2.jpg",
+    image: "/images/services/service/masonry_repair/3.webp",
     title: "Plan The Repair",
     text: "We determine the most effective repair approach for lasting results.",
     aosDelay: "200",
@@ -69,7 +69,7 @@ const masonryProcessSteps = [
   {
     id: "3",
     number: "3",
-    image: "/images/process/process3.jpg",
+    image: "/images/services/service/masonry_repair/4.webp",
     title: "Restore The Masonry",
     text: "Brick, stone, and mortar are repaired with durable materials.",
     aosDelay: "300",
@@ -77,7 +77,7 @@ const masonryProcessSteps = [
   {
     id: "4",
     number: "4",
-    image: "/images/process/process4.jpg",
+    image: "/images/services/service/masonry_repair/5.webp",
     title: "Ensure Lasting Performance",
     text: "Repairs are completed with attention to durability and appearance.",
     aosDelay: "400",
@@ -85,18 +85,15 @@ const masonryProcessSteps = [
 ];
 
 // Overview spesifik untuk Masonry Repair
-import overviewImg1 from "../../../../public/images/overview/overview3.jpg";
-import overviewImg2 from "../../../../public/images/overview/overview4.jpg";
-
 const masonryOverviewItems = [
   {
-    image: overviewImg1,
+    image: "/images/services/service/masonry_repair/6.webp",
     titleNormal: "Brick & Mortar",
     titleHighlight: "Restoration",
     aosDelay: "100"
   },
   {
-    image: overviewImg2,
+    image: "/images/services/service/masonry_repair/7.webp",
     titleNormal: "Stone Masonry",
     titleHighlight: "Refurbishing",
     aosDelay: "200"
@@ -129,6 +126,7 @@ export default function Page() {
       <PageTitle title="Masonry Repair" homeText="Home" homeUrl="/" />
 
       <ServiceDetailsContent
+        mainImage="/images/services/service/masonry_repair/1.webp"
         title="Professional Masonry Repair & Restoration Services"
         subtitle="SERVICE"
         description1="At DMG Masonry, we provide masonry repair and restoration services designed to restore strength, stability, and timeless appearance for residential and commercial properties, helping structures perform reliably for years to come."
@@ -166,6 +164,7 @@ export default function Page() {
       />
 
       <AboutUsContent
+        image="/images/services/service/masonry_repair/8.webp"
         subtitle="WHY CHOOSE US"
         title="Signs Your Masonry May Need Restoration"
         description="Small masonry issues can develop into larger structural problems if left untreated. We identify early signs of deterioration before they affect the structure’s strength, stability, and appearance."
@@ -187,6 +186,7 @@ export default function Page() {
 
       <div className="ptb-100">
         <ContactFormStyleTwo
+          image="/images/services/service/masonry_repair/9.webp"
           title="Restore Your Masonry"
           subtitle="REQUEST A QUOTE"
         />

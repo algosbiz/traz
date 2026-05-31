@@ -57,7 +57,7 @@ const foundationProcessSteps = [
   {
     id: "1",
     number: "1",
-    image: "/images/process/process1.jpg",
+    image: "/images/services/service/foundation_repair/2.webp",
     title: "Inspect the Foundation",
     text: "We assess structural movement, cracks, and foundation conditions.",
     aosDelay: "100",
@@ -65,7 +65,7 @@ const foundationProcessSteps = [
   {
     id: "2",
     number: "2",
-    image: "/images/process/process2.jpg",
+    image: "/images/services/service/foundation_repair/3.webp",
     title: "Plan the Repair",
     text: "We determine the right solution for the structure and damage level.",
     aosDelay: "200",
@@ -73,7 +73,7 @@ const foundationProcessSteps = [
   {
     id: "3",
     number: "3",
-    image: "/images/process/process3.jpg",
+    image: "/images/services/service/foundation_repair/4.webp",
     title: "Complete the Repairs",
     text: "Foundation areas are reinforced using reliable repair methods and materials.",
     aosDelay: "300",
@@ -81,7 +81,7 @@ const foundationProcessSteps = [
   {
     id: "4",
     number: "4",
-    image: "/images/process/process4.jpg",
+    image: "/images/services/service/foundation_repair/5.webp",
     title: "Ensure Long-Term Stability",
     text: "Final work is completed with focus on strength, durability, and performance.",
     aosDelay: "400",
@@ -89,18 +89,15 @@ const foundationProcessSteps = [
 ];
 
 // Overview spesifik untuk Foundation Repair
-import overviewImg1 from "../../../../public/images/overview/overview3.jpg";
-import overviewImg2 from "../../../../public/images/overview/overview4.jpg";
-
 const foundationOverviewItems = [
   {
-    image: overviewImg1,
+    image: "/images/services/service/foundation_repair/6.webp",
     titleNormal: "Basement Crack",
     titleHighlight: "Injection",
     aosDelay: "100",
   },
   {
-    image: overviewImg2,
+    image: "/images/services/service/foundation_repair/7.webp",
     titleNormal: "Exterior Concrete",
     titleHighlight: "Waterproofing",
     aosDelay: "200",
@@ -135,6 +132,7 @@ export default function Page() {
       <PageTitle title="Foundation Repair" homeText="Home" homeUrl="/" />
 
       <ServiceDetailsContent
+        mainImage="/images/services/service/foundation_repair/1.webp"
         title="Professional Foundation Repair Services"
         subtitle="SERVICE"
         description1="Foundation problems can affect the safety and condition of a property if left unresolved. DMG Masonry provides foundation repair services to correct structural issues and reinforce weakened areas."
@@ -169,6 +167,7 @@ export default function Page() {
       />
 
       <AboutUsContent
+        image="/images/services/service/foundation_repair/8.webp"
         subtitle="WHY CHOOSE US"
         title="Protecting Structural Stability from the Foundation Up"
         description="Foundation damage can affect the safety and performance of a building if not repaired properly. Our team provides foundation repair services focused on structural stability."
@@ -190,6 +189,7 @@ export default function Page() {
 
       <div className="ptb-100">
         <ContactFormStyleTwo
+          image="/images/services/service/foundation_repair/9.webp"
           title="Restore Strength to Your Foundation"
           subtitle="REQUEST A QUOTE"
         />

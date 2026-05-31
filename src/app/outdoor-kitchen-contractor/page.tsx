@@ -53,7 +53,7 @@ const outdoorKitchenProcessSteps = [
   {
     id: "1",
     number: "1",
-    image: "/images/process/process1.jpg",
+    image: "/images/services/service/outdoor_kitchen/2.webp",
     title: "Assess The Space",
     text: "We review layout, needs, and available outdoor area before starting.",
     aosDelay: "100",
@@ -61,7 +61,7 @@ const outdoorKitchenProcessSteps = [
   {
     id: "2",
     number: "2",
-    image: "/images/process/process2.jpg",
+    image: "/images/services/service/outdoor_kitchen/3.webp",
     title: "Plan The Setup",
     text: "Cooking needs, materials, and design are prepared for a functional layout.",
     aosDelay: "200",
@@ -69,7 +69,7 @@ const outdoorKitchenProcessSteps = [
   {
     id: "3",
     number: "3",
-    image: "/images/process/process3.jpg",
+    image: "/images/services/service/outdoor_kitchen/4.webp",
     title: "Build The Kitchen",
     text: "We construct BBQ and cooking areas with durable materials and methods.",
     aosDelay: "300",
@@ -77,7 +77,7 @@ const outdoorKitchenProcessSteps = [
   {
     id: "4",
     number: "4",
-    image: "/images/process/process4.jpg",
+    image: "/images/services/service/outdoor_kitchen/5.webp",
     title: "Finalize The Details",
     text: "Finishing work ensures usability, clean look, and long-term performance.",
     aosDelay: "400",
@@ -85,18 +85,15 @@ const outdoorKitchenProcessSteps = [
 ];
 
 // Overview spesifik untuk Outdoor Kitchen
-import overviewImg1 from "../../../public/images/overview/overview3.jpg";
-import overviewImg2 from "../../../public/images/overview/overview4.jpg";
-
 const outdoorKitchenOverviewItems = [
   {
-    image: overviewImg1,
+    image: "/images/services/service/outdoor_kitchen/6.webp",
     titleNormal: "Built-In",
     titleHighlight: "BBQ Grills",
     aosDelay: "100"
   },
   {
-    image: overviewImg2,
+    image: "/images/services/service/outdoor_kitchen/7.webp",
     titleNormal: "Custom Stone",
     titleHighlight: "Counters",
     aosDelay: "200"
@@ -133,6 +130,7 @@ export default function Page() {
       />
 
       <ServiceDetailsContent
+        mainImage="/images/services/service/outdoor_kitchen/1.webp"
         title="Outdoor Kitchen BBQ Contractor"
         subtitle="SERVICE"
         description1="A professionally designed outdoor kitchen creates a space where cooking, dining, and gathering happen in one connected outdoor environment. Our outdoor kitchen contractor services create practical and timeless cooking spaces that complement your property."
@@ -167,6 +165,7 @@ export default function Page() {
       />
 
       <AboutUsContent
+        image="/images/services/service/outdoor_kitchen/8.webp"
         subtitle="WHY CHOOSE US"
         title="Outdoor Kitchens Designed for Living and Gathering"
         description="Outdoor kitchen spaces work best when planned around how people cook, gather, and spend time outside. Our approach focuses on creating functional layouts that support everyday use and social outdoor experiences."
@@ -188,6 +187,7 @@ export default function Page() {
 
       <div className="ptb-100">
         <ContactFormStyleTwo
+          image="/images/services/service/outdoor_kitchen/9.webp"
           title="Build Your Perfect Outdoor Kitchen"
           subtitle="REQUEST A QUOTE"
         />

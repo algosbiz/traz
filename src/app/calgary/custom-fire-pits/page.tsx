@@ -53,7 +53,7 @@ const firePitsProcessSteps = [
   {
     id: "1",
     number: "1",
-    image: "/images/process/process1.jpg",
+    image: "/images/services/service/custom_firepit/2.webp",
     title: "Review The Space",
     text: "We assess the layout and installation area before construction.",
     aosDelay: "100",
@@ -61,7 +61,7 @@ const firePitsProcessSteps = [
   {
     id: "2",
     number: "2",
-    image: "/images/process/process2.jpg",
+    image: "/images/services/service/custom_firepit/3.webp",
     title: "Plan The Design",
     text: "Materials, fuel type, and functionality are carefully planned.",
     aosDelay: "200",
@@ -69,7 +69,7 @@ const firePitsProcessSteps = [
   {
     id: "3",
     number: "3",
-    image: "/images/process/process3.jpg",
+    image: "/images/services/service/custom_firepit/4.webp",
     title: "Build The Fire Pit",
     text: "The structure is installed using durable masonry materials.",
     aosDelay: "300",
@@ -77,7 +77,7 @@ const firePitsProcessSteps = [
   {
     id: "4",
     number: "4",
-    image: "/images/process/process4.jpg",
+    image: "/images/services/service/custom_firepit/5.webp",
     title: "Complete The Finishing",
     text: "Final details support safe use and visual balance.",
     aosDelay: "400",
@@ -85,18 +85,15 @@ const firePitsProcessSteps = [
 ];
 
 // Overview spesifik untuk Custom Fire Pits
-import overviewImg1 from "../../../../public/images/overview/overview3.jpg";
-import overviewImg2 from "../../../../public/images/overview/overview4.jpg";
-
 const firePitsOverviewItems = [
   {
-    image: overviewImg1,
+    image: "/images/services/service/custom_firepit/6.webp",
     titleNormal: "Wood Burning",
     titleHighlight: "Fire Pits",
     aosDelay: "100"
   },
   {
-    image: overviewImg2,
+    image: "/images/services/service/custom_firepit/7.webp",
     titleNormal: "Gas & Propane",
     titleHighlight: "Fire Tables",
     aosDelay: "200"
@@ -129,6 +126,7 @@ export default function Page() {
       <PageTitle title="Custom Fire Pits" homeText="Home" homeUrl="/" />
 
       <ServiceDetailsContent
+        mainImage="/images/services/service/custom_firepit/1.webp"
         title="Custom-Made Fire Pit Services"
         subtitle="SERVICE"
         description1="A custom fire pit can transform an outdoor area into a more comfortable and inviting space for gathering and relaxation. Our fire pit services create durable outdoor features that combine practical function with timeless design for lasting enjoyment and visual appeal."
@@ -163,6 +161,7 @@ export default function Page() {
       />
 
       <AboutUsContent
+        image="/images/services/service/custom_firepit/8.webp"
         subtitle="WHY CHOOSE US"
         title="Outdoor Fire Features Built for Lasting Comfort"
         description="An expertly crafted fire pit can create a more inviting outdoor setting while adding practical value and lasting character to the property. Our custom fire pit solutions create safe and dependable gathering areas for outdoor living."
@@ -184,6 +183,7 @@ export default function Page() {
 
       <div className="ptb-100">
         <ContactFormStyleTwo
+          image="/images/services/service/custom_firepit/9.webp"
           title="Create Your Ideal Fire Pit"
           subtitle="REQUEST A QUOTE"
         />

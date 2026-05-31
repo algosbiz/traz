@@ -54,7 +54,7 @@ const pizzaOvenProcessSteps = [
   {
     id: "1",
     number: "1",
-    image: "/images/process/process1.jpg",
+    image: "/images/services/service/custome_pizza/2.webp",
     title: "Assess the Space",
     text: "We review your layout and cooking needs.",
     aosDelay: "100",
@@ -62,7 +62,7 @@ const pizzaOvenProcessSteps = [
   {
     id: "2",
     number: "2",
-    image: "/images/process/process2.jpg",
+    image: "/images/services/service/custome_pizza/3.webp",
     title: "Plan the Installation",
     text: "We create a tailored setup based on your space and requirements.",
     aosDelay: "200",
@@ -70,7 +70,7 @@ const pizzaOvenProcessSteps = [
   {
     id: "3",
     number: "3",
-    image: "/images/process/process3.jpg",
+    image: "/images/services/service/custome_pizza/4.webp",
     title: "Install the Oven",
     text: "We build with focus on structure, heat performance, and durability.",
     aosDelay: "300",
@@ -78,7 +78,7 @@ const pizzaOvenProcessSteps = [
   {
     id: "4",
     number: "4",
-    image: "/images/process/process4.jpg",
+    image: "/images/services/service/custome_pizza/5.webp",
     title: "Final Finish",
     text: "We ensure a clean and long-lasting result ready for outdoor use.",
     aosDelay: "400",
@@ -86,18 +86,15 @@ const pizzaOvenProcessSteps = [
 ];
 
 // Overview spesifik untuk Custom Pizza Oven
-import overviewImg1 from "../../../../public/images/overview/overview3.jpg";
-import overviewImg2 from "../../../../public/images/overview/overview4.jpg";
-
 const pizzaOvenOverviewItems = [
   {
-    image: overviewImg1,
+    image: "/images/services/service/custome_pizza/6.webp",
     titleNormal: "Wood-Fired",
     titleHighlight: "Pizza Ovens",
     aosDelay: "100",
   },
   {
-    image: overviewImg2,
+    image: "/images/services/service/custome_pizza/7.webp",
     titleNormal: "Custom Masonry",
     titleHighlight: "Oven Builds",
     aosDelay: "200",
@@ -132,6 +129,7 @@ export default function Page() {
       <PageTitle title="Custom Pizza Oven" homeText="Home" homeUrl="/" />
 
       <ServiceDetailsContent
+        mainImage="/images/services/service/custome_pizza/1.webp"
         title="Custom Pizza Oven Installation"
         subtitle="SERVICE"
         description1="Outdoor pizza ovens bring a different rhythm to outdoor living, where cooking, heat, and gathering come together in one space. We design and build custom pizza ovens that are made to perform reliably while fitting naturally into any outdoor environments."
@@ -166,6 +164,7 @@ export default function Page() {
       />
 
       <AboutUsContent
+        image="/images/services/service/custome_pizza/8.webp"
         subtitle="WHY CHOOSE US"
         title="Custom Pizza Ovens Built for Outdoor Living"
         description="A wood-fired pizza oven adds warmth, character, and functionality to any outdoor space. We create custom-built ovens designed for reliable cooking performance while complementing the overall style of your backyard area."
@@ -187,6 +186,7 @@ export default function Page() {
 
       <div className="ptb-100">
         <ContactFormStyleTwo
+          image="/images/services/service/custome_pizza/9.webp"
           title="Build Your Ideal Pizza Oven"
           subtitle="REQUEST A QUOTE"
         />

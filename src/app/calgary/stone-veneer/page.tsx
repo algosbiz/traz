@@ -53,7 +53,7 @@ const stoneVeneerProcessSteps = [
   {
     id: "1",
     number: "1",
-    image: "/images/process/process1.jpg",
+    image: "/images/services/service/stone_veneer/2.webp",
     title: "Evaluate The Project",
     text: "We review the space, surface conditions, and installation needs.",
     aosDelay: "100",
@@ -61,7 +61,7 @@ const stoneVeneerProcessSteps = [
   {
     id: "2",
     number: "2",
-    image: "/images/process/process2.jpg",
+    image: "/images/services/service/stone_veneer/3.webp",
     title: "Prepare Materials & Layout",
     text: "Stone selections, layout patterns, and installation details are prepared.",
     aosDelay: "200",
@@ -69,7 +69,7 @@ const stoneVeneerProcessSteps = [
   {
     id: "3",
     number: "3",
-    image: "/images/process/process3.jpg",
+    image: "/images/services/service/stone_veneer/4.webp",
     title: "Apply The Stone Veneer",
     text: "Each section is installed carefully for secure placement and appearance.",
     aosDelay: "300",
@@ -77,7 +77,7 @@ const stoneVeneerProcessSteps = [
   {
     id: "4",
     number: "4",
-    image: "/images/process/process4.jpg",
+    image: "/images/services/service/stone_veneer/5.webp",
     title: "Complete The Final Finish",
     text: "The surface is refined to ensure clean detailing and long-term durability.",
     aosDelay: "400",
@@ -85,18 +85,15 @@ const stoneVeneerProcessSteps = [
 ];
 
 // Overview spesifik untuk Stone Veneer
-import overviewImg1 from "../../../../public/images/overview/overview3.jpg";
-import overviewImg2 from "../../../../public/images/overview/overview4.jpg";
-
 const stoneVeneerOverviewItems = [
   {
-    image: overviewImg1,
+    image: "/images/services/service/stone_veneer/6.webp",
     titleNormal: "Natural Thin",
     titleHighlight: "Veneer",
     aosDelay: "100"
   },
   {
-    image: overviewImg2,
+    image: "/images/services/service/stone_veneer/7.webp",
     titleNormal: "Manufactured",
     titleHighlight: "Cultured Stone",
     aosDelay: "200"
@@ -129,6 +126,7 @@ export default function Page() {
       <PageTitle title="Stone Veneer" homeText="Home" homeUrl="/" />
 
       <ServiceDetailsContent
+        mainImage="/images/services/service/stone_veneer/1.webp"
         title="Stone Veneer Installation Calgary"
         subtitle="SERVICE"
         description1="Stone veneer installation is a masonry solution using a thin layer of natural or engineered stone for interior and exterior surfaces. At DMG Masonry, we provide stone veneer installation in Calgary focused on appearance, durability, and long-term performance."
@@ -166,6 +164,7 @@ export default function Page() {
       />
 
       <AboutUsContent
+        image="/images/services/service/stone_veneer/8.webp"
         subtitle="WHY CHOOSE US"
         title="Why Property Owners Choose Stone Veneer"
         description="Stone veneer offers the timeless look of natural stone with a lighter structure and efficient installation. We create surfaces that enhance visual appeal, durability, and property value."
@@ -187,6 +186,7 @@ export default function Page() {
 
       <div className="ptb-100">
         <ContactFormStyleTwo
+          image="/images/services/service/stone_veneer/9.webp"
           title="Enhance Your Property With Stone Veneer"
           subtitle="REQUEST A QUOTE"
         />

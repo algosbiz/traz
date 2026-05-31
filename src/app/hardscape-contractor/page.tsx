@@ -53,7 +53,7 @@ const hardscapeProcessSteps = [
   {
     id: "1",
     number: "1",
-    image: "/images/process/process1.jpg",
+    image: "/images/services/service/hardscape_constructor/2.webp",
     title: "Evaluate The Project Area",
     text: "We review site conditions and outdoor layout before construction begins.",
     aosDelay: "100",
@@ -61,7 +61,7 @@ const hardscapeProcessSteps = [
   {
     id: "2",
     number: "2",
-    image: "/images/process/process2.jpg",
+    image: "/images/services/service/hardscape_constructor/3.webp",
     title: "Prepare The Base",
     text: "Grading and foundation preparation help support long-term stability.",
     aosDelay: "200",
@@ -69,7 +69,7 @@ const hardscapeProcessSteps = [
   {
     id: "3",
     number: "3",
-    image: "/images/process/process3.jpg",
+    image: "/images/services/service/hardscape_constructor/4.webp",
     title: "Install The Features",
     text: "Outdoor surfaces and structures are built with durable materials.",
     aosDelay: "300",
@@ -77,7 +77,7 @@ const hardscapeProcessSteps = [
   {
     id: "4",
     number: "4",
-    image: "/images/process/process4.jpg",
+    image: "/images/services/service/hardscape_constructor/5.webp",
     title: "Refine The Final Result",
     text: "Finishing details improve functionality, appearance, and durability",
     aosDelay: "400",
@@ -85,18 +85,15 @@ const hardscapeProcessSteps = [
 ];
 
 // Overview spesifik untuk Hardscape Contractor
-import overviewImg1 from "../../../public/images/overview/overview3.jpg";
-import overviewImg2 from "../../../public/images/overview/overview4.jpg";
-
 const hardscapeOverviewItems = [
   {
-    image: overviewImg1,
+    image: "/images/services/service/hardscape_constructor/6.webp",
     titleNormal: "Custom Stone",
     titleHighlight: "Patios",
     aosDelay: "100"
   },
   {
-    image: overviewImg2,
+    image: "/images/services/service/hardscape_constructor/7.webp",
     titleNormal: "Structural",
     titleHighlight: "Retaining Walls",
     aosDelay: "200"
@@ -129,6 +126,7 @@ export default function Page() {
       <PageTitle title="Hardscape Contractor" homeText="Home" homeUrl="/" />
 
       <ServiceDetailsContent
+        mainImage="/images/services/service/hardscape_constructor/1.webp"
         title="Hardscape Contractor Services"
         subtitle="SERVICE"
         description1="A well-designed outdoor space should feel functional, durable, and naturally connected to the property. Our hardscape contractor services build patios, retaining walls, pathways, and outdoor surfaces designed for long-term performance with a timeless appearance."
@@ -163,6 +161,7 @@ export default function Page() {
       />
 
       <AboutUsContent
+        image="/images/services/service/hardscape_constructor/8.webp"
         subtitle="WHY CHOOSE US"
         title="Outdoor Spaces Built for Long-Term Use"
         description="Well-planned hardscape construction creates outdoor spaces that are functional, durable, and visually balanced. We careful planning and installation support long-term usability."
@@ -184,6 +183,7 @@ export default function Page() {
 
       <div className="ptb-100">
         <ContactFormStyleTwo
+          image="/images/services/service/hardscape_constructor/9.webp"
           title="Upgrade Your Outdoors"
           subtitle="REQUEST A QUOTE"
         />

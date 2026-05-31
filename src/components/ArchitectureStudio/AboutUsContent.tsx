@@ -18,6 +18,7 @@ interface AboutUsProps {
   videoUrl?: string;
   buttonText?: string;
   buttonLink?: string;
+  image?: any;
 }
 
 const AboutUsContent: React.FC<AboutUsProps> = ({
@@ -32,7 +33,8 @@ const AboutUsContent: React.FC<AboutUsProps> = ({
   ],
   videoUrl = "https://www.youtube.com/embed/sVi2pdF1aIc?si=wuP0-H9KuJnEk0Js",
   buttonText = "Know More About Us",
-  buttonLink = "/about-us"
+  buttonLink = "/about-us",
+  image = aboutImg
 }) => {
   // To open the lightbox change the value of the "toggler" prop.
   // const [toggler, setToggler] = useState<boolean>(false);
@@ -55,7 +57,7 @@ const AboutUsContent: React.FC<AboutUsProps> = ({
                 data-aos-duration="600"
                 data-aos-once="true"
               >
-                <Image src={aboutImg} alt="image" width={1052} height={1120} />
+                <Image src={image} alt="image" width={1052} height={1120} />
 
                 {/* <div className="wrap-video">
                   <Image src={videoCircleImg} alt="image" width={184} height={184} />

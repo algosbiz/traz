@@ -53,7 +53,7 @@ const patioStoneProcessSteps = [
   {
     id: "1",
     number: "1",
-    image: "/images/process/process1.jpg",
+    image: "/images/services/service/pation_stone/2.webp",
     title: "Assess The Site",
     text: "We evaluate ground conditions, drainage, and layout prior to installation.",
     aosDelay: "100",
@@ -61,7 +61,7 @@ const patioStoneProcessSteps = [
   {
     id: "2",
     number: "2",
-    image: "/images/process/process2.jpg",
+    image: "/images/services/service/pation_stone/3.webp",
     title: "Prepare The Base",
     text: "Proper grading and base work are completed to support a stable surface.",
     aosDelay: "200",
@@ -69,7 +69,7 @@ const patioStoneProcessSteps = [
   {
     id: "3",
     number: "3",
-    image: "/images/process/process3.jpg",
+    image: "/images/services/service/pation_stone/4.webp",
     title: "Install The Stones",
     text: "Each stone is placed with care to ensure alignment, level, and strength.",
     aosDelay: "300",
@@ -77,7 +77,7 @@ const patioStoneProcessSteps = [
   {
     id: "4",
     number: "4",
-    image: "/images/process/process4.jpg",
+    image: "/images/services/service/pation_stone/5.webp",
     title: "Complete The Surface",
     text: "Final adjustments are made to achieve a clean, durable, and even finish.",
     aosDelay: "400",
@@ -85,18 +85,15 @@ const patioStoneProcessSteps = [
 ];
 
 // Overview spesifik untuk Patio Stone Installation
-import overviewImg1 from "../../../public/images/overview/overview3.jpg";
-import overviewImg2 from "../../../public/images/overview/overview4.jpg";
-
 const patioStoneOverviewItems = [
   {
-    image: overviewImg1,
+    image: "/images/services/service/pation_stone/6.webp",
     titleNormal: "Natural Flagstone",
     titleHighlight: "Patios",
     aosDelay: "100",
   },
   {
-    image: overviewImg2,
+    image: "/images/services/service/pation_stone/7.webp",
     titleNormal: "Interlocking",
     titleHighlight: "Pavers",
     aosDelay: "200",
@@ -135,6 +132,7 @@ export default function Page() {
       />
 
       <ServiceDetailsContent
+        mainImage="/images/services/service/pation_stone/1.webp"
         title="Patio Stone Installation Services"
         subtitle="SERVICE"
         description1="A properly installed patio stone surface can improve both the function and appearance of an outdoor space. Our patio stone installation services at DMG Masonry focus on building stable, well-structured surfaces for everyday use and long-term durability in Calgary's climate."
@@ -169,6 +167,7 @@ export default function Page() {
       />
 
       <AboutUsContent
+        image="/images/services/service/pation_stone/8.webp"
         subtitle="WHY CHOOSE US"
         title="Patio Stone Installation Built for Long-Term Use"
         description="A properly installed patio stone surface helps create a functional, balanced outdoor space. At DMG Masonry, we build patio installations with strong structure and a clean, timeless finish for everyday use."
@@ -190,6 +189,7 @@ export default function Page() {
 
       <div className="ptb-100">
         <ContactFormStyleTwo
+          image="/images/services/service/pation_stone/9.webp"
           title="Design Your Perfect Patio"
           subtitle="REQUEST A QUOTE"
         />

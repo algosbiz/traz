@@ -53,7 +53,7 @@ const retainingWallProcessSteps = [
   {
     id: "1",
     number: "1",
-    image: "/images/process/process1.jpg",
+    image: "/images/services/service/retaining_wall/2.webp",
     title: "Evaluate The Site",
     text: "We assess grading, drainage, and soil conditions before installation begins.",
     aosDelay: "100",
@@ -61,7 +61,7 @@ const retainingWallProcessSteps = [
   {
     id: "2",
     number: "2",
-    image: "/images/process/process2.jpg",
+    image: "/images/services/service/retaining_wall/3.webp",
     title: "Plan The Wall Structure",
     text: "Layout, materials, and wall support requirements are carefully prepared.",
     aosDelay: "200",
@@ -69,7 +69,7 @@ const retainingWallProcessSteps = [
   {
     id: "3",
     number: "3",
-    image: "/images/process/process3.jpg",
+    image: "/images/services/service/retaining_wall/4.webp",
     title: "Build The Retaining Wall",
     text: "The wall is constructed using durable materials and proper installation methods.",
     aosDelay: "300",
@@ -77,7 +77,7 @@ const retainingWallProcessSteps = [
   {
     id: "4",
     number: "4",
-    image: "/images/process/process4.jpg",
+    image: "/images/services/service/retaining_wall/5.webp",
     title: "Complete The Finishing",
     text: "Final adjustments help ensure structural support and a clean overall appearance.",
     aosDelay: "400",
@@ -85,18 +85,15 @@ const retainingWallProcessSteps = [
 ];
 
 // Overview spesifik untuk Retaining Wall
-import overviewImg1 from "../../../../public/images/overview/overview3.jpg";
-import overviewImg2 from "../../../../public/images/overview/overview4.jpg";
-
 const retainingWallOverviewItems = [
   {
-    image: overviewImg1,
+    image: "/images/services/service/retaining_wall/6.webp",
     titleNormal: "Segmental Block",
     titleHighlight: "Retaining Walls",
     aosDelay: "100",
   },
   {
-    image: overviewImg2,
+    image: "/images/services/service/retaining_wall/7.webp",
     titleNormal: "Natural Boulder",
     titleHighlight: "Terraced Slopes",
     aosDelay: "200",
@@ -135,6 +132,7 @@ export default function Page() {
       />
 
       <ServiceDetailsContent
+        mainImage="/images/services/service/retaining_wall/1.webp"
         title="Retaining Wall Installation Calgary"
         subtitle="SERVICE"
         description1="Retaining walls help manage sloped landscapes while improving the structure and appearance of an outdoor space. At DMG Masonry, we build retaining walls designed for dependable support, proper drainage, and a clean finish that fits naturally with the property."
@@ -169,6 +167,7 @@ export default function Page() {
       />
 
       <AboutUsContent
+        image="/images/services/service/retaining_wall/8.webp"
         subtitle="WHY CHOOSE US"
         title="Built to Support Sloped Outdoor Spaces"
         description="Retaining walls help support uneven ground and improve outdoor usability. We build retaining wall systems with dependable performance and a clean appearance for residential and commercial properties."
@@ -190,6 +189,7 @@ export default function Page() {
 
       <div className="ptb-100">
         <ContactFormStyleTwo
+          image="/images/services/service/retaining_wall/9.webp"
           title="Start Your Retaining Wall Project"
           subtitle="REQUEST A QUOTE"
         />

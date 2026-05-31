@@ -53,7 +53,7 @@ const chimneyProcessSteps = [
   {
     id: "1",
     number: "1",
-    image: "/images/process/process1.jpg",
+    image: "/images/services/service/chimney_repair/2.webp",
     title: "Inspect The Chimney",
     text: "We assess cracks, damage, and overall chimney condition.",
     aosDelay: "100",
@@ -61,7 +61,7 @@ const chimneyProcessSteps = [
   {
     id: "2",
     number: "2",
-    image: "/images/process/process2.jpg",
+    image: "/images/services/service/chimney_repair/3.webp",
     title: "Plan The Repair",
     text: "Repair solutions are prepared based on the structure and damage.",
     aosDelay: "200",
@@ -69,7 +69,7 @@ const chimneyProcessSteps = [
   {
     id: "3",
     number: "3",
-    image: "/images/process/process3.jpg",
+    image: "/images/services/service/chimney_repair/4.webp",
     title: "Strengthen The Structure",
     text: "Damaged brick and mortar are restored with durable materials.",
     aosDelay: "300",
@@ -77,7 +77,7 @@ const chimneyProcessSteps = [
   {
     id: "4",
     number: "4",
-    image: "/images/process/process4.jpg",
+    image: "/images/services/service/chimney_repair/5.webp",
     title: "Seal & Protect",
     text: "Repairs help improve safety, function, and long-term performance.",
     aosDelay: "400",
@@ -85,18 +85,15 @@ const chimneyProcessSteps = [
 ];
 
 // Overview spesifik untuk Chimney Repair
-import overviewImg1 from "../../../../public/images/overview/overview3.jpg";
-import overviewImg2 from "../../../../public/images/overview/overview4.jpg";
-
 const chimneyOverviewItems = [
   {
-    image: overviewImg1,
+    image: "/images/services/service/chimney_repair/6.webp",
     titleNormal: "Crown & Cap",
     titleHighlight: "Pouring",
     aosDelay: "100"
   },
   {
-    image: overviewImg2,
+    image: "/images/services/service/chimney_repair/7.webp",
     titleNormal: "Tuckpointing",
     titleHighlight: "Restoration",
     aosDelay: "200"
@@ -129,6 +126,7 @@ export default function Page() {
       <PageTitle title="Chimney Repair" homeText="Home" homeUrl="/" />
 
       <ServiceDetailsContent
+        mainImage="/images/services/service/chimney_repair/1.webp"
         title="Chimney Repair Services in Calgary"
         subtitle="SERVICE"
         description1="Chimneys are constantly exposed to moisture, temperature changes, and weather conditions that can weaken masonry over time. Our chimney repair services help restore safe performance, reliable function, and long-term durability for any property."
@@ -163,6 +161,7 @@ export default function Page() {
       />
 
       <AboutUsContent
+        image="/images/services/service/chimney_repair/8.webp"
         subtitle="WHY CHOOSE US"
         title="Protecting the Long-Term Performance of Your Chimney"
         description="Chimney damage can affect the safety and condition of a masonry structure over time. Our repair approach helps restore structural reliability and protect the chimney from further deterioration."
@@ -184,6 +183,7 @@ export default function Page() {
 
       <div className="ptb-100">
         <ContactFormStyleTwo
+          image="/images/services/service/chimney_repair/9.webp"
           title="Chimney Repair Solutions"
           subtitle="REQUEST A QUOTE"
         />

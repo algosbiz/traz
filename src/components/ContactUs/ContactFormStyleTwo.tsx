@@ -17,11 +17,13 @@ interface FormData {
 interface ContactFormProps {
   title?: string;
   subtitle?: string;
+  image?: any;
 }
 
 const ContactFormStyleTwo: React.FC<ContactFormProps> = ({
   title = "Contact Our Team to Discuss Your Masonry Project",
   subtitle = "CONTACT",
+  image = contactImg,
 }) => {
   const [formData, setFormData] = useState<FormData>({
     name: "",
@@ -105,7 +107,7 @@ const ContactFormStyleTwo: React.FC<ContactFormProps> = ({
             >
               <div className="contact-image">
                 <Image
-                  src={contactImg}
+                  src={image}
                   alt="contact"
                   width={700}
                   height={1012}

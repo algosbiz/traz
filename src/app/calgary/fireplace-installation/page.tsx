@@ -53,7 +53,7 @@ const fireplaceProcessSteps = [
   {
     id: "1",
     number: "1",
-    image: "/images/process/process1.jpg",
+    image: "/images/services/service/fireplace_installation/2.webp",
     title: "Assess the Outdoor Space",
     text: "We review the layout, surrounding features, and overall fireplace goals.",
     aosDelay: "100",
@@ -61,7 +61,7 @@ const fireplaceProcessSteps = [
   {
     id: "2",
     number: "2",
-    image: "/images/process/process2.jpg",
+    image: "/images/services/service/fireplace_installation/3.webp",
     title: "Plan the Installation",
     text: "We develop a setup that balances function, safety, and visual flow.",
     aosDelay: "200",
@@ -69,7 +69,7 @@ const fireplaceProcessSteps = [
   {
     id: "3",
     number: "3",
-    image: "/images/process/process3.jpg",
+    image: "/images/services/service/fireplace_installation/4.webp",
     title: "Build the Fireplace",
     text: "Materials are installed with durability and performance in mind.",
     aosDelay: "300",
@@ -77,7 +77,7 @@ const fireplaceProcessSteps = [
   {
     id: "4",
     number: "4",
-    image: "/images/process/process4.jpg",
+    image: "/images/services/service/fireplace_installation/5.webp",
     title: "Complete the Finish",
     text: "Final details are refined for a clean lasting result.",
     aosDelay: "400",
@@ -85,18 +85,15 @@ const fireplaceProcessSteps = [
 ];
 
 // Overview spesifik untuk Fireplace Installation
-import overviewImg1 from "../../../../public/images/overview/overview3.jpg";
-import overviewImg2 from "../../../../public/images/overview/overview4.jpg";
-
 const fireplaceOverviewItems = [
   {
-    image: overviewImg1,
+    image: "/images/services/service/fireplace_installation/6.webp",
     titleNormal: "Indoor Luxury",
     titleHighlight: "Fireplaces",
     aosDelay: "100",
   },
   {
-    image: overviewImg2,
+    image: "/images/services/service/fireplace_installation/7.webp",
     titleNormal: "Patio Outdoor",
     titleHighlight: "Fireplaces",
     aosDelay: "200",
@@ -135,6 +132,7 @@ export default function Page() {
       />
 
       <ServiceDetailsContent
+        mainImage="/images/services/service/fireplace_installation/1.webp"
         title="Outdoor Fireplace Installation Calgary"
         subtitle="SERVICE"
         description1="At DMG Masonry, we create custom fireplace installations that add warmth, comfort, and visual character to residential and commercial properties while providing dependable performance and lasting durability."
@@ -169,6 +167,7 @@ export default function Page() {
       />
 
       <AboutUsContent
+        image="/images/services/service/fireplace_installation/8.webp"
         subtitle="WHY CHOOSE US"
         title="Designed for Comfort & Year-Round Enjoyment"
         description="We build custom outdoor fireplaces that add warmth, comfort, and visual character to outdoor living spaces while supporting long-term outdoor use while complementing the style of the property."
@@ -190,6 +189,7 @@ export default function Page() {
 
       <div className="ptb-100">
         <ContactFormStyleTwo
+          image="/images/services/service/fireplace_installation/9.webp"
           title="Let's Build Your Ideal Outdoor Fireplace"
           subtitle="REQUEST A QUOTE"
         />
