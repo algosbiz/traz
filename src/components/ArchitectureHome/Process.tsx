@@ -7,7 +7,7 @@ const processData = [
   {
     id: "1",
     number: "1",
-    image: "/images/process/process1.jpg",
+    image: "/images/main-banner/home/10.webp",
     title: "Project Consultation",
     text: "Reviewing your property and masonry needs.",
     aosDelay: "100",
@@ -15,7 +15,7 @@ const processData = [
   {
     id: "2",
     number: "2",
-    image: "/images/process/process2.jpg",
+    image: "/images/main-banner/home/11.webp",
     title: "Site & Material Planning ",
     text: "Coordinating materials and project preparation.",
     aosDelay: "200",
@@ -23,7 +23,7 @@ const processData = [
   {
     id: "3",
     number: "3",
-    image: "/images/process/process3.jpg",
+    image: "/images/main-banner/home/12.webp",
     title: "Professional Installation",
     text: "Delivering durable masonry with skilled workmanship.",
     aosDelay: "300",
@@ -31,7 +31,7 @@ const processData = [
   {
     id: "4",
     number: "4",
-    image: "/images/process/process4.jpg",
+    image: "/images/main-banner/home/13.webp",
     title: "Final Quality Review",
     text: "Ensuring lasting quality and clean results.",
     aosDelay: "400",

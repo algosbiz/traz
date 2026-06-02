@@ -3,8 +3,8 @@
 import React from "react";
 import Image from "next/image";
 
-import overviewImg1 from "../../../public/images/overview/overview1.jpg";
-import overviewImg2 from "../../../public/images/overview/overview2.jpg";
+import overviewImg1 from "../../../public/images/main-banner/home/4.webp";
+import overviewImg2 from "../../../public/images/main-banner/home/5.webp";
 
 const Overview: React.FC = () => {
   return (

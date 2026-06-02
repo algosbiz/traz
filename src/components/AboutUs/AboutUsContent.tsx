@@ -4,9 +4,9 @@ import React, { useState } from "react";
 import FsLightbox from "fslightbox-react";
 import Image from "next/image";
 
-import aboutImg from "../../../public/images/about/about5.jpg";
+import aboutImg from "../../../public/images/about/new/1.webp";
 import arrowIcon from "../../../public/images/about/arrow2.svg";
-import videoThumb from "../../../public/images/about/about4.png";
+import videoThumb from "../../../public/images/about/new/2.webp";
 import videoCircleImg from "../../../public/images/about/wrap.png";
 import textShape from "../../../public/images/about/archi-text2.png";
 

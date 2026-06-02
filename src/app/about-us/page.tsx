@@ -40,7 +40,7 @@ export default function Page() {
       </div> */}
 
       <div className="pb-100 pt-100">
-        <ContactFormStyleTwo />
+        <ContactFormStyleTwo image="/images/about/new/3.webp" />
       </div>
 
       <Footer />

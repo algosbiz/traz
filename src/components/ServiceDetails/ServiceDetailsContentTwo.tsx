@@ -1,16 +1,26 @@
 "use client";
 
-import React from "react";
+import React, { useRef, useState } from "react";
 import Image from "next/image";
 
-import serviceImg from "../../../public/images/services-details/services-details1.jpg";
 import arrowIcon from "../../../public/images/services-details/arrow.svg";
-// You should move the generated image to public/images/ or use the absolute path if allowed
-// For now, I'll use a placeholder or assume the user will provide the path. 
-// But I can use the generated image path for now to show it works.
-import sidebarImg from "/public/images/sidebar-service.png";
+import sidebarImg from "../../../public/images/main-banner/home/9.webp";
+
+// Same video used on the top banner (position no. 8 is a video, not an image)
+const bannerVideoUrl =
+  "https://dmgmasonry.ca/wp-content/uploads/2025/06/suite_home_renos-720p.mp4";
 
 const ServiceDetailsContentTwo: React.FC = () => {
+  const videoRef = useRef<HTMLVideoElement>(null);
+  const [isMuted, setIsMuted] = useState(true);
+
+  const toggleMute = () => {
+    const video = videoRef.current;
+    if (!video) return;
+    video.muted = !video.muted;
+    setIsMuted(video.muted);
+  };
+
   return (
     <>
       <div className="services-details-area pt-100 pb-100">
@@ -32,18 +42,48 @@ const ServiceDetailsContentTwo: React.FC = () => {
           <div className="row justify-content-left">
             <div className="col-lg-8 col-md-12">
               <div className="services-details-desc">
-                <Image
-                  src={serviceImg}
-                  alt="service"
-                  width={1400}
-                  height={645}
-                  style={{
-                    width: '100%',
-                    height: '550px',
-                    objectFit: 'cover',
-                    borderRadius: '10px'
-                  }}
-                />
+                <div style={{ position: 'relative' }}>
+                  <video
+                    ref={videoRef}
+                    src={bannerVideoUrl}
+                    autoPlay
+                    muted
+                    loop
+                    playsInline
+                    preload="auto"
+                    style={{
+                      width: '100%',
+                      height: '550px',
+                      objectFit: 'cover',
+                      borderRadius: '10px',
+                      display: 'block'
+                    }}
+                  />
+                  <button
+                    type="button"
+                    onClick={toggleMute}
+                    aria-label={isMuted ? 'Unmute video' : 'Mute video'}
+                    style={{
+                      position: 'absolute',
+                      bottom: '20px',
+                      right: '20px',
+                      width: '48px',
+                      height: '48px',
+                      borderRadius: '50%',
+                      border: 'none',
+                      background: 'rgba(0, 0, 0, 0.55)',
+                      color: '#fff',
+                      display: 'flex',
+                      alignItems: 'center',
+                      justifyContent: 'center',
+                      cursor: 'pointer',
+                      fontSize: '20px',
+                      zIndex: 2
+                    }}
+                  >
+                    <i className={isMuted ? 'ri-volume-mute-line' : 'ri-volume-up-line'}></i>
+                  </button>
+                </div>
                 <p>
                   We works with masonry because it provides long-term durability, reliable structural strength, and timeless performance across residential and commercial projects. Its natural resistance to weather, moisture, fire, and everyday wear makes masonry a dependable solution designed to last for years.
 

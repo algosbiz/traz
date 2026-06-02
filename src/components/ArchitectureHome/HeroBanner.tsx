@@ -77,7 +77,7 @@ const HeroBanner: React.FC = () => {
 
         <div
           className="main-banner-image"
-          style={{ backgroundImage: `url(/images/main-banner/banner1.png)` }}
+          style={{ backgroundImage: `url(/images/main-banner/home/1.png)` }}
           data-aos="fade-up"
           data-aos-delay="400"
           data-aos-duration="600"

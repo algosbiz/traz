@@ -4,7 +4,7 @@ import React, { useState, ChangeEvent, FormEvent } from "react";
 import ContactInfo from "./ContactInfo";
 import Image from "next/image";
 
-import contactImg from "../../../public/images/contact/contact.png";
+import contactImg from "../../../public/images/main-banner/home/14.webp";
 import shape from "../../../public/images/contact/shape.png";
 
 interface FormData {
