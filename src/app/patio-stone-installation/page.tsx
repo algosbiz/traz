@@ -120,6 +120,15 @@ const patioStoneFeedbacks = [
   },
 ];
 
+import { buildMetadata } from "@/lib/seo";
+
+export const metadata = buildMetadata({
+  title: "Patio Paving Calgary — Expert Stone Installation",
+  description:
+    "Expert stone paving and patio installation with tailored patterns, drainage solutions, and quality materials to enhance outdoor living spaces.",
+  path: "/patio-stone-installation/",
+});
+
 export default function Page() {
   return (
     <>

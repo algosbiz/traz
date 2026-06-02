@@ -118,6 +118,15 @@ const outdoorKitchenFeedbacks = [
   }
 ];
 
+import { buildMetadata } from "@/lib/seo";
+
+export const metadata = buildMetadata({
+  title: "Outdoor Kitchen Services in Calgary — Custom Builds",
+  description:
+    "Custom outdoor kitchen services including countertops, grills, pizza ovens, and stonework, delivered by experienced Calgary contractors.",
+  path: "/outdoor-kitchen-contractor/",
+});
+
 export default function Page() {
   return (
     <>

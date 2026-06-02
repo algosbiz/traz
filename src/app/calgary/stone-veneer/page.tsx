@@ -118,6 +118,15 @@ const stoneVeneerFeedbacks = [
   }
 ];
 
+import { buildMetadata } from "@/lib/seo";
+
+export const metadata = buildMetadata({
+  title: "Stone Veneer Calgary | Stones Veneer Installation",
+  description:
+    "High-quality stone veneer Calgary services to enhance your property’s look. Expert Calgary stones veneer installation with durable and elegant finishes.",
+  path: "/calgary/stone-veneer/",
+});
+
 export default function Page() {
   return (
     <>

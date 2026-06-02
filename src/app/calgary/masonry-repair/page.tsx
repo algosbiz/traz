@@ -118,6 +118,15 @@ const masonryFeedbacks = [
   }
 ];
 
+import { buildMetadata } from "@/lib/seo";
+
+export const metadata = buildMetadata({
+  title: "Masonry Repair Calgary — Restore Brick & Stone",
+  description:
+    "Masonry repair Calgary: expert brick, stone, and chimney restoration, structural patching, and weatherproofing to extend lifespan; contact DMG Masonry today",
+  path: "/calgary/masonry-repair/",
+});
+
 export default function Page() {
   return (
     <>

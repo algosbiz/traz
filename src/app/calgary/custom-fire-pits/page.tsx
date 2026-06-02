@@ -118,6 +118,15 @@ const firePitsFeedbacks = [
   }
 ];
 
+import { buildMetadata } from "@/lib/seo";
+
+export const metadata = buildMetadata({
+  title: "Fire Pits Calgary | Built to Fit Your Outdoor Space",
+  description:
+    "Custom-made fire pits in Calgary to elevate your outdoor space. We ensure durable and stylish fire pits that deliver great value for you.",
+  path: "/calgary/custom-fire-pits/",
+});
+
 export default function Page() {
   return (
     <>

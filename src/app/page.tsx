@@ -15,6 +15,15 @@ import Footer from "@/components/Layout/Footer";
 import ServiceDetailsContent from "@/components/ServiceDetails/ServiceDetailsContent";
 import ServiceDetailsContentTwo from "@/components/ServiceDetails/ServiceDetailsContentTwo";
 import FaqsContent from "@/components/Faqs/FaqsContent";
+import { buildMetadata } from "@/lib/seo";
+
+export const metadata = buildMetadata({
+  title: "DMG Masonry Contractor Service Calgary for Custom Designs",
+  description:
+    "Transform your space with our masonry contractor service in Calgary. We specialize in durable repairs and unique designs.",
+  path: "/",
+});
+
 export default function Home() {
   const masonryRepairFaqs = [
     {

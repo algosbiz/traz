@@ -120,6 +120,15 @@ const retainingWallFeedbacks = [
   },
 ];
 
+import { buildMetadata } from "@/lib/seo";
+
+export const metadata = buildMetadata({
+  title: "Calgary Retaining Walls — Build, Repair, Reinforce",
+  description:
+    "Professional retaining wall construction and repair delivering structural stability, drainage solutions, and long-lasting finishes; contact DMG Masonry for estimates",
+  path: "/calgary/retaining-wall-construction/",
+});
+
 export default function Page() {
   return (
     <>

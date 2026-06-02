@@ -118,6 +118,15 @@ const chimneyFeedbacks = [
   }
 ];
 
+import { buildMetadata } from "@/lib/seo";
+
+export const metadata = buildMetadata({
+  title: "Chimney Repair Calgary: Keep Your Home Safe",
+  description:
+    "Discover reliable chimney repair services in Calgary. Our team provides thorough inspections and effective solutions for your chimney.",
+  path: "/calgary/chimney-repair/",
+});
+
 export default function Page() {
   return (
     <>

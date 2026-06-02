@@ -5,6 +5,15 @@ import ServicesCard from "@/components/Services/ServicesCard";
 import Partner from "@/components/Common/Partner";
 import Footer from "@/components/Layout/Footer";
 
+import { buildMetadata } from "@/lib/seo";
+
+export const metadata = buildMetadata({
+  title: "Services — DMG Masonry | Expert Masonry Solutions",
+  description:
+    "Full masonry services in Calgary: repairs, restorations, fireplaces, outdoor kitchens, and retaining walls delivered with skilled craftsmanship and reliable timelines.",
+  path: "/services/",
+});
+
 export default function Page() {
   return (
     <>

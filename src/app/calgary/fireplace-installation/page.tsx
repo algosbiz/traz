@@ -120,6 +120,15 @@ const fireplaceFeedbacks = [
   },
 ];
 
+import { buildMetadata } from "@/lib/seo";
+
+export const metadata = buildMetadata({
+  title: "Outdoor Fireplace Calgary | Fireplace Installation Experts",
+  description:
+    "Expert fireplace service in Calgary providing customized installations, safety upgrades, and preventive maintenance to boost performance and comfort.",
+  path: "/calgary/fireplace-installation/",
+});
+
 export default function Page() {
   return (
     <>

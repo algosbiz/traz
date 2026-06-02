@@ -121,6 +121,15 @@ const pizzaOvenFeedbacks = [
   },
 ];
 
+import { buildMetadata } from "@/lib/seo";
+
+export const metadata = buildMetadata({
+  title: "Pizza Oven Calgary | Outdoor & Commercial Oven Solutions",
+  description:
+    "Premium outdoor pizza ovens designed for authentic wood-fired flavor, easy maintenance, expert construction for residential or commercial projects.",
+  path: "/calgary/custom-pizza-oven/",
+});
+
 export default function Page() {
   return (
     <>

@@ -10,6 +10,15 @@ import Partner from "@/components/Common/Partner";
 import ContactFormStyleTwo from "@/components/ContactUs/ContactFormStyleTwo";
 import Footer from "@/components/Layout/Footer";
 
+import { buildMetadata } from "@/lib/seo";
+
+export const metadata = buildMetadata({
+  title: "ABOUT DMG Masonry Calgary: Quality Craftsmanship Matters - DMG Masonry",
+  description:
+    "Explore the craftsmanship of DMG Masonry Calgary, where outdoor beauty meets durability with our expert masonry services.",
+  path: "/about-us/",
+});
+
 export default function Page() {
   return (
     <>
