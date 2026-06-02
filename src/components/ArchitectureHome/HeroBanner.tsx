@@ -75,13 +75,10 @@ const HeroBanner: React.FC = () => {
           </div>
         </div>
 
+        {/* LCP element: no AOS fade so it paints immediately; uses real WebP */}
         <div
           className="main-banner-image"
-          style={{ backgroundImage: `url(/images/main-banner/home/1.png)` }}
-          data-aos="fade-up"
-          data-aos-delay="400"
-          data-aos-duration="600"
-          data-aos-once="false"
+          style={{ backgroundImage: `url(/images/main-banner/home/1.webp)` }}
         ></div>
 
         <div className="main-banner-wrap-shape">

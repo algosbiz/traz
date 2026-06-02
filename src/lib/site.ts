@@ -12,7 +12,7 @@ export const siteConfig = {
   url: rawUrl.replace(/\/+$/, ""),
   locale: "en_US",
   // Default social-share image (used for og:image / twitter:image).
-  ogImage: "/images/main-banner/home/1.png",
+  ogImage: "/images/main-banner/home/1.webp",
   telephone: "+1-403-619-8727",
   email: "will@dmgmasonry.ca",
   sameAs: [

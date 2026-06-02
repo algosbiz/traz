@@ -64,6 +64,15 @@ export default function Home() {
   ];
   return (
     <>
+      {/* Preload the LCP hero background so the browser fetches it early
+          (CSS background-images are not seen by the preload scanner). */}
+      <link
+        rel="preload"
+        as="image"
+        href="/images/main-banner/home/1.webp"
+        type="image/webp"
+      />
+
       <Navbar />
 
       <HeroBanner />
