@@ -36,7 +36,12 @@ const CoreFeatures: React.FC = () => {
                         </span>
                       </div>
                       <div className="wrap">
-                        <Image src={featureImg} alt="image" width={161} height={231} />
+                        <Image
+                          src={featureImg}
+                          alt="Brick masonry outdoor fireplace built by DMG Masonry in Calgary"
+                          width={161}
+                          height={231}
+                        />
                       </div>
                     </div>
                   </div>

@@ -210,7 +210,8 @@ const ContactForm: React.FC = () => {
         </div>
 
         <div className="contact-shape1">
-          <Image src={shape} alt="image" width={116} height={82} />
+          {/* Decorative shape — empty alt */}
+          <Image src={shape} alt="" width={116} height={82} />
         </div>
       </div>
     </>

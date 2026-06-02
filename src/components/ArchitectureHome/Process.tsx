@@ -71,7 +71,7 @@ const Process: React.FC = () => {
                       <div className="process-image">
                         <Image
                           src={value.image}
-                          alt="image"
+                          alt={value.title}
                           width={540}
                           height={310}
                         />

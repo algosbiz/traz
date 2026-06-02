@@ -99,7 +99,7 @@ const ClientsFeedbackSlider: React.FC<ClientsFeedbackProps> = ({
                       <div className="image">
                         <Image
                           src={value.image}
-                          alt="image"
+                          alt={value.name}
                           width={70}
                           height={70}
                         />

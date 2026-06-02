@@ -47,7 +47,12 @@ const AboutUsContent: React.FC = () => {
                 <div className="row justify-content-center">
                   <div className="col-lg-5">
                     <div className="inner-image">
-                      <Image src={aboutImg2} alt="about" width={690} height={590} />
+                      <Image
+                        src={aboutImg2}
+                        alt="Residential masonry construction with concrete foundation walls by DMG Masonry in Calgary"
+                        width={690}
+                        height={590}
+                      />
                     </div>
                   </div>
 
@@ -89,7 +94,8 @@ const AboutUsContent: React.FC = () => {
         </div>
 
         <div className="about-text-wrap">
-          <Image src={archiTextImg} alt="image" width={766} height={157} />
+          {/* Decorative blueprint lettering — empty alt so it's skipped by screen readers */}
+          <Image src={archiTextImg} alt="" width={766} height={157} />
         </div>
       </div>
     </>

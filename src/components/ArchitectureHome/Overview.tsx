@@ -21,7 +21,12 @@ const Overview: React.FC = () => {
             >
               <div className="overview-card">
                 <div className="image">
-                  <Image src={overviewImg1} alt="overview" width={1320} height={780} />
+                  <Image
+                    src={overviewImg1}
+                    alt="Mason laying concrete blocks with mortar for an outdoor kitchen build in Calgary"
+                    width={1320}
+                    height={780}
+                  />
                 </div>
                 <h3>
                   Outdor Kitchen <span>Contractor</span>
@@ -38,7 +43,12 @@ const Overview: React.FC = () => {
             >
               <div className="overview-card">
                 <div className="image">
-                  <Image src={overviewImg2} alt="overview" width={1320} height={780} />
+                  <Image
+                    src={overviewImg2}
+                    alt="Concrete block wall construction for a hardscape project in Calgary"
+                    width={1320}
+                    height={780}
+                  />
                 </div>
                 <h3>
                   Hardscape <span>Contractor</span>
