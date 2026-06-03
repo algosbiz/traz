@@ -11,6 +11,7 @@ import type { Metadata } from "next";
 import { Jost } from "next/font/google";
 
 import { siteConfig } from "@/lib/site";
+import { headers } from "next/headers";
 
 const jost = Jost({ subsets: ["latin"] });
 
@@ -18,28 +19,42 @@ const defaultTitle = "DMG Masonry — Masonry Contractor in Calgary";
 const defaultDescription =
   "Transform your space with our masonry contractor service in Calgary. We specialize in durable repairs and unique designs.";
 
-export const metadata: Metadata = {
-  metadataBase: new URL(siteConfig.url),
-  title: defaultTitle,
-  description: defaultDescription,
-  robots:
-    "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
-  openGraph: {
-    type: "website",
-    locale: siteConfig.locale,
-    url: "/",
-    siteName: siteConfig.name,
+const INDEX_ROBOTS =
+  "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1";
+
+// Index only on the canonical domain. On a *.vercel.app host (preview builds or
+// the production deployment's default Vercel URL) emit noindex so those URLs
+// don't compete with dmgmasonry.ca in search results.
+//
+// NOTE: reading headers() opts the whole site into dynamic (per-request)
+// rendering — the accepted trade-off for a host-aware <meta robots> tag. The
+// middleware (src/middleware.ts) also sets X-Robots-Tag as an HTTP backstop.
+export function generateMetadata(): Metadata {
+  const host = headers().get("host") ?? "";
+  const noindex = host.endsWith(".vercel.app");
+
+  return {
+    metadataBase: new URL(siteConfig.url),
     title: defaultTitle,
     description: defaultDescription,
-    images: [{ url: siteConfig.ogImage }],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: defaultTitle,
-    description: defaultDescription,
-    images: [siteConfig.ogImage],
-  },
-};
+    robots: noindex ? "noindex, nofollow" : INDEX_ROBOTS,
+    openGraph: {
+      type: "website",
+      locale: siteConfig.locale,
+      url: "/",
+      siteName: siteConfig.name,
+      title: defaultTitle,
+      description: defaultDescription,
+      images: [{ url: siteConfig.ogImage }],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: defaultTitle,
+      description: defaultDescription,
+      images: [siteConfig.ogImage],
+    },
+  };
+}
 
 import { ThemeProvider } from "@/components/Layout/ThemeProvider";
 
