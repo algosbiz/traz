@@ -1,8 +1,9 @@
 "use client";
 
-import React, { useState, ChangeEvent, FormEvent } from "react";
+import React, { useState, useRef, ChangeEvent, FormEvent } from "react";
 import ContactInfo from "./ContactInfo";
 import Image from "next/image";
+import Turnstile, { TurnstileHandle } from "@/components/Common/Turnstile";
 
 import contactImg from "../../../public/images/main-banner/home/14.webp";
 import shape from "../../../public/images/contact/shape.png";
@@ -25,6 +26,8 @@ const ContactForm: React.FC = () => {
   const [loading, setLoading] = useState(false);
   const [success, setSuccess] = useState("");
   const [error, setError] = useState("");
+  const [token, setToken] = useState("");
+  const turnstileRef = useRef<TurnstileHandle>(null);
 
   const handleChange = (
     e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
@@ -56,13 +59,18 @@ const ContactForm: React.FC = () => {
       return;
     }
 
+    if (!token) {
+      setError("Please complete the bot verification below.");
+      return;
+    }
+
     setLoading(true);
 
     try {
-      const response = await fetch("/api/contact", {
+      const response = await fetch("/api/contact/", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(formData),
+        body: JSON.stringify({ ...formData, turnstileToken: token }),
       });
 
       const result = await response.json();
@@ -77,6 +85,9 @@ const ContactForm: React.FC = () => {
       setError("Network error. Please check your connection and try again.");
     } finally {
       setLoading(false);
+      // Turnstile tokens are single-use — reset for the next submission.
+      turnstileRef.current?.reset();
+      setToken("");
     }
   };
 
@@ -187,6 +198,15 @@ const ContactForm: React.FC = () => {
                           {success}
                         </div>
                       )}
+
+                      <div className="form-group">
+                        <Turnstile
+                          ref={turnstileRef}
+                          onVerify={setToken}
+                          onExpire={() => setToken("")}
+                          onError={() => setToken("")}
+                        />
+                      </div>
 
                       <button
                         type="submit"
