@@ -1470,6 +1470,9 @@ Services Area CSS
   position: relative;
   z-index: 1;
   overflow: hidden;
+  height: calc(100% - 25px);
+  display: flex;
+  flex-direction: column;
 }
 
 .services-item .icon {
@@ -1499,6 +1502,7 @@ Services Area CSS
 .services-item p {
   color: var(--textColor);
   margin-bottom: 25px;
+  flex-grow: 1;
 }
 
 .services-item::before {
