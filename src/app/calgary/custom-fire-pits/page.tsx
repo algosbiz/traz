@@ -105,16 +105,23 @@ const firePitsFeedbacks = [
   {
     id: "1",
     feedbackText: "Our new natural stone fire pit is the highlight of our backyard. We spend every weekend out there now. Amazing work!",
-    image: "/images/client/user1.png",
-    name: "John & Mary D.",
-    designation: "Calgary Homeowners",
+    image: "/images/client/custom_firepits/18.png",
+    name: "John D.",
+    designation: "Calgary Homeowner",
   },
   {
     id: "2",
     feedbackText: "The gas fire pit they built matches our patio perfectly. Highly professional crew.",
-    image: "/images/client/user2.png",
-    name: "Steven M.",
+    image: "/images/client/custom_firepits/19.png",
+    name: "Stephanie M.",
     designation: "Homeowner",
+  },
+  {
+    id: "3",
+    feedbackText: "We use our new fire pit almost every evening. The stone construction is solid and it has become the centerpiece of our outdoor space.",
+    image: "/images/client/custom_firepits/20.png",
+    name: "Rachel B.",
+    designation: "Calgary Homeowner",
   }
 ];
 

@@ -106,7 +106,7 @@ const fireplaceFeedbacks = [
     id: "1",
     feedbackText:
       "They ripped out our old 1980s brick fireplace and installed a stunning floor-to-ceiling natural stone wall with a gas insert. Truly unbelievable transformation.",
-    image: "/images/client/user1.png",
+    image: "/images/client/fireplace_installation/38.png",
     name: "Jessica P.",
     designation: "Calgary Homeowner",
   },
@@ -114,9 +114,16 @@ const fireplaceFeedbacks = [
     id: "2",
     feedbackText:
       "The custom wood mantel over the cultured stone looks amazing. Professional service and very clean worksite.",
-    image: "/images/client/user2.png",
-    name: "Brian C.",
+    image: "/images/client/fireplace_installation/39.png",
+    name: "Briana C.",
     designation: "Interior Designer",
+  },
+  {
+    id: "3",
+    feedbackText: "Our new stone fireplace has become the heart of the living room. The installation was clean and the finished result exceeded our expectations.",
+    image: "/images/client/fireplace_installation/40.png",
+    name: "Lucas M.",
+    designation: "Calgary Homeowner",
   },
 ];
 

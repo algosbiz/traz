@@ -106,17 +106,24 @@ const retainingWallFeedbacks = [
     id: "1",
     feedbackText:
       "The team built a massive 3-tier retaining wall in our backyard. It looks stunning and has completely solved our erosion problem. True professionals.",
-    image: "/images/client/user1.png",
-    name: "James W.",
+    image: "/images/client/retaining_wall_construction/34.png",
+    name: "Jenna W.",
     designation: "Calgary Homeowner",
   },
   {
     id: "2",
     feedbackText:
       "I was extremely impressed with their focus on proper drainage and engineering. The wall is rock solid.",
-    image: "/images/client/user2.png",
+    image: "/images/client/retaining_wall_construction/35.png",
     name: "Karen S.",
     designation: "Property Developer",
+  },
+  {
+    id: "3",
+    feedbackText: "Our sloped yard was unusable until they installed a tiered retaining wall. The drainage work is excellent and everything has held up beautifully through winter.",
+    image: "/images/client/retaining_wall_construction/36.png",
+    name: "Daniel M.",
+    designation: "Homeowner",
   },
 ];
 

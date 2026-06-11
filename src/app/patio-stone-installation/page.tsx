@@ -106,7 +106,7 @@ const patioStoneFeedbacks = [
     id: "1",
     feedbackText:
       "Our new interlocking paver patio is the absolute perfect addition to our backyard. The installation was incredibly fast and the grading is flawless.",
-    image: "/images/client/user1.png",
+    image: "/images/client/patio_stone_installation/26.png",
     name: "Amanda R.",
     designation: "Calgary Homeowner",
   },
@@ -114,8 +114,15 @@ const patioStoneFeedbacks = [
     id: "2",
     feedbackText:
       "They transformed our muddy backyard into a stunning stone courtyard. Highly recommend their hardscaping services.",
-    image: "/images/client/user2.png",
+    image: "/images/client/patio_stone_installation/27.png",
     name: "Chris L.",
+    designation: "Homeowner",
+  },
+  {
+    id: "3",
+    feedbackText: "The flagstone patio they laid is level, durable, and absolutely beautiful. The crew was punctual and left the site spotless every day.",
+    image: "/images/client/patio_stone_installation/28.png",
+    name: "Greg T.",
     designation: "Homeowner",
   },
 ];

@@ -105,16 +105,23 @@ const hardscapeFeedbacks = [
   {
     id: "1",
     feedbackText: "They completely overhauled our backyard. We went from a boring grass slope to a beautiful two-tiered patio with a fire pit. Exceptional hardscaping work!",
-    image: "/images/client/user1.png",
+    image: "/images/client/hardscape_contractor/10.png",
     name: "Michael B.",
     designation: "Calgary Homeowner",
   },
   {
     id: "2",
     feedbackText: "The team's attention to detail on our interlocking driveway and front walkway was amazing. It totally upgraded our home's curb appeal.",
-    image: "/images/client/user2.png",
-    name: "Sarah V.",
+    image: "/images/client/hardscape_contractor/11.png",
+    name: "Shaun V.",
     designation: "Homeowner",
+  },
+  {
+    id: "3",
+    feedbackText: "From the paver patio to the retaining walls, every detail was done right. Our backyard is now the favorite hangout spot for the whole family.",
+    image: "/images/client/hardscape_contractor/12.png",
+    name: "Kayla D.",
+    designation: "Calgary Homeowner",
   }
 ];
 

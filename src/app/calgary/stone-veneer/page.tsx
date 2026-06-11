@@ -105,16 +105,23 @@ const stoneVeneerFeedbacks = [
   {
     id: "1",
     feedbackText: "The stone veneer transformed the entire look of our home exterior. The team was professional, clean, and detail-oriented.",
-    image: "/images/client/user1.png",
+    image: "/images/client/stone_veneer/6.png",
     name: "Michael R.",
     designation: "Calgary Homeowner",
   },
   {
     id: "2",
     feedbackText: "Our indoor fireplace accent wall looks stunning thanks to the cultured stone installation. Extremely happy with the results!",
-    image: "/images/client/user2.png",
-    name: "Jessica T.",
+    image: "/images/client/stone_veneer/7.png",
+    name: "Jason T.",
     designation: "Interior Designer",
+  },
+  {
+    id: "3",
+    feedbackText: "The natural stone veneer on our entryway completely elevated the curb appeal. Neighbors keep asking who did the work. Top-notch craftsmanship.",
+    image: "/images/client/stone_veneer/8.png",
+    name: "Andrea P.",
+    designation: "Calgary Homeowner",
   }
 ];
 

@@ -11,6 +11,7 @@ import Process from "@/components/ArchitectureHome/Process";
 import ClientsFeedbackSlider from "@/components/ArchitectureHome/ClientsFeedbackSlider";
 import BlogPost from "@/components/ArchitectureHome/BlogPost";
 import ContactForm from "@/components/ContactUs/ContactForm";
+import BeholdFeed from "@/components/Common/BeholdFeed";
 import Footer from "@/components/Layout/Footer";
 import ServiceDetailsContent from "@/components/ServiceDetails/ServiceDetailsContent";
 import ServiceDetailsContentTwo from "@/components/ServiceDetails/ServiceDetailsContentTwo";
@@ -102,6 +103,10 @@ export default function Home() {
         title="Frequently Asked Questions"
         subtitle="FAQ"
       />
+      {/* Instagram wall via Behold — tempel Feed ID kamu pada prop `feedId`
+          (atau set DEFAULT_FEED_ID di dalam komponennya). */}
+      <BeholdFeed feedId="" />
+
       <ContactForm />
 
       <Footer />
