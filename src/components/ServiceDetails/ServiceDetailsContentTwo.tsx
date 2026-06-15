@@ -42,7 +42,7 @@ const ServiceDetailsContentTwo: React.FC = () => {
             </div>
           </div>
 
-          <div className="row justify-content-left pb-100">
+          <div className="row justify-content-left ">
             <div className="col-lg-8 col-md-12">
               <div className="services-details-desc">
                 <div style={{ position: "relative" }}>
