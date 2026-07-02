@@ -105,7 +105,7 @@ export default function Home() {
       />
       {/* Instagram wall via Behold — tempel Feed ID kamu pada prop `feedId`
           (atau set DEFAULT_FEED_ID di dalam komponennya). */}
-      <BeholdFeed feedId="" />
+      {/* <BeholdFeed feedId="" /> */}
 
       <ContactForm />
 
