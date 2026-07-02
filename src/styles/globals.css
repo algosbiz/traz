@@ -28,5 +28,8 @@
 /* Global styles */
 @import "../../public/css/style.css";
 
+/* Local overrides / fixes */
+@import "../../public/css/form-fixes.css";
+
 /* Responsive overrides - MUST be last to ensure proper cascade */
 @import "../../public/css/responsive.css";

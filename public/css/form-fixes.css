@@ -1,0 +1,15 @@
+/*
+ * Form control fixes
+ *
+ * Native <select> option lists are drawn by the OS/browser on a white
+ * background regardless of the page theme. In dark mode the form's inherited
+ * light text becomes invisible on that white popup, so force readable dark
+ * text on the options. Applies to both themes (dark text on white reads fine
+ * in light mode too).
+ */
+.form-select option,
+.form-control option,
+select option {
+  color: #1a1a2e;
+  background-color: #ffffff;
+}

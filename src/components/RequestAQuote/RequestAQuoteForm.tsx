@@ -1,8 +1,9 @@
 "use client";
 
-import React, { useState, ChangeEvent, FormEvent } from "react";
+import React, { useState, useRef, ChangeEvent, FormEvent } from "react";
 import ContactInfo from "../ContactUs/ContactInfo";
 import Image from "next/image";
+import Turnstile, { TurnstileHandle } from "@/components/Common/Turnstile";
 
 import contactImg from "../../../public/images/contact/contact2.png";
 
@@ -15,19 +16,51 @@ interface QuoteFormData {
   message: string;
 }
 
+// Project categories mirror DMG's masonry services (see src/lib/servicesData.ts)
+// plus an "Other" catch-all.
+const CATEGORY_OPTIONS = [
+  "Masonry Repair",
+  "Stone Veneer",
+  "Chimney Repair",
+  "Fireplace Installation",
+  "Retaining Wall Construction",
+  "Foundation Repair",
+  "Hardscaping",
+  "Outdoor Kitchen",
+  "Patio Stone Installation",
+  "Custom Fire Pit",
+  "Custom Pizza Oven",
+  "Other",
+];
+
+// Calgary + surrounding service areas. Adjust to your actual coverage.
+const LOCATION_OPTIONS = [
+  "Calgary",
+  "Airdrie",
+  "Cochrane",
+  "Chestermere",
+  "Okotoks",
+  "Other",
+];
+
+const DEFAULT_CATEGORY = CATEGORY_OPTIONS[0];
+const DEFAULT_LOCATION = LOCATION_OPTIONS[0];
+
 const RequestAQuoteForm: React.FC = () => {
   const [formData, setFormData] = useState<QuoteFormData>({
     name: "",
     email: "",
     phone: "",
-    category: "Interior Design",
-    location: "Montreal",
+    category: DEFAULT_CATEGORY,
+    location: DEFAULT_LOCATION,
     message: "",
   });
 
   const [loading, setLoading] = useState(false);
   const [success, setSuccess] = useState("");
   const [error, setError] = useState("");
+  const [token, setToken] = useState("");
+  const turnstileRef = useRef<TurnstileHandle>(null);
 
   const handleChange = (
     e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
@@ -57,13 +90,18 @@ const RequestAQuoteForm: React.FC = () => {
       return;
     }
 
+    if (!token) {
+      setError("Please complete the bot verification below.");
+      return;
+    }
+
     setLoading(true);
 
     try {
-      const response = await fetch("/api/quote", {
+      const response = await fetch("/api/quote/", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(formData),
+        body: JSON.stringify({ ...formData, turnstileToken: token }),
       });
 
       const result = await response.json();
@@ -74,8 +112,8 @@ const RequestAQuoteForm: React.FC = () => {
           name: "",
           email: "",
           phone: "",
-          category: "Interior Design",
-          location: "Montreal",
+          category: DEFAULT_CATEGORY,
+          location: DEFAULT_LOCATION,
           message: "",
         });
       } else {
@@ -85,6 +123,9 @@ const RequestAQuoteForm: React.FC = () => {
       setError("Network error. Please check your connection and try again.");
     } finally {
       setLoading(false);
+      // Turnstile tokens are single-use — reset for the next submission.
+      turnstileRef.current?.reset();
+      setToken("");
     }
   };
 
@@ -159,16 +200,18 @@ const RequestAQuoteForm: React.FC = () => {
                           CHOOSE PROJECT CATEGORY<span>*</span>
                         </label>
 
-                        <select 
+                        <select
                           name="category"
                           value={formData.category}
                           onChange={handleChange}
                           className="form-select form-control"
                           disabled={loading}
                         >
-                          <option value="Interior Design">Interior Design</option>
-                          <option value="Urban Design">Urban Design</option>
-                          <option value="Architecture">Architecture</option>
+                          {CATEGORY_OPTIONS.map((opt) => (
+                            <option key={opt} value={opt}>
+                              {opt}
+                            </option>
+                          ))}
                         </select>
                       </div>
 
@@ -177,17 +220,18 @@ const RequestAQuoteForm: React.FC = () => {
                           CHOOSE PROJECT LOCATION<span>*</span>
                         </label>
 
-                        <select 
+                        <select
                           name="location"
                           value={formData.location}
                           onChange={handleChange}
                           className="form-select form-control"
                           disabled={loading}
                         >
-                          <option value="Montreal">Montreal</option>
-                          <option value="Exterior">Exterior</option>
-                          <option value="Industrial">Industrial</option>
-                          <option value="3D Modelling">3D Modelling</option>
+                          {LOCATION_OPTIONS.map((opt) => (
+                            <option key={opt} value={opt}>
+                              {opt}
+                            </option>
+                          ))}
                         </select>
                       </div>
 
@@ -217,8 +261,17 @@ const RequestAQuoteForm: React.FC = () => {
                         </div>
                       )}
 
-                      <button 
-                        type="submit" 
+                      <div className="form-group">
+                        <Turnstile
+                          ref={turnstileRef}
+                          onVerify={setToken}
+                          onExpire={() => setToken("")}
+                          onError={() => setToken("")}
+                        />
+                      </div>
+
+                      <button
+                        type="submit"
                         className="default-btn"
                         disabled={loading}
                         style={{ opacity: loading ? 0.7 : 1, cursor: loading ? "not-allowed" : "pointer" }}

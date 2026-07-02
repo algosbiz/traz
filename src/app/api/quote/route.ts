@@ -1,12 +1,14 @@
 import { NextRequest, NextResponse } from "next/server";
 import { sendQuoteNotification, sendQuoteAutoReply } from "@/lib/sendEmail";
+import { verifyTurnstile } from "@/lib/turnstile";
 
 export const runtime = "edge";
 
 export async function POST(request: NextRequest) {
   try {
     const body = await request.json();
-    const { name, email, phone, category, location, message } = body;
+    const { name, email, phone, category, location, message, turnstileToken } =
+      body;
 
     // Validate required fields
     if (!name || !email || !phone || !category || !location || !message) {
@@ -22,6 +24,22 @@ export async function POST(request: NextRequest) {
       return NextResponse.json(
         { success: false, message: "Please provide a valid email address." },
         { status: 400 }
+      );
+    }
+
+    // Anti-bot: verify the Cloudflare Turnstile token before sending anything.
+    const ip =
+      request.headers.get("CF-Connecting-IP") ||
+      request.headers.get("x-forwarded-for")?.split(",")[0]?.trim() ||
+      undefined;
+    const isHuman = await verifyTurnstile(turnstileToken, ip);
+    if (!isHuman) {
+      return NextResponse.json(
+        {
+          success: false,
+          message: "Bot verification failed. Please refresh the page and try again.",
+        },
+        { status: 403 }
       );
     }
 
