@@ -12,12 +12,10 @@ const ElevatingInteriorsTransforming: React.FC = () => {
 
   return (
     <>
-      {/* Use here youtube Embed video link */}
       <FsLightbox
         toggler={toggler}
-        sources={[
-          "https://www.youtube.com/embed/sVi2pdF1aIc?si=wuP0-H9KuJnEk0Js",
-        ]}
+        sources={["/video/video.mp4"]}
+        types={["video"]}
       />
 
       <div className="elevating-area ptb-100">

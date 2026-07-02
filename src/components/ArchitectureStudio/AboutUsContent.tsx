@@ -31,7 +31,7 @@ const AboutUsContent: React.FC<AboutUsProps> = ({
     "A client-centric approach for an architectural company",
     "Sustainable Design Practices"
   ],
-  videoUrl = "https://www.youtube.com/embed/sVi2pdF1aIc?si=wuP0-H9KuJnEk0Js",
+  videoUrl = "/video/video.mp4",
   buttonText = "Know More About Us",
   buttonLink = "/about-us",
   image = aboutImg

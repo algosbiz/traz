@@ -6,9 +6,8 @@ import Image from "next/image";
 import arrowIcon from "../../../public/images/services-details/arrow.svg";
 import sidebarImg from "../../../public/images/main-banner/home/9.webp";
 
-// Same video used on the top banner (position no. 8 is a video, not an image)
-const bannerVideoUrl =
-  "https://dmgmasonry.ca/wp-content/uploads/2025/06/suite_home_renos-720p.mp4";
+// Same local video used on the top banner.
+const bannerVideoUrl = "/video/video.mp4";
 
 const ServiceDetailsContentTwo: React.FC = () => {
   const videoRef = useRef<HTMLVideoElement>(null);

@@ -33,12 +33,9 @@ const HeroBanner: React.FC = () => {
 
   return (
     <>
-      {/* Use here youtube Embed video link */}
       <FsLightbox
         toggler={toggler}
-        sources={[
-          "https://dmgmasonry.ca/wp-content/uploads/2025/06/suite_home_renos-720p.mp4",
-        ]}
+        sources={["/video/video.mp4"]}
         types={["video"]}
       />
 
