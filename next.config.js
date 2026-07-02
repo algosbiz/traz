@@ -26,6 +26,16 @@ const nextConfig = {
       { key: "Vercel-CDN-Cache-Control", value: "public, s-maxage=31536000" },
     ];
 
+    // Static assets served straight from /public (images, video, fonts).
+    // Vercel's default for these is `max-age=0, must-revalidate`, so neither
+    // CDN caches them — force a long CDN TTL. Browser TTL stays modest because
+    // the filenames aren't content-hashed; the CDN copies are purged on deploy.
+    const mediaCache = [
+      { key: "Cache-Control", value: "public, max-age=86400" },
+      { key: "CDN-Cache-Control", value: "public, s-maxage=31536000" },
+      { key: "Vercel-CDN-Cache-Control", value: "public, s-maxage=31536000" },
+    ];
+
     return [
       {
         // HTML pages only: exclude /api, /_next and anything with a file
@@ -39,6 +49,10 @@ const nextConfig = {
       // freshness on redeploy is handled by the Cloudflare purge workflow.
       { source: "/sitemap.xml", headers: cdnCache },
       { source: "/robots.txt", headers: cdnCache },
+      // Static media served straight from /public — see mediaCache above.
+      { source: "/images/:path*", headers: mediaCache },
+      { source: "/video/:path*", headers: mediaCache },
+      { source: "/fonts/:path*", headers: mediaCache },
       {
         // Form endpoints must never be cached by any layer.
         source: "/api/:path*",
