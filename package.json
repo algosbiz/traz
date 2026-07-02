@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "purge:cf": "node scripts/purge-cloudflare.mjs"
   },
   "dependencies": {
     "@types/aos": "^3.0.7",

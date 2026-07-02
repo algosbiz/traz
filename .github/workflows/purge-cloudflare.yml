@@ -1,0 +1,33 @@
+name: Purge Cloudflare cache on deploy
+
+# Vercel updates a GitHub "deployment" status when a deploy goes live. We react
+# to the Production deployment reaching state=success and purge the Cloudflare
+# edge (layer 1) so visitors stop being served stale HTML that Cloudflare cached
+# in front of Vercel (layer 2).
+#
+# NOTE: `deployment_status` workflows only run from the repository's DEFAULT
+# branch (main), so this file must be committed to main to take effect.
+on:
+  deployment_status:
+
+jobs:
+  purge:
+    # Only a successful *production* deploy — ignore preview deploys and the
+    # intermediate pending/failure states. Vercel names the env "Production"
+    # (both casings guarded just in case).
+    if: >-
+      github.event.deployment_status.state == 'success' &&
+      (github.event.deployment_status.environment == 'Production' ||
+       github.event.deployment_status.environment == 'production')
+    runs-on: ubuntu-latest
+    steps:
+      - name: Purge Cloudflare cache (purge_everything)
+        run: |
+          resp=$(curl -sS -X POST \
+            "https://api.cloudflare.com/client/v4/zones/${{ secrets.CLOUDFLARE_ZONE_ID }}/purge_cache" \
+            -H "Authorization: Bearer ${{ secrets.CLOUDFLARE_API_TOKEN }}" \
+            -H "Content-Type: application/json" \
+            --data '{"purge_everything":true}')
+          echo "$resp"
+          echo "$resp" | grep -q '"success":true' \
+            || { echo "::error::Cloudflare purge failed"; exit 1; }
