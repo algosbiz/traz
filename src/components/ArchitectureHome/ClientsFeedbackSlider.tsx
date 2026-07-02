@@ -96,17 +96,8 @@ const ClientsFeedbackSlider: React.FC<ClientsFeedbackProps> = ({
                     <p>{value.feedbackText}</p>
 
                     <div className="client-information">
-                      <div className="image">
-                        <Image
-                          src={value.image}
-                          alt={value.name}
-                          width={70}
-                          height={70}
-                        />
-                      </div>
-                      <div className="title">
+                      <div className="title mt-0">
                         <h3>{value.name}</h3>
-                        <span>{value.designation}</span>
                       </div>
                     </div>
                   </div>

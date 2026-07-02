@@ -95,18 +95,9 @@ const ClientsFeedbackSlider: React.FC = () => {
 
                       <p>{value.feedbackText}</p>
 
-                      <div className="info d-flex align-items-center">
-                        <div className="image">
-                          <Image
-                            src={value.image}
-                            alt="image"
-                            width={70}
-                            height={70}
-                          />
-                        </div>
-                        <div className="title">
+                      <div className="info">
+                        <div className="title ms-0">
                           <h3>{value.name}</h3>
-                          <span>{value.designation}</span>
                         </div>
                       </div>
                     </div>
