@@ -105,25 +105,14 @@ const patioStoneFeedbacks = [
   {
     id: "1",
     feedbackText:
-      "Our new interlocking paver patio is the absolute perfect addition to our backyard. The installation was incredibly fast and the grading is flawless.",
-    image: "/images/client/patio_stone_installation/26.png",
-    name: "Amanda R.",
-    designation: "Calgary Homeowner",
+      "We originally contacted DMG Masonry about repairing our patio, but after talking through the options, we decided on a new installation instead. Looking back, it was definitely the right decision for our space.",
+    name: "Nicole H.",
   },
   {
     id: "2",
     feedbackText:
-      "They transformed our muddy backyard into a stunning stone courtyard. Highly recommend their hardscaping services.",
-    image: "/images/client/patio_stone_installation/27.png",
-    name: "Chris L.",
-    designation: "Homeowner",
-  },
-  {
-    id: "3",
-    feedbackText: "The flagstone patio they laid is level, durable, and absolutely beautiful. The crew was punctual and left the site spotless every day.",
-    image: "/images/client/patio_stone_installation/28.png",
-    name: "Greg T.",
-    designation: "Homeowner",
+      "Our backyard finally feels finished. The patio connects everything together, thank you DMG Masonry.",
+    name: "Melissa W.",
   },
 ];
 

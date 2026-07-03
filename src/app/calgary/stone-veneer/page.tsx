@@ -104,25 +104,28 @@ const stoneVeneerOverviewItems = [
 const stoneVeneerFeedbacks = [
   {
     id: "1",
-    feedbackText: "The stone veneer transformed the entire look of our home exterior. The team was professional, clean, and detail-oriented.",
-    image: "/images/client/stone_veneer/6.png",
-    name: "Michael R.",
-    designation: "Calgary Homeowner",
+    feedbackText:
+      "We had stone veneer installed around our fireplace and it completely changed the space. The installation was neat and everything lined up nicely.",
+    name: "Olivia S.",
   },
   {
     id: "2",
-    feedbackText: "Our indoor fireplace accent wall looks stunning thanks to the cultured stone installation. Extremely happy with the results!",
-    image: "/images/client/stone_veneer/7.png",
-    name: "Jason T.",
-    designation: "Interior Designer",
+    feedbackText:
+      "DMG Masonry helped us choose a stone that suited the style of our home instead of just picking what looked good on its own. Really happy with the result.",
+    name: "Melissa K.",
   },
   {
     id: "3",
-    feedbackText: "The natural stone veneer on our entryway completely elevated the curb appeal. Neighbors keep asking who did the work. Top-notch craftsmanship.",
-    image: "/images/client/stone_veneer/8.png",
-    name: "Andrea P.",
-    designation: "Calgary Homeowner",
-  }
+    feedbackText:
+      "Our old fireplace looked pretty dated, so we decided to update it with stone veneer. The room feels much warmer and more inviting now.",
+    name: "Brian T.",
+  },
+  {
+    id: "4",
+    feedbackText:
+      "I liked that they took the time to explain the different options before we made a decision. It made choosing the right finish a lot easier than we expected.",
+    name: "Ashley M.",
+  },
 ];
 
 import { buildMetadata } from "@/lib/seo";

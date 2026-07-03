@@ -19,6 +19,22 @@ export const metadata = buildMetadata({
   path: "/about-us/",
 });
 
+// Testimonial klien spesifik untuk About Us
+const aboutFeedbacks = [
+  {
+    id: "1",
+    feedbackText:
+      "I reached out to a few contractors before deciding, and I'm glad I chose DMG Masonry. They were easy to deal with, explained everything clearly, and the work turned out just the way we wanted.",
+    name: "Mark H.",
+  },
+  {
+    id: "2",
+    feedbackText:
+      "You can tell they care about doing things properly. We're really happy with how everything came together.",
+    name: "Laura P.",
+  },
+];
+
 export default function Page() {
   return (
     <>
@@ -36,9 +52,9 @@ export default function Page() {
 
       <QuoteText />
 
-      {/* <div className="ptb-100">
-        <ClientsFeedbackSlider />
-      </div> */}
+      <div className="ptb-100">
+        <ClientsFeedbackSlider feedbacks={aboutFeedbacks} />
+      </div>
 
       {/* <TextSlide /> */}
 

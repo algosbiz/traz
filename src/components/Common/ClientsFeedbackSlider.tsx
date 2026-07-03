@@ -42,7 +42,19 @@ const clientsFeedbackData = [
   },
 ];
 
-const ClientsFeedbackSlider: React.FC = () => {
+interface ClientsFeedbackProps {
+  feedbacks?: {
+    id: string;
+    feedbackText: string;
+    name: string;
+    image?: string;
+    designation?: string;
+  }[];
+}
+
+const ClientsFeedbackSlider: React.FC<ClientsFeedbackProps> = ({
+  feedbacks = clientsFeedbackData,
+}) => {
   return (
     <>
       <div className="client-wrap-area pb-75">
@@ -53,7 +65,7 @@ const ClientsFeedbackSlider: React.FC = () => {
           </div>
         </div>
 
-        {clientsFeedbackData && (
+        {feedbacks && (
           <div className="container-fluid">
             <Swiper
               spaceBetween={25}
@@ -85,8 +97,8 @@ const ClientsFeedbackSlider: React.FC = () => {
               modules={[Autoplay, Pagination]}
               className="client-swiper"
             >
-              {clientsFeedbackData &&
-                clientsFeedbackData.map((value, i) => (
+              {feedbacks &&
+                feedbacks.map((value, i) => (
                   <SwiperSlide key={i} style={{ paddingBottom: '30px' }}>
                     <div className="client-wrap-card">
                       <div className="icon">

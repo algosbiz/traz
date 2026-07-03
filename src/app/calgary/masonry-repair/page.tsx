@@ -104,25 +104,22 @@ const masonryOverviewItems = [
 const masonryFeedbacks = [
   {
     id: "1",
-    feedbackText: "They completely restored our 1950s brick chimney. The color matching was so perfect you can't even tell where the new mortar begins. Outstanding craftsmanship!",
-    image: "/images/client/masonry_repair/2.png",
-    name: "Diana H.",
-    designation: "Calgary Homeowner",
+    feedbackText:
+      "The damaged area had been bothering us for a while because it was becoming more noticeable each year. After the repairs, you wouldn't know there had ever been an issue.",
+    name: "Eric T.",
   },
   {
     id: "2",
-    feedbackText: "Professional from start to finish. They fixed our retaining wall quickly and left the yard spotless. I highly recommend DMG Masonry for any stone work.",
-    image: "/images/client/masonry_repair/3.png",
-    name: "Daniel Brooks",
-    designation: "Property Manager",
+    feedbackText:
+      "I wasn't sure if the cracks needed to be repaired right away, so I had them come take a look. They explained what was worth fixing now and what could wait. That kind of honesty was really appreciated.",
+    name: "Ryan K.",
   },
   {
     id: "3",
-    feedbackText: "The brickwork on our front porch had been crumbling for years. DMG rebuilt it to match the original perfectly and it looks brand new. Couldn't be happier.",
-    image: "/images/client/masonry_repair/4.png",
-    name: "Megan P.",
-    designation: "Calgary Homeowner",
-  }
+    feedbackText:
+      "Our brickwork was starting to show its age, especially around a few spots near the front of the house. The repairs kept the original look of the house without drawing attention to the repaired areas.",
+    name: "Emily W.",
+  },
 ];
 
 import { buildMetadata } from "@/lib/seo";

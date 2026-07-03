@@ -25,6 +25,27 @@ export const metadata = buildMetadata({
   path: "/",
 });
 
+const homeFeedbacks = [
+  {
+    id: "1",
+    feedbackText:
+      "We had a few areas that needed repair, and everything was taken care of without any hassle. The team was easy to work with, kept us updated, and the finished work matched the original brick really well.",
+    name: "Michael R.",
+  },
+  {
+    id: "2",
+    feedbackText:
+      "The whole process was smooth from start to finish. They showed up on time, answered all of our questions, and made sure everything was cleaned up before they left.",
+    name: "Lisa M.",
+  },
+  {
+    id: "3",
+    feedbackText:
+      "I appreciated how straightforward everything was. The quote was clear and the work turned out exactly as discussed.",
+    name: "Kevin B.",
+  },
+];
+
 export default function Home() {
   const masonryRepairFaqs = [
     {
@@ -95,7 +116,7 @@ export default function Home() {
 
       <Process />
 
-      <ClientsFeedbackSlider />
+      <ClientsFeedbackSlider feedbacks={homeFeedbacks} />
 
       {/* <BlogPost /> */}
       <FaqsContent

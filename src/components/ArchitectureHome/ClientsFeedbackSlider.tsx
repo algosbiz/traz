@@ -12,9 +12,9 @@ import shape2 from "../../../public/images/client/shape2.png";
 export interface FeedbackItem {
   id: string;
   feedbackText: string;
-  image: string;
   name: string;
-  designation: string;
+  image?: string;
+  designation?: string;
 }
 
 const defaultClientsFeedbackData: FeedbackItem[] = [

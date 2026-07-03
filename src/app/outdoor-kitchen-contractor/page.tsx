@@ -104,25 +104,16 @@ const outdoorKitchenOverviewItems = [
 const outdoorKitchenFeedbacks = [
   {
     id: "1",
-    feedbackText: "They built us a massive L-shaped outdoor kitchen with a built-in grill and mini-fridge. It's completely changed how we entertain guests in the summer!",
-    image: "/images/client/outdoor_kitchen_contractor/22.png",
-    name: "Mark T.",
-    designation: "Calgary Homeowner",
+    feedbackText:
+      "We didn't have a huge backyard, so I wasn't sure an outdoor kitchen would work. The layout ended up making great use of the space without feeling crowded.",
+    name: "Jason W.",
   },
   {
     id: "2",
-    feedbackText: "The stonework on the bar island is impeccable. The team was fantastic to work with from the initial 3D design all the way to the final cleanup.",
-    image: "/images/client/outdoor_kitchen_contractor/23.png",
-    name: "Stephen W.",
-    designation: "Homeowner",
+    feedbackText:
+      "Summer dinners have become a lot more fun since the project was finished. Instead of running back and forth between the house and the patio, everything we need is right outside.",
+    name: "Olivia C.",
   },
-  {
-    id: "3",
-    feedbackText: "The built-in grill station and stone countertop they created are stunning. Cooking outdoors has never been easier or looked this good.",
-    image: "/images/client/outdoor_kitchen_contractor/24.png",
-    name: "Danielle R.",
-    designation: "Homeowner",
-  }
 ];
 
 import { buildMetadata } from "@/lib/seo";

@@ -109,25 +109,14 @@ const foundationFeedbacks = [
   {
     id: "1",
     feedbackText:
-      "They stopped the leak in our basement wall completely with their epoxy injection system. The basement has been bone dry ever since the heavy rains.",
-    image: "/images/client/foundation_repair/42.png",
-    name: "Theresa G.",
-    designation: "Calgary Homeowner",
+      "I appreciated that they answered all of our questions before starting the work. It made us feel a lot more comfortable moving forward with the repairs.",
+    name: "Karen L.",
   },
   {
     id: "2",
     feedbackText:
-      "Honest assessment and very thorough exterior waterproofing work. I finally have peace of mind that my foundation is solid.",
-    image: "/images/client/foundation_repair/43.png",
-    name: "Emily W.",
-    designation: "Homeowner",
-  },
-  {
-    id: "3",
-    feedbackText: "Crack repair and waterproofing were done quickly and professionally. Our basement stayed completely dry through spring runoff. Great peace of mind.",
-    image: "/images/client/foundation_repair/44.png",
-    name: "Michael S.",
-    designation: "Calgary Homeowner",
+      "The whole process was well organized from the inspection through the repairs. Once everything was finished, the work area was left clean and the repairs blended in nicely.",
+    name: "Jennifer W.",
   },
 ];
 

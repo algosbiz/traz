@@ -106,25 +106,14 @@ const pizzaOvenFeedbacks = [
   {
     id: "1",
     feedbackText:
-      "Our custom pizza oven is incredible. It heats up fast, retains heat perfectly, and looks gorgeous in our patio. Authentic Italian pizza at home!",
-    image: "/images/client/custom_pizza_oven/30.png",
-    name: "Tony S.",
-    designation: "Calgary Homeowner",
+      "I'd wanted a wood-fired pizza oven for a long time, but never knew where to start. DMG Masonry helped us come up with a design that fit our backyard without taking over the whole space.",
+    name: "Matt R.",
   },
   {
     id: "2",
     feedbackText:
-      "The craftsmanship of the stone dome is true artisan work. Best investment we made for our outdoor kitchen.",
-    image: "/images/client/custom_pizza_oven/31.png",
-    name: "Luca K.",
-    designation: "Chef & Homeowner",
-  },
-  {
-    id: "3",
-    feedbackText: "Friends can't stop talking about our backyard pizza oven. It bakes a perfect crust in 90 seconds and the stonework is a real showpiece.",
-    image: "/images/client/custom_pizza_oven/32.png",
-    name: "Marta B.",
-    designation: "Calgary Homeowner",
+      "The finished pizza oven looks really clean and fits the space perfectly.",
+    name: "Hannah M.",
   },
 ];
 

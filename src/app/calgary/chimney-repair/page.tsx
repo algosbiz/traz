@@ -104,25 +104,16 @@ const chimneyOverviewItems = [
 const chimneyFeedbacks = [
   {
     id: "1",
-    feedbackText: "They completely saved our chimney from collapsing. Quick, efficient, and they cleaned up perfectly afterward.",
-    image: "/images/client/chimney_repair/14.png",
-    name: "Robert K.",
-    designation: "Calgary Homeowner",
+    feedbackText:
+      "After a heavy rain, we started seeing signs of moisture around the fireplace. DMG Masonry found the problem with the chimney and repaired it before it turned into something bigger. It's been holding up well ever since.",
+    name: "Allison P.",
   },
   {
     id: "2",
-    feedbackText: "Great communication and very fair pricing for a full chimney rebuild. Highly recommended!",
-    image: "/images/client/chimney_repair/15.png",
-    name: "Amanda L.",
-    designation: "Homeowner",
+    feedbackText:
+      "The finished work blends in really well, and it doesn't stand out like a patch job.",
+    name: "Trevor L.",
   },
-  {
-    id: "3",
-    feedbackText: "They repointed our chimney and replaced the crown before winter hit. Fast, tidy, and the work has held up perfectly. Highly recommend.",
-    image: "/images/client/chimney_repair/16.png",
-    name: "Daniel F.",
-    designation: "Calgary Homeowner",
-  }
 ];
 
 import { buildMetadata } from "@/lib/seo";

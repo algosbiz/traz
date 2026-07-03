@@ -104,25 +104,16 @@ const hardscapeOverviewItems = [
 const hardscapeFeedbacks = [
   {
     id: "1",
-    feedbackText: "They completely overhauled our backyard. We went from a boring grass slope to a beautiful two-tiered patio with a fire pit. Exceptional hardscaping work!",
-    image: "/images/client/hardscape_contractor/10.png",
-    name: "Michael B.",
-    designation: "Calgary Homeowner",
+    feedbackText:
+      "One of the things I noticed right away was how much care went into the details. The lines are straight, everything feels solid, and nothing looks rushed.",
+    name: "Adam P.",
   },
   {
     id: "2",
-    feedbackText: "The team's attention to detail on our interlocking driveway and front walkway was amazing. It totally upgraded our home's curb appeal.",
-    image: "/images/client/hardscape_contractor/11.png",
-    name: "Shaun V.",
-    designation: "Homeowner",
+    feedbackText:
+      "DMG Masonry helped us figure out a layout that made better use of the space. It turned out much more functional.",
+    name: "Jennifer L.",
   },
-  {
-    id: "3",
-    feedbackText: "From the paver patio to the retaining walls, every detail was done right. Our backyard is now the favorite hangout spot for the whole family.",
-    image: "/images/client/hardscape_contractor/12.png",
-    name: "Kayla D.",
-    designation: "Calgary Homeowner",
-  }
 ];
 
 import { buildMetadata } from "@/lib/seo";

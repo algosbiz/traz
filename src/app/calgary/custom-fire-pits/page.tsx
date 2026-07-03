@@ -104,25 +104,22 @@ const firePitsOverviewItems = [
 const firePitsFeedbacks = [
   {
     id: "1",
-    feedbackText: "Our new natural stone fire pit is the highlight of our backyard. We spend every weekend out there now. Amazing work!",
-    image: "/images/client/custom_firepits/18.png",
-    name: "John D.",
-    designation: "Calgary Homeowner",
+    feedbackText:
+      "The fire pit has become our favorite part of the backyard. Big thanks to DMG Masonry.",
+    name: "Amanda S.",
   },
   {
     id: "2",
-    feedbackText: "The gas fire pit they built matches our patio perfectly. Highly professional crew.",
-    image: "/images/client/custom_firepits/19.png",
-    name: "Stephanie M.",
-    designation: "Homeowner",
+    feedbackText:
+      "I was mostly focused on how it would look, but it ended up being a really practical addition too. It's nice having a place where everyone naturally gathers.",
+    name: "Lisa W.",
   },
   {
     id: "3",
-    feedbackText: "We use our new fire pit almost every evening. The stone construction is solid and it has become the centerpiece of our outdoor space.",
-    image: "/images/client/custom_firepits/20.png",
-    name: "Rachel B.",
-    designation: "Calgary Homeowner",
-  }
+    feedbackText:
+      "It looks natural in the space, and the quality of the stonework really stands out.",
+    name: "Kyle T.",
+  },
 ];
 
 import { buildMetadata } from "@/lib/seo";
