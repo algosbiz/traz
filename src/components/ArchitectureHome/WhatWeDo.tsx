@@ -12,7 +12,7 @@ const servicesData = [
     icon: "flaticon-measuring",
     title: "Masonry Repair",
     text: "Reliable masonry repairs for cracks, damage, and worn surfaces to keep your property safe and sound.",
-    link: "/services/service-details",
+    link: "/services",
     aosDelay: "100",
   },
   {
@@ -20,7 +20,7 @@ const servicesData = [
     icon: "flaticon-mansory",
     title: "Masonry Restoration",
     text: "Restoring aging structures with precision while preserving their original appearance and strength.",
-    link: "/services/service-details",
+    link: "/services",
     aosDelay: "200",
   },
   {
@@ -28,7 +28,7 @@ const servicesData = [
     icon: "flaticon-interior-design",
     title: "Masonry Design",
     text: "Designing custom masonry with detailed stonework and lasting outdoor features tailored to your vision.",
-    link: "/services/service-details",
+    link: "/services",
     aosDelay: "300",
   },
 ];

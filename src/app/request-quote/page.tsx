@@ -12,6 +12,7 @@ export default function Page() {
         title="Request a Quote"
         homeText="Home"
         homeUrl="/"
+        titleAsHeading
       />
 
       <RequestAQuoteForm />

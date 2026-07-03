@@ -7,6 +7,15 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
+  async redirects() {
+    return [
+      {
+        source: "/services/service-details",
+        destination: "/services/",
+        permanent: true,
+      },
+    ];
+  },
   // Multi-tier caching for the Cloudflare (layer 1) + Vercel (layer 2) setup.
   // Three headers target three different caches:
   //   Vercel-CDN-Cache-Control — Vercel's edge only (stripped before the

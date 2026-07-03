@@ -12,6 +12,7 @@ export default function Page() {
         title="Privacy Policy"
         homeText="Home"
         homeUrl="/"
+        titleAsHeading
       />
 
       <PrivacyPolicyContent />

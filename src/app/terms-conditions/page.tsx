@@ -12,6 +12,7 @@ export default function Page() {
         title="Terms & Conditions"
         homeText="Home"
         homeUrl="/"
+        titleAsHeading
       />
 
       <TermsConditionsContent />

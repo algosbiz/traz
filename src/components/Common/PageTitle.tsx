@@ -7,12 +7,14 @@ interface PageBannerTitleProps {
   title: string;
   homeText: string;
   homeUrl: string;
+  titleAsHeading?: boolean;
 }
 
 const PageTitle: React.FC<PageBannerTitleProps> = ({
   title,
   homeText,
   homeUrl,
+  titleAsHeading = false,
 }) => {
   return (
     <div className="page-banner-area">
@@ -24,7 +26,22 @@ const PageTitle: React.FC<PageBannerTitleProps> = ({
                 {homeText}
               </Link>
             </li>
-            <li>{title}</li>
+            <li>
+              {titleAsHeading ? (
+                <h1
+                  style={{
+                    color: "inherit",
+                    font: "inherit",
+                    margin: 0,
+                    textTransform: "inherit",
+                  }}
+                >
+                  {title}
+                </h1>
+              ) : (
+                title
+              )}
+            </li>
           </ul>
         </div>
       </div>
