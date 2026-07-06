@@ -30,7 +30,7 @@ const CoreFeatures: React.FC = () => {
                   <div className="col-lg-4 col-md-5">
                     <div className="inner-box">
                       <div className="title">
-                        <h3 className="counter">5+</h3>
+                        <h3 className="counter">35+</h3>
                         <span>
                           YEARS OF <b>EXPERIENCE</b>
                         </span>
