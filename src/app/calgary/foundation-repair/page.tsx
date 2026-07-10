@@ -180,7 +180,7 @@ export default function Page() {
       <FaqsContent
         faqs={foundationFaqs}
         title="Frequently Asked Questions"
-        subtitle="FOUNDATION FAQ"
+        subtitle="FAQ"
       />
 
       <div className="ptb-100">

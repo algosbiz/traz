@@ -185,7 +185,7 @@ export default function Page() {
       <FaqsContent
         faqs={chimneyRepairFaqs}
         title="Chimney Repair Frequently Asked Questions"
-        subtitle="CHIMNEY FAQ"
+        subtitle="FAQ"
       />
 
       <div className="ptb-100">

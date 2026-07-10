@@ -194,7 +194,7 @@ export default function Page() {
       <FaqsContent
         faqs={masonryRepairFaqs}
         title="Frequently Asked Questions - Masonry Repair"
-        subtitle="REPAIR FAQ"
+        subtitle="FAQ"
       />
 
       <div className="ptb-100">

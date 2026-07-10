@@ -189,7 +189,7 @@ export default function Page() {
       <FaqsContent
         faqs={fireplaceFaqs}
         title="Frequently Asked Questions"
-        subtitle="FIREPLACE FAQ"
+        subtitle="FAQ"
       />
 
       <div className="ptb-100">

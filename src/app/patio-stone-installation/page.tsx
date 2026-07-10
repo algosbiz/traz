@@ -189,7 +189,7 @@ export default function Page() {
       <FaqsContent
         faqs={patioStoneFaqs}
         title="Frequently Asked Questions"
-        subtitle="PATIO FAQ"
+        subtitle="FAQ"
       />
 
       <div className="ptb-100">

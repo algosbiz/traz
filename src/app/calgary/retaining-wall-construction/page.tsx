@@ -195,7 +195,7 @@ export default function Page() {
       <FaqsContent
         faqs={retainingWallFaqs}
         title="Frequently Asked Questions"
-        subtitle="RETAINING WALL FAQ"
+        subtitle="FAQ"
       />
 
       <div className="ptb-100">

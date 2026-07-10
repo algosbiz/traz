@@ -28,6 +28,15 @@ const socialLinks = [
 
 import { servicesData } from "@/lib/servicesData";
 
+const footerServices = [
+  ...servicesData,
+  {
+    id: "brick-repair",
+    title: "Brick Repair",
+    link: "/calgary/brick-repair",
+  },
+];
+
 const Footer: React.FC = () => {
   const { theme } = useTheme();
 
@@ -93,7 +102,7 @@ const Footer: React.FC = () => {
               <h3>Services</h3>
 
               <ul className="footer-links-list footer-links-list-plain footer-services-list">
-                {servicesData && servicesData.map((value) => (
+                {footerServices.map((value) => (
                   <li key={value.id}>
                     <Link href={value.link}>{value.title}</Link>
                   </li>

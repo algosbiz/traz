@@ -29,6 +29,7 @@ const routes: {
   { path: "/outdoor-kitchen-contractor/", priority: 0.8, changeFrequency: "monthly" },
   { path: "/patio-stone-installation/", priority: 0.8, changeFrequency: "monthly" },
   { path: "/calgary/masonry-repair/", priority: 0.8, changeFrequency: "monthly" },
+  { path: "/calgary/brick-repair/", priority: 0.8, changeFrequency: "monthly" },
   { path: "/calgary/stone-veneer/", priority: 0.8, changeFrequency: "monthly" },
   { path: "/calgary/chimney-repair/", priority: 0.8, changeFrequency: "monthly" },
   { path: "/calgary/custom-pizza-oven/", priority: 0.8, changeFrequency: "monthly" },

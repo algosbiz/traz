@@ -186,7 +186,7 @@ export default function Page() {
       <FaqsContent
         faqs={pizzaOvenFaqs}
         title="Frequently Asked Questions"
-        subtitle="PIZZA OVEN FAQ"
+        subtitle="FAQ"
       />
 
       <div className="ptb-100">

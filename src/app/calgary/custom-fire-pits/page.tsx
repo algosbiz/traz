@@ -191,7 +191,7 @@ export default function Page() {
       <FaqsContent
         faqs={firePitsFaqs}
         title="Custom Fire Pit Construction FAQs"
-        subtitle="FIRE PIT FAQ"
+        subtitle="FAQ"
       />
 
       <div className="ptb-100">
