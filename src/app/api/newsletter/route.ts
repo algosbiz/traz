@@ -1,5 +1,8 @@
 import { NextRequest, NextResponse } from "next/server";
-import { sendNewsletterWelcome } from "@/lib/sendEmail";
+import {
+  sendNewsletterWelcome,
+  sendNewsletterNotification,
+} from "@/lib/sendEmail";
 
 export const runtime = "edge";
 
@@ -24,8 +27,11 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    // Send welcome email
-    await sendNewsletterWelcome(email);
+    // Welcome the subscriber and notify the admin(s) in parallel.
+    await Promise.all([
+      sendNewsletterWelcome(email),
+      sendNewsletterNotification(email),
+    ]);
 
     return NextResponse.json({
       success: true,

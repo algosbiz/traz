@@ -3339,7 +3339,7 @@ Contact Area CSS
 }
 
 .contact-info-list li .social li a {
-  color: var(--whiteTextColor);
+  color: var(--headingColor);
 }
 
 .contact-info-list li .social li a:hover {

@@ -17,7 +17,7 @@ const CommentForm: React.FC = () => {
               <input
                 type="text"
                 className="form-control"
-                placeholder="Jonathon Ronan"
+                placeholder="Your name"
               />
             </div>
           </div>
@@ -30,7 +30,7 @@ const CommentForm: React.FC = () => {
               <input
                 type="text"
                 className="form-control"
-                placeholder="jonathonronana63@gmail.com"
+                placeholder="Your email"
               />
             </div>
           </div>
@@ -43,7 +43,7 @@ const CommentForm: React.FC = () => {
               <input
                 type="text"
                 className="form-control"
-                placeholder="+0 321 546 2345"
+                placeholder="Your phone number"
               />
             </div>
           </div>

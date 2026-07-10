@@ -175,7 +175,7 @@ const RequestAQuoteForm: React.FC = () => {
                           value={formData.email}
                           onChange={handleChange}
                           className="form-control"
-                          placeholder="Email address"
+                          placeholder="Your email"
                           disabled={loading}
                         />
                       </div>
@@ -190,7 +190,7 @@ const RequestAQuoteForm: React.FC = () => {
                           value={formData.phone}
                           onChange={handleChange}
                           className="form-control"
-                          placeholder="+0 321 546 2345"
+                          placeholder="Your phone number"
                           disabled={loading}
                         />
                       </div>

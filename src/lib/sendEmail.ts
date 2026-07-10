@@ -6,7 +6,8 @@
 const SENDGRID_API_URL = "https://api.sendgrid.com/v3/mail/send";
 
 interface EmailParams {
-  to: string;
+  /** Single address, an array, or a comma-separated list (e.g. ADMIN_EMAIL). */
+  to: string | string[];
   subject: string;
   html: string;
   replyTo?: string;
@@ -21,8 +22,19 @@ async function sendEmail({ to, subject, html, replyTo }: EmailParams): Promise<v
     throw new Error("Missing SendGrid configuration. Check SENDGRID_API_KEY and SENDER_EMAIL in .env.local");
   }
 
+  // Normalise `to` into a recipient list so a comma-separated ADMIN_EMAIL
+  // reaches everyone (e.g. "will@dmgmasonry.ca,contact@algoseabiz.com").
+  const recipients = (Array.isArray(to) ? to : to.split(","))
+    .map((email) => email.trim())
+    .filter(Boolean)
+    .map((email) => ({ email }));
+
+  if (recipients.length === 0) {
+    throw new Error("sendEmail: no valid recipient address provided in `to`.");
+  }
+
   const body: Record<string, unknown> = {
-    personalizations: [{ to: [{ email: to }] }],
+    personalizations: [{ to: recipients }],
     from: { email: senderEmail, name: siteName },
     subject,
     content: [{ type: "text/html", value: html }],
@@ -268,6 +280,30 @@ export async function sendQuoteAutoReply(data: QuoteFormData): Promise<void> {
 }
 
 // ─── Newsletter Emails ───────────────────────────────────────────────────────
+
+export async function sendNewsletterNotification(email: string): Promise<void> {
+  const adminEmail = process.env.ADMIN_EMAIL;
+  if (!adminEmail) throw new Error("Missing ADMIN_EMAIL in .env.local");
+
+  const html = wrapInTemplate(`
+    <h2 style="margin:0 0 8px;color:#1a1a2e;font-size:22px;">New Newsletter Subscriber 📩</h2>
+    <p style="margin:0 0 24px;color:#666;font-size:14px;">A new visitor just subscribed to your newsletter.</p>
+
+    <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+      <tr>
+        <td style="padding:12px 16px;background-color:#f8f9fa;border-left:4px solid #0f3460;font-size:13px;color:#888;font-weight:600;width:120px;">Email</td>
+        <td style="padding:12px 16px;background-color:#f8f9fa;font-size:14px;color:#333;"><a href="mailto:${email}" style="color:#0f3460;">${email}</a></td>
+      </tr>
+    </table>
+  `);
+
+  await sendEmail({
+    to: adminEmail,
+    subject: `[DMG Masonry] New Newsletter Subscriber`,
+    html,
+    replyTo: email,
+  });
+}
 
 export async function sendNewsletterWelcome(email: string): Promise<void> {
   const siteName = process.env.SITE_NAME || "DMG Masonry";

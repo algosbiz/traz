@@ -152,7 +152,7 @@ const ContactFormStyleTwo: React.FC<ContactFormProps> = ({
                           value={formData.name}
                           onChange={handleChange}
                           className="form-control"
-                          placeholder="Jonathon Ronan"
+                          placeholder="Your name"
                           disabled={loading}
                         />
                       </div>
@@ -167,7 +167,7 @@ const ContactFormStyleTwo: React.FC<ContactFormProps> = ({
                           value={formData.email}
                           onChange={handleChange}
                           className="form-control"
-                          placeholder="jonathonronana63@gmail.com"
+                          placeholder="Your email"
                           disabled={loading}
                         />
                       </div>
@@ -182,7 +182,7 @@ const ContactFormStyleTwo: React.FC<ContactFormProps> = ({
                           value={formData.phone}
                           onChange={handleChange}
                           className="form-control"
-                          placeholder="+0 321 546 2345"
+                          placeholder="Your phone number"
                           disabled={loading}
                         />
                       </div>
