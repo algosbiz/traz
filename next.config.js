@@ -58,6 +58,17 @@ const nextConfig = {
       // freshness on redeploy is handled by the Cloudflare purge workflow.
       { source: "/sitemap.xml", headers: cdnCache },
       { source: "/robots.txt", headers: cdnCache },
+      {
+        // Admin HTML is personalized by an httpOnly session cookie and must
+        // never be stored by the browser, Cloudflare, or Vercel's edge cache.
+        source: "/admin/:path*",
+        headers: [
+          { key: "Cache-Control", value: "no-store, max-age=0" },
+          { key: "CDN-Cache-Control", value: "no-store" },
+          { key: "Vercel-CDN-Cache-Control", value: "no-store" },
+          { key: "X-Robots-Tag", value: "noindex, nofollow" },
+        ],
+      },
       // Static media served straight from /public — see mediaCache above.
       { source: "/images/:path*", headers: mediaCache },
       { source: "/video/:path*", headers: mediaCache },
@@ -66,6 +77,12 @@ const nextConfig = {
         // Form endpoints must never be cached by any layer.
         source: "/api/:path*",
         headers: [{ key: "Cache-Control", value: "no-store, max-age=0" }],
+      },
+      {
+        // Blog asset IDs are immutable; this rule overrides the generic API
+        // no-store header above for public cover and inline images.
+        source: "/api/blog-assets/:path*",
+        headers: mediaCache,
       },
     ];
   },

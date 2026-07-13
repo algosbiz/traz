@@ -219,6 +219,15 @@ const Navbar: React.FC = () => {
                 </ul>
               </li>
 
+              <li className="nav-item">
+                <Link
+                  href="/blogs/"
+                  className={`nav-link ${currentRoute.startsWith("/blogs/") ? "active" : ""}`}
+                >
+                  Blogs
+                </Link>
+              </li>
+
               {/* <li className="nav-item dropdown">
                 <Link
                   className="nav-link dropdown-toggle"
@@ -465,6 +474,13 @@ const Navbar: React.FC = () => {
                     </ul>
                   </AccordionItemPanel>
                 </AccordionItem>
+
+                <Link
+                  href="/blogs/"
+                  className={`nav-link ${currentRoute.startsWith("/blogs/") ? "active" : ""}`}
+                >
+                  Blogs
+                </Link>
 
                 <Link
                   href="/contact-us/"

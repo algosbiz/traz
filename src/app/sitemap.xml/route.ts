@@ -1,10 +1,11 @@
 import { siteConfig } from "@/lib/site";
+import { getPublishedBlogs } from "@/lib/cmsBlogs";
 
 // Static sitemap generator. Implemented as a Route Handler (instead of the
 // metadata `sitemap.ts` convention) because that convention is incompatible
 // with `output: 'export'` in this Next.js version. `force-static` makes it
 // emit a static /sitemap.xml file at build time.
-export const dynamic = "force-static";
+export const dynamic = "force-dynamic";
 
 type ChangeFrequency =
   | "always"
@@ -24,6 +25,7 @@ const routes: {
   { path: "/", priority: 1, changeFrequency: "weekly" },
   { path: "/about-us/", priority: 0.8, changeFrequency: "monthly" },
   { path: "/services/", priority: 0.9, changeFrequency: "monthly" },
+  { path: "/blogs/", priority: 0.7, changeFrequency: "monthly" },
   { path: "/contact-us/", priority: 0.7, changeFrequency: "yearly" },
   { path: "/hardscape-contractor/", priority: 0.8, changeFrequency: "monthly" },
   { path: "/outdoor-kitchen-contractor/", priority: 0.8, changeFrequency: "monthly" },
@@ -42,10 +44,15 @@ const routes: {
   { path: "/terms-conditions/", priority: 0.3, changeFrequency: "yearly" },
 ];
 
-export function GET() {
+export async function GET() {
   const lastmod = new Date().toISOString();
+  const blogRoutes = (await getPublishedBlogs()).map((post) => ({
+    path: `/blogs/${post.slug}/`,
+    priority: 0.6,
+    changeFrequency: "monthly" as ChangeFrequency,
+  }));
 
-  const urls = routes
+  const urls = [...routes, ...blogRoutes]
     .map(
       ({ path, priority, changeFrequency }) =>
         `  <url>\n` +
