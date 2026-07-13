@@ -35,6 +35,17 @@ const nextConfig = {
       { key: "Vercel-CDN-Cache-Control", value: "public, s-maxage=31536000" },
     ];
 
+    // Blog HTML and the sitemap are generated from Neon. Cloudflare may cache
+    // them briefly, but Vercel must always return fresh data after a CF purge.
+    const dynamicBlogCache = [
+      { key: "Cache-Control", value: "public, max-age=0, must-revalidate" },
+      {
+        key: "CDN-Cache-Control",
+        value: "public, s-maxage=300, stale-while-revalidate=3600",
+      },
+      { key: "Vercel-CDN-Cache-Control", value: "no-store" },
+    ];
+
     // Static assets served straight from /public (images, video, fonts).
     // Vercel's default for these is `max-age=0, must-revalidate`, so neither
     // CDN caches them — force a long CDN TTL. Browser TTL stays modest because
@@ -56,8 +67,9 @@ const nextConfig = {
       // so the HTML rule above skips them — and Cloudflare doesn't cache
       // .xml/.txt by default. Give them the same CDN caching explicitly;
       // freshness on redeploy is handled by the Cloudflare purge workflow.
-      { source: "/sitemap.xml", headers: cdnCache },
+      { source: "/sitemap.xml", headers: dynamicBlogCache },
       { source: "/robots.txt", headers: cdnCache },
+      { source: "/blogs/:path*", headers: dynamicBlogCache },
       {
         // Admin HTML is personalized by an httpOnly session cookie and must
         // never be stored by the browser, Cloudflare, or Vercel's edge cache.

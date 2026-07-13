@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from "next/server";
 import { revalidatePath } from "next/cache";
 
 import { getAdminSessionFromRequest } from "@/lib/adminAuth";
+import { purgeBlogCache } from "@/lib/cloudflareCache";
 import {
   deleteBlog,
   getBlogById,
@@ -67,6 +68,9 @@ export async function PUT(request: NextRequest, { params }: RouteContext) {
         revalidatePath(`/blogs/${previousBlog.slug}/`);
       }
       revalidatePath("/sitemap.xml");
+      if (blog.status === "published" || previousBlog?.status === "published") {
+        await purgeBlogCache();
+      }
     }
     return blog
       ? NextResponse.json({ blog })
@@ -90,6 +94,7 @@ export async function DELETE(request: NextRequest, { params }: RouteContext) {
     revalidatePath("/blogs/");
     if (blog) revalidatePath(`/blogs/${blog.slug}/`);
     revalidatePath("/sitemap.xml");
+    if (blog?.status === "published") await purgeBlogCache();
     return NextResponse.json({ success: true });
   } catch (error) {
     const message = error instanceof Error ? error.message : "Unable to delete blog.";
