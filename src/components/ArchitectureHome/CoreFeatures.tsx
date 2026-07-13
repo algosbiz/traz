@@ -67,7 +67,7 @@ const CoreFeatures: React.FC = () => {
                       </ul>
 
                       <div className="features-btn">
-                        <Link href="#" className="default-btn">
+                        <Link href="/services" className="default-btn">
                           What We Offer
                         </Link>
                       </div>
