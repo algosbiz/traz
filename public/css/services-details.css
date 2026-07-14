@@ -187,6 +187,7 @@ Services Details Area CSS
     font-size: 15px;
   }
   .services-details-info-side {
+    display: none;
     margin-top: 30px;
   }
   .services-details-info-side li {

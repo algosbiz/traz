@@ -36,12 +36,22 @@
         }
         h2 {
             font-size: 25px;
+
+            span {
+                -webkit-text-stroke: 1px var(--headingColor);
+            }
         }
         a {
             font-size: 12px;
             display: block;
             margin-top: 15px;
         }
+    }
+
+    .about-one-content .title h2 span,
+    .features-content h2 span,
+    .contact-form-wrap .title h2 span {
+        -webkit-text-stroke: 1px var(--headingColor);
     }
 
     .p-0 {
@@ -63,12 +73,41 @@
             top: 50px;
             bottom: 70px;
         };
+
+        &::before {
+            background: linear-gradient(180deg, rgba(22, 21, 18, 0.78) 0%, rgba(22, 21, 18, 0.62) 100%);
+        }
+
         .container-fluid {
             padding: {
                 left: calc(var(--bs-gutter-x) * .5);
                 right: calc(var(--bs-gutter-x) * .5);
             };
             max-width: 540px;
+        }
+
+        .main-banner-content {
+            h1 {
+                color: var(--whiteTextColor);
+                text-shadow: 0 2px 4px rgba(0, 0, 0, 0.45);
+
+                span {
+                    color: var(--whiteTextColor);
+                    -webkit-text-stroke: 0;
+                }
+            }
+
+            p {
+                color: var(--whiteTextColor);
+                text-shadow: 0 1px 3px rgba(0, 0, 0, 0.55);
+            }
+
+            .banner-btn {
+                .default-btn {
+                    color: var(--whiteTextColor);
+                    background-color: rgba(22, 21, 18, 0.25);
+                }
+            }
         }
     }
     .main-banner-content {
@@ -301,6 +340,11 @@
     .animation-view-content {
         h1 {
             font-size: 25px;
+            color: var(--headingColor);
+
+            span:nth-child(odd) {
+                -webkit-text-stroke: 1px var(--headingColor);
+            }
         }
     }
 

@@ -58,7 +58,7 @@ Default CSS
   --backgroundColor: var(--whiteColor);
   --textColor: var(--paragraphColor);
   --headingColor: var(--blackColor);
-  --subtitleColor: #989898;
+  --subtitleColor: #6C6661;
   --mutedColor: #6C6661;
   --cardBg: #F4F4F4;
   --borderColor: #E7E0E0;
@@ -3767,6 +3767,7 @@ Box Style Area CSS
   top: 50%;
   transform: translateY(-50%);
   z-index: -1;
+  opacity: var(--shapeOpacity);
 }
 
 /*================================================
