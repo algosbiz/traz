@@ -28,10 +28,13 @@ export const servicesData = [
     title: "Chimney Repair",
     text: "Comprehensive chimney inspection, repair, and rebuilding services to keep your home safe.",
     link: "/calgary/chimney-repair",
-    locations: chimneyRepairLocations.map((location) => ({
-      name: location.name,
-      link: `/calgary/chimney-repair/${location.slug}`,
-    })),
+    locations: [
+      { name: "Calgary", link: "/services" },
+      ...chimneyRepairLocations.map((location) => ({
+        name: location.name,
+        link: `/calgary/chimney-repair/${location.slug}`,
+      })),
+    ].sort((first, second) => first.name.localeCompare(second.name)),
   },
   {
     id: "5",
