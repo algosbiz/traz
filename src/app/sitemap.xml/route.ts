@@ -1,5 +1,6 @@
 import { siteConfig } from "@/lib/site";
 import { getPublishedBlogs } from "@/lib/cmsBlogs";
+import { chimneyRepairLocations } from "@/lib/chimneyRepairLocations";
 
 // Static sitemap generator. Implemented as a Route Handler (instead of the
 // metadata `sitemap.ts` convention) because that convention is incompatible
@@ -34,6 +35,11 @@ const routes: {
   { path: "/calgary/brick-repair/", priority: 0.8, changeFrequency: "monthly" },
   { path: "/calgary/stone-veneer/", priority: 0.8, changeFrequency: "monthly" },
   { path: "/calgary/chimney-repair/", priority: 0.8, changeFrequency: "monthly" },
+  ...chimneyRepairLocations.map((location) => ({
+    path: `/calgary/chimney-repair/${location.slug}/`,
+    priority: 0.7,
+    changeFrequency: "monthly" as ChangeFrequency,
+  })),
   { path: "/calgary/custom-pizza-oven/", priority: 0.8, changeFrequency: "monthly" },
   { path: "/calgary/custom-fire-pits/", priority: 0.8, changeFrequency: "monthly" },
   { path: "/calgary/retaining-wall-construction/", priority: 0.8, changeFrequency: "monthly" },
