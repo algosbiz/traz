@@ -9,23 +9,23 @@ import {
 
 export async function POST(request: Request) {
   try {
-    const { email, password } = (await request.json()) as {
-      email?: string;
+    const { account, password } = (await request.json()) as {
+      account?: string;
       password?: string;
     };
 
-    if (!email || !password) {
-      return NextResponse.json({ error: "Email and password are required." }, { status: 400 });
+    if (!account || !password) {
+      return NextResponse.json({ error: "Account and password are required." }, { status: 400 });
     }
 
-    if (!(await verifyAdminCredentials(email.trim(), password))) {
-      return NextResponse.json({ error: "Invalid email or password." }, { status: 401 });
+    if (!(await verifyAdminCredentials(account.trim(), password))) {
+      return NextResponse.json({ error: "Invalid account or password." }, { status: 401 });
     }
 
     const response = NextResponse.json({ success: true });
     response.cookies.set(
       ADMIN_COOKIE_NAME,
-      createAdminSession(email.trim()),
+      createAdminSession(account.trim()),
       adminCookieOptions,
     );
     return response;

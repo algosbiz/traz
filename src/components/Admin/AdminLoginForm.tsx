@@ -7,7 +7,7 @@ import styles from "./Admin.module.css";
 
 export default function AdminLoginForm() {
   const router = useRouter();
-  const [email, setEmail] = useState("");
+  const [account, setAccount] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
@@ -21,7 +21,7 @@ export default function AdminLoginForm() {
       const response = await fetch("/api/admin/login/", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ email, password }),
+        body: JSON.stringify({ account, password }),
       });
       const result = (await response.json()) as { error?: string };
       if (!response.ok) throw new Error(result.error || "Unable to log in.");
@@ -38,13 +38,13 @@ export default function AdminLoginForm() {
     <form onSubmit={submit}>
       {error && <div className={styles.error}>{error}</div>}
       <div className={styles.field}>
-        <label htmlFor="admin-email">EMAIL</label>
+        <label htmlFor="admin-account">ACCOUNT</label>
         <input
-          id="admin-email"
+          id="admin-account"
           className={styles.input}
-          type="email"
-          value={email}
-          onChange={(event) => setEmail(event.target.value)}
+          type="text"
+          value={account}
+          onChange={(event) => setAccount(event.target.value)}
           autoComplete="username"
           required
         />

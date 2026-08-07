@@ -7,7 +7,7 @@ export const ADMIN_COOKIE_NAME = "dmg_admin_session";
 const SESSION_DURATION_SECONDS = 60 * 60 * 8;
 
 interface SessionPayload {
-  email: string;
+  account: string;
   expiresAt: number;
 }
 
@@ -23,9 +23,9 @@ function sign(value: string) {
   return createHmac("sha256", getSessionSecret()).update(value).digest("base64url");
 }
 
-export function createAdminSession(email: string) {
+export function createAdminSession(account: string) {
   const payload: SessionPayload = {
-    email,
+    account,
     expiresAt: Math.floor(Date.now() / 1000) + SESSION_DURATION_SECONDS,
   };
   const encodedPayload = Buffer.from(JSON.stringify(payload)).toString("base64url");
@@ -56,7 +56,7 @@ export function verifyAdminSession(token?: string | null): SessionPayload | null
 
     if (
       payload.expiresAt <= Math.floor(Date.now() / 1000) ||
-      payload.email !== process.env.ADMIN_EMAIL
+      payload.account !== process.env.ADMIN_ACCOUNT
     ) {
       return null;
     }
@@ -75,17 +75,17 @@ export function getAdminSessionFromRequest(request: NextRequest) {
   return verifyAdminSession(request.cookies.get(ADMIN_COOKIE_NAME)?.value);
 }
 
-export async function verifyAdminCredentials(email: string, password: string) {
-  const adminEmail = process.env.ADMIN_EMAIL;
+export async function verifyAdminCredentials(account: string, password: string) {
+  const adminAccount = process.env.ADMIN_ACCOUNT;
   const passwordHash = process.env.ADMIN_PASSWORD_HASH;
 
-  if (!adminEmail || !passwordHash) return false;
+  if (!adminAccount || !passwordHash) return false;
   if (!/^\$2[aby]\$\d{2}\$.{53}$/.test(passwordHash)) {
     throw new Error(
       "ADMIN_PASSWORD_HASH is invalid. Generate it again and keep the escaped dollar signs.",
     );
   }
-  if (email !== adminEmail) return false;
+  if (account !== adminAccount) return false;
   return compare(password, passwordHash);
 }
 

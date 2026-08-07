@@ -18,19 +18,24 @@ Generate a password hash and session secret:
 npm run admin:credentials -- "use-a-strong-password-here"
 ```
 
-Copy the two generated values into `.env.local` together with the admin email:
+Copy the two generated values into `.env.local` together with the admin account:
 
 ```env
-ADMIN_EMAIL=admin@example.com
+ADMIN_ACCOUNT=admin@example.com
 ADMIN_PASSWORD_HASH=generated-bcrypt-hash
 ADMIN_SESSION_SECRET=generated-random-secret
 ```
 
-The generated password hash contains escaped dollar signs (`\$`). Copy it
-exactly as printed; removing the backslashes causes Next.js to alter the hash
-while loading `.env.local`.
+`ADMIN_ACCOUNT` is used only for CMS login. Keep `ADMIN_EMAIL` separate for
+contact, quote, and newsletter notification recipients.
 
-Add the same variables to the production environment in Vercel.
+For `.env.local`, the generated password hash contains escaped dollar signs
+(`\$`). Copy it exactly as printed; removing the backslashes causes the dotenv
+loader to alter the hash.
+
+In the Vercel Environment Variables dashboard, use the same three variables but
+paste `ADMIN_PASSWORD_HASH` with normal dollar signs (`$2b$...`) and no
+backslashes. Vercel stores the value directly rather than parsing an env file.
 
 ## 3. Configure Cloudflare R2
 
