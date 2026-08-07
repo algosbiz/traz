@@ -14,6 +14,7 @@ Navbar Area CSS
   padding-bottom: 25px;
   transition: var(--transition);
 }
+
 .navbar.sticky {
   padding-top: 20px;
   padding-bottom: 20px;
