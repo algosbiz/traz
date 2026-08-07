@@ -1,5 +1,3 @@
-import { chimneyRepairLocations } from "./chimneyRepairLocations";
-
 export const servicesData = [
   {
     id: "1",
@@ -28,10 +26,6 @@ export const servicesData = [
     title: "Chimney Repair",
     text: "Comprehensive chimney inspection, repair, and rebuilding services to keep your home safe.",
     link: "/calgary/chimney-repair",
-    locations: chimneyRepairLocations.map((location) => ({
-      name: location.name,
-      link: `/calgary/chimney-repair/${location.slug}`,
-    })),
   },
   {
     id: "5",
