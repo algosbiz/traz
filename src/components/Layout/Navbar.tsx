@@ -17,6 +17,10 @@ import whiteLogoWebp from "/public/images/whitelogo.webp";
 import ThemeToggle from "./ThemeToggle";
 import { useTheme } from "./ThemeProvider";
 import { servicesData } from "@/lib/servicesData";
+import {
+  DesktopServicesNavigation,
+  MobileServicesNavigation,
+} from "./ServicesNavigation";
 
 const Navbar: React.FC = () => {
   const currentRoute = usePathname();
@@ -205,17 +209,7 @@ const Navbar: React.FC = () => {
                 </Link>
 
                 <ul className="dropdown-menu">
-                  {servicesData && servicesData.map((value) => (
-                    <li className="nav-item" key={value.id}>
-                      <Link
-                        href={value.link}
-                        className={`nav-link ${currentRoute === value.link ? "active" : ""}`}
-                      >
-                        {value.title}
-                      </Link>
-                    </li>
-                  ))}
-
+                  <DesktopServicesNavigation currentRoute={currentRoute} />
                 </ul>
               </li>
 
@@ -460,17 +454,7 @@ const Navbar: React.FC = () => {
 
                   <AccordionItemPanel>
                     <ul className="menu-list">
-                      {servicesData && servicesData.map((value) => (
-                        <li key={value.id}>
-                          <Link
-                            href={value.link}
-                            className={`nav-link ${currentRoute === value.link ? "active" : ""}`}
-                          >
-                            {value.title}
-                          </Link>
-                        </li>
-                      ))}
-                      
+                      <MobileServicesNavigation currentRoute={currentRoute} />
                     </ul>
                   </AccordionItemPanel>
                 </AccordionItem>
