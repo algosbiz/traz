@@ -22,38 +22,22 @@ interface ChimneyLocationPageProps {
   params: { location: string };
 }
 
-const chimneyProcessSteps = [
+const chimneyProcessContent = [
   {
-    id: "1",
-    number: "1",
-    image: "/images/services/service/chimney_repair/2.webp",
     title: "Inspect The Chimney",
     text: "We assess the masonry, crown, cap, joints, and visible damage.",
-    aosDelay: "100",
   },
   {
-    id: "2",
-    number: "2",
-    image: "/images/services/service/chimney_repair/3.webp",
     title: "Plan The Repair",
     text: "The repair scope is matched to the structure and source of damage.",
-    aosDelay: "200",
   },
   {
-    id: "3",
-    number: "3",
-    image: "/images/services/service/chimney_repair/4.webp",
     title: "Restore The Masonry",
     text: "Failed brick, stone, and mortar are repaired with durable materials.",
-    aosDelay: "300",
   },
   {
-    id: "4",
-    number: "4",
-    image: "/images/services/service/chimney_repair/5.webp",
     title: "Finish & Protect",
     text: "The completed work is detailed for strength and weather resistance.",
-    aosDelay: "400",
   },
 ];
 
@@ -119,6 +103,15 @@ export default function ChimneyLocationPage({
   if (!location) {
     notFound();
   }
+
+  const processSteps = chimneyProcessContent.map((step, index) => ({
+    id: `${index + 1}`,
+    number: `${index + 1}`,
+    image: location.images.process[index],
+    title: step.title,
+    text: step.text,
+    aosDelay: `${(index + 1) * 100}`,
+  }));
 
   const faqs = [
     {
@@ -193,7 +186,7 @@ export default function ChimneyLocationPage({
       />
 
       <ServiceDetailsContent
-        mainImage="/images/services/service/chimney_repair/1.webp"
+        mainImage={location.images.main}
         title={`Chimney Repair Services in ${location.name}`}
         subtitle="SERVICE"
         description1={location.description}
@@ -204,7 +197,7 @@ export default function ChimneyLocationPage({
 
       <Process
         title={`Our ${location.name} Chimney Repair Process`}
-        steps={chimneyProcessSteps}
+        steps={processSteps}
       />
 
       <Overview fullWidth items={chimneyOverviewItems} />
@@ -216,7 +209,7 @@ export default function ChimneyLocationPage({
       />
 
       <AboutUsContent
-        image="/images/services/service/chimney_repair/8.webp"
+        image={location.images.whyChoose}
         subtitle="WHY CHOOSE US"
         title={location.whyChooseTitle}
         description={location.whyChooseDescription}
@@ -233,7 +226,7 @@ export default function ChimneyLocationPage({
 
       <div className="ptb-100">
         <ContactFormStyleTwo
-          image="/images/services/service/chimney_repair/9.webp"
+          image={location.images.contact}
           title={`Request Chimney Repair in ${location.name}`}
           subtitle="REQUEST A QUOTE"
         />

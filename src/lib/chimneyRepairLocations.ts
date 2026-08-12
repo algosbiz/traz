@@ -1,3 +1,10 @@
+export interface ChimneyRepairLocationImages {
+  main: string;
+  process: [string, string, string, string];
+  whyChoose: string;
+  contact: string;
+}
+
 export interface ChimneyRepairLocation {
   slug: string;
   name: string;
@@ -11,6 +18,7 @@ export interface ChimneyRepairLocation {
   whyChooseDescription: string;
   whyChooseItems: string[];
   climateContext: string;
+  images: ChimneyRepairLocationImages;
 }
 
 export const chimneyRepairLocations: ChimneyRepairLocation[] = [
@@ -48,6 +56,17 @@ export const chimneyRepairLocations: ChimneyRepairLocation[] = [
     ],
     climateContext:
       "Bragg Creek's foothills setting brings moisture, snow, wind, and frequent freeze-thaw conditions that can expose weaknesses in chimney masonry.",
+    images: {
+      main: "/images/services/braggcreek/braggcreek-1.webp",
+      process: [
+        "/images/services/braggcreek/braggcreek-2.webp",
+        "/images/services/braggcreek/braggcreek-3.webp",
+        "/images/services/braggcreek/braggcreek-4.webp",
+        "/images/services/braggcreek/braggcreek-5.webp",
+      ],
+      whyChoose: "/images/services/braggcreek/braggcreek-6.webp",
+      contact: "/images/services/braggcreek/braggcreek-7.webp",
+    },
   },
   {
     slug: "longview",
@@ -83,6 +102,17 @@ export const chimneyRepairLocations: ChimneyRepairLocation[] = [
     ],
     climateContext:
       "Longview's open foothills location can expose chimneys to wind, blowing precipitation, and sharp temperature changes throughout the year.",
+    images: {
+      main: "/images/services/longview/longview-1.webp",
+      process: [
+        "/images/services/longview/longview-2.webp",
+        "/images/services/longview/longview-3.webp",
+        "/images/services/longview/longview-4.webp",
+        "/images/services/longview/longview-5.webp",
+      ],
+      whyChoose: "/images/services/longview/longview-6.webp",
+      contact: "/images/services/longview/longview-7.webp",
+    },
   },
   {
     slug: "kananaskis",
@@ -118,6 +148,19 @@ export const chimneyRepairLocations: ChimneyRepairLocation[] = [
     ],
     climateContext:
       "Kananaskis mountain properties experience snow, moisture, wind, and fast temperature shifts that can be particularly demanding on exposed chimneys.",
+    images: {
+      main: "/images/services/kananaskis/kananaskis-1.webp",
+      process: [
+        "/images/services/kananaskis/kananaskis-2.webp",
+        "/images/services/kananaskis/kananaskis-3.webp",
+        "/images/services/kananaskis/kananaskis-4.webp",
+        "/images/services/kananaskis/kananaskis-5.webp",
+      ],
+      // 6 and 7 are swapped here compared to the other locations: the
+      // portrait shot is -6 and the near-square one is -7.
+      whyChoose: "/images/services/kananaskis/kananaskis-7.webp",
+      contact: "/images/services/kananaskis/kananaskis-6.webp",
+    },
   },
   {
     slug: "sundre",
@@ -153,6 +196,17 @@ export const chimneyRepairLocations: ChimneyRepairLocation[] = [
     ],
     climateContext:
       "Sundre's foothills weather brings seasonal moisture, snow, and freeze-thaw cycling that can gradually weaken mortar and masonry.",
+    images: {
+      main: "/images/services/sundre/sundre-1.webp",
+      process: [
+        "/images/services/sundre/sundre-2.webp",
+        "/images/services/sundre/sundre-3.webp",
+        "/images/services/sundre/sundre-4.webp",
+        "/images/services/sundre/sundre-5.webp",
+      ],
+      whyChoose: "/images/services/sundre/sundre-6.webp",
+      contact: "/images/services/sundre/sundre-7.webp",
+    },
   },
   {
     slug: "three-hills",
@@ -188,6 +242,17 @@ export const chimneyRepairLocations: ChimneyRepairLocation[] = [
     ],
     climateContext:
       "Three Hills properties can experience open prairie wind, blowing precipitation, and large seasonal temperature swings that stress exposed masonry.",
+    images: {
+      main: "/images/services/threehills/threehills-1.webp",
+      process: [
+        "/images/services/threehills/threehills-2.webp",
+        "/images/services/threehills/threehills-3.webp",
+        "/images/services/threehills/threehills-4.webp",
+        "/images/services/threehills/threehills-5.webp",
+      ],
+      whyChoose: "/images/services/threehills/threehills-6.webp",
+      contact: "/images/services/threehills/threehills-7.webp",
+    },
   },
   {
     slug: "drumheller",
@@ -223,6 +288,17 @@ export const chimneyRepairLocations: ChimneyRepairLocation[] = [
     ],
     climateContext:
       "Drumheller chimneys are exposed to sun, wind, winter freezing, and rapid weather changes that can widen existing cracks and weaken aged joints.",
+    images: {
+      main: "/images/services/drumheller/drumheller-1.webp",
+      process: [
+        "/images/services/drumheller/drumheller-2.webp",
+        "/images/services/drumheller/drumheller-3.webp",
+        "/images/services/drumheller/drumheller-4.webp",
+        "/images/services/drumheller/drumheller-5.webp",
+      ],
+      whyChoose: "/images/services/drumheller/drumheller-6.webp",
+      contact: "/images/services/drumheller/drumheller-7.webp",
+    },
   },
   {
     slug: "claresholm",
@@ -258,6 +334,17 @@ export const chimneyRepairLocations: ChimneyRepairLocation[] = [
     ],
     climateContext:
       "Claresholm's southern Alberta setting can bring strong wind and fast temperature shifts that test chimney joints, crowns, and exposed masonry.",
+    images: {
+      main: "/images/services/claresholm/claresholm-1.webp",
+      process: [
+        "/images/services/claresholm/claresholm-2.webp",
+        "/images/services/claresholm/claresholm-3.webp",
+        "/images/services/claresholm/claresholm-4.webp",
+        "/images/services/claresholm/claresholm-5.webp",
+      ],
+      whyChoose: "/images/services/claresholm/claresholm-6.webp",
+      contact: "/images/services/claresholm/claresholm-7.webp",
+    },
   },
 ];
 
