@@ -381,6 +381,12 @@
   color: #9a6245;
 }
 
+.editorContent :global(.tiptap h1) {
+  margin: 34px 0 16px;
+  color: #24211e;
+  font-size: 34px;
+}
+
 .editorContent :global(.tiptap h2) {
   margin: 30px 0 14px;
   color: #24211e;
@@ -391,6 +397,12 @@
   margin: 24px 0 12px;
   color: #24211e;
   font-size: 22px;
+}
+
+.editorContent :global(.tiptap h4) {
+  margin: 20px 0 10px;
+  color: #24211e;
+  font-size: 19px;
 }
 
 .editorContent :global(.tiptap img) {

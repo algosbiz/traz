@@ -1,13 +1,19 @@
 "use client";
 
 import ImageExtension from "@tiptap/extension-image";
-import { EditorContent, useEditor } from "@tiptap/react";
+import { EditorContent, useEditor, useEditorState } from "@tiptap/react";
 import StarterKit from "@tiptap/starter-kit";
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import { ChangeEvent, FormEvent, useRef, useState } from "react";
+import { ChangeEvent, FormEvent, useEffect, useRef, useState } from "react";
 
+import {
+  getApiResponse,
+  parseStoredBlogDraft,
+  prepareImageForUpload,
+  type StoredBlogDraft,
+} from "@/lib/adminBlogForm";
 import { slugify, type BlogInput, type CmsBlog } from "@/lib/cmsBlogs";
 import styles from "./Admin.module.css";
 
@@ -17,8 +23,10 @@ interface BlogEditorFormProps {
 
 export default function BlogEditorForm({ blog }: BlogEditorFormProps) {
   const router = useRouter();
+  const draftStorageKey = `admin-blog-draft:${blog?.id ?? "new"}`;
   const inlineImageInput = useRef<HTMLInputElement>(null);
   const coverImageInput = useRef<HTMLInputElement>(null);
+  const currentDraft = useRef<StoredBlogDraft | null>(null);
   const [title, setTitle] = useState(blog?.title ?? "");
   const [slug, setSlug] = useState(blog?.slug ?? "");
   const [slugEdited, setSlugEdited] = useState(Boolean(blog));
@@ -30,6 +38,8 @@ export default function BlogEditorForm({ blog }: BlogEditorFormProps) {
   const [saving, setSaving] = useState(false);
   const [uploading, setUploading] = useState(false);
   const [error, setError] = useState("");
+  const [draftReady, setDraftReady] = useState(false);
+  const [draftRestored, setDraftRestored] = useState(false);
 
   const editor = useEditor({
     immediatelyRender: false,
@@ -38,19 +48,111 @@ export default function BlogEditorForm({ blog }: BlogEditorFormProps) {
     onUpdate: ({ editor: currentEditor }) => setContentHtml(currentEditor.getHTML()),
   });
 
+  const editorState = useEditorState({
+    editor,
+    selector: ({ editor: currentEditor }) => ({
+      paragraph: currentEditor?.isActive("paragraph") ?? false,
+      heading1: currentEditor?.isActive("heading", { level: 1 }) ?? false,
+      heading2: currentEditor?.isActive("heading", { level: 2 }) ?? false,
+      heading3: currentEditor?.isActive("heading", { level: 3 }) ?? false,
+      heading4: currentEditor?.isActive("heading", { level: 4 }) ?? false,
+      bold: currentEditor?.isActive("bold") ?? false,
+      italic: currentEditor?.isActive("italic") ?? false,
+      bulletList: currentEditor?.isActive("bulletList") ?? false,
+      orderedList: currentEditor?.isActive("orderedList") ?? false,
+      blockquote: currentEditor?.isActive("blockquote") ?? false,
+    }),
+  });
+
+  currentDraft.current = {
+    version: 1,
+    sourceUpdatedAt: blog?.updatedAt ?? null,
+    title,
+    slug,
+    slugEdited,
+    excerpt,
+    category,
+    coverImage,
+    status,
+    contentHtml,
+  };
+
+  useEffect(() => {
+    if (!editor || draftReady) return;
+
+    try {
+      const storedValue = window.localStorage.getItem(draftStorageKey);
+      const draft = parseStoredBlogDraft(storedValue, blog?.updatedAt ?? null);
+
+      if (draft) {
+        setTitle(draft.title);
+        setSlug(draft.slug);
+        setSlugEdited(draft.slugEdited);
+        setExcerpt(draft.excerpt);
+        setCategory(draft.category);
+        setCoverImage(draft.coverImage);
+        setStatus(draft.status);
+        setContentHtml(draft.contentHtml);
+        editor.commands.setContent(draft.contentHtml || "<p></p>", { emitUpdate: false });
+        setDraftRestored(true);
+      } else if (storedValue) {
+        window.localStorage.removeItem(draftStorageKey);
+      }
+    } catch {
+      // The form remains usable when storage is unavailable or contains invalid data.
+    } finally {
+      setDraftReady(true);
+    }
+  }, [blog?.updatedAt, draftReady, draftStorageKey, editor]);
+
+  useEffect(() => {
+    if (!draftReady) return;
+    const saveDraft = () => {
+      if (!currentDraft.current) return;
+      try {
+        window.localStorage.setItem(draftStorageKey, JSON.stringify(currentDraft.current));
+      } catch {
+        // Ignore unavailable/full browser storage; saving the blog still works normally.
+      }
+    };
+    const timer = window.setTimeout(saveDraft, 300);
+    window.addEventListener("beforeunload", saveDraft);
+
+    return () => {
+      window.clearTimeout(timer);
+      window.removeEventListener("beforeunload", saveDraft);
+    };
+  }, [
+    category,
+    contentHtml,
+    coverImage,
+    draftReady,
+    draftStorageKey,
+    excerpt,
+    slug,
+    slugEdited,
+    status,
+    title,
+  ]);
+
   function updateTitle(value: string) {
     setTitle(value);
     if (!slugEdited) setSlug(slugify(value));
   }
 
   async function uploadImage(file: File) {
+    const preparedFile = await prepareImageForUpload(file);
     const formData = new FormData();
-    formData.append("file", file);
+    formData.append("file", preparedFile);
     const response = await fetch("/api/admin/assets/", {
       method: "POST",
       body: formData,
     });
-    const result = (await response.json()) as { url?: string; error?: string };
+    const result = await getApiResponse<{ url?: string }>(
+      response,
+      "Image upload failed.",
+      "The image is too large to upload. Choose a smaller image and try again.",
+    );
     if (!response.ok || !result.url) throw new Error(result.error || "Image upload failed.");
     return result.url;
   }
@@ -107,8 +209,13 @@ export default function BlogEditorForm({ blog }: BlogEditorFormProps) {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(payload),
       });
-      const result = (await response.json()) as { error?: string };
+      const result = await getApiResponse(response, "Unable to save blog.");
       if (!response.ok) throw new Error(result.error || "Unable to save blog.");
+      try {
+        window.localStorage.removeItem(draftStorageKey);
+      } catch {
+        // A storage failure must not turn a successful server save into an error.
+      }
       router.push("/admin/");
       router.refresh();
     } catch (submitError) {
@@ -120,6 +227,9 @@ export default function BlogEditorForm({ blog }: BlogEditorFormProps) {
   return (
     <form onSubmit={submit}>
       {error && <div className={styles.error}>{error}</div>}
+      {draftRestored && (
+        <div className={styles.success}>Your unsaved draft and text formatting were restored.</div>
+      )}
       <div className={styles.formGrid}>
         <div>
           <section className={styles.formSection}>
@@ -169,7 +279,7 @@ export default function BlogEditorForm({ blog }: BlogEditorFormProps) {
               <div className={styles.toolbar}>
                 <button
                   type="button"
-                  data-active={editor?.isActive("bold")}
+                  data-active={editorState?.bold}
                   onClick={() => editor?.chain().focus().toggleBold().run()}
                   title="Bold"
                 >
@@ -177,7 +287,7 @@ export default function BlogEditorForm({ blog }: BlogEditorFormProps) {
                 </button>
                 <button
                   type="button"
-                  data-active={editor?.isActive("italic")}
+                  data-active={editorState?.italic}
                   onClick={() => editor?.chain().focus().toggleItalic().run()}
                   title="Italic"
                 >
@@ -185,21 +295,47 @@ export default function BlogEditorForm({ blog }: BlogEditorFormProps) {
                 </button>
                 <button
                   type="button"
-                  data-active={editor?.isActive("heading", { level: 2 })}
+                  data-active={editorState?.paragraph}
+                  onClick={() => editor?.chain().focus().setParagraph().run()}
+                  title="Paragraph"
+                >
+                  P
+                </button>
+                <button
+                  type="button"
+                  data-active={editorState?.heading1}
+                  onClick={() => editor?.chain().focus().toggleHeading({ level: 1 }).run()}
+                  title="Heading 1"
+                >
+                  H1
+                </button>
+                <button
+                  type="button"
+                  data-active={editorState?.heading2}
                   onClick={() => editor?.chain().focus().toggleHeading({ level: 2 }).run()}
+                  title="Heading 2"
                 >
                   H2
                 </button>
                 <button
                   type="button"
-                  data-active={editor?.isActive("heading", { level: 3 })}
+                  data-active={editorState?.heading3}
                   onClick={() => editor?.chain().focus().toggleHeading({ level: 3 }).run()}
+                  title="Heading 3"
                 >
                   H3
                 </button>
                 <button
                   type="button"
-                  data-active={editor?.isActive("bulletList")}
+                  data-active={editorState?.heading4}
+                  onClick={() => editor?.chain().focus().toggleHeading({ level: 4 }).run()}
+                  title="Heading 4"
+                >
+                  H4
+                </button>
+                <button
+                  type="button"
+                  data-active={editorState?.bulletList}
                   onClick={() => editor?.chain().focus().toggleBulletList().run()}
                   title="Bullet list"
                 >
@@ -207,7 +343,7 @@ export default function BlogEditorForm({ blog }: BlogEditorFormProps) {
                 </button>
                 <button
                   type="button"
-                  data-active={editor?.isActive("orderedList")}
+                  data-active={editorState?.orderedList}
                   onClick={() => editor?.chain().focus().toggleOrderedList().run()}
                   title="Numbered list"
                 >
@@ -215,7 +351,7 @@ export default function BlogEditorForm({ blog }: BlogEditorFormProps) {
                 </button>
                 <button
                   type="button"
-                  data-active={editor?.isActive("blockquote")}
+                  data-active={editorState?.blockquote}
                   onClick={() => editor?.chain().focus().toggleBlockquote().run()}
                   title="Quote"
                 >
@@ -309,7 +445,9 @@ export default function BlogEditorForm({ blog }: BlogEditorFormProps) {
                 onChange={handleCoverUpload}
                 hidden
               />
-              <small className={styles.hint}>JPG, PNG, WebP, or GIF. Maximum 4 MB.</small>
+              <small className={styles.hint}>
+                JPG, PNG, or WebP up to 20 MB (large files are optimized automatically). GIF up to 3.5 MB.
+              </small>
             </section>
           </div>
         </aside>

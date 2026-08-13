@@ -87,6 +87,7 @@ function legacyPostToCmsBlog(post: BlogPost): CmsBlog {
 const allowedTags = [
   "p",
   "br",
+  "h1",
   "h2",
   "h3",
   "h4",

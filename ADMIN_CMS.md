@@ -82,7 +82,9 @@ npm run r2:migrate
 
 Cover and inline image binaries are stored in Cloudflare R2. Neon stores only
 their metadata, blog relationship, and R2 object key. Images are addressed via
-`/api/blog-assets/:id`. Uploads accept JPG, PNG, WebP, and GIF images up to 4 MB.
+`/api/blog-assets/:id`. JPG, PNG, and WebP source images up to 20 MB are
+optimized in the browser before upload; animated GIF uploads must be 3.5 MB or
+smaller.
 
 ## Publishing
 

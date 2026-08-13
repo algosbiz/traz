@@ -1,11 +1,9 @@
 import { NextRequest, NextResponse } from "next/server";
 
 import { getAdminSessionFromRequest } from "@/lib/adminAuth";
+import { SAFE_IMAGE_UPLOAD_BYTES, isAllowedImageType } from "@/lib/blogImageConfig";
 import { getSql } from "@/lib/db";
 import { deleteR2Assets, uploadR2Asset } from "@/lib/r2";
-
-const MAX_IMAGE_SIZE = 4 * 1024 * 1024;
-const ALLOWED_IMAGE_TYPES = new Set(["image/jpeg", "image/png", "image/webp", "image/gif"]);
 
 export async function POST(request: NextRequest) {
   if (!getAdminSessionFromRequest(request)) {
@@ -19,11 +17,11 @@ export async function POST(request: NextRequest) {
     if (!(file instanceof File)) {
       return NextResponse.json({ error: "An image file is required." }, { status: 400 });
     }
-    if (!ALLOWED_IMAGE_TYPES.has(file.type)) {
+    if (!isAllowedImageType(file.type)) {
       return NextResponse.json({ error: "Use a JPG, PNG, WebP, or GIF image." }, { status: 415 });
     }
-    if (file.size > MAX_IMAGE_SIZE) {
-      return NextResponse.json({ error: "Image must be 4 MB or smaller." }, { status: 413 });
+    if (file.size > SAFE_IMAGE_UPLOAD_BYTES) {
+      return NextResponse.json({ error: "Image must be 3.5 MB or smaller." }, { status: 413 });
     }
 
     const bytes = new Uint8Array(await file.arrayBuffer());
