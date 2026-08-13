@@ -190,7 +190,7 @@ export default function Page() {
 
       <div className="ptb-100">
         <ContactFormStyleTwo
-          image="/images/services/service/chimney_repair/9.webp"
+          image="/images/services/calgary/calgary-1.webp"
           title="Chimney Repair Solutions"
           subtitle="REQUEST A QUOTE"
         />

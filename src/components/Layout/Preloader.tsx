@@ -1,12 +1,40 @@
 "use client";
 
-import React, { useState, useEffect, useCallback, useRef } from "react";
+import React, {
+  Suspense,
+  useState,
+  useEffect,
+  useCallback,
+  useRef,
+} from "react";
 import { usePathname, useSearchParams } from "next/navigation";
+
+interface SearchParamsObserverProps {
+  onChange: () => void;
+}
+
+const SearchParamsObserver: React.FC<SearchParamsObserverProps> = ({
+  onChange,
+}) => {
+  const searchParams = useSearchParams();
+  const currentSearch = searchParams.toString();
+  const isInitialRender = useRef(true);
+
+  useEffect(() => {
+    if (isInitialRender.current) {
+      isInitialRender.current = false;
+      return;
+    }
+
+    onChange();
+  }, [currentSearch, onChange]);
+
+  return null;
+};
 
 const Preloader: React.FC = () => {
   const [show, setShow] = useState(true);
   const pathname = usePathname();
-  const searchParams = useSearchParams();
   const timerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   // Helper to clear any pending hide-timer
@@ -29,12 +57,18 @@ const Preloader: React.FC = () => {
     [clearHideTimer]
   );
 
-  // When pathname / searchParams change → the new page has rendered, schedule hide
-  useEffect(() => {
+  const handleNavigationComplete = useCallback(() => {
     setShow(true);
     scheduleHide(1200);
+  }, [scheduleHide]);
+
+  // When pathname changes → the new page has rendered, schedule hide.
+  // Search params are observed separately so they cannot prevent this
+  // component's preloader markup from being server-rendered.
+  useEffect(() => {
+    handleNavigationComplete();
     return clearHideTimer;
-  }, [pathname, searchParams, scheduleHide, clearHideTimer]);
+  }, [pathname, handleNavigationComplete, clearHideTimer]);
 
   // Normalise a pathname by stripping trailing slashes for comparison
   const normalisePath = (p: string) => (p.endsWith("/") && p.length > 1 ? p.slice(0, -1) : p);
@@ -93,41 +127,47 @@ const Preloader: React.FC = () => {
     document.addEventListener("click", handleClick, { capture: true });
     return () =>
       document.removeEventListener("click", handleClick, { capture: true });
-  }, [clearHideTimer]);
+  }, [clearHideTimer, scheduleHide]);
 
   return (
-    <div
-      id="preloader"
-      className={`preloader-area position-fixed text-center ${show ? "" : "preloader-deactivate"}`}
-      style={{
-        transition: show
-          ? "none"
-          : "opacity 0.6s ease-in-out, visibility 0.6s ease-in-out",
-        opacity: show ? 1 : 0,
-        visibility: show ? "visible" : "hidden",
-        zIndex: 99999,
-        pointerEvents: show ? "auto" : "none",
-      }}
-    >
-      <div className="loader">
-        <div className="waviy">
-          <div className="waviy-line">
-            <span>D</span>
-            <span>M</span>
-            <span>G</span>
-          </div>
-          <div className="waviy-line">
-            <span>M</span>
-            <span>A</span>
-            <span>S</span>
-            <span>O</span>
-            <span>N</span>
-            <span>R</span>
-            <span>Y</span>
+    <>
+      <div
+        id="preloader"
+        className={`preloader-area position-fixed text-center ${show ? "" : "preloader-deactivate"}`}
+        style={{
+          transition: show
+            ? "none"
+            : "opacity 0.6s ease-in-out, visibility 0.6s ease-in-out",
+          opacity: show ? 1 : 0,
+          visibility: show ? "visible" : "hidden",
+          zIndex: 99999,
+          pointerEvents: show ? "auto" : "none",
+        }}
+      >
+        <div className="loader">
+          <div className="waviy">
+            <div className="waviy-line">
+              <span>D</span>
+              <span>M</span>
+              <span>G</span>
+            </div>
+            <div className="waviy-line">
+              <span>M</span>
+              <span>A</span>
+              <span>S</span>
+              <span>O</span>
+              <span>N</span>
+              <span>R</span>
+              <span>Y</span>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+
+      <Suspense fallback={null}>
+        <SearchParamsObserver onChange={handleNavigationComplete} />
+      </Suspense>
+    </>
   );
 };
 

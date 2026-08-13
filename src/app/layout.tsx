@@ -2,7 +2,7 @@
 // in production builds (fixes responsive styles being overridden on Vercel)
 import "@/styles/globals.css";
 
-import React, { Suspense } from "react";
+import React from "react";
 import AosAnimation from "@/components/Layout/AosAnimation";
 import BackToTop from "@/components/Layout/BackToTop";
 import Preloader from "@/components/Layout/Preloader";
@@ -50,6 +50,23 @@ export const metadata: Metadata = {
 
 import { ThemeProvider } from "@/components/Layout/ThemeProvider";
 
+const themeInitializationScript = `
+  (function () {
+    try {
+      var savedTheme = localStorage.getItem("theme");
+      var theme = savedTheme === "light" || savedTheme === "dark"
+        ? savedTheme
+        : "dark";
+      var root = document.documentElement;
+      root.setAttribute("data-theme", theme);
+      root.setAttribute("data-bs-theme", theme);
+      root.style.colorScheme = theme;
+    } catch (_) {
+      // The server-rendered dark theme remains the safe default.
+    }
+  })();
+`;
+
 const jsonLd = {
   "@context": "https://schema.org",
   "@graph": [
@@ -80,7 +97,19 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html
+      lang="en"
+      data-theme="dark"
+      data-bs-theme="dark"
+      style={{ colorScheme: "dark" }}
+      suppressHydrationWarning
+    >
+      <head>
+        <script
+          id="theme-initializer"
+          dangerouslySetInnerHTML={{ __html: themeInitializationScript }}
+        />
+      </head>
       <body className={jost.className}>
         <script
           type="application/ld+json"
@@ -92,9 +121,7 @@ export default function RootLayout({
         </ThemeProvider>
 
         {/* Preloader */}
-        <Suspense fallback={null}>
-          <Preloader />
-        </Suspense>
+        <Preloader />
 
         {/* AosAnimation */}
         <AosAnimation />

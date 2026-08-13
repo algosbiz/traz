@@ -13,22 +13,25 @@ const ThemeContext = createContext<ThemeContextType | undefined>(undefined);
 
 export const ThemeProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const [theme, setTheme] = useState<Theme>("dark");
+  const [initialized, setInitialized] = useState(false);
 
   useEffect(() => {
-    // Check local storage for theme preference
-    const savedTheme = localStorage.getItem("theme") as Theme | null;
-    if (savedTheme) {
-      setTheme(savedTheme);
-    }
+    // The inline initializer in layout.tsx resolves localStorage before the
+    // browser's first paint. Sync React state with that already-applied theme.
+    const initialTheme = document.documentElement.getAttribute("data-theme");
+    setTheme(initialTheme === "light" ? "light" : "dark");
+    setInitialized(true);
   }, []);
 
   useEffect(() => {
+    if (!initialized) return;
+
     // Apply theme to document
     document.documentElement.setAttribute("data-theme", theme);
     document.documentElement.setAttribute("data-bs-theme", theme);
     document.documentElement.style.colorScheme = theme;
     localStorage.setItem("theme", theme);
-  }, [theme]);
+  }, [initialized, theme]);
 
   const toggleTheme = () => {
     setTheme((prevTheme) => (prevTheme === "light" ? "dark" : "light"));

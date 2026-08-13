@@ -1,0 +1,12 @@
+/* Materials & Finishes section (service detail pages).
+   Reuses the .services-wrap-area / .services-item card styling from
+   style.css; only the intro paragraph and card spacing need adjusting. */
+.materials-area .section-title-wrap p {
+  margin-top: 20px;
+  margin-bottom: 0;
+  color: var(--textColor);
+}
+
+.materials-area .services-item p {
+  margin-bottom: 0;
+}

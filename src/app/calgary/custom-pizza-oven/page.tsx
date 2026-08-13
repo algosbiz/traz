@@ -8,6 +8,7 @@ import Overview from "@/components/InteriorHome/Overview";
 import AboutUsContent from "@/components/ArchitectureStudio/AboutUsContent";
 import FaqsContent from "@/components/Faqs/FaqsContent";
 import ClientsFeedbackSlider from "@/components/ArchitectureHome/ClientsFeedbackSlider";
+import MaterialsSection from "@/components/ServiceDetails/MaterialsSection";
 
 // Data FAQ khusus untuk halaman Custom Pizza Oven
 const pizzaOvenFaqs = [
@@ -47,6 +48,70 @@ const pizzaOvenFaqs = [
       "Yes. At DMG Masonry, every pizza oven is tailored to the project, including the size, shape, finish, and overall style to ensure it fits naturally within the outdoor environment and cooking needs.",
     ],
   },
+  {
+    uuid: "faq-oven-6",
+    question: "How long before I can use my new pizza oven after installation?",
+    answers: [
+      "A newly built pizza oven needs time for the masonry and mortar to cure properly, and it's important to follow a gradual first-fire process to avoid cracking. We'll provide you with a recommended curing and first-use schedule specific to your oven once construction is complete.",
+    ],
+  },
+  {
+    uuid: "faq-oven-7",
+    question: "How long does it take to build a custom pizza oven?",
+    answers: [
+      "Most pizza oven builds take one to a few weeks to complete, depending on the size, design, and materials chosen. We'll give you a more precise timeline after reviewing your specific project.",
+    ],
+  },
+  {
+    uuid: "faq-oven-8",
+    question: "Is brick or natural stone better for a pizza oven?",
+    answers: [
+      "Both stone perform well for pizza ovens, though the choice often comes down to style and how the oven fits into your outdoor space. We typically recommend heat-resistant materials suited to high-temperature cooking, and can guide you through the best option for your design during planning.",
+    ],
+  },
+  {
+    uuid: "faq-oven-9",
+    question:
+      "What should I ask a contractor before starting my pizza oven project?",
+    answers: [
+      "It's a good idea to ask about experience building pizza ovens specifically, expected construction timelines, material options, and how heat performance and durability are handled. We're happy to answer all of this during your initial consultation.",
+    ],
+  },
+  {
+    uuid: "faq-oven-10",
+    question: "Are there eco-friendly material options for a custom pizza oven?",
+    answers: [
+      "Yes, there are eco-friendly and sustainably sourced masonry material options available for pizza oven builds. We can discuss material choices that align with your sustainability preferences during the design phase.",
+    ],
+  },
+];
+
+// Section MATERIALS baru (lihat sheet "CUSTOM PIZZA OVEN" baris 10-19)
+const pizzaOvenMaterials = [
+  {
+    icon: "flaticon-mansory",
+    title: "Heat-Resistant Brick",
+    text: "Firebrick and heat-resistant brick are the traditional choice for pizza oven interiors, prized for how efficiently they retain and radiate heat for consistent cooking results.",
+    aosDelay: "100",
+  },
+  {
+    icon: "flaticon-cube",
+    title: "Natural Stone",
+    text: "Natural stone is often used for the oven's exterior and surrounding structure, giving it a durable, textured finish that holds up well outdoors while complementing the rest of your backyard.",
+    aosDelay: "200",
+  },
+  {
+    icon: "flaticon-facade",
+    title: "Stone Veneer & Brick Finishes",
+    text: "For homeowners who want the visual character of stone or brick without the added weight, veneer finishes are a practical option that still delivers a strong, long-lasting exterior for your oven.",
+    aosDelay: "300",
+  },
+  {
+    icon: "flaticon-houses",
+    title: "Eco-Friendly Material Options",
+    text: "We're able to source eco-friendly and sustainably produced masonry materials for pizza oven builds, so you can choose a construction approach that aligns with your environmental priorities without sacrificing performance.",
+    aosDelay: "400",
+  },
 ];
 
 // Tahapan proses spesifik untuk Custom Pizza Oven
@@ -71,7 +136,7 @@ const pizzaOvenProcessSteps = [
     id: "3",
     number: "3",
     image: "/images/services/service/custome_pizza/4.webp",
-    title: "Install the Oven",
+    title: "Build the Custom Pizza Oven",
     text: "We build with focus on structure, heat performance, and durability.",
     aosDelay: "300",
   },
@@ -135,28 +200,34 @@ export default function Page() {
 
       <ServiceDetailsContent
         mainImage="/images/services/service/custome_pizza/1.webp"
-        title="Custom Pizza Oven Installation"
+        title="Custom Outdoor Pizza Oven Installation in Calgary"
         subtitle="SERVICE"
-        description1="Outdoor pizza ovens bring a different rhythm to outdoor living, where cooking, heat, and gathering come together in one space. We design and build custom pizza ovens that are made to perform reliably while fitting naturally into any outdoor environments."
+        description1="Outdoor pizza ovens bring a different rhythm to outdoor living in Calgary, where cooking, heat, and gathering come together in one space. We design and build custom outdoor pizza ovens that are made to perform reliably while fitting naturally into any outdoor environment."
         paragraphs={[
-          "Built for high-temperature cooking and year-round exposure, each pizza oven requires careful material selection and precise construction. We use durable masonry systems designed to retain heat efficiently, handle repeated use, and maintain structural stability through changing weather conditions, ensuring consistent performance.",
+          "Built for high-temperature cooking and year-round exposure, each outdoor pizza oven requires careful material selection and precise construction. We use durable masonry systems designed to retain heat efficiently, handle repeated use, and maintain structural stability through Calgary's changing weather conditions, ensuring consistent performance.",
           "A well-designed pizza oven often becomes more than a cooking feature. It naturally becomes a social focal point in the outdoor space, influencing how people gather, cook, and spend time together in a more engaging setting, while adding both function and atmosphere to the overall outdoor experience.",
         ]}
         benefits={[
-          "Custom Design & Build",
+          "Custom Pizza Oven Design & Build",
           "Built-In Outdoor Cooking Systems",
-          "Residential & Commercial Builds",
+          "Residential & Commercial Pizza Oven Builds",
           "Durable Heat-Resistant Masonry",
         ]}
         extraParagraphs={[
           "Every build begins with a clear understanding of how the space will be lived in and experienced, from cooking habits and frequency of use to the available layout and flow of the outdoor area. This approach allows us to design a pizza oven that feels naturally integrated into its surroundings, rather than appearing as a standalone structure that simply occupies space.",
           "Construction is carried out with careful consideration of heat distribution, structural integrity, and how each material responds under sustained high temperatures. Every layer and connection is planned with precision to support consistent performance, while also achieving a clean, cohesive finish that holds up well in demanding outdoor conditions over time.",
-          "At DMG Masonry, the defining focus of our work is precision in execution combined with a strong understanding of material behavior. This commitment ensures each pizza oven is not only visually well-resolved, but also stable, efficient, and reliable for long-term use in outdoor environments where durability truly matters.",
+          "At DMG Masonry, the defining focus of our work is precision in execution combined with a strong understanding of material behavior. This commitment ensures each outdoor pizza oven is not only visually well-resolved, but also stable, efficient, and reliable for long-term use in Calgary outdoor environments where durability truly matters.",
         ]}
       />
 
+      <MaterialsSection
+        title="Pizza Oven Materials We Use"
+        description="Because pizza ovens operate at high, sustained temperatures, material choice matters even more than it does for most outdoor structures. Here's what we typically work with."
+        items={pizzaOvenMaterials}
+      />
+
       <Process
-        title="Our Pizza Oven Installation Process"
+        title="Our Outdoor Pizza Oven Installation Process in Calgary"
         steps={pizzaOvenProcessSteps}
       />
 
@@ -164,20 +235,23 @@ export default function Page() {
 
       <ClientsFeedbackSlider
         titleNormal="What Outdoor Chefs"
-        titleHighlight="Say About Our Ovens"
+        titleHighlight="Say About Our Pizza Ovens"
         feedbacks={pizzaOvenFeedbacks}
       />
 
       <AboutUsContent
         image="/images/services/service/custome_pizza/8.webp"
         subtitle="WHY CHOOSE US"
-        title="Custom Pizza Ovens Built for Outdoor Living"
-        description="A wood-fired pizza oven adds warmth, character, and functionality to any outdoor space. We create custom-built ovens designed for reliable cooking performance while complementing the overall style of your backyard area."
+        title="Custom Outdoor Pizza Ovens Built for Calgary Backyards"
+        description="A wood-fired outdoor pizza oven adds warmth, character, and functionality to any outdoor space in Calgary. We create custom-built pizza ovens designed for reliable cooking performance while complementing the overall style of your backyard area."
         listItems={[
           "Custom-built pizza oven designs",
           "Reliable heat for consistent cooking",
           "Traditional wood-fired cooking experience",
           "Designed for outdoor gatherings",
+          "Professional pizza oven installation in Calgary",
+          "Built with durable, heat-resistant masonry materials",
+          "Trusted by Calgary homeowners for outdoor living projects",
         ]}
         buttonText="Contact Our Team"
         buttonLink="/contact-us"
@@ -192,7 +266,7 @@ export default function Page() {
       <div className="ptb-100">
         <ContactFormStyleTwo
           image="/images/services/service/custome_pizza/9.webp"
-          title="Build Your Ideal Pizza Oven"
+          title="Build Your Ideal Outdoor Pizza Oven in Calgary"
           subtitle="REQUEST A QUOTE"
         />
       </div>
