@@ -15,7 +15,7 @@ const chimneyRepairFaqs = [
     uuid: "faq-chimney-1",
     question: "How do I know if my chimney needs repair?",
     answers: [
-      "Common signs of chimney damage include cracked mortar joints, loose brickwork, water leaks, visible deterioration, and reduced fireplace performance. During our inspection, we assess the overall condition of the chimney to determine the most appropriate repair approach based on structural condition and long-term performance needs.",
+      "Common signs of chimney damage include cracked mortar joints, loose brickwork, spalling brick faces that are flaking or crumbling, water leaks, visible deterioration, and reduced fireplace performance. During our inspection, we check for spalling brick that needs replacing and assess the overall condition of the chimney to determine the most appropriate repair approach based on structural condition and long-term performance needs.",
     ],
   },
   {
@@ -55,7 +55,7 @@ const chimneyProcessSteps = [
     number: "1",
     image: "/images/services/service/chimney_repair/2.webp",
     title: "Inspect The Chimney",
-    text: "We assess cracks, damage, and overall chimney condition.",
+    text: "We assess cracks, spalling brick, and overall chimney condition.",
     aosDelay: "100",
   },
   {
@@ -71,7 +71,7 @@ const chimneyProcessSteps = [
     number: "3",
     image: "/images/services/service/chimney_repair/4.webp",
     title: "Strengthen The Structure",
-    text: "Damaged brick and mortar are restored with durable materials.",
+    text: "Spalling brick is replaced and damaged mortar is restored.",
     aosDelay: "300",
   },
   {
@@ -88,7 +88,7 @@ const chimneyProcessSteps = [
 const chimneyOverviewItems = [
   {
     image: "/images/services/service/chimney_repair/6.webp",
-    titleNormal: "Crown & Cap",
+    titleNormal: "Cap/Crown",
     titleHighlight: "Pouring",
     aosDelay: "100"
   },
@@ -149,7 +149,7 @@ export default function Page() {
         ]}
         extraParagraphs={[
           "Every chimney structure presents different repair conditions depending on age, exposure, and overall masonry condition. Before repairs begin, we carefully evaluate the existing structure, visible damage, and surrounding masonry areas to determine the most effective repair strategy for long-term performance, structural stability, and safety.",
-          "Our repair work may involve restoring damaged mortar joints, replacing deteriorated masonry materials, or repairing chimney components affected by weather exposure and wear. Each stage of the process is completed with attention to durability, clean workmanship, and consistent structural support.",
+          "Our repair work may involve restoring damaged mortar joints, replacing spalling or otherwise deteriorated masonry units, or repairing chimney components affected by weather exposure and wear. Each stage of the process is completed with attention to durability, clean workmanship, and consistent structural support.",
           "Reliable chimney restoration comes from combining experienced masonry techniques with proper planning and durable repair materials. By using careful repair methods and focusing on the overall condition of the structure, we help chimney systems maintain their strength, functionality, and original appearance while supporting long-term structural performance.",
         ]}
       />

@@ -25,7 +25,7 @@ interface ChimneyLocationPageProps {
 const chimneyProcessContent = [
   {
     title: "Inspect The Chimney",
-    text: "We assess the masonry, crown, cap, joints, and visible damage.",
+    text: "We assess the masonry, cap/crown, joints, spalling brick, and visible damage.",
   },
   {
     title: "Plan The Repair",
@@ -33,7 +33,7 @@ const chimneyProcessContent = [
   },
   {
     title: "Restore The Masonry",
-    text: "Failed brick, stone, and mortar are repaired with durable materials.",
+    text: "Spalling brick is replaced and failed stone and mortar are restored.",
   },
   {
     title: "Finish & Protect",
@@ -44,7 +44,7 @@ const chimneyProcessContent = [
 const chimneyOverviewItems = [
   {
     image: "/images/services/service/chimney_repair/6.webp",
-    titleNormal: "Crown & Cap",
+    titleNormal: "Cap/Crown",
     titleHighlight: "Repair",
     aosDelay: "100",
   },
@@ -118,14 +118,14 @@ export default function ChimneyLocationPage({
       uuid: `faq-${location.slug}-1`,
       question: `What are the signs that my ${location.name} chimney needs repair?`,
       answers: [
-        "Cracked or missing mortar, loose brick or stone, white staining, pieces of masonry near the roof, water marks around the fireplace, and a visibly cracked crown are all reasons to arrange an inspection. Early assessment can often keep the repair more focused.",
+        "Cracked or missing mortar, loose brick or stone, spalling brick faces that are flaking or crumbling, white staining, pieces of masonry near the roof, water marks around the fireplace, and a visibly cracked cap/crown are all reasons to arrange an inspection. Early assessment can often keep the repair more focused.",
       ],
     },
     {
       uuid: `faq-${location.slug}-2`,
       question: `How does local weather affect chimneys in ${location.name}?`,
       answers: [
-        `${location.climateContext} Once water enters a crack or open joint, freezing can expand the affected area and speed up deterioration. Sound mortar, crown, and cap details help reduce that exposure.`,
+        `${location.climateContext} Once water enters a crack or open joint, freezing can expand the affected area and speed up deterioration. Sound mortar and cap/crown details help reduce that exposure.`,
       ],
     },
     {
@@ -139,7 +139,7 @@ export default function ChimneyLocationPage({
       uuid: `faq-${location.slug}-4`,
       question: "What chimney components can DMG Masonry repair?",
       answers: [
-        "Our masonry repair scope can include brick and stone units, mortar joints, chimney crowns, caps, and unstable sections of the stack. An inspection determines which components are contributing to leaks, movement, or visible deterioration.",
+        "Our masonry repair scope can include brick and stone units, replacement of spalling brick, mortar joints, the chimney cap/crown, and unstable sections of the stack. An inspection determines which components are contributing to leaks, movement, or visible deterioration.",
       ],
     },
     {
