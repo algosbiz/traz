@@ -19,7 +19,7 @@ import FaqsContent from "@/components/Faqs/FaqsContent";
 import { buildMetadata } from "@/lib/seo";
 
 export const metadata = buildMetadata({
-  title: "DMG Masonry Contractor Service Calgary for Custom Designs",
+  title: "Masonry and Contractor Services in Calgary",
   description:
     "Transform your space with our masonry contractor service in Calgary. We specialize in durable repairs and unique designs.",
   path: "/",
