@@ -131,9 +131,9 @@ const stoneVeneerFeedbacks = [
 import { buildMetadata } from "@/lib/seo";
 
 export const metadata = buildMetadata({
-  title: "Stone Veneer Calgary | Stones Veneer Installation",
+  title: "Upgrade Your Home with Stone Veneer Calgary | DMG Masonry",
   description:
-    "High-quality stone veneer Calgary services to enhance your property’s look. Expert Calgary stones veneer installation with durable and elegant finishes.",
+    "Our Calgary stones veneer installations add texture and character to any home, using durable materials built to handle the local climate every season.",
   path: "/calgary/stone-veneer/",
 });
 

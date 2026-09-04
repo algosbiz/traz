@@ -125,9 +125,9 @@ const retainingWallFeedbacks = [
 import { buildMetadata } from "@/lib/seo";
 
 export const metadata = buildMetadata({
-  title: "Calgary Retaining Walls — Build, Repair, Reinforce",
+  title: "Pro Retaining Wall Installation in Calgary – DMG Masonry",
   description:
-    "Professional retaining wall construction and repair delivering structural stability, drainage solutions, and long-lasting finishes; contact DMG Masonry for estimates",
+    "Our retaining wall Calgary projects manage sloped yards and control erosion. Ask us for a retaining wall cost estimate before your next landscaping project.",
   path: "/calgary/retaining-wall-construction/",
 });
 

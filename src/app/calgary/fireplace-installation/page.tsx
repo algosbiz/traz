@@ -163,9 +163,9 @@ const fireplaceFeedbacks = [
 import { buildMetadata } from "@/lib/seo";
 
 export const metadata = buildMetadata({
-  title: "Outdoor Fireplace Calgary | Fireplace Installation Experts",
+  title: "Fireplace Installation Experts in Calgary - DMG Masonry",
   description:
-    "Expert fireplace service in Calgary providing customized installations, safety upgrades, and preventive maintenance to boost performance and comfort.",
+    "We build a custom outdoor fireplace for backyards across Calgary, adding warmth, ambiance and a natural gathering spot for family and friends every season.",
   path: "/calgary/fireplace-installation/",
 });
 

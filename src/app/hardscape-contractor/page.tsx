@@ -163,9 +163,9 @@ const hardscapeFeedbacks = [
 import { buildMetadata } from "@/lib/seo";
 
 export const metadata = buildMetadata({
-  title: "Hardscape Services | Expert Hardscape Construction",
+  title: "Five-Star Hardscape Contractors in Calgary - DMG Masonry",
   description:
-    "Professional hardscape services for outdoor living spaces. We specialize in custom hardscape construction to enhance function and style",
+    "We provide hardscape services and hardscape construction across Calgary, from patios to retaining walls, all built to last through many years of weather.",
   path: "/hardscape-contractor/",
 });
 

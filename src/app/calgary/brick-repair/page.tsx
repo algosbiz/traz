@@ -82,9 +82,9 @@ const brickRepairProcessSteps = [
 ];
 
 export const metadata = buildMetadata({
-  title: "Brick Repair Calgary — Professional Masonry Repairs",
+  title: "Brick Repair From a Trusted Calgary Mason - DMG Masonry",
   description:
-    "Professional brick repair in Calgary for cracked bricks, deteriorated mortar, loose masonry, and weather damage. Request a quote from DMG Masonry.",
+    "Our brick mason team handles brick repair for homes and businesses across Calgary, matching mortar and materials for a clean, seamless finish every time.",
   path: "/calgary/brick-repair/",
 });
 

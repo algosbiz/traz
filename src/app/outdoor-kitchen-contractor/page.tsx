@@ -119,9 +119,9 @@ const outdoorKitchenFeedbacks = [
 import { buildMetadata } from "@/lib/seo";
 
 export const metadata = buildMetadata({
-  title: "Outdoor Kitchen Services in Calgary — Custom Builds",
+  title: "Calgary’s Favorite Custom Outdoor Kitchens – DMG Masonry",
   description:
-    "Custom outdoor kitchen services including countertops, grills, pizza ovens, and stonework, delivered by experienced Calgary contractors.",
+    "From a simple outdoor barbecue setup to a full outdoor kitchen with pizza oven, we help you plan the layout, materials and overall project cost upfront.",
   path: "/outdoor-kitchen-contractor/",
 });
 

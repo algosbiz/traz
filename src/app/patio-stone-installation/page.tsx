@@ -119,9 +119,9 @@ const patioStoneFeedbacks = [
 import { buildMetadata } from "@/lib/seo";
 
 export const metadata = buildMetadata({
-  title: "Patio Paving Calgary — Expert Stone Installation",
+  title: "Patio Stone Installation for Calgary Homes - DMG Masonry",
   description:
-    "Expert stone paving and patio installation with tailored patterns, drainage solutions, and quality materials to enhance outdoor living spaces.",
+    "We handle every stage of your patio project, from grading to laying patio stones, creating a durable outdoor surface built for daily use and years of weather.",
   path: "/patio-stone-installation/",
 });
 

@@ -25,9 +25,9 @@ export const chimneyRepairLocations: ChimneyRepairLocation[] = [
   {
     slug: "bragg-creek",
     name: "Bragg Creek",
-    metadataTitle: "Chimney Repair Bragg Creek | DMG Masonry",
+    metadataTitle: "Trusted Chimney Repair in Bragg Creek - DMG Masonry",
     metadataDescription:
-      "Professional chimney repair in Bragg Creek for cracked mortar, damaged brick, leaks, cap/crown repairs, and weathered masonry. Request an inspection.",
+      "Homes around Bragg Creek face harsh mountain weather that wears chimneys down fast. Our masons repair cracks, leaks and structural damage all year round.",
     description:
       "DMG Masonry provides chimney repair in Bragg Creek for homes affected by cracked mortar, loose brickwork, water entry, and a deteriorated cap/crown. Our repairs are planned to restore stability while preserving the character of the existing masonry.",
     paragraphs: [
@@ -72,9 +72,9 @@ export const chimneyRepairLocations: ChimneyRepairLocation[] = [
   {
     slug: "longview",
     name: "Longview",
-    metadataTitle: "Chimney Repair Longview AB | DMG Masonry",
+    metadataTitle: "Expert Chimney Repair Serving Longview Alberta - DMG Masonry",
     metadataDescription:
-      "Reliable chimney repair in Longview, Alberta, including spalling brick replacement, tuckpointing, cap/crown work, leak assessment, and masonry restoration.",
+      "Our team travels out to Longview for chimney repair, fixing cracked brick and worn mortar so your fireplace stays safe and reliable through every season.",
     description:
       "Our chimney repair services in Longview help homeowners correct weathered mortar, cracked brick, unstable masonry, and water-related deterioration. DMG Masonry focuses on repairs that support safe function, lasting strength, and a finish that suits the property.",
     paragraphs: [
@@ -118,9 +118,9 @@ export const chimneyRepairLocations: ChimneyRepairLocation[] = [
   {
     slug: "kananaskis",
     name: "Kananaskis",
-    metadataTitle: "Chimney Repair Kananaskis | DMG Masonry",
+    metadataTitle: "Expert Chimney Repair in the Kananaskis Area - DMG Masonry",
     metadataDescription:
-      "Chimney repair in Kananaskis for mountain homes, cabins, and properties. We repair cracked masonry, mortar joints, the cap/crown, and water damage.",
+      "From mountain cabins to full time residences, we handle chimney repair throughout Kananaskis, restoring safety and function to aging fireplace structures.",
     description:
       "DMG Masonry provides chimney repair in Kananaskis for cabins, residences, and mountain properties where masonry must withstand demanding seasonal exposure. We restore damaged brick, stone, mortar, and the cap/crown with an emphasis on stability and moisture protection.",
     paragraphs: [
@@ -167,9 +167,9 @@ export const chimneyRepairLocations: ChimneyRepairLocation[] = [
   {
     slug: "sundre",
     name: "Sundre",
-    metadataTitle: "Chimney Repair Sundre AB | DMG Masonry",
+    metadataTitle: "Expert Chimney Repair Serving Sundre Alberta - DMG Masonry",
     metadataDescription:
-      "Professional chimney repair in Sundre, Alberta. DMG Masonry repairs brick, mortar, the chimney cap/crown, leaks, and weather-damaged masonry.",
+      "We help Sundre homeowners with chimney repair, from small mortar touch ups to full masonry restoration on older or historic fireplace structures nearby.",
     description:
       "DMG Masonry offers chimney repair in Sundre for residential and rural properties with cracked joints, damaged brick or stone, a leaking cap/crown, and aging masonry. Our work is designed to restore dependable performance without compromising the chimney's appearance.",
     paragraphs: [
@@ -214,9 +214,9 @@ export const chimneyRepairLocations: ChimneyRepairLocation[] = [
   {
     slug: "three-hills",
     name: "Three Hills",
-    metadataTitle: "Chimney Repair Three Hills | DMG Masonry",
+    metadataTitle: "Expert Chimney Repair for Homes in Three Hills - DMG Masonry",
     metadataDescription:
-      "Expert chimney repair in Three Hills, Alberta, for cracked brick, failing mortar, a damaged cap/crown, leaks, and unstable masonry. Book an assessment.",
+      "Our masons provide chimney repair across the Three Hills area, addressing spalling brick, cracked mortar and other common issues before they spread further.",
     description:
       "Our chimney repair service in Three Hills addresses failing mortar, cracked or spalling brick, cap/crown damage, leaks, and loose masonry. DMG Masonry provides a detailed assessment followed by repairs suited to the age and construction of the chimney.",
     paragraphs: [
@@ -260,9 +260,9 @@ export const chimneyRepairLocations: ChimneyRepairLocation[] = [
   {
     slug: "drumheller",
     name: "Drumheller",
-    metadataTitle: "Chimney Repair Drumheller | DMG Masonry",
+    metadataTitle: "Expert Chimney Repair Serving Drumheller Homes - DMG Masonry",
     metadataDescription:
-      "Chimney repair in Drumheller for cracked mortar, loose or damaged brick, cap/crown deterioration, and leaks. Restore your chimney with DMG Masonry.",
+      "Our masonry crew serves Drumheller homeowners, addressing cracked brick, water damage and worn mortar on chimneys before small problems become costly repairs.",
     description:
       "DMG Masonry provides chimney repair in Drumheller for masonry affected by age, movement, moisture, and temperature extremes. We repair mortar joints, brickwork, the cap/crown, and unstable sections to restore a stronger, cleaner chimney assembly.",
     paragraphs: [
@@ -306,9 +306,9 @@ export const chimneyRepairLocations: ChimneyRepairLocation[] = [
   {
     slug: "claresholm",
     name: "Claresholm",
-    metadataTitle: "Chimney Repair Claresholm | DMG Masonry",
+    metadataTitle: "Expert Chimney Repair for Homes in Claresholm - DMG Masonry",
     metadataDescription:
-      "Dependable chimney repair in Claresholm, Alberta. We restore cracked mortar, damaged brick, the cap/crown, leaks, and weathered masonry.",
+      "We provide chimney repair for homes throughout Claresholm, fixing mortar damage and structural issues to keep your fireplace safe and reliable each winter.",
     description:
       "Our Claresholm chimney repair service restores deteriorated mortar, damaged brick or stone, a cracked cap/crown, and loose masonry. DMG Masonry plans each repair around the existing structure and the weather exposure common to southern Alberta.",
     paragraphs: [

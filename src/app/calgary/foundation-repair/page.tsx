@@ -8,6 +8,14 @@ import Overview from "@/components/InteriorHome/Overview";
 import AboutUsContent from "@/components/ArchitectureStudio/AboutUsContent";
 import FaqsContent from "@/components/Faqs/FaqsContent";
 import ClientsFeedbackSlider from "@/components/ArchitectureHome/ClientsFeedbackSlider";
+import { buildMetadata } from "@/lib/seo";
+
+export const metadata = buildMetadata({
+  title: "Foundation Repair Solutions in Calgary - DMG Masonry",
+  description:
+    "Cracks and shifting can signal deeper structural issues. Our team provides foundation repair across Calgary to protect your home's value for years to come.",
+  path: "/calgary/foundation-repair/",
+});
 
 // Data FAQ khusus untuk halaman Foundation Repair
 const foundationFaqs = [

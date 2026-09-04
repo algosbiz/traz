@@ -119,9 +119,9 @@ const chimneyFeedbacks = [
 import { buildMetadata } from "@/lib/seo";
 
 export const metadata = buildMetadata({
-  title: "Chimney Repair Calgary: Keep Your Home Safe",
+  title: "Leading Chimney Repair Services in Calgary - DMG Masonry",
   description:
-    "Discover reliable chimney repair services in Calgary. Our team provides thorough inspections and effective solutions for your chimney.",
+    "Our chimney repair service covers Calgary and the surrounding area, fixing cracks and leaks fast. Ask us for a chimney repair cost estimate before winter.",
   path: "/calgary/chimney-repair/",
 });
 

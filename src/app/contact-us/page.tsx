@@ -7,9 +7,9 @@ import Footer from "@/components/Layout/Footer";
 import { buildMetadata } from "@/lib/seo";
 
 export const metadata = buildMetadata({
-  title: "Contact DMG Masonry for Expert Solutions Today - DMG Masonry",
+  title: "Get in Touch With Our Calgary Masonry Team - DMG Masonry",
   description:
-    "Contact DMG Masonry for quotes, inspections, repairs and new construction services by experienced masons near you.",
+    "Reach out to discuss your next project. Our team is ready to answer questions, offer guidance and schedule an onsite consultation at a time that suits you.",
   path: "/contact-us/",
 });
 

@@ -13,9 +13,9 @@ import Footer from "@/components/Layout/Footer";
 import { buildMetadata } from "@/lib/seo";
 
 export const metadata = buildMetadata({
-  title: "ABOUT DMG Masonry Calgary: Quality Craftsmanship Matters - DMG Masonry",
+  title: "About Special Masonry Contractor for You - DMG Masonry",
   description:
-    "Explore the craftsmanship of DMG Masonry Calgary, where outdoor beauty meets durability with our expert masonry services.",
+    "Learn about DMG Masonry, a Calgary based team specializing in brick and stone craftsmanship, historic restorations and custom outdoor living builds for homes.",
   path: "/about-us/",
 });
 

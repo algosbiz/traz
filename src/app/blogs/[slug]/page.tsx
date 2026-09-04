@@ -6,6 +6,7 @@ import PageTitle from "@/components/Common/PageTitle";
 import Footer from "@/components/Layout/Footer";
 import NavbarStyleTwo from "@/components/Layout/NavbarStyleTwo";
 import { getPublishedBlogBySlug, getPublishedBlogs } from "@/lib/cmsBlogs";
+import { getBlogSeoOverride } from "@/lib/blogSeo";
 import { buildMetadata } from "@/lib/seo";
 
 interface BlogDetailsPageProps {
@@ -21,9 +22,11 @@ export async function generateMetadata({ params }: BlogDetailsPageProps): Promis
     return {};
   }
 
+  const seo = getBlogSeoOverride(post.slug);
+
   return buildMetadata({
-    title: `${post.title} | DMG Masonry`,
-    description: post.excerpt,
+    title: seo?.title ?? `${post.title} | DMG Masonry`,
+    description: seo?.description ?? post.excerpt,
     path: `/blogs/${post.slug}/`,
   });
 }

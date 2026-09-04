@@ -188,9 +188,9 @@ const firePitsFeedbacks = [
 import { buildMetadata } from "@/lib/seo";
 
 export const metadata = buildMetadata({
-  title: "Fire Pits Calgary | Built to Fit Your Outdoor Space",
+  title: "Custom Fire Pits for Home Yards in Calgary – DMG Masonry",
   description:
-    "Custom-made fire pits in Calgary to elevate your outdoor space. We ensure durable and stylish fire pits that deliver great value for you.",
+    "We design fire pits Calgary homeowners enjoy year round, using durable stone and brick to create a lasting, comfortable gathering spot for family and friends.",
   path: "/calgary/custom-fire-pits/",
 });
 
