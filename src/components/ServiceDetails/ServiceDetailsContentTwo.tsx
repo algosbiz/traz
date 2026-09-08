@@ -1,17 +1,60 @@
 "use client";
 
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 
 import arrowIcon from "../../../public/images/services-details/arrow.svg";
 import sidebarImg from "../../../public/images/main-banner/home/9.webp";
 
-// Same local video used on the top banner.
-const bannerVideoUrl = "/video/video.mp4";
+// A 540p cut of the banner video. This box is only ~720px wide (col-lg-8), so
+// the 720p /video/video.mp4 the lightboxes play was twice the resolution needed
+// here — the smaller file halves the bytes with no visible difference at this
+// size. The poster is the video's own opening frame, so nothing shifts visually
+// when playback starts.
+const bannerVideoUrl = "/video/video-loop.mp4";
+const bannerPosterUrl = "/images/video-poster.webp";
 
 const ServiceDetailsContentTwo: React.FC = () => {
   const videoRef = useRef<HTMLVideoElement>(null);
   const [isMuted, setIsMuted] = useState(true);
+
+  // This section sits well below the fold, but the video used to carry
+  // `autoPlay preload="auto"`, so the browser pulled the whole file during the
+  // initial page load — the single biggest contributor to the homepage load
+  // time. The markup now ships `preload="none"`, and the download only starts
+  // once the video is about to scroll into view.
+  useEffect(() => {
+    const video = videoRef.current;
+    if (!video) return;
+
+    // Without IntersectionObserver (very old browsers) fall back to the
+    // previous behaviour rather than leaving a video that never plays.
+    if (typeof IntersectionObserver === "undefined") {
+      video.preload = "auto";
+      void video.play().catch(() => {});
+      return;
+    }
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (!entry.isIntersecting) return;
+
+        video.preload = "auto";
+        video.load();
+        // Autoplay is only permitted while muted; the mute button below may
+        // have already unmuted it, in which case the promise rejects and the
+        // visitor presses play themselves.
+        void video.play().catch(() => {});
+        observer.disconnect();
+      },
+      // Start fetching a little before it is actually visible so playback has
+      // a head start by the time the section is on screen.
+      { rootMargin: "300px" },
+    );
+
+    observer.observe(video);
+    return () => observer.disconnect();
+  }, []);
 
   const toggleMute = () => {
     const video = videoRef.current;
@@ -48,11 +91,11 @@ const ServiceDetailsContentTwo: React.FC = () => {
                   <video
                     ref={videoRef}
                     src={bannerVideoUrl}
-                    autoPlay
+                    poster={bannerPosterUrl}
                     muted
                     loop
                     playsInline
-                    preload="auto"
+                    preload="none"
                     style={{
                       width: "100%",
                       height: "550px",

@@ -10,6 +10,7 @@
     "db:setup": "tsx scripts/setup-neon.ts",
     "r2:migrate": "tsx scripts/migrate-assets-to-r2.ts",
     "admin:credentials": "node scripts/generate-admin-credentials.mjs",
+    "optimize:images": "node scripts/optimize-images.mjs",
     "purge:cf": "node scripts/purge-cloudflare.mjs"
   },
   "dependencies": {
