@@ -8,15 +8,14 @@ const TextSlide: React.FC = () => {
       <div className="animation-view-area pb-100">
         <div className="container-fluid">
           <div className="animation-view-content">
-            <h1>
+            <div className="animation-view-text">
               <span>Professional Masonry Contractors</span>
               <span>Custom Masonry Services in Calgary</span>
-              <span>Best Architecture Design Agency</span>
-              <span>Creative Interior Design Agency</span>
-              <span>Trusted Architecture Design Agency</span>
-              <span>Award Winning Architecture Design Company</span>
-              <span>Best Service Provider Architecture Design Agency</span>
-            </h1>
+              <span>Professional Masonry Contractors</span>
+              <span>Custom Masonry Services in Calgary</span>
+              <span>Professional Masonry Contractors</span>
+              <span>Custom Masonry Services in Calgary</span>
+            </div>
           </div>
         </div>
       </div>

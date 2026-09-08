@@ -7,6 +7,7 @@ import Image from "next/image";
 import arrowShape from "../../../public/images/about/arrow-shape.png";
 import aboutImg2 from "../../../public/images/main-banner/home/3.webp";
 import archiTextImg from "../../../public/images/about/archi-text.png";
+import aboutBgImg from "../../../public/images/main-banner/home/2.webp";
 import arrowIcon from "../../../public/images/about/arrow.svg";
 
 const AboutUsContent: React.FC = () => {
@@ -18,7 +19,7 @@ const AboutUsContent: React.FC = () => {
             <div className="col-lg-4 col-md-12">
               <div
                 className="about-image-one"
-                style={{ backgroundImage: `url(/images/main-banner/home/2.webp)` }}
+                style={{ backgroundImage: `url(${aboutBgImg.src})` }}
                 data-aos="fade-up"
                 data-aos-delay="100"
                 data-aos-duration="600"

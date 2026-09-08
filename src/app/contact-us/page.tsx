@@ -18,10 +18,11 @@ export default function Page() {
     <>
       <NavbarStyleTwo />
 
-      <PageTitle 
+      <PageTitle
         title="Contact Us"
         homeText="Home"
         homeUrl="/"
+        titleAsHeading
       />
 
       <div className="ptb-100">

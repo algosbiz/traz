@@ -2356,9 +2356,11 @@ Animation View Area CSS
 }
 
 .animation-view-content {
-    h1 {
+    .animation-view-text {
         white-space: nowrap;
         font-size: 60px;
+        line-height: 1.2;
+        font-weight: bold;
         margin-bottom: 0;
         color: #9C9C9C;
         animation: marquee 25s linear infinite forwards;

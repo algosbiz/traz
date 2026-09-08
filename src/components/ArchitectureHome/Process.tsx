@@ -2,12 +2,16 @@
 
 import React from "react";
 import Image from "next/image";
+import processImg10 from "../../../public/images/main-banner/home/10.webp";
+import processImg11 from "../../../public/images/main-banner/home/11.webp";
+import processImg12 from "../../../public/images/main-banner/home/12.webp";
+import processImg13 from "../../../public/images/main-banner/home/13.webp";
 
 const processData = [
   {
     id: "1",
     number: "1",
-    image: "/images/main-banner/home/10.webp",
+    image: processImg10,
     title: "Project Consultation",
     text: "Reviewing your property and masonry needs.",
     aosDelay: "100",
@@ -15,7 +19,7 @@ const processData = [
   {
     id: "2",
     number: "2",
-    image: "/images/main-banner/home/11.webp",
+    image: processImg11,
     title: "Site & Material Planning ",
     text: "Coordinating materials and project preparation.",
     aosDelay: "200",
@@ -23,7 +27,7 @@ const processData = [
   {
     id: "3",
     number: "3",
-    image: "/images/main-banner/home/12.webp",
+    image: processImg12,
     title: "Professional Installation",
     text: "Delivering durable masonry with skilled workmanship.",
     aosDelay: "300",
@@ -31,7 +35,7 @@ const processData = [
   {
     id: "4",
     number: "4",
-    image: "/images/main-banner/home/13.webp",
+    image: processImg13,
     title: "Final Quality Review",
     text: "Ensuring lasting quality and clean results.",
     aosDelay: "400",

@@ -19,10 +19,11 @@ export default function Page() {
     <>
       <NavbarStyleTwo />
 
-      <PageTitle 
+      <PageTitle
         title="Services"
         homeText="Home"
         homeUrl="/"
+        titleAsHeading
       />
 
       <ServicesCard />

@@ -44,6 +44,7 @@ export default function Page() {
         title="About Us"
         homeText="Home"
         homeUrl="/"
+        titleAsHeading
       />
 
       <AboutUsContent />

@@ -48,10 +48,19 @@ const nextConfig = {
 
     // Static assets served straight from /public (images, video, fonts).
     // Vercel's default for these is `max-age=0, must-revalidate`, so neither
-    // CDN caches them — force a long CDN TTL. Browser TTL stays modest because
-    // the filenames aren't content-hashed; the CDN copies are purged on deploy.
+    // CDN caches them — force a long CDN TTL. The CDN copies are purged on
+    // deploy; browser copies cannot be, and these filenames aren't
+    // content-hashed, so the browser TTL is a month rather than a year, with
+    // stale-while-revalidate to refresh it in the background. Images rendered
+    // by a page are imported instead of referenced by path, which gives them a
+    // hashed /_next/static/media/ URL cached immutably for a year — this rule
+    // covers what is left: images referenced from CSS, and the logo URL in the
+    // JSON-LD block.
     const mediaCache = [
-      { key: "Cache-Control", value: "public, max-age=86400" },
+      {
+        key: "Cache-Control",
+        value: "public, max-age=2592000, stale-while-revalidate=86400",
+      },
       { key: "CDN-Cache-Control", value: "public, s-maxage=31536000" },
       { key: "Vercel-CDN-Cache-Control", value: "public, s-maxage=31536000" },
     ];

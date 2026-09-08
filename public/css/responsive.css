@@ -249,11 +249,11 @@
   .projects-btn a {
     font-size: 14px;
   }
-  .animation-view-content h1 {
+  .animation-view-content .animation-view-text {
     font-size: 25px;
     color: var(--headingColor);
   }
-  .animation-view-content h1 span:nth-child(odd) {
+  .animation-view-content .animation-view-text span:nth-child(odd) {
     -webkit-text-stroke: 1px var(--headingColor);
   }
   .col-xl-3:nth-child(1) .process-card {
@@ -1072,7 +1072,7 @@
   .projects-btn a {
     font-size: 14px;
   }
-  .animation-view-content h1 {
+  .animation-view-content .animation-view-text {
     font-size: 50px;
   }
   .col-xl-3:nth-child(1) .process-card {
@@ -1673,7 +1673,7 @@
   .projects-item {
     margin-bottom: 45px;
   }
-  .animation-view-content h1 {
+  .animation-view-content .animation-view-text {
     font-size: 50px;
   }
   .col-xl-3:nth-child(1) .process-card {

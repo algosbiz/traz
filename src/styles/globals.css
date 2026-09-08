@@ -10,12 +10,15 @@
 
 /* Third-party libraries */
 @import "bootstrap/dist/css/bootstrap.min.css";
-@import "remixicon/fonts/remixicon.css";
-@import "swiper/css/bundle";
+@import "../../public/css/remixicon-subset.css";
+/* Only the Swiper modules this app registers: Autoplay (no CSS),
+   Pagination and EffectFade. The full bundle pulls in every module. */
+@import "swiper/css";
+@import "swiper/css/pagination";
+@import "swiper/css/effect-fade";
 @import "react-accessible-accordion/dist/fancy-example.css";
 
 /* Base styles */
-@import "../../public/css/animate.min.css";
 @import "../../public/css/flaticon_astle.css";
 
 /* Component styles */

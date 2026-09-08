@@ -1,0 +1,66 @@
+/*
+ * Remixicon - subset.
+ *
+ * The full stylesheet shipped by the package is ~127 KB and defines every icon
+ * in the set; this app renders 35 of them, so the rest was render-blocking
+ * weight on every page. Only the glyphs listed below are included.
+ *
+ * ADDING AN ICON: copy its `.ri-name:before { content: "\exxx"; }` rule from
+ * node_modules/remixicon/fonts/remixicon.css into the list at the bottom. If
+ * the class is missing here, the icon renders as a blank box.
+ *
+ * The package's own @font-face lists .eot first, which makes browsers download
+ * the legacy format; this one offers woff2 first and declares font-display.
+ */
+@font-face {
+  font-family: "remixicon";
+  font-display: swap;
+  src: url("../fonts/remixicon.woff2") format("woff2"),
+    url("../fonts/remixicon.woff") format("woff"),
+    url("../fonts/remixicon.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="ri-"], [class*=" ri-"] {
+  font-family: 'remixicon' !important;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.ri-add-line:before { content: "\ea13"; }
+.ri-arrow-down-s-line:before { content: "\ea4e"; }
+.ri-arrow-go-back-line:before { content: "\ea58"; }
+.ri-arrow-go-forward-line:before { content: "\ea5a"; }
+.ri-arrow-left-line:before { content: "\ea60"; }
+.ri-arrow-left-s-line:before { content: "\ea64"; }
+.ri-arrow-right-line:before { content: "\ea6c"; }
+.ri-arrow-right-s-line:before { content: "\ea6e"; }
+.ri-arrow-up-s-line:before { content: "\ea78"; }
+.ri-check-line:before { content: "\eb7b"; }
+.ri-close-line:before { content: "\eb99"; }
+.ri-delete-bin-line:before { content: "\ec2a"; }
+.ri-double-quotes-l:before { content: "\ec51"; }
+.ri-edit-line:before { content: "\ec86"; }
+.ri-error-warning-line:before { content: "\eca1"; }
+.ri-external-link-line:before { content: "\ecaf"; }
+.ri-facebook-line:before { content: "\ecbd"; }
+.ri-grid-line:before { content: "\eddf"; }
+.ri-image-add-line:before { content: "\ee47"; }
+.ri-instagram-line:before { content: "\ee66"; }
+.ri-linkedin-line:before { content: "\eeb6"; }
+.ri-list-ordered:before { content: "\eebb"; }
+.ri-list-unordered:before { content: "\eebe"; }
+.ri-loader-4-line:before { content: "\eec6"; }
+.ri-moon-line:before { content: "\ef75"; }
+.ri-play-fill:before { content: "\f00a"; }
+.ri-search-line:before { content: "\f0d1"; }
+.ri-stack-line:before { content: "\f181"; }
+.ri-sun-line:before { content: "\f1bf"; }
+.ri-twitter-fill:before { content: "\f23a"; }
+.ri-twitter-line:before { content: "\f23b"; }
+.ri-upload-2-line:before { content: "\f24a"; }
+.ri-volume-mute-line:before { content: "\f29e"; }
+.ri-volume-up-line:before { content: "\f2a2"; }
+.ri-whatsapp-line:before { content: "\f2bc"; }

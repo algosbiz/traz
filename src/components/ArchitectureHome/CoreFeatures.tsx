@@ -5,6 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 import featureImg from "../../../public/images/main-banner/home/6.webp";
+import featureBgImg from "../../../public/images/main-banner/home/7.webp";
 import arrowIcon from "../../../public/images/features/arrow.svg";
 import architecturalShape from "../../../public/images/features/architectural-shape.png";
 
@@ -85,7 +86,7 @@ const CoreFeatures: React.FC = () => {
                 data-aos-duration="600"
                 data-aos-once="true"
                 style={{
-                  backgroundImage: `url(/images/main-banner/home/7.webp)`,
+                  backgroundImage: `url(${featureBgImg.src})`,
                 }}
               ></div>
             </div>

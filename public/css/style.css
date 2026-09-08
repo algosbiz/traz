@@ -2333,20 +2333,22 @@ Animation View Area CSS
   padding-right: 0;
 }
 
-.animation-view-content h1 {
+.animation-view-content .animation-view-text {
   white-space: nowrap;
   font-size: 60px;
+  line-height: 1.2;
+  font-weight: bold;
   margin-bottom: 0;
   color: #9C9C9C;
   animation: marquee 25s linear infinite forwards;
 }
 
-.animation-view-content h1 span {
+.animation-view-content .animation-view-text span {
   display: inline-block;
   margin: 0 10px;
 }
 
-.animation-view-content h1 span:nth-child(odd) {
+.animation-view-content .animation-view-text span:nth-child(odd) {
   color: transparent;
   -webkit-text-stroke: 0.5px #9C9C9C;
   -webkit-user-select: none;
@@ -2354,7 +2356,7 @@ Animation View Area CSS
   user-select: none;
 }
 
-.animation-view-content h1:hover {
+.animation-view-content .animation-view-text:hover {
   animation-play-state: paused;
 }
 

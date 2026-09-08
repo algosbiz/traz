@@ -1,8 +1,9 @@
 @font-face {
     font-family: "flaticon_astle";
-    src: url("../fonts/flaticon_astle.ttf?23d801b4aa1e308745aa32f976d1c7d8") format("truetype"),
+    font-display: swap;
+    src: url("../fonts/flaticon_astle.woff2?23d801b4aa1e308745aa32f976d1c7d8") format("woff2"),
 url("../fonts/flaticon_astle.woff?23d801b4aa1e308745aa32f976d1c7d8") format("woff"),
-url("../fonts/flaticon_astle.woff2?23d801b4aa1e308745aa32f976d1c7d8") format("woff2"),
+url("../fonts/flaticon_astle.ttf?23d801b4aa1e308745aa32f976d1c7d8") format("truetype"),
 url("../fonts/flaticon_astle.eot?23d801b4aa1e308745aa32f976d1c7d8#iefix") format("embedded-opentype"),
 url("../fonts/flaticon_astle.svg?23d801b4aa1e308745aa32f976d1c7d8#flaticon_astle") format("svg");
 }

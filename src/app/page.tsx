@@ -17,6 +17,7 @@ import ServiceDetailsContent from "@/components/ServiceDetails/ServiceDetailsCon
 import ServiceDetailsContentTwo from "@/components/ServiceDetails/ServiceDetailsContentTwo";
 import FaqsContent from "@/components/Faqs/FaqsContent";
 import { buildMetadata } from "@/lib/seo";
+import heroBgImg from "../../public/images/main-banner/home/1.webp";
 
 export const metadata = buildMetadata({
   title: "DMG Masonry – Build Your Dream Home with Pro Stone Masons",
@@ -91,8 +92,9 @@ export default function Home() {
       <link
         rel="preload"
         as="image"
-        href="/images/main-banner/home/1.webp"
+        href={heroBgImg.src}
         type="image/webp"
+        fetchPriority="high"
       />
 
       <Navbar />

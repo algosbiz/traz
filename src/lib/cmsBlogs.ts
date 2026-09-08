@@ -118,6 +118,9 @@ export function sanitizeContentHtml(content: string) {
       a: sanitizeHtml.simpleTransform("a", {
         rel: "noopener noreferrer",
       }),
+      // The post title is already the page's h1, so a heading typed as h1 in
+      // the editor would give the article two of them. Demote it to h2.
+      h1: sanitizeHtml.simpleTransform("h2", {}),
     },
   });
 }

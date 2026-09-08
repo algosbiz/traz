@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import FsLightbox from "fslightbox-react";
 import Link from "next/link";
 import Image from "next/image";
+import heroBgImg from "../../../public/images/main-banner/home/1.webp";
 
 import shapeImg from "../../../public/images/main-banner/shape.png";
 import arrowRightIcon from "../../../public/images/main-banner/arrow-right.svg";
@@ -75,7 +76,7 @@ const HeroBanner: React.FC = () => {
         {/* LCP element: no AOS fade so it paints immediately; uses real WebP */}
         <div
           className="main-banner-image"
-          style={{ backgroundImage: `url(/images/main-banner/home/1.webp)` }}
+          style={{ backgroundImage: `url(${heroBgImg.src})` }}
         ></div>
 
         <div className="main-banner-wrap-shape">
