@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useState, type ChangeEvent, type FormEvent } from "react";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -39,6 +39,57 @@ const footerServices = [
 
 const Footer: React.FC = () => {
   const { theme } = useTheme();
+
+  // The markup below used to be a bare <form>: it had no onSubmit, so pressing
+  // Subscribe just reloaded the page and the address was never sent anywhere.
+  // It now posts to the same /api/newsletter endpoint the rest of the site uses.
+  const [email, setEmail] = useState("");
+  const [status, setStatus] = useState<"idle" | "sending">("idle");
+  const [message, setMessage] = useState<{ kind: "ok" | "error"; text: string } | null>(
+    null,
+  );
+
+  const handleEmailChange = (e: ChangeEvent<HTMLInputElement>) => {
+    setEmail(e.target.value);
+    if (message) setMessage(null);
+  };
+
+  const handleSubscribe = async (e: FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+
+    // Checked here as well as on the server so an obvious typo does not cost a
+    // round trip.
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+      setMessage({ kind: "error", text: "Please enter a valid email address." });
+      return;
+    }
+
+    setStatus("sending");
+    setMessage(null);
+
+    try {
+      const response = await fetch("/api/newsletter/", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ email }),
+      });
+      const result = await response.json();
+
+      if (result.success) {
+        setMessage({ kind: "ok", text: result.message });
+        setEmail("");
+      } else {
+        setMessage({
+          kind: "error",
+          text: result.message || "Something went wrong. Please try again.",
+        });
+      }
+    } catch {
+      setMessage({ kind: "error", text: "Network error. Please try again." });
+    } finally {
+      setStatus("idle");
+    }
+  };
 
   return (
     <>
@@ -119,19 +170,43 @@ const Footer: React.FC = () => {
             >
               <h3>Subscribe Newsletter</h3>
 
-              <form className="footer-newsletter-form">
+              <form className="footer-newsletter-form" onSubmit={handleSubscribe}>
                 <input
                   type="email"
                   className="footer-newsletter-input"
                   placeholder="Your Email Here"
                   aria-label="Your Email Here"
+                  value={email}
+                  onChange={handleEmailChange}
+                  disabled={status === "sending"}
                 />
 
-                <button type="submit" className="footer-newsletter-button">
+                <button
+                  type="submit"
+                  className="footer-newsletter-button"
+                  disabled={status === "sending"}
+                >
                   <span className="footer-link-arrow">&rarr;</span>
-                  <span>Subscribe Newsletter</span>
+                  <span>
+                    {status === "sending" ? "Subscribing..." : "Subscribe Newsletter"}
+                  </span>
                 </button>
               </form>
+
+              {message && (
+                <p
+                  role="status"
+                  style={{
+                    marginTop: "10px",
+                    marginBottom: 0,
+                    fontSize: "13px",
+                    lineHeight: 1.5,
+                    color: message.kind === "ok" ? "#2ecc71" : "#e94560",
+                  }}
+                >
+                  {message.text}
+                </p>
+              )}
             </div>
           </div>
         </div>
