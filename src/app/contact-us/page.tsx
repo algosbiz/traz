@@ -26,7 +26,7 @@ export default function Page() {
       />
 
       <div className="ptb-100">
-        <ContactFormStyleTwo />
+        <ContactFormStyleTwo priorityImage />
       </div>
 
       <div className="pb-100">

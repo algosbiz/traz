@@ -5,9 +5,30 @@
  * in the set; this app renders 35 of them, so the rest was render-blocking
  * weight on every page. Only the glyphs listed below are included.
  *
- * ADDING AN ICON: copy its `.ri-name:before { content: "\exxx"; }` rule from
- * node_modules/remixicon/fonts/remixicon.css into the list at the bottom. If
- * the class is missing here, the icon renders as a blank box.
+ * The font files in public/fonts are subsetted to match: the packaged
+ * remixicon.woff2 is 149 KB because it carries every glyph, and this build
+ * ships 3.2 KB.
+ *
+ * ADDING AN ICON: two steps, both required. Copy its
+ * `.ri-name:before { content: "\exxx"; }` rule from
+ * node_modules/remixicon/fonts/remixicon.css into the list at the bottom, then
+ * regenerate the fonts so the glyph actually exists:
+ *
+ *   pip install fonttools brotli
+ *   pyftsubset node_modules/remixicon/fonts/remixicon.ttf  *     --unicodes=$(the codepoints of every rule below, comma separated)  *     --flavor=woff2 --output-file=public/fonts/remixicon.woff2  *     --no-hinting --desubroutinize --layout-features=
+ *   (repeat with --flavor=woff and with no flavor for .ttf)
+ *
+ * Adding only the CSS rule renders a blank box.
+ *
+ * TWO GLYPHS ARE NOT IN THE LIST BELOW and must be kept anyway, because
+ * they are injected straight from CSS rather than through a .ri- class:
+ *
+ *   U+ea4e  navbar.css - dropdown chevron, on every page
+ *   U+ea6e  chimney-location-menu.css - location submenu arrow
+ *
+ * Both happen to coincide with an icon used elsewhere today, so a subset
+ * built from the class list alone still contains them - but that is luck.
+ * Always append U+ea4e,U+ea6e to the --unicodes argument.
  *
  * The package's own @font-face lists .eot first, which makes browsers download
  * the legacy format; this one offers woff2 first and declares font-display.

@@ -136,7 +136,7 @@ const RequestAQuoteForm: React.FC = () => {
           <div className="row justify-content-center">
             <div className="col-lg-5 col-md-12 pe-5">
               <div className="contact-image">
-                <Image src={contactImg} alt="contact" width={700} height={1012} />
+                <Image src={contactImg} alt="contact" width={700} height={1012} priority />
               </div>
             </div>
 

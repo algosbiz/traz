@@ -19,12 +19,19 @@ interface ContactFormProps {
   title?: string;
   subtitle?: string;
   image?: any;
+  /**
+   * Load the side image eagerly. Only true on /contact-us, where this
+   * form sits directly under the breadcrumb and the image is the LCP; on
+   * the other 22 pages that render this form it is far below the fold.
+   */
+  priorityImage?: boolean;
 }
 
 const ContactFormStyleTwo: React.FC<ContactFormProps> = ({
   title = "Contact Our Team to Discuss Your Masonry Project",
   subtitle = "CONTACT",
   image = contactImg,
+  priorityImage = false,
 }) => {
   const [formData, setFormData] = useState<FormData>({
     name: "",
@@ -122,6 +129,7 @@ const ContactFormStyleTwo: React.FC<ContactFormProps> = ({
                   alt="contact"
                   width={700}
                   height={1012}
+                  priority={priorityImage}
                 />
               </div>
             </div>

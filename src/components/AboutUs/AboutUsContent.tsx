@@ -35,7 +35,8 @@ const AboutUsContent: React.FC = () => {
           </div>
 
           <div className="about-image-three">
-            <Image src={aboutImg} alt="image" width={1320} height={430} />
+            {/* First thing under the breadcrumb, so it is this page's LCP. */}
+            <Image src={aboutImg} alt="image" width={1320} height={430} priority />
           </div>
 
           <div className="about-three-inner">

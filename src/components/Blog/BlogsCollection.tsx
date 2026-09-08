@@ -42,7 +42,7 @@ export default function BlogsCollection({
         </div>
 
         <div className="row g-4 justify-content-center">
-          {posts.map((post) => {
+          {posts.map((post, index) => {
             const displayDate = getBlogDisplayDate(post);
 
             return (
@@ -56,6 +56,8 @@ export default function BlogsCollection({
                         alt={post.title}
                         fill
                         sizes="(max-width: 991px) 100vw, 50vw"
+                        // Top card of the grid, so it is the LCP on this page.
+                        priority={index === 0}
                       />
                     </Link>
                   </div>

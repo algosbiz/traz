@@ -41,7 +41,16 @@ const ServiceDetailsContent: React.FC<ServiceDetailsContentProps> = ({
                   </p>
                 </div>
 
-                <Image src={mainImage} alt={title || "service"} width={1400} height={645} />
+                {/* The banner is the LCP element on every page that renders this
+                    component, so it must not be lazy-loaded: `priority` marks it
+                    eager and sets fetchpriority="high". */}
+                <Image
+                  src={mainImage}
+                  alt={title || "service"}
+                  width={1400}
+                  height={645}
+                  priority
+                />
 
                 {paragraphs && paragraphs.length > 0 ? (
                   paragraphs.map((p, index) => <p key={index}>{p}</p>)

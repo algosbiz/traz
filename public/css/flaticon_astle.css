@@ -1,11 +1,28 @@
+/*
+ * flaticon_astle - subset.
+ *
+ * The shipped font carried 166 glyphs; this app uses 7, so the font files in
+ * public/fonts were regenerated with only those. The .eot and .svg sources were
+ * dropped from the src list entirely - they exist for IE and pre-2013 Safari,
+ * and the .svg alone was 540 KB.
+ *
+ * ADDING AN ICON: the class list below still describes all 166 glyphs, but the
+ * font only contains 7 of them, so a class that is not in the subset renders as
+ * a blank box. To add one, recover the full font and re-subset:
+ *
+ *   git show d37c41a:public/fonts/flaticon_astle.ttf > /tmp/flaticon-full.ttf
+ *   pip install fonttools brotli
+ *   pyftsubset /tmp/flaticon-full.ttf --flavor=woff2 --no-hinting
+ *     --layout-features= --output-file=public/fonts/flaticon_astle.woff2
+ *     --unicodes=U+f10b,U+f117,U+f11a,U+f120,U+f12f,U+f133,U+f136,<new>
+ *   (repeat with --flavor=woff and with no flavor for .ttf)
+ */
 @font-face {
     font-family: "flaticon_astle";
     font-display: swap;
-    src: url("../fonts/flaticon_astle.woff2?23d801b4aa1e308745aa32f976d1c7d8") format("woff2"),
-url("../fonts/flaticon_astle.woff?23d801b4aa1e308745aa32f976d1c7d8") format("woff"),
-url("../fonts/flaticon_astle.ttf?23d801b4aa1e308745aa32f976d1c7d8") format("truetype"),
-url("../fonts/flaticon_astle.eot?23d801b4aa1e308745aa32f976d1c7d8#iefix") format("embedded-opentype"),
-url("../fonts/flaticon_astle.svg?23d801b4aa1e308745aa32f976d1c7d8#flaticon_astle") format("svg");
+    src: url("../fonts/flaticon_astle.woff2") format("woff2"),
+url("../fonts/flaticon_astle.woff") format("woff"),
+url("../fonts/flaticon_astle.ttf") format("truetype");
 }
 
 i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
