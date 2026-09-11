@@ -1,7 +1,10 @@
 import React from "react";
 
 export interface MaterialItem {
-  icon: string;
+  // Optional: the flaticon font is subsetted to the 7 glyphs the site already
+  // uses, so a card with no matching glyph renders without an icon rather than
+  // with an empty box. See public/css/flaticon_astle.css.
+  icon?: string;
   title: string;
   text: string;
   aosDelay: string;
@@ -41,9 +44,11 @@ const MaterialsSection: React.FC<MaterialsSectionProps> = ({
               key={item.title}
             >
               <div className="services-item">
-                <div className="icon">
-                  <i className={item.icon}></i>
-                </div>
+                {item.icon && (
+                  <div className="icon">
+                    <i className={item.icon}></i>
+                  </div>
+                )}
                 <h3>{item.title}</h3>
                 <p>{item.text}</p>
               </div>

@@ -8,6 +8,7 @@ import Overview from "@/components/InteriorHome/Overview";
 import AboutUsContent from "@/components/ArchitectureStudio/AboutUsContent";
 import FaqsContent from "@/components/Faqs/FaqsContent";
 import ClientsFeedbackSlider from "@/components/ArchitectureHome/ClientsFeedbackSlider";
+import MaterialsSection from "@/components/ServiceDetails/MaterialsSection";
 
 // Data FAQ khusus untuk halaman Patio Stone Installation
 const patioStoneFaqs = [
@@ -48,6 +49,30 @@ const patioStoneFaqs = [
   },
 ];
 
+// Perawatan, sealing & biaya patio - section tanya-jawab baru (AEO)
+const patioMaintenanceTopics = [
+  {
+    title: "Does a patio need sealing?",
+    text: "Sealing is optional. It helps with staining and can deepen the colour of natural stone, but it needs redoing periodically and is not what determines whether the patio lasts. Base preparation is.",
+    aosDelay: "100",
+  },
+  {
+    title: "How do I maintain a paver patio?",
+    text: "Sweep it, keep joint sand topped up, and pull weeds from joints before they establish. Re-sanding joints every few years keeps the interlock working, which is what stops individual pavers shifting.",
+    aosDelay: "200",
+  },
+  {
+    title: "Is salt bad for a stone patio?",
+    text: "De-icing salt is hard on natural stone and on the surface of some concrete products. Sand or a stone-safe alternative is the safer choice on a patio you care about the look of.",
+    aosDelay: "300",
+  },
+  {
+    title: "How much does patio stone installation cost?",
+    text: "Cost is driven by area, the material chosen, how much excavation the site needs, and access for equipment. A flat, open backyard and a terraced site with a narrow gate are very different jobs at the same square footage, which is why we quote after seeing the space.",
+    aosDelay: "400",
+  },
+];
+
 // Tahapan proses spesifik untuk Patio Stone Installation
 const patioStoneProcessSteps = [
   {
@@ -63,7 +88,7 @@ const patioStoneProcessSteps = [
     number: "2",
     image: "/images/services/service/pation_stone/3.webp",
     title: "Prepare The Base",
-    text: "Proper grading and base work are completed to support a stable surface.",
+    text: "Proper grading and base work are completed to support a stable patio surface.",
     aosDelay: "200",
   },
   {
@@ -71,7 +96,7 @@ const patioStoneProcessSteps = [
     number: "3",
     image: "/images/services/service/pation_stone/4.webp",
     title: "Install The Stones",
-    text: "Each stone is placed with care to ensure alignment, level, and strength.",
+    text: "Each patio stone is placed with care to ensure alignment, level, and strength.",
     aosDelay: "300",
   },
   {
@@ -138,32 +163,40 @@ export default function Page() {
 
       <ServiceDetailsContent
         mainImage="/images/services/service/pation_stone/1.webp"
-        title="Patio Stone Installation Services"
+        title="Patio Stone Installation Calgary: Hardscape Patios & Pavers"
         subtitle="SERVICE"
-        description1="A properly installed patio stone surface can improve both the function and appearance of an outdoor space. Our patio stone installation services at DMG Masonry focus on building stable, well-structured surfaces for everyday use and long-term durability in Calgary's climate."
+        description1="DMG Masonry is a patio stone installer in Calgary, Alberta. A properly installed patio stone surface can improve both the function and appearance of an outdoor space. Our patio stone installation focuses on building stable, well-structured surfaces for everyday use and long-term durability in Calgary's climate."
+        paragraphsHeading="What affects how long a patio lasts?"
         paragraphs={[
-          "Outdoor patio areas are exposed to constant movement, seasonal weather changes, and moisture over time. At DMG Masonry, we install patio stones using dependable construction methods and carefully selected materials to ensure the surface remains stable, properly aligned, and visually consistent through years of use.",
+          "Outdoor patio areas are exposed to constant movement, seasonal weather changes, and moisture over time. At DMG Masonry, we install patio stones using dependable hardscape construction methods and carefully selected materials to ensure the surface remains stable, properly aligned, and visually consistent through years of use in Calgary's freeze-thaw climate.",
           "Beyond functionality, a patio also plays an important role in shaping how the overall outdoor environment comes together. With the right layout and planning, we help create spaces that feel practical for everyday use while still remaining comfortable and inviting for hosting, relaxation, and outdoor gatherings, while maintaining a cohesive connection with the rest of the property.",
         ]}
         benefits={[
           "Custom Patio Layout Planning",
           "Durable Outdoor Construction",
-          "Professional Stone Installation",
+          "Professional Patio Stone Installation",
           "Repair & Re-Leveling Services",
         ]}
+        extraParagraphsHeading="What does patio stone installation involve?"
         extraParagraphs={[
-          "Every patio project starts with a detailed assessment of the space, including soil condition, drainage patterns, and intended use of the area. Our team at DMG Masonry carefully evaluates these factors before installation begins to determine the most suitable construction approach and to help ensure long-term performance and structural reliability.",
+          "Every patio project starts with a detailed assessment of the space, including soil condition, drainage patterns, and intended use of the area. As masonry contractors in Calgary, we carefully evaluate these factors before installation begins to determine the most suitable construction approach and to help ensure long-term performance and structural reliability.",
           "During installation, each stone is carefully positioned and adjusted to achieve consistent leveling, proper alignment, and strong structural stability. We focus on precise workmanship throughout the process, ensuring the surface not only looks clean and even but also performs well under regular foot traffic and varying weather conditions.",
-          "At DMG Masonry, our patio stone installation work is built around durable construction methods, quality materials, and consistent execution at every stage of the project. The result is a patio surface designed to remain functional, stable, and visually consistent over many years of outdoor use.",
+          "At DMG Masonry, our patio stone installation work is built around durable construction methods, quality materials, and consistent execution at every stage of the project. The result is a patio surface across Calgary and Alberta designed to remain functional, stable, and visually consistent over many years of outdoor use.",
         ]}
       />
 
       <Process
-        title="Our Patio Installation Process"
+        title="How Does Patio Stone Installation Work?"
         steps={patioStoneProcessSteps}
       />
 
       <Overview fullWidth items={patioStoneOverviewItems} />
+
+      <MaterialsSection
+        subtitle="MAINTENANCE & COST"
+        title="Patio Maintenance, Sealing And Cost"
+        items={patioMaintenanceTopics}
+      />
 
       <ClientsFeedbackSlider
         titleNormal="What Calgary Thinks"
@@ -174,13 +207,14 @@ export default function Page() {
       <AboutUsContent
         image="/images/services/service/pation_stone/8.webp"
         subtitle="WHY CHOOSE US"
-        title="Patio Stone Installation Built for Long-Term Use"
-        description="A properly installed patio stone surface helps create a functional, balanced outdoor space. At DMG Masonry, we build patio installations with strong structure and a clean, timeless finish for everyday use."
+        title="Why Choose DMG Masonry For Patio Stone Installation In Calgary?"
+        description="A properly installed patio stone surface helps create a functional, balanced outdoor space. As masonry contractors in Calgary, we build patio installations with strong structure and a clean, timeless finish for everyday use."
         listItems={[
           "Stable and level stone placement",
           "Properly prepared base layers",
-          "Durable outdoor surface construction",
+          "Durable hardscape construction",
           "Designed for everyday outdoor use",
+          "Built for Calgary's freeze-thaw climate",
         ]}
         buttonText="Contact Our Team"
         buttonLink="/contact-us"
@@ -188,7 +222,7 @@ export default function Page() {
 
       <FaqsContent
         faqs={patioStoneFaqs}
-        title="Frequently Asked Questions"
+        title="Patio Stone Installation Calgary: Frequently Asked Questions"
         subtitle="FAQ"
       />
 

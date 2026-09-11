@@ -8,6 +8,7 @@ import Overview from "@/components/InteriorHome/Overview";
 import AboutUsContent from "@/components/ArchitectureStudio/AboutUsContent";
 import FaqsContent from "@/components/Faqs/FaqsContent";
 import ClientsFeedbackSlider from "@/components/ArchitectureHome/ClientsFeedbackSlider";
+import MaterialsSection from "@/components/ServiceDetails/MaterialsSection";
 
 // Data FAQ khusus untuk halaman Stone Veneer
 const stoneVeneerFaqs = [
@@ -27,9 +28,9 @@ const stoneVeneerFaqs = [
   },
   {
     uuid: "faq-veneer-3",
-    question: "Is stone veneer suitable for Calgary’s climate?",
+    question: "Is stone veneer suitable for Calgary's climate?",
     answers: [
-      "Yes. When installed properly, stone veneer performs reliably in Calgary’s changing weather conditions. We use appropriate installation methods and durable materials to help the surface withstand moisture exposure and seasonal temperature fluctuations over time."
+      "Yes. When installed properly, stone veneer performs reliably in Calgary's changing weather conditions. We use appropriate installation methods and durable materials to help the surface withstand moisture exposure and seasonal temperature fluctuations over time."
     ]
   },
   {
@@ -41,9 +42,9 @@ const stoneVeneerFaqs = [
   },
   {
     uuid: "faq-veneer-5",
-    question: "Do you provide custom stone veneer design guidance?",
+    question: "Can damaged stone veneer be repaired instead of replaced?",
     answers: [
-      "In many cases, damaged or aging stone veneer can be repaired rather than fully replaced. We assess the condition of the surface carefully and recommend repair solutions that help restore both appearance and structural reliability."
+      "In many cases, yes. Damaged or aging stone veneer can be repaired rather than fully replaced. We assess the condition of the surface carefully and recommend repair solutions that help restore both appearance and structural reliability."
     ]
   }
 ];
@@ -63,7 +64,7 @@ const stoneVeneerProcessSteps = [
     number: "2",
     image: "/images/services/service/stone_veneer/3.webp",
     title: "Prepare Materials & Layout",
-    text: "Stone selections, layout patterns, and installation details are prepared.",
+    text: "Stone veneer selections, layout patterns, and installation details are prepared.",
     aosDelay: "200",
   },
   {
@@ -89,7 +90,7 @@ const stoneVeneerOverviewItems = [
   {
     image: "/images/services/service/stone_veneer/6.webp",
     titleNormal: "Natural Thin",
-    titleHighlight: "Veneer",
+    titleHighlight: "Stone Veneer",
     aosDelay: "100"
   },
   {
@@ -98,6 +99,30 @@ const stoneVeneerOverviewItems = [
     titleHighlight: "Cultured Stone",
     aosDelay: "200"
   }
+];
+
+// Lokasi pemasangan stone veneer - section tanya-jawab baru (AEO)
+const stoneVeneerApplications = [
+  {
+    title: "Exterior facades and accent walls",
+    text: "Stone veneer is most often used on the front elevation, around entryways, and on columns or wainscot bands to break up siding. It is light enough to apply over most prepared exterior surfaces.",
+    aosDelay: "100",
+  },
+  {
+    title: "Interior feature walls and fireplace surrounds",
+    text: "Indoors, stone veneer is used on fireplace surrounds, feature walls and basement bars. Interior installs avoid the freeze-thaw exposure of exterior work, so material choice is driven mainly by appearance.",
+    aosDelay: "200",
+  },
+  {
+    title: "Outdoor kitchens, fire pits and retaining walls",
+    text: "Stone veneer is frequently used to clad outdoor kitchen bases, fire pit surrounds and the face of block retaining walls, which is how a hardscape project ends up looking like one connected design rather than separate builds.",
+    aosDelay: "300",
+  },
+  {
+    title: "Can stone veneer go over existing brick or concrete?",
+    text: "In many cases yes, provided the substrate is sound and properly prepared. We assess the existing surface first, because veneer applied over a wall that is already failing will fail with it.",
+    aosDelay: "400",
+  },
 ];
 
 // Testimonial klien spesifik untuk Stone Veneer
@@ -146,34 +171,42 @@ export default function Page() {
 
       <ServiceDetailsContent
         mainImage="/images/services/service/stone_veneer/1.webp"
-        title="Stone Veneer Installation Calgary"
+        title="Stone Veneer in Calgary: Professional Installation Services"
         subtitle="SERVICE"
-        description1="Stone veneer installation is a masonry solution using a thin layer of natural or engineered stone for interior and exterior surfaces. At DMG Masonry, we provide stone veneer installation in Calgary focused on appearance, durability, and long-term performance."
+        description1="Stone veneer is a masonry finish that uses a thin layer of natural or engineered stone on interior and exterior surfaces. DMG Masonry is a stone veneer installer in Calgary, Alberta, focused on appearance, durability, and long-term performance."
+        paragraphsHeading="Why do property owners choose stone veneer?"
         paragraphs={[
           "Stone veneer is widely used because it offers a flexible way to achieve a natural stone look without the weight and cost of full stone construction. It can be applied to feature walls, exterior facades, fireplaces, and other architectural surfaces while still maintaining structural efficiency.",
-          "In addition to its visual appeal, stone veneer is a practical choice for long-term property value. When installed correctly, it performs well in different weather conditions, requires minimal maintenance, and helps enhance both residential and commercial spaces with a timeless stone finish."
+          "In addition to its visual appeal, stone veneer is a practical choice for long-term property value. When installed correctly, it performs well in Calgary's changing weather conditions, requires minimal maintenance, and helps enhance both residential and commercial spaces with a timeless stone finish."
         ]}
         benefits={[
-          "Full Installation",
+          "Full Stone Veneer Installation",
           "Design Consultation",
           "Repairs & Maintenance",
           "Interior & Exterior Applications",
         ]}
+        extraParagraphsHeading="What does proper stone veneer installation involve?"
         extraParagraphs={[
           "Proper installation is essential to ensure stone veneer remains secure, stable, and performs well over time. Our team carefully handles surface preparation, material application, and finishing to achieve strong adhesion, clean detailing, and long-lasting results across both interior and exterior surfaces.",
-          "At DMG Masonry, we also guide clients through material and design selection to ensure the stone style complements the property’s character, architecture, and intended use. By considering both function and appearance, we help create a balanced result that feels cohesive, durable, and visually appealing for the space.",
-          "We also provide repair and maintenance services for stone veneer that has become loose, cracked, worn, or aged over time. Our goal is to restore both appearance and structural integrity so the surface continues to perform reliably while maintaining a clean, consistent, and well-finished appearance over the long term. Through careful repair work and proper material matching, we help preserve the overall look and durability of the masonry surface."
+          "As stone veneer contractors in Calgary, we also guide clients through material and design selection to ensure the stone style complements the property's character, architecture, and intended use. By considering both function and appearance, we help create a balanced result that feels cohesive, durable, and visually appealing for the space.",
+          "We also provide stone veneer repair and maintenance for surfaces that have become loose, cracked, worn, or aged over time. Our goal is to restore both appearance and structural integrity so the surface continues to perform reliably while maintaining a clean, consistent, and well-finished appearance over the long term. Through careful repair work and proper material matching, we help preserve the overall look and durability of the masonry surface."
         ]}
       />
 
       <Process
-        title="Our Stone Veneer Installation Process"
+        title="How Does Our Stone Veneer Installation Work?"
         steps={stoneVeneerProcessSteps}
       />
 
       <Overview
         fullWidth
         items={stoneVeneerOverviewItems}
+      />
+
+      <MaterialsSection
+        subtitle="APPLICATIONS"
+        title="Where Can Stone Veneer Be Installed?"
+        items={stoneVeneerApplications}
       />
 
       <ClientsFeedbackSlider
@@ -185,12 +218,12 @@ export default function Page() {
       <AboutUsContent
         image="/images/services/service/stone_veneer/8.webp"
         subtitle="WHY CHOOSE US"
-        title="Why Property Owners Choose Stone Veneer"
+        title="Why Do Calgary Property Owners Choose Stone Veneer?"
         description="Stone veneer offers the timeless look of natural stone with a lighter structure and efficient installation. We create surfaces that enhance visual appeal, durability, and property value."
         listItems={[
-          "Custom stone styles and finishes",
+          "Custom stone veneer styles and finishes",
           "Clean and precise installation",
-          "Durable long-term performance",
+          "Durable long-term performance in Calgary's climate",
           "Timeless architectural appearance"
         ]}
         buttonText="Find Out More"
@@ -199,7 +232,7 @@ export default function Page() {
 
       <FaqsContent
         faqs={stoneVeneerFaqs}
-        title="Frequently Asked Questions"
+        title="Stone Veneer Calgary: Frequently Asked Questions"
         subtitle="FAQ"
       />
 

@@ -242,3 +242,15 @@ Services Details Area CSS
     font-size: 18px;
   }
 }/*# sourceMappingURL=services-details.css.map */
+
+/* Question-form h2 headings inside the service body copy. The first one follows
+   the banner image, which already carries 30px of bottom margin; the second one
+   follows the benefits row, whose last <li> sits flush, so only that one needs
+   its own top spacing. */
+.services-details-desc .body-question {
+  margin-bottom: 20px;
+}
+
+.services-details-desc .row + .body-question {
+  margin-top: 30px;
+}

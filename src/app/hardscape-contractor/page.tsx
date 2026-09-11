@@ -16,7 +16,7 @@ const hardscapeFaqs = [
     uuid: "faq-hardscape-1",
     question: "What hardscape services do you provide?",
     answers: [
-      "We provide full hardscape construction services, including patios, walkways, retaining walls, driveways, outdoor kitchens, and other outdoor stone features. We also handle repairs and upgrades to improve the functionality and long-term performance of existing outdoor spaces.",
+      "We provide full hardscape construction services in Calgary, including patios, walkways, retaining walls, driveways, outdoor kitchens, and other outdoor stone features. We also handle repairs and upgrades to improve the functionality and long-term performance of existing outdoor spaces.",
     ],
   },
   {
@@ -30,7 +30,7 @@ const hardscapeFaqs = [
     uuid: "faq-hardscape-3",
     question: "What materials are used for hardscape construction?",
     answers: [
-      "We work with durable materials such as natural stone, stone veneer, concrete pavers, and other masonry products depending on the project requirements. Material selection is based on performance, appearance, and long-term outdoor durability.",
+      "We work with durable materials such as natural stone, stone veneer, concrete pavers, and other masonry products depending on the project requirements. Material selection is based on performance, appearance, and long-term outdoor durability in Calgary's climate.",
     ],
   },
   {
@@ -51,7 +51,7 @@ const hardscapeFaqs = [
     uuid: "faq-hardscape-6",
     question: "Do you build outdoor kitchens or BBQ areas as part of your hardscape services?",
     answers: [
-      "Yes. Outdoor kitchens and BBQ areas are a natural extension of our hardscape construction services, and we can design them alongside patios, seating areas, and other outdoor features to create a complete outdoor living space.",
+      "Yes. Outdoor kitchens and outdoor BBQ areas in Calgary are a natural extension of our hardscape construction services, and we can design them alongside patios, seating areas, and other outdoor features to create a complete outdoor living space.",
     ],
   },
   {
@@ -65,7 +65,7 @@ const hardscapeFaqs = [
     uuid: "faq-hardscape-8",
     question: "How long does it take to build a retaining wall in Calgary?",
     answers: [
-      "Timelines for a retaining wall depend on the length, height, and site conditions, but most projects can be completed within one to a few weeks. We'll provide a more specific estimate once we've reviewed your property.",
+      "Timelines for a retaining wall depend on the length, height, and site conditions, but most retaining wall projects in Calgary can be completed within one to a few weeks. We'll provide a more specific estimate once we've reviewed your property.",
     ],
   },
   {
@@ -74,6 +74,35 @@ const hardscapeFaqs = [
     answers: [
       "Most hardscape projects require an upfront deposit to secure materials and scheduling, with the remaining balance due as the project progresses or upon completion.",
     ],
+  },
+];
+
+// Material hardscape - section tanya-jawab baru (AEO)
+const hardscapeMaterials = [
+  {
+    title: "Concrete pavers",
+    text: "Interlocking pavers are the most common hardscape surface in Calgary. They flex slightly with ground movement instead of cracking, and individual units can be lifted and reset if a section settles.",
+    aosDelay: "100",
+  },
+  {
+    title: "Natural stone",
+    text: "Flagstone and quarried stone give a less uniform, more organic surface. Every piece is different, so it takes longer to lay, but the result does not repeat the way a manufactured pattern does.",
+    aosDelay: "200",
+  },
+  {
+    title: "Segmental retaining wall block",
+    text: "Engineered block systems are used for most retaining walls. They lock together, allow drainage through the wall, and can be stepped or curved to follow a slope.",
+    aosDelay: "300",
+  },
+  {
+    title: "Stone veneer over block",
+    text: "Where a wall or outdoor kitchen base needs to match the house, we build in block and clad the face in stone veneer. It is the usual way to get a natural stone appearance on a structural element.",
+    aosDelay: "400",
+  },
+  {
+    title: "How do you choose between them?",
+    text: "Material choice comes down to how the space is used, how much ground movement the site has, what the house is finished in, and budget. We walk through options against your actual property rather than recommending one material for every job.",
+    aosDelay: "500",
   },
 ];
 
@@ -87,7 +116,7 @@ const hardscapeFeatures = [
   {
     icon: "flaticon-facade",
     title: "Retaining Walls",
-    text: "Retaining walls manage grade changes and support sloped areas of a property, combining structural performance with a finished, natural appearance. We also build walkways, driveways, and other outdoor stone features as part of a complete hardscape plan tailored to your property.",
+    text: "Retaining walls in Calgary manage grade changes and support sloped areas of a property, combining structural performance with a finished, natural appearance. We also build walkways, driveways, and other outdoor stone features as part of a complete hardscape plan tailored to your property.",
     aosDelay: "200",
   },
 ];
@@ -123,7 +152,7 @@ const hardscapeProcessSteps = [
     number: "4",
     image: "/images/services/service/hardscape_constructor/5.webp",
     title: "Refine The Final Result",
-    text: "Finishing details improve functionality, appearance, and long-term durability",
+    text: "Finishing details improve functionality, appearance, and long-term durability.",
     aosDelay: "400",
   },
 ];
@@ -178,11 +207,12 @@ export default function Page() {
 
       <ServiceDetailsContent
         mainImage="/images/services/service/hardscape_constructor/1.webp"
-        title="Hardscape Contractor & Construction Services in Calgary"
+        title="Hardscape Construction Calgary: Patios, Retaining Walls & Outdoor Surfaces"
         subtitle="SERVICE"
-        description1="A well-designed outdoor space should feel functional, durable, and naturally connected to your property. As a Calgary hardscape contractor, we build patios, retaining walls, pathways, and outdoor surfaces designed for long-term performance and a timeless, well-finished appearance."
+        description1="DMG Masonry is a hardscape contractor in Calgary, Alberta. We handle hardscape construction including patios, retaining walls, pathways, and outdoor surfaces built for long-term performance and a timeless, well-finished appearance."
+        paragraphsHeading="What is hardscape construction?"
         paragraphs={[
-          "Outdoor hardscape features are constantly exposed to weather changes, moisture, ground movement, and everyday use. Using durable materials and reliable hardscape construction methods, we build outdoor surfaces designed to maintain their structure, stability, and visual quality for years to come.",
+          "Hardscape construction covers the built, non-planted parts of an outdoor space: patios, retaining walls, walkways, driveways, and outdoor kitchens. These features are constantly exposed to weather changes, moisture, ground movement, and everyday use. Using durable materials and reliable hardscape construction methods, we build outdoor surfaces designed to maintain their structure, stability, and visual quality for years to come.",
           "Thoughtful hardscape construction also improves the usability and overall value of a property. Carefully planned layouts, clean finishing, and practical design choices help outdoor spaces remain visually balanced, low-maintenance, and functional for years, creating a more cohesive and comfortable outdoor environment.",
         ]}
         benefits={[
@@ -194,26 +224,33 @@ export default function Page() {
           "Outdoor Kitchen & BBQ Area Construction",
           "Natural Stone & Stone Veneer Finishes",
         ]}
+        extraParagraphsHeading="What does a hardscape project involve?"
         extraParagraphs={[
           "Every hardscape project requires careful planning before construction begins. Site layout, drainage conditions, material selection, and intended use all play an important role in creating outdoor spaces that perform reliably over time while maintaining proper functionality, stability, and visual balance.",
           "From patios and retaining walls to walkways and outdoor kitchens, our team approaches each hardscape construction project with attention to detail and practical building methods. The goal is to create outdoor features that complement the property while supporting everyday functionality, long-term durability, and a clean, cohesive appearance.",
-          "Strong hardscape construction depends on experienced workmanship, durable materials, and careful execution throughout every stage of the project. Through reliable installation practices and timeless outdoor design, we help create hardscape spaces that remain stable, functional, and visually lasting for years to come.",
+          "Strong hardscape construction depends on experienced workmanship, durable materials, and careful execution throughout every stage of the project. Through reliable installation practices and timeless outdoor design, we help Calgary properties keep hardscape spaces that remain stable, functional, and visually lasting for years to come.",
         ]}
       />
 
       <MaterialsSection
         subtitle="HARDSCAPE FEATURES"
-        title="Hardscape Features We Build"
-        description="Hardscape construction covers a wide range of outdoor features, and most projects combine more than one. Here's a look at what we build most often."
+        title="What Hardscape Features Do We Build?"
+        description="Hardscape construction covers a wide range of outdoor features, and most projects combine more than one. Here's a look at what we build most often in Calgary."
         items={hardscapeFeatures}
       />
 
       <Process
-        title="Our Hardscape Construction Process"
+        title="How Does Our Hardscape Construction Process Work?"
         steps={hardscapeProcessSteps}
       />
 
       <Overview fullWidth items={hardscapeOverviewItems} />
+
+      <MaterialsSection
+        subtitle="MATERIALS"
+        title="What Materials Are Used In Hardscape Construction?"
+        items={hardscapeMaterials}
+      />
 
       <ClientsFeedbackSlider
         titleNormal="Hear From Our Happy"
@@ -224,14 +261,14 @@ export default function Page() {
       <AboutUsContent
         image="/images/services/service/hardscape_constructor/8.webp"
         subtitle="WHY CHOOSE US"
-        title="Outdoor Hardscape Spaces Built for Long-Term Use in Calgary"
+        title="Why Choose DMG Masonry For Hardscape Construction In Calgary?"
         description="Well-planned hardscape construction creates outdoor spaces that are functional, durable, and visually balanced. We use careful planning and quality installation practices to support long-term usability for every hardscape project."
         listItems={[
           "Thoughtful outdoor planning",
           "Stable and durable construction",
           "Functional everyday use",
           "Timeless outdoor appearance",
-          "Retaining wall & patio expertise",
+          "Retaining walls Calgary homeowners rely on",
           "Patio, walkway & driveway construction",
           "Trusted Calgary hardscape contractor",
         ]}
@@ -241,7 +278,7 @@ export default function Page() {
 
       <FaqsContent
         faqs={hardscapeFaqs}
-        title="Frequently Asked Questions"
+        title="Hardscape Construction Calgary: Frequently Asked Questions"
         subtitle="FAQ"
       />
 

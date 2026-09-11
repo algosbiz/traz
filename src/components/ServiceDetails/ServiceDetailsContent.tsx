@@ -12,8 +12,12 @@ interface ServiceDetailsContentProps {
   subtitle?: string;
   mainImage?: any;
   description1?: string;
+  /** Question-form h2 introducing `paragraphs`. */
+  paragraphsHeading?: string;
   paragraphs?: string[];
   benefits?: string[];
+  /** Question-form h2 introducing `extraParagraphs`. */
+  extraParagraphsHeading?: string;
   extraParagraphs?: string[];
 }
 
@@ -22,8 +26,10 @@ const ServiceDetailsContent: React.FC<ServiceDetailsContentProps> = ({
   subtitle = "SERVICE",
   mainImage = serviceImg,
   description1,
+  paragraphsHeading,
   paragraphs,
   benefits,
+  extraParagraphsHeading,
   extraParagraphs
 }) => {
   return (
@@ -51,6 +57,10 @@ const ServiceDetailsContent: React.FC<ServiceDetailsContentProps> = ({
                   height={645}
                   priority
                 />
+
+                {paragraphsHeading && (
+                  <h2 className="body-question">{paragraphsHeading}</h2>
+                )}
 
                 {paragraphs && paragraphs.length > 0 ? (
                   paragraphs.map((p, index) => <p key={index}>{p}</p>)
@@ -122,6 +132,10 @@ const ServiceDetailsContent: React.FC<ServiceDetailsContentProps> = ({
                       </ul>
                     </div>
                   </div>
+                )}
+
+                {extraParagraphsHeading && (
+                  <h2 className="body-question">{extraParagraphsHeading}</h2>
                 )}
 
                 {extraParagraphs && extraParagraphs.length > 0 ? (

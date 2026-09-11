@@ -10,3 +10,10 @@
 .materials-area .services-item p {
   margin-bottom: 0;
 }
+
+/* Placed after the Overview gallery rather than directly after
+   ServiceDetailsContent: .overview-inner-area leaves only 40px under its dashed
+   rule, where the usual position inherits a full pb-100 above it. */
+.overview-area + .materials-area {
+  padding-top: 60px;
+}
